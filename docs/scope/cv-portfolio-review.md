@@ -1,6 +1,6 @@
 # Revue des CV et portfolios — cadrage progressif
 
-Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D082. Double validation, référent/remplacement et visibilité des commentaires validés ; modalités restantes à approfondir, pas spécification technique ni fonctionnalité Accepted.
+Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D083. Double validation, référent/remplacement, commentaires et déclaration des modifications du portfolio validés ; modalités restantes à approfondir, pas spécification technique ni fonctionnalité Accepted.
 
 ## Besoin exprimé
 
@@ -15,7 +15,7 @@ Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D082.
 ## Modèle de revue validé (D057) et compléments proposés
 
 Deux avis distincts par élément examiné : formateur et CME. CV et portfolio évalués séparément. Validation globale seulement lorsque les deux avis sont positifs pour le document examiné ; après modification, nouvelle revue des deux intervenants et conservation des anciens avis sans les reporter au nouveau contenu. Première revue en attente. Les autres statuts globaux restent à définir.
-Compléments proposés : auteur, date et référence de version pour chaque avis ; répartition technique/projets côté formateur, présentation et candidature côté CME. Détail à spécifier/valider. Pour un portfolio externe, la méthode d'identification du contenu examiné et de signalement des modifications est ouverte : aucun suivi automatique du site promis.
+Compléments proposés : auteur, date et référence de version pour chaque avis ; répartition technique/projets côté formateur, présentation et candidature côté CME. Détail à spécifier/valider. D083 valide désormais le signalement humain des changements du portfolio externe, avec date et résumé ; référence technique au contenu examiné encore à spécifier, aucun suivi automatique du site promis.
 
 Exemple fictif : CV version 1 validé par le formateur, non validé par la CME → pas de validation globale. Deux avis positifs → globalement validé. Remplacement par version 2 → nouvelle revue, anciens avis conservés comme historique de version 1.
 
@@ -25,7 +25,7 @@ Exemple fictif : CV version 1 validé par le formateur, non validé par la CME �
 2. Remplacement D080, validations sur contenu inchangé D081 et visibilité des commentaires historiques D082 validés ; modalités de révision d'un avis existant à préciser.
 3. Deux avis positifs et revues séparées validés (D057) ; autres statuts globaux à spécifier.
 4. En attente/non validé distingués par D057 ; règles détaillées de correction à spécifier.
-5. Modification déclenchant nouvelle revue validée ; historique/versions et détection ou déclaration des changements d'un portfolio externe à préciser.
+5. Signalement humain des modifications du portfolio validé D083 ; méthode technique de référence au contenu examiné et historique détaillé à spécifier.
 6. Visibilité des commentaires D082 validée : apprenant concerné, CME et référent actuel, y compris anciens retours. Droits d'écriture/correction et conservation détaillée à spécifier ; bilans et notes privées distincts.
 7. Les filtres et compteurs sont-ils destinés à la CME, au formateur limité à sa classe et/ou au tableau porteur ? Voir un statut ne donne pas automatiquement accès au fichier.
 8. Une absence de validation empêche-t-elle de candidater ? Aucun blocage de candidature décidé ; ne pas inventer de condition supplémentaire.
@@ -70,7 +70,7 @@ Les contrôles d'autorisation à chaque requête doivent refléter l'affectation
 
 Un remplacement de référent sans modification du contenu ne remet pas le document à revalider : conserver les validations existantes avec leurs véritables auteurs. Le nouveau référent ne devient pas auteur d'un avis qu'il n'a pas rédigé. Un avis en attente ou non validé ne devient pas positif du seul fait du changement. La règle des deux avis positifs D057 reste applicable séparément au CV et au portfolio.
 
-Toute modification du contenu impose une nouvelle revue selon D057, même si elle coïncide avec le remplacement. La méthode d'identification du contenu d'un portfolio externe et de signalement des changements reste à préciser ; même URL ne signifie pas même contenu. Aucun contrôle automatique du site n'est promis par cet accord.
+Toute modification du contenu impose une nouvelle revue D057, même si elle coïncide avec le remplacement. Signalement humain du portfolio précisé D083 ; référence technique au contenu examiné encore à spécifier. Même URL ne signifie pas même contenu, aucun contrôle automatique du site promis.
 
 | Vérification à prévoir | Résultat attendu, non encore testé |
 |---|---|
@@ -98,6 +98,23 @@ L'ancien référent n'accède plus à ces retours par son ancienne affectation n
 | Référent invoque la revue pour consulter un bilan d'un autre accompagnant | Refus selon les règles propres aux bilans |
 
 Contrôles serveur à chaque accès selon D060, y compris listes et URL directe. Droits d'écriture/correction, liens avec les versions et conservation détaillée à spécifier. Cette visibilité n'autorise ni modification des retours d'autrui ni création d'un espace de notes privées ; aucune preuve applicative disponible.
+
+## Modification du portfolio externe — Déclaration validée D083
+
+L'apprenant signale dans la plateforme une modification de son portfolio, y compris si son URL n'a pas changé. Enregistrer la date du signalement et un bref résumé des changements. Cette date est celle de la déclaration ; elle n'est pas une preuve de la date réelle de modification du site.
+
+Le portfolio passe à revalider et les deux revues formateur/CME sont de nouveau requises selon D057. Le CV reste dans son état actuel s'il n'a pas été modifié. Conserver les avis précédents pour le contenu examiné auparavant ; pas de report de validation au nouveau contenu ni d'avis positif automatique. Les retours restent consultables selon D082, avec auteurs conservés. Les transitions individuelles lorsqu'une première revue n'a pas encore eu lieu seront précisées en respectant la distinction D057 entre « en attente » et « à revalider ».
+
+| Vérification à prévoir | Résultat attendu, non encore testé |
+|---|---|
+| Apprenant signale une modification d'un portfolio déjà examiné avec même URL | Date et bref résumé enregistrés ; portfolio à revalider et deux nouvelles revues requises |
+| Portfolio modifié, CV inchangé | Seul le portfolio suit la nouvelle revue ; état et avis du CV conservés |
+| Revues formateur et CME successives après signalement | Deux avis distincts sur le contenu réexaminé, validation globale seulement après deux avis positifs selon D057 |
+| Anciennes validations présentes au signalement | Conservées pour l'ancien contenu, sans valider automatiquement le nouveau |
+| Autre apprenant tente de déclarer une modification sur ce dossier | Refus sans modification ni exposition non autorisée |
+| Appel répété ou erreur pendant déclaration/revue | Cohérence et absence d'écrasement silencieux à spécifier/tester selon D060 |
+
+Approche déclarative : aucune preuve de stabilité du site entre revues, aucune surveillance automatique ni copie complète du portfolio décidée. Référence technique au contenu examiné, limites du résumé, affichage, conservation et erreurs à spécifier avant développement. D083 n'ajoute aucun envoi externe ni condition bloquant une candidature.
 
 ## Limites et articulation
 

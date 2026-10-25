@@ -353,3 +353,11 @@ Après remplacement, le nouveau référent peut consulter ces retours historique
 Bilans de rendez-vous et accompagnements gardent leurs règles propres D025/D080 : leur accès ne donne pas à lui seul accès aux commentaires de revue, et la classe ne donne pas accès aux bilans d'autres accompagnants. Cette décision concerne la consultation des retours de revue ; elle n'autorise pas leur modification par un tiers, ni une fonctionnalité de notes privées ou un partage collectif. Droits d'écriture/correction et conservation détaillée à spécifier.
 
 Documents et contrôles attendus alignés ; C08 reste en cours pour portfolio externe et autres modalités, D007 ouverte. Aucun développement ni test applicatif. Commit/push selon D069, sans snapshot D074.
+
+## D083 — Déclaration humaine des modifications du portfolio externe — Validé, 2026-10-25
+
+Accord explicite « oui valide » à la proposition présentée : pour le pilote, l'apprenant signale dans la plateforme une modification de son portfolio, même lorsque le lien reste identique. Le portfolio passe à revalider et déclenche les deux revues formateur/CME prévues par D057 ; le CV conserve son état s'il n'a pas changé. Conserver la date du signalement et un bref résumé des changements.
+
+Les avis précédents restent conservés pour le contenu précédemment examiné, sans validation automatique du nouveau contenu. Cette approche est déclarative ; un signalement, une URL inchangée ou l'absence de signalement ne prouvent pas que le site est resté identique entre deux revues. Aucun suivi automatique du site ou copie complète du contenu décidé. Méthode technique de référence au contenu examiné et gestion des erreurs/répétitions à spécifier.
+
+Les droits sur les documents et retours restent D058/D082, bilans séparés. Documents et contrôles attendus alignés ; C08 reste en cours pour autres modalités, D007 ouverte. Aucun développement ou test applicatif ; commit/push selon D069, sans snapshot D074.

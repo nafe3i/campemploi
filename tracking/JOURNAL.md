@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Déclaration humaine des changements du portfolio validée
+
+Accord explicite « oui valide ». D083 consignée : signalement par apprenant même URL, date du signalement et bref résumé conservés, portfolio et deux avis à revalider, CV inchangé conservé. Anciens avis historisés, approche déclarative sans preuve de stabilité du site ni surveillance automatique décidée. Documents et contrôles attendus alignés ; C08 en cours pour derniers points de cadrage/autres modalités, D007 ouverte, aucun développement ou test applicatif. Commit/push à vérifier selon D069, sans snapshot D074.
+
 ## 2026-10-25 — D082 publiée et vérifiée
 
 Commit 8959092fed90608947e7e590e5dc774bd6e9c1d6, « docs: valider la visibilite des commentaires de revue », publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun snapshot créé. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 en cours, D007 ouverte, aucune preuve applicative.
