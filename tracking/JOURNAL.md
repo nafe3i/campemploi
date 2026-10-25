@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D081 publiée et vérifiée
+
+Commit fe002b9ac62aa601fcb87f687969dc4b3de43215, « docs: conserver les validations au changement de referent », publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun nouveau snapshot. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 en cours, D007 ouverte, aucune preuve applicative.
+
 ## 2026-10-25 — Validations conservées au seul remplacement validées
 
 Accord explicite « valide ». D081 consignée : sur contenu inchangé, le remplacement du référent ne remet pas les documents à revalider ; validations gardées avec leurs véritables auteurs, aucun avis manquant/non validé rendu positif. Une modification du contenu déclenche toujours la revue D057, CV et portfolio séparés. Documents et suivi alignés, contrôles attendus documentés sans exécution applicative. Visibilité des commentaires et contenu du portfolio externe restent ouverts, C08 en cours, D007 ouverte. Commit/push à vérifier selon D069, aucun snapshot D074.
