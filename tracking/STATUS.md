@@ -1,7 +1,7 @@
 # État — 2026-10-25
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
-D078 validée et documentée : un formateur référent par classe porte l'avis, plusieurs classes possibles par formateur, affectation CME dans son établissement avec permission locale. C08 en cours ; correspondance formateur/responsable technique UNKNOWN, clarification demandée séparément, sans fusion de rôles. Contrôles attendus documentés ; lot à publier selon D069 sans snapshot D074.
+D078 validée et documentée : un formateur référent par classe porte l'avis, plusieurs classes possibles par formateur, affectation CME dans son établissement avec permission locale. C08 en cours ; correspondance formateur/responsable technique UNKNOWN, clarification demandée séparément, sans fusion de rôles. Commit 957a2e309d2d5125317e587add5dcc424def5c09 publié et vérifié sur origin/main ; contrôles applicatifs non exécutés, sans snapshot D074.
 Consolidation C09 documentaire terminée : parcours, matrice des droits et critères dans docs/scope/first-slice.md ; arbitrages D076/D077 publiés et vérifiés au commit a9ebfe0eddb335009b3a7cf01c1342c44e837746. Aucune preuve applicative ; D007 reste ouverte, C08 désormais en cours.
 
 ## Repères documentaires précédents

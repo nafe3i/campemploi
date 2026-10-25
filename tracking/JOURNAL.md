@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D078 publiée et vérifiée
+
+Commit 957a2e309d2d5125317e587add5dcc424def5c09, « docs: valider le formateur referent de chaque classe », publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun nouveau snapshot. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 reste en cours, correspondance formateur/responsable technique UNKNOWN, aucune preuve applicative.
+
 ## 2026-10-25 — Organisation du référent de classe validée
 
 Accord « c est valider » à l'organisation présentée : un référent par classe pour l'avis formateur CV/portfolio, plusieurs classes possibles par formateur, affectation gérée par CME. D078 consignée et documents concernés alignés ; C08 passe en cours, contrôles attendus documentés sans preuve applicative. La question séparée d'équivalence formateur/responsable technique reste UNKNOWN : clarification demandée, aucun cumul/fusion de permissions déduit de l'accord d'organisation. Remplacement, accès/anciens avis et autres modalités à discuter. D007 ouverte ; commit/push à vérifier selon D069, aucun snapshot D074.
