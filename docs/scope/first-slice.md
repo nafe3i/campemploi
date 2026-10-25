@@ -1,6 +1,6 @@
 # Première tranche — proposer, valider et consulter des offres
 
-Mise à jour : 25 octobre 2026. Statut : périmètre fondé sur D053–D054, modération D061, clôture/modifications D068, informations/qualification D070 et consultation D071 validées ; règles complémentaires non arbitrées ci-dessous Proposed. D007 encore en attente. Aucune stack ni architecture technique choisie.
+Mise à jour : 25 octobre 2026. Statut : périmètre fondé sur D053–D054, modération D061, clôture/modifications D068, informations/qualification D070, consultation D071 et traitement manuel des propositions en doublon D072 validés ; règles complémentaires non arbitrées ci-dessous Proposed. D007 encore en attente. Aucune stack ni architecture technique choisie.
 
 ## Résultat utilisateur
 
@@ -33,8 +33,9 @@ Proposition finale C07 explicitement validée le 25 octobre (D068) : clôture/r�
 | Informations de soumission | Intitulé, entreprise, type et lien source ou texte avec provenance | Validé D070 ; formats et limites à spécifier |
 | Qualification et informations absentes | CME renseigne les conditions disponibles ; absences explicites « non précisé » ou « à confirmer », sans invention | Validé D070 ; géographie D029 et niveau D052 conservés |
 | Moyen de candidature | Page, adresse professionnelle publiée ou instructions exploitables nécessaires avant publication ; correction si absent | Validé D070 ; présence du seul lien source insuffisante |
+| Proposition en doublon | Vérification manuelle CME ; une seule offre au catalogue, proposition répétée rejetée avec motif « déjà présente » ; référence existante seulement si consultable par l'auteur | Validé D072 ; aucun suivi supprimé/fusionné automatiquement |
 
-Les quatre états et le cycle correction/rejet ont été validés explicitement par D061, puis clôture/modifications D068, informations/qualification D070 et consultation avant publication D071. Les autres propositions restent ouvertes ; autres droits, formats/limites des champs et transitions restantes à préciser.
+Les quatre états et le cycle correction/rejet ont été validés explicitement par D061, puis clôture/modifications D068, informations/qualification D070, consultation D071 et propositions en doublon D072. Les autres propositions restent ouvertes ; autres droits, formats/limites des champs et transitions restantes à préciser.
 
 ## Limites de cette première tranche
 
@@ -49,6 +50,7 @@ Préparation/CV et suivi des candidatures, demandes d'accompagnement, rendez-vou
 - Cycle de correction et motif selon D061 ; clôture/réouverture, versions, retrait temporaire et continuité des suivis selon D068.
 - Exigences bac+5 et accessibilité inconnue affichées sans promesse d'éligibilité.
 - D070 : informations minimales exigées à la soumission ; texte avec provenance accepté sans URL ; inconnues de qualification explicites ; publication refusée sans moyen de candidature exploitable, sans bloquer la soumission initiale pour ce seul manque. Détail dans offer-lifecycle.md.
+- D072 : doublon confirmé manuellement par CME rejeté avec motif ; référence de l'offre existante seulement si accès autorisé ; aucun suivi de candidature supprimé/fusionné automatiquement. Cas de doublons déjà publiés à préciser.
 
 ## Prochaine étape
 

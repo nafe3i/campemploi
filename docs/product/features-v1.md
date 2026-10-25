@@ -1,6 +1,6 @@
 # Fonctionnalités de la première version pilote
 
-Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registre jusqu'à D071. Besoins validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
+Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registre jusqu'à D072. Besoins validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
 
 | Bloc | Fonctions principales | Points ouverts |
 |---|---|---|
@@ -8,7 +8,7 @@ Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registr
 | Gestion locale | CME avec permission locale : classes, invitations formateurs/personnel, rattachements et rôles locaux | Catégories de personnel et délégations précises |
 | Comptes apprenants | Inscription, rôle apprenant par défaut, validation du rattachement ; lien partagé par classe généré par CME, comptes individuels, expiration/désactivation/renouvellement (D059) | Authentification, durée d'expiration, demandes répétées et changements de classe à spécifier |
 | Classes et profils | Affectations des formateurs, vue CME établissement, tri/filtres classe/année/formateur | Équivalence formateur/responsable technique, nombre de formateurs par classe, champs du profil |
-| Offres | Contributions lien/texte ; modération CME et correction/rejet motivés (D061) ; disponibilité, clôture/réouverture, versions et suivis préservés (D068) ; informations minimales et qualification avant publication (D070) ; consultation des propositions/états/motifs par leur auteur et par CME de leur établissement, autres membres après publication (D071) | Formats/limites des champs, doublons, conservation/visibilité détaillée de l'historique et autres exceptions à préciser |
+| Offres | Contributions lien/texte ; modération motivée (D061), disponibilité/versions/suivis préservés (D068), informations/qualification (D070), consultation auteur/CME avant publication (D071) ; doublons de propositions vérifiés manuellement par CME puis rejetés avec motif et référence si accès autorisé (D072) | Formats/limites des champs, doublons déjà publiés, conservation/visibilité détaillée de l'historique et autres exceptions à préciser |
 | Entreprises | Liste enrichissable et propositions soumises à validation CME | Position dans les tranches et détails du parcours spontané |
 | CV et portfolio | CV PDF privé remplaçable, portfolio par lien ; avis CME/formateur séparés, double validation, nouvelle revue après modification et historique (D057). Accès formateur par classe sans demande ; CME pour son établissement (D058) | Changements d'affectation, plusieurs formateurs, autres statuts globaux, version examinée et signalement des changements du portfolio externe |
 | Candidatures | Checklist, brouillon, retours humains, envoi externe, six états, prochaine action/dates | Transitions, historique et partage du brouillon |

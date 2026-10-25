@@ -259,3 +259,11 @@ Accord explicite « oui je valide » à la règle présentée : l'auteur rattach
 Cette décision précise la consultation individuelle de l'auteur avant la visibilité collective D028, sans lui accorder le droit de publier ni d'accéder aux propositions d'autrui. Correction et nouvelle soumission restent régies par D061 ; modification du contenu publié et retrait pour doute sérieux par D068. Aucun nouveau droit sur les candidatures, les traces détaillées ou le contenu problématique retiré n'est déduit de cette consultation. Aucun privilège de consultation métier automatiquement accordé par l'administration technique.
 
 Règles et contrôles de propriété/rôle/établissement à chaque accès, dont listes et URL directe, détaillés dans docs/scope/offer-lifecycle.md. Scope, synthèse et suivi alignés ; C09 reste en cours pour les autres critères. Documentation validée, aucune fonctionnalité développée ni test applicatif exécuté. D007 inchangée ; commit descriptif et push selon D069.
+
+## D072 — Traitement manuel des propositions en doublon — Validé, 2026-10-25
+
+Accord explicite « oui je valide » à l'approche présentée : pour le pilote, la CME vérifie manuellement si une proposition répète une offre existante, conserve une seule offre dans le catalogue et rejette la proposition répétée avec le motif « déjà présente ». L'offre existante est indiquée à l'auteur seulement s'il a le droit de la consulter selon D071 et l'isolation des établissements. Le motif ne doit pas permettre de contourner ces droits.
+
+Utiliser le rejet motivé D061, sans créer un état supplémentaire ni une fusion automatique. Aucun suivi de candidature n'est supprimé ou fusionné automatiquement. Cette approche ne requiert pas de système complexe de détection automatique. Le périmètre validé concerne l'examen d'une proposition avant publication ; la résolution de doublons déjà publiés, notamment avec des suivis existants, reste à préciser sans supprimer leurs données.
+
+Règles et contrôles attendus dans docs/scope/offer-lifecycle.md ; première tranche, synthèse, scope et suivi alignés. C09 reste en cours, D007 ouverte ; aucun développement ou test applicatif réalisé. Commit descriptif et push selon D069.

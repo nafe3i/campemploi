@@ -1,6 +1,6 @@
 # Cycle de vie des offres — règles validées et propositions restantes
 
-Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070 valide informations de soumission et qualification ; D071 valide consultation avant publication, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068, D070 et D071. Aucun code ni choix technique.
+Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070 valide informations/qualification ; D071 valide consultation avant publication ; D072 valide traitement manuel des propositions en doublon, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068 et D070–D072. Aucun code ni choix technique.
 
 ## Deux dimensions
 
@@ -95,9 +95,27 @@ Liste de travail CME : propositions en attente, date de soumission, auteur et é
 
 Historique : auteur, date, motif et versions utiles validés D068 pour clôture/réouverture/modifications. Extension aux autres actions et visibilité détaillée des traces à préciser ; pas de collecte intégrale inutile de données ni de copie de toute annonce par défaut. La validation de la CME n'est pas une certification juridique ou une garantie de fiabilité de l'employeur.
 
-## Cas limites et vérifications proposés
+## Propositions en doublon — Validé D072
 
-- Doublon : montrer la correspondance et relier au contenu existant après examen CME ; ne pas fusionner sur le seul intitulé ni activer un dédoublonnage complexe sans décision.
+Accord explicite du 25 octobre 2026 (« oui je valide »). Pendant l'examen d'une proposition, la CME du même établissement vérifie manuellement si elle répète une offre existante. Conserver une seule offre dans le catalogue et rejeter la proposition répétée avec le motif « déjà présente », selon le rejet motivé D061. Pas de nouvel état de modération ni de système complexe de détection automatique requis au pilote.
+
+Indiquer l'offre existante à l'auteur seulement s'il a le droit de la consulter (D071). La comparaison ou le motif de rejet ne donne aucun accès supplémentaire à une proposition non publiée d'autrui ni à un autre établissement. Conserver la décision de rejet et son motif dans le suivi de la proposition selon D061/D071. Aucun suivi de candidature supprimé ou fusionné automatiquement.
+
+### Contrôles à prévoir — aucune preuve applicative
+
+| Cas | Résultat attendu |
+|---|---|
+| CME confirme qu'une proposition répète une offre existante | Proposition rejetée avec motif « déjà présente », offre existante conservée, pas de seconde publication |
+| Auteur autorisé à consulter l'offre existante | Référence consultable indiquée avec le motif |
+| Auteur non autorisé à consulter l'offre existante | Motif accessible sur sa proposition, mais aucun lien/contenu interne inaccessible exposé ; accès direct toujours refusé |
+| Suivis de candidatures déjà présents sur l'offre conservée | Aucun suivi supprimé, fusionné ni changé automatiquement par le rejet du doublon |
+| Autre contributeur tente de rejeter comme doublon | Refus selon D061 ; seul le rôle CME autorisé prend cette décision |
+
+Un intitulé similaire ne suffit pas à prouver que deux annonces sont la même opportunité : examen humain des informations disponibles, sans décision automatique. Nouvelle campagne/poste distinct reste une nouvelle offre selon D068. La résolution de doublons déjà publiés, notamment avec des suivis existants, reste à préciser ; D072 n'autorise pas leur suppression ou fusion automatique. Aucun outil automatique de rapprochement choisi.
+
+## Autres cas limites et vérifications proposés
+
+- Doublon d'une proposition : traitement manuel validé D072 ci-dessus ; cas des doublons déjà publiés encore à préciser.
 - Lien inaccessible : proposer une provenance et un texte utile ; statut à corriger ou vérification supplémentaire selon décision CME, pas fausse ouverture.
 - Annonce expirée avant publication : ne pas la proposer comme recrutement ouvert ; conservation comme référence ou rejet à arbitrer.
 - Date limite explicite dépassée : signalement à vérifier et confirmation CME de la clôture validés D068 ; toujours distinguer date limite de candidature et date de début.
@@ -150,4 +168,4 @@ Conserver modération (en attente/à corriger/publiée/rejetée) et disponibilit
 
 Accord consigné D068 ; première tranche et synthèse réalignées. Avant code : spécifier champs/transitions et tests ; détails de conservation, concurrence et affichage à traiter sans choisir la stack implicitement. Ces contrôles sont à réaliser ; aucune preuve applicative disponible.
 
-Parcours nominal et motifs validés D061 ; disponibilité, clôture/réouverture, modifications et historique utile validés D068 ; informations/qualification validées D070 ; consultation avant publication validée D071 dans les périmètres ci-dessus. Restent notamment ouverts : corrections après rejet, retrait par l'auteur, doublons, formats/limites précis des champs, visibilité/conservation détaillée des traces et saisie rétrospective d'une candidature. D007 reste ouverte.
+Parcours nominal et motifs validés D061 ; disponibilité, clôture/réouverture, modifications et historique utile validés D068 ; informations/qualification D070, consultation avant publication D071 et traitement manuel des propositions en doublon D072 validés dans les périmètres ci-dessus. Restent notamment ouverts : corrections après rejet, retrait par l'auteur, doublons déjà publiés, formats/limites précis des champs, visibilité/conservation détaillée des traces et saisie rétrospective d'une candidature. D007 reste ouverte.

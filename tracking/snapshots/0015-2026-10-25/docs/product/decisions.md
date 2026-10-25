@@ -1,0 +1,269 @@
+# Décisions
+
+| ID | Sujet | État | Décision ou point ouvert |
+|---|---|---|---|
+| D001 | Public initial | Validé | Pilote interne à l'établissement |
+| D002 | Vision | Validé | Accueillir ensuite d'autres écoles et recruteurs |
+| D003 | Géographie | Validé | Maroc et international si accessible ; remote ou présentiel |
+| D004 | Types d'opportunités | Validé | Stage, stage de préembauche, emploi |
+| D005 | Méthode | Orientation retenue | Workflow inspiré du document JSM fourni ; adaptation à préciser |
+| D006 | Nom | Proposé | CapEmploi Campus |
+| D007 | Scope pilote | Consolidé, validation globale ouverte | Voir docs/scope/pilot.md ; consolidation des décisions individuelles, sans validation automatique des propositions restantes |
+| D008 | Stack et hébergement | UNKNOWN | À comparer après cadrage |
+| D009 | Droits et confidentialité | Partiellement validé | Règles définies par D019–D026 et D037–D039 ; matrice détaillée et droits restants à spécifier |
+| D010 | Collecte d'offres | Objectif validé ; modalités ouvertes | Automatiser la recherche et le rassemblement d'offres ; sources, faisabilité et périmètre initial à définir. Le partage manuel seul ne répond pas au besoin. |
+| D011 | Rythme | Validé | Avancer progressivement, sans date fixe de livraison |
+| D012 | Recherche élargie | Validé | Inclure les offres publiées et les entreprises à prospecter pour des candidatures spontanées ; ordre de réalisation et collecte à préciser |
+| D013 | Mémoire des décisions | Validé | Consigner chaque décision validée immédiatement dans ce registre et le document concerné, avec mise à jour de l'état et du journal |
+| D014 | Réalisation accompagnée | Validé | Développement avec l'assistant, explications et participation de l'utilisateur ; décisions structurantes validées ensemble |
+| D015 | Aide à la candidature | Précisé par D036–D037 | Préparation guidée et suivi validés ; aide automatique à la rédaction et rappels automatiques non tranchés |
+| D016 | Opportunités par année | Validé | Première année : stages. Deuxième année : stages de préembauche et premiers emplois. Cette répartition définit les objectifs de recherche ; elle ne définit pas de restriction d'accès. |
+| D017 | Périodes de début recherchées | Validé, précisé par D048–D049 | Première année : début flexible en avril ou mai 2027, y compris en cours de mois, durée de deux mois. Date limite de fin et débuts plus tardifs à confirmer. Deuxième année : pas de préférence de mois. |
+| D018 | Durée des stages de première année | Validé | Deux mois. Durée des stages de préembauche de deuxième année : UNKNOWN. |
+| D019 | Visibilité des candidatures pour la CME | Validé | Première approche retenue : la CME peut consulter toutes les candidatures des apprenants de son établissement pour le suivi. Cette décision ne valide pas l'accès aux notes privées, ni les droits de modification ou d'envoi. Les autres droits restent à préciser. |
+| D020 | Accès des responsables techniques | Validé | Accès limité aux demandes d'accompagnement qui leur sont attribuées : préparation technique, retour sur portfolio ou simulation d'entretien. Aucun accès global aux candidatures. Champs consultables à préciser ; choix du responsable défini par D021. |
+| D021 | Choix du responsable technique | Validé | L'apprenant choisit directement le responsable technique de son établissement auquel adresser sa demande, sans attribution préalable par la CME. Traitement défini par D022 ; gestion des demandes sans réponse à préciser. |
+| D022 | Traitement des demandes techniques | Validé, précisé par D023 | Le responsable peut accepter la demande ou demander une réorientation en cas d'indisponibilité ou de sujet relevant d'un autre collègue. L'apprenant voit l'état de sa demande. L'organisation peut se faire selon les habitudes de l'établissement, mais le rendez-vous doit être suivi dans la plateforme (D023). Pas de calendrier intégré retenu à ce stade. Réattribution et demandes sans réponse à préciser. |
+| D023 | Suivi des rendez-vous | Validé | Traçabilité obligatoire même si organisation ailleurs. Champs par D024, visibilité par D025 et auteurs par D026. Autres droits de mise à jour à préciser ; calendrier interactif et synchronisation externe non validés. |
+| D024 | Contenu et continuité du suivi d'accompagnement | Validé | Rendez-vous lié à l'apprenant, à l'accompagnant et à la demande ; date, heure, lieu ou lien, état (planifié, réalisé, annulé ou absent), bref bilan et prochaine action. Liens aux remarques et à la progression. Visibilité par D025, observations par D026, méthode de progression par D027 ; distinction avec les notes privées et autres droits à préciser. |
+| D025 | Visibilité du bilan et des remarques d'un rendez-vous | Validé | Uniquement l'apprenant concerné, l'accompagnant de ce rendez-vous et la CME de son établissement. Aucun accès aux autres apprenants ni aux autres responsables techniques, y compris via l'historique de progression. Cette règle ne définit pas les droits de modification ni l'accès aux notes personnelles privées. |
+| D026 | Auteurs des observations du rendez-vous | Validé | L'accompagnant rédige son bilan et ses observations ; l'apprenant ajoute son propre retour. Chacun peut modifier ses propres observations, sans modifier celles de l'autre. Visibilité selon D025. Contribution ou modification par la CME lorsqu'elle n'est pas l'accompagnante, suppression et historique des modifications restent à préciser. |
+| D028 | Validation des offres avant publication | Validé | Toute offre collectée doit être validée par la CME de l'établissement avant de devenir visible aux apprenants. Aucune publication automatique directe. Critères de validation, traitement des modifications après publication et organisation de la charge restent à définir. La validation ne prouve pas une condition géographique absente de la source. |
+| D029 | Publication d'une offre à accessibilité inconnue | Validé | Après validation par la CME, une offre dont l'accessibilité depuis le Maroc n'est pas précisée peut être publiée avec la mention explicite « Accessibilité depuis le Maroc à confirmer ». La publication ne confirme pas l'éligibilité ; une offre explicitement inaccessible ne doit pas être présentée comme simplement incertaine. |
+| D030 | Budget initial | Validé | Commencer avec des solutions gratuites. Une évolution vers des services payants reste possible après décision explicite ; aucun engagement payant autorisé. Faisabilité de la collecte et limites des services gratuits à vérifier ; hébergement non choisi. |
+| D031 | Contribution aux offres | Validé | Les apprenants et le personnel de l'établissement, notamment CME et responsables campus/techniques, peuvent proposer les offres qu'ils trouvent. Validation par la CME avant visibilité aux apprenants maintenue (D028). Cette contribution complète l'objectif de collecte automatique ; elle ne le remplace pas. Le droit de proposer une offre ne confère pas de droit de validation aux autres membres du personnel. |
+
+Date de constitution : 2026-10-17. Source : conversation de cadrage.
+
+## D032 — Approche initiale de collecte — Validé
+
+Collecte mixte : automatisation ciblée de quelques sources à vérifier et contributions humaines ; validation CME avant publication. Contributions initiales par lien ou texte copié avec provenance, avec entreprise, intitulé et type d'opportunité. Traitement des images et PDF reporté. Étude des sources automatiques dès le départ ; réalisation progressive : offres et validation → candidatures et suivi → accompagnement et progression. Sources précises et faisabilité gratuite encore UNKNOWN.
+
+## D033 — Disponibilité indicative pour la validation CME — Validé
+
+L'utilisateur indique environ 30 minutes par jour ou plus pour la validation des offres par la CME. C'est une disponibilité indicative de cadrage, pas un engagement de délai de traitement ni un objectif de charge à dépasser. La charge réelle sera à mesurer. Composition du groupe pilote définie depuis par D034.
+
+## D034 — Ouverture progressive du pilote — Validé
+
+Premiers essais de la plateforme avec 8 à 12 apprenants des deux années, la CME et 1 à 2 responsables techniques. Élargissement progressif à l'établissement après les premiers retours et corrections. Ce groupe n'est pas une limite de capacité de la plateforme. Critères initiaux définis par D035 ; participants précis et durée d'observation à définir.
+
+## D035 — Critères initiaux de réussite du pilote — Validé
+
+- Autonomie : au moins 80 % des apprenants testeurs trouvent une offre et enregistrent leur suivi sans aide.
+- Utilité : au moins 70 % trouvent une opportunité qu'ils jugent pertinente.
+- Charge CME : validation compatible avec la disponibilité indicative de 30 minutes par jour ; mesurer le temps réel.
+- Accompagnement : une demande peut être traitée jusqu'au rendez-vous, au bilan et à la prochaine action.
+- Confidentialité : aucun accès non autorisé lors des vérifications ; tout problème détecté est corrigé avant élargissement.
+
+Ces critères constituent une base de validation, pas des résultats obtenus. Les pourcentages traduisent les seuils approuvés de 8 sur 10 et 7 sur 10, pour un groupe de 8 à 12 : nombre minimal de réussites arrondi à l'entier supérieur. Protocole, durée d'observation et mesure comparative du temps de recherche restent à préciser. Les réponses des entreprises et entretiens sont suivis sans constituer seuls une condition de réussite.
+
+## D027 — Progression par actions — Validé
+
+La progression de l'apprenant est suivie par des actions concrètes avec les états « à faire », « en cours » et « réalisée », sans note globale. Les actions peuvent être examinées au rendez-vous suivant avec un retour de l'accompagnant. Ce lien à la progression n'élargit pas la visibilité des bilans et remarques définie par D025. Droits de création et de mise à jour des actions, ainsi que leur visibilité détaillée : à préciser.
+
+## D036 — Préparation guidée des candidatures — Validé
+
+Première approche : checklist liée à l'offre (CV adapté, motivation, portfolio et pièces demandées), brouillon personnel rédigé par l'apprenant, possibilité de demander un retour à la CME ou au responsable technique selon les droits déjà définis. L'apprenant effectue l'envoi sur le canal indiqué par l'entreprise. L'aide automatique à la rédaction reste ouverte et n'est pas une condition de cette approche. Stockage des documents, champs précis, partage du brouillon et automatisation des rappels restent à préciser. Cette décision précise D015 sans valider ses options d'automatisation.
+
+## D037 — Suivi personnel des candidatures — Validé
+
+États : « en préparation », « envoyée », « entretien », « acceptée », « refusée » et « retirée ». Parcours indicatif : préparation → envoi → entretien → acceptation ou refus ; retrait possible si l'apprenant abandonne. Ce parcours n'impose pas de passer par un entretien avant un refus. Chaque candidature comporte une date d'envoi, une prochaine action et, si nécessaire, une date de relance ; la date d'envoi n'est renseignée qu'après envoi. L'apprenant met à jour l'état, la CME de son établissement consulte le suivi selon D019. Aucun droit de modification par la CME ni rappel automatique validé ici. Règles détaillées de transition à préciser dans les spécifications.
+## D038 — Inscription et changement de rôle — Validé
+
+Inscription ouverte avec rôle « apprenant » par défaut. Le compte reste en attente, sans accès aux données internes, jusqu'à validation du rattachement à l'établissement par l'administrateur. Celui-ci peut ensuite changer le rôle après une demande, notamment pour la CME ou un responsable technique. Cette approche remplace la proposition sur invitation. Périmètre des pouvoirs de l'administrateur, traitement détaillé des demandes et création du premier administrateur restent à définir. Aucun accès automatique aux données sensibles déduit du rôle administrateur.
+
+## D039 — Administration du pilote et des établissements — Validé
+
+Le porteur du projet assure l'administration des comptes pendant le pilote, notamment validation des rattachements et changements de rôle sur demande (D038). À l'ouverture multi-établissements (multi-tenant), chaque établissement dispose de son propre administrateur, dont les pouvoirs sont limités à son établissement. Cette séparation doit être anticipée dès la conception. Création technique du premier administrateur, désignation des futurs administrateurs et éventuel rôle d'administration globale restent à définir. Aucun accès automatique aux CV, candidatures ou bilans n'est accordé du seul fait de l'administration des comptes.
+
+## D040 — Fonctionnalités à réaliser après le pilote — Validé
+
+Chat interne, envoi automatique de candidatures, simulation automatique d'entretien, matching complexe, espace recruteur et facturation sont exclus du pilote mais conservés comme fonctionnalités à réaliser dans les versions futures. Ils ne sont pas abandonnés. Priorités, calendrier, faisabilité, coûts et spécifications restent à définir. L'envoi automatique futur reste soumis à une autorisation explicite avant envoi externe. Les simulations humaines avec la CME ou les responsables techniques restent incluses dans le pilote. Suivi : docs/product/roadmap.md.
+
+## D041 — CV et portfolio — Validé
+
+Le CV est déposé dans la plateforme ; le portfolio est référencé par un lien. Le choix ne valide pas les autres propositions : format PDF, taille maximale, nombre de versions, caractère obligatoire ou facultatif des documents, champs du profil et permissions précises de consultation restent à définir. Stockage privé et protection des données à prévoir conformément aux consignes du projet ; aucune solution technique de stockage choisie.
+
+## D042 — Format et accès au CV — Validé
+
+CV au format PDF, remplaçable par l'apprenant. Consultation par l'apprenant concerné et la CME de son établissement ; accès du responsable technique uniquement dans le cadre d'une demande d'accompagnement qui lui est adressée. Aucun accès aux autres apprenants ni par lien public. Cette décision précise D041 ; taille maximale, conservation des anciennes versions, caractère obligatoire et modalités techniques restent à définir.
+
+## D043 — Suivi du travail de chaque rôle — Besoin validé, modalités ouvertes
+
+Le système doit permettre de suivre si chaque personne réalise son travail : apprenant, CME et responsable technique. Actions et responsabilités mesurées, indicateurs, visibilité, délais et traitement des exceptions restent à définir avec l'utilisateur. Ce besoin ne valide ni un score individuel, ni un classement, ni un accès général aux contenus confidentiels ; les permissions déjà définies restent applicables. Aucune activité externe ne peut être considérée comme automatiquement observée.
+
+## D044 — Consultation du tableau de suivi par le porteur — Validé
+
+Le porteur du projet peut consulter un tableau de suivi du travail des apprenants, de la CME et des responsables techniques de son établissement. Ce droit est distinct de l'administration des comptes, limité à son établissement et n'accorde pas automatiquement accès aux CV ni aux bilans et remarques confidentiels (D025, D042). Indicateurs, champs visibles, niveau de détail et autres destinataires du tableau restent à définir. Aucun accès aux tableaux d'autres établissements ni droit de modification déduit.
+
+## D045 — Première version du tableau de suivi — Validé
+
+- Apprenant : candidatures par état, prochaines actions, actions de progression et présence aux rendez-vous.
+- CME : offres en attente et traitées, demandes d'accompagnement et rendez-vous réalisés.
+- Responsable technique : demandes en attente et traitées, rendez-vous réalisés et bilans renseignés.
+- Filtre par période et signalement des actions dépassant une échéance définie.
+- Montrer qu'un bilan est renseigné sans afficher son contenu confidentiel.
+
+Consultation par le porteur selon D044. Formules de calcul, champs de synthèse des actions à rendre visibles sans exposer les notes confidentielles, définition des événements et dates servant au filtre, attribution des échéances et autres destinataires restent à spécifier. Sans échéance définie, ne pas déduire de retard. Aucun score individuel ni classement validé.
+
+## D046 — Enrichissement de la liste d'entreprises — Validé
+
+La liste n'est pas limitée aux premières entreprises citées. La CME peut ajouter une entreprise à prospecter avec nom, site et page carrières ; les apprenants et responsables peuvent proposer des entreprises, soumises à validation par la CME avant ajout à la liste commune. Ajouter une entreprise n'active pas automatiquement sa collecte : faisabilité, conditions et configuration de la source sont vérifiées séparément. Champs obligatoires, absence de page carrières, doublons et correction des fiches restent à préciser. Une entreprise à prospecter n'est ni un partenaire confirmé ni une offre de recrutement.
+
+## D047 — Première hypothèse à vérifier et expérimentation — Validé
+
+Précisions ultérieures : portage officiel non confirmé et période première année précisée par D048.
+
+Démontrer qu'il est plus facile de trouver des opportunités réellement adaptées et accessibles aux apprenants, pas simplement davantage d'offres. Examiner séparément pertinence (niveau, compétences, type de stage), accessibilité (géographie, remote et restrictions) et effort de recherche (temps pour identifier une opportunité exploitable). Expérimentation sans développement applicatif, avec protocole pour les deux années, échantillon réel chronométré et analyse avant décision du contenu exact de la première tranche. Suivi et accompagnement conservés ; décisions antérieures non annulées, D007 en attente. Paramètres du protocole encore proposés dans docs/scope/opportunity-experiment.md. Portage officiel et responsable du traitement : UNKNOWN ; ne pas déduire un mandat de l'établissement ni un portage personnel confirmé.
+## D048 — Portage non confirmé et période des stages — Confirmé
+
+L'utilisateur indique ne pas avoir de véritable confirmation de l'engagement officiel de l'établissement. Ne pas présenter le projet comme mandaté par celui-ci ; responsable du traitement et cadre d'essai réel encore UNKNOWN. Première année : stages de deux mois commençant en avril ou mai 2027, année explicitement confirmée. Cette précision complète D017–D018 et D047 ; elle ne fixe pas de date de livraison du logiciel.
+
+## D049 — Flexibilité du début de stage de première année — Confirmé
+
+Précision des profils : voir D050.
+
+Durée obligatoire : deux mois. Début possible en avril ou mai 2027, y compris en cours de mois ; ne pas imposer un début au premier du mois. L'utilisateur a également évoqué mai à juillet et un début en juillet, mais la réponse suivante ne tranche pas la date limite de fin ni l'ensemble des débuts plus tardifs admissibles : ces bornes restent à confirmer. Ne pas exclure automatiquement une offre pour ces seules bornes non établies ; classer la compatibilité temporelle à confirmer si nécessaire. Précise D017 et D048 sans date de livraison applicative.
+## D050 — Profils techniques et niveau de formation — Confirmé
+
+Profils de développeur full stack : Java/Angular, MERN et PHP/Laravel ; niveaux de formation indiqués par l'utilisateur : bac+2 et bac+3. Ne pas supposer que chaque apprenant maîtrise les trois stacks, ni associer automatiquement une année à un niveau de diplôme. Diplôme exact, niveau acquis ou préparé selon l'année, compétences individuelles et langues utilisables au travail : à confirmer. Ces précisions n'imposent pas la stack de la plateforme.
+
+## D051 — Langues de travail — Confirmé
+
+L'utilisateur indique le français et l'anglais comme langues utilisables au travail par le public ciblé. Aucun niveau individuel, bilinguisme uniforme ou certification linguistique déduit. Pour l'étude des offres, une exigence linguistique précise reste à comparer au niveau réel de l'apprenant ; si ce niveau manque, compatibilité à confirmer.
+
+## D052 — Offres demandant bac+5 — Validé
+
+Une offre demandant bac+5 peut être conservée et présentée aux apprenants après validation CME, à condition de mentionner clairement le niveau demandé. Ne pas l'exclure automatiquement de la collecte ou de la publication pour ce seul motif. Pour un profil bac+2/+3, indiquer l'écart de niveau ; ne pas présumer une dérogation ni compter l'offre comme adaptée/accessible sur ce critère sans preuve. D047 et l'évaluation de pertinence restent applicables : visibilité distincte de l'éligibilité.
+
+## D053 — Contributions humaines d'abord, automatisation ultérieure — Validé
+
+Confirmation de priorité le 24 octobre 2026 : voir D054.
+
+Commencer la première tranche avec propositions d'offres par les apprenants et le personnel (lien ou texte), validation CME puis consultation par les apprenants. La collecte automatique reste prévue dans une tranche ultérieure, alimentant la même file de validation après preuve de faisabilité et d'utilité. Elle ne conditionne plus le démarrage de la première tranche. L'expression utilisateur « la première comme expertise » est comprise comme maintien de l'étude/expérimentation de l'approche automatique, sans promettre un connecteur opérationnel immédiat.
+
+Cette décision modifie explicitement le calendrier de réalisation de D010/D032 et précise D047 : la valeur initiale est de mutualiser et qualifier les offres trouvées ; aucun gain de découverte automatique n'est revendiqué. Le suivi des candidatures, l'accompagnement, la confidentialité et les critères D035 restent conservés. D007 reste en attente ; aucune stack, aucun démarrage de code ni protocole expérimental proposé n'est validé automatiquement. L'étude de l'automatisation est conservée, mais ne bloque plus la définition de la tranche à contributions humaines.
+## D054 — Priorité aux fonctions principales et prototype de collecte séparé — Validé, 2026-10-24
+
+Complément de périmètre : revue CV/portfolio et classes décrites par D055.
+
+Avancer d'abord sur les fonctionnalités principales déjà définies, progressivement, puis sur les évolutions de la vision globale. Ordre conservé : offres humaines et validation, candidatures et suivi, accompagnement/progression ; tableau de pilotage conservé, placement précis à définir. L'automatisation reste prévue selon D053.
+
+Conserver pour la suite l'approche d'un petit prototype indépendant : une source choisie et vérifiée, récupération limitée via API/flux officiel si disponible ou autre méthode autorisée, sortie JSON/CSV pour examen, sans publication automatique. Un navigateur contrôlé peut aider l'exploration ; il ne constitue pas à lui seul un collecteur de production. Source, langage, outil, calendrier et faisabilité non choisis ; aucune dépendance payante autorisée. Ce prototype ne bloque pas les fonctions principales.
+
+Cette confirmation autorise la poursuite du travail de cadrage et de préparation, sans valider automatiquement les quatre états d'offre encore proposés, la stack ou D007. Aucune décision antérieure de confidentialité annulée.
+## D055 — Revue CV/portfolio, classes et avis distincts — Besoin confirmé, règles détaillées ouvertes, 2026-10-24
+
+Organisation administrative à l'étude : D056 ; ne modifie pas les accès déjà validés.
+
+L'utilisateur demande une validation des CV et portfolios par la CME et les formateurs, avec avis distinct de chaque intervenant. Chaque formateur est affecté à sa classe ; la CME voit tous les apprenants de son établissement. Prévoir tri/filtrage par classe, année et formateur. États souhaités pour le CV : « validé », « non validé », « à revalider ». Leur sens précis, l'état avant première revue, l'application des états au portfolio et la règle combinant les deux avis en un statut global restent à discuter.
+
+Le rôle formateur doit être rapproché explicitement du rôle responsable technique avant architecture : équivalence non présumée. L'affectation de classe ne suffit pas à définir les accès à tous les documents ou bilans ; préciser l'articulation avec D020/D042 (demande d'accompagnement) sans élargir implicitement D025 (bilans confidentiels). Aucun accès inter-établissements. Le besoin reste parmi les fonctions principales, sans déplacement automatique dans la première tranche offres ni validation de D007. Autres filtres/fonctions évoqués sans détail restent UNKNOWN.
+## D056 — Administration générale puis organisation locale — Validé, 2026-10-24
+
+Règles de revue CV/portfolio précisées ensuite par D057.
+
+Organisation retenue après discussion : le porteur assure l'administration générale, crée l'établissement et désigne la CME avec permission d'administration locale. Celle-ci organise les classes, les formateurs et le personnel de son établissement, valide les rattachements et gère les rôles locaux. Rôle métier CME et administration locale distincts et cumulables ; création du personnel par invitation, activation et mot de passe par chaque personne. Gestion limitée à l'établissement, sans attribution d'administration générale ni accès automatique aux contenus confidentiels.
+
+Cette validation modifie D039 : administration locale confiée à la CME, porteur conservant l'administration générale. Inscription apprenant en attente de rattachement maintenue (D038). L'organisation cible est validée ; étendue de l'écran multi-établissements au pilote, détails des délégations, catégories de personnel et procédures de remplacement restent ouverts. D007 n'est pas validée par cette seule décision. Le rappel documentaire précédent ne constituait pas l'accord ; l'accord intervient ensuite explicitement.
+## D057 — Double validation des CV et portfolios — Validé, 2026-10-24
+
+Accès de revue par classe précisé ensuite par D058.
+
+CV et portfolio évalués séparément. Pour chacun, conserver deux avis distincts, formateur et CME, aux états « en attente », « non validé », « validé », « à revalider ». Le document est globalement validé seulement si les deux avis sont positifs sur le document examiné. Après modification, les anciens avis restent dans l'historique et une nouvelle revue des deux intervenants est nécessaire ; ne pas reporter les validations sur le nouveau contenu. Première revue en attente ; non validé signifie examiné avec corrections nécessaires.
+
+Précise D055 sans élargir les permissions. Identification/version du portfolio modifiable hors plateforme, signalement des changements, autres statuts globaux (hors cas validé), visibilité des commentaires, accès par classe et changement d'accompagnant à définir. Aucun blocage de candidature déduit de l'absence de validation. Répartition technique/CME proposée dans le cadrage non automatiquement validée. Aucun état d'offre ni D007 validé par cet accord.
+## D058 — Accès aux CV/portfolios par classe — Validé, 2026-10-24
+
+Parcours d'inscription par classe précisé par D059.
+
+Le formateur affecté à une classe peut consulter et examiner les CV et portfolios de ses apprenants sans demande d'accompagnement préalable. La CME couvre les apprenants de son établissement. Cette règle fait évoluer D042 pour les formateurs affectés ; elle n'accorde pas d'accès général aux autres classes ni établissements, ni aux bilans confidentiels d'autres accompagnants (D025). Les droits d'accompagnement sur demande D020 restent distincts ; l'équivalence formateur/responsable technique n'est pas déduite. Changement d'affectation, historique accessible et gestion de plusieurs formateurs restent à préciser.
+## D059 — Lien d'invitation partagé par classe — Validé, 2026-10-24
+
+Méthode générale de vérification étendue à toutes les fonctionnalités par D060.
+
+La CME génère un lien d'inscription/rattachement propre à chaque classe de son établissement, réutilisable et partageable avec toute la classe. Chaque apprenant crée son compte individuel (rôle apprenant par défaut) ou se connecte à son compte existant, puis demande son rattachement à la classe visée. Validation CME obligatoire avant accès aux données internes selon D038 ; possession du lien ne prouve pas l'appartenance à la classe et ne connecte pas directement une personne.
+
+Lien avec expiration, désactivation et renouvellement ; aucun mot de passe ni donnée personnelle dans le lien. Un compte déjà rattaché ne change pas automatiquement de classe. L'envoi effectif du lien reste une action humaine ou explicitement autorisée. Durée de validité, demandes répétées, changement de classe/établissement, fermeture des inscriptions et modalités techniques de protection restent à spécifier. Aucun accès inter-établissements ni rôle privilégié conféré par le lien.
+## D060 — Contrôles communs et spécifiques à chaque parcours — Validé, 2026-10-24
+
+Application au parcours nominal des offres : D061.
+
+Appliquer la démarche de vérification à chaque fonctionnalité et chaque étape, pas uniquement aux invitations. Distinguer contrôles communs (identité, permissions, isolation, entrées, confidentialité, erreurs) et règles spécifiques au parcours (états, préconditions, modifications, expiration/révocation lorsque pertinentes, cas limites). Définir les comportements avant implémentation puis vérifier les cas normaux, refus et erreurs par preuves et tests pertinents. Mutualiser les mécanismes communs lorsque justifié, sans abstractions prématurées ni généralisation automatique des règles métier. Détail dans docs/workflow.md ; consigne ajoutée à AGENTS.md. Aucun choix technique ni validation d'une règle métier encore ouverte par cette décision.
+## D061 — Modération initiale des offres — Validé, 2026-10-24
+
+Suivi de la réalisation du projet : D062.
+
+Proposition soumise → en attente. La CME de l'établissement peut publier, demander correction ou rejeter. États de modération : en attente, à corriger, publiée, rejetée. Correction et rejet accompagnés d'un motif pour l'auteur ; l'auteur corrige puis soumet de nouveau à validation, sans publication automatique. Cette validation porte sur le groupe de règles nominales explicitement soumis à l'utilisateur. Clôture/disponibilité, modification après publication, réouverture d'un rejet, détail des droits de consultation avant publication et autres exceptions restent à arbitrer. D007 inchangée.
+## D062 — Suivre et marquer notre travail — Validé, 2026-10-24
+
+Conservation temporelle précisée par D063.
+
+À la demande de l'utilisateur, tenir un tableau de suivi de la réalisation du projet dans tracking/BOARD.md, distinct du tableau d'activité prévu dans l'application. Marquer les tâches et leurs preuves d'avancement ; distinguer décision validée, livrable documentaire terminé et fonctionnalité réellement vérifiée/testée. Convention initiale : à faire, en cours, à valider, terminé, reporté ; pas de changement des statuts de spécification ni de décision du workflow. Actualiser après chaque avancée réelle et conserver le journal des changements. Découper les tâches de réalisation au moment des spécifications ; aucun développement déduit de la création du tableau.
+## D063 — Historique temporel de notre travail — Validé, 2026-10-24
+
+Accord avant application d'une nouvelle décision : D064.
+
+Conserver les états successifs du projet pour comparer passé, présent et évolutions futures réelles. Tableau courant et journal complétés par instantanés documentaires identifiés, datés et conservés sans réécriture, indexés dans tracking/HISTORY.md. Créer un état après changement significatif et en fin de session si le suivi a changé, avec motif et preuves pertinentes. Aucun faux état historique ou futur inventé ; les périodes antérieures à la première capture ne disposent pas de copies complètes garanties. Première mise en place sans initialisation Git ni sauvegarde globale du poste ; Git pourra ensuite compléter l'historique du code et des fichiers.
+## D064 — Accord explicite avant application des décisions — Validé, 2026-10-24
+
+L'utilisateur demande d'être questionné avant l'application de toute nouvelle décision. Présenter le résultat concret, les conséquences et le périmètre, demander validation puis attendre l'accord explicite. Analyse/proposition ne vaut pas exécution ; clarifier tout accord ambigu. Une instruction explicite d'effectuer une action autorise celle-ci sans nouvelle confirmation ; autorisations déjà données conservées dans leur périmètre. Après accord, consigner et appliquer. Cette demande autorise l'ajout de la règle dans AGENTS.md et son suivi documentaire selon D013/D063, sans nouvelle décision produit.
+
+## D065 — Suivi global et par fonctionnalité jusqu'à la production — Validé, 2026-10-24
+
+Compléter le suivi global par un suivi de chaque fonctionnalité : étape actuelle, prochaine action, décision attendue, preuves, difficultés et version concernée. Parcours : cadrage, conception, architecture, développement, vérification/tests, revue, préproduction, production pilote, observation/amélioration. Avancer par preuves ; une étape documentaire franchie ne vaut pas développement, ni production. Pas de pourcentage global sans base. Les statuts existants des décisions, tâches et spécifications restent inchangés et complémentaires.
+
+La validation de cette méthode n'autorise aucun déploiement ni choix d'outil distant. Git/GitHub et alternatives comparés dans docs/work-tracking-options.md restent des propositions ; aucune initialisation, commit, publication ou création de dépôt effectuée.
+
+## D066 — Adoption de Git et GitHub pour le suivi — Validé, 2026-10-24
+
+Choix de visibilité et accord de commit/envoi précisés ensuite par D067.
+
+L'utilisateur valide l'organisation recommandée : Git pour versionner les documents puis le code ; GitHub avec dépôt privé, Issues et Projects pour centraliser et suivre les tâches, puis PR, tests et versions selon le développement. URL fournie explicitement : https://github.com/nafe3i/campemploi.git ; configuration comme origin autorisée. Git local initialisé sur main, origin configuré, identité d'auteur déjà présente sans modification globale. Vérification distante en lecture seule : aucune référence annoncée (dépôt vide à ce moment). Visibilité privée non encore vérifiée.
+
+Premier contenu préparé pour revue avant commit/publication conformément à la séquence présentée à l'utilisateur et D064. Aucun commit, push, Issue ou Project créé à cette étape. L'adoption de l'outil n'autorise pas la publication d'un contenu non revu. Contrôle ultérieur de l'API GitHub : dépôt actuellement public (private=false), contrairement au choix privé prévu ; clarification nécessaire avant envoi, aucune visibilité modifiée. Instantanés existants conservés ; migration de la règle de copies périodiques et répartition précise entre BOARD.md et Projects encore à valider. D065 et étapes de réalisation conservées ; aucune stack applicative choisie.
+## D067 — Premier commit et dépôt public — Validé, 2026-10-25
+
+Après présentation du contenu préparé et de la visibilité publique, l'utilisateur autorise la réalisation du premier commit et confirme que le dépôt public ne pose pas de problème. L'envoi du contenu documentaire revu vers https://github.com/nafe3i/campemploi.git est autorisé dans cette séquence. Le choix public remplace l'intention privée de D066 ; aucune modification de visibilité n'est nécessaire. Exclusions de secrets/données utilisateur et préservation des instantanés maintenues. Pas d'autorisation d'envoi de CV ou données personnelles réelles d'apprenants, de changement de stack, de création d'Issues/Project non présentés ni de déploiement. Mises à jour de suivi découlant de l'exécution autorisées selon les règles documentaires existantes.
+
+## D068 — Clôture et modification des offres publiées — Validé, 2026-10-25
+
+Après présentation de la proposition finale C07 et demande de validation, accord explicite : « oui on vat suivre cette approche ». Les règles détaillées de la section finale de docs/scope/offer-lifecycle.md sont validées ; D061 est complétée, D007 reste ouverte.
+
+Séparer modération et disponibilité (ouverte, clôturée, à confirmer). Seule la CME du même établissement clôture et rouvre après vérification, avec auteur, date et motif ; apprenants/formateurs signalent sans clôturer directement. Clôture : retrait de la recherche courante et arrêt de l'initiation de nouvelles candidatures depuis cette offre, conservation des suivis existants sans refus automatique. Échéance explicite dépassée signalée à vérifier ; clôture confirmée par CME, jamais déduite d'une ancienneté ou d'un lien inaccessible. Réouverture de la même opportunité tracée ; nouvelle campagne distincte = nouvelle offre.
+
+Seule la CME modifie/confirme le contenu publié dans cette première version ; contributeurs signalent les corrections. Modification mineure confirmée en conservant la publication ; changement de conditions vérifié à la source, écarts avant/après conservés et nouvelle version explicitement confirmée avant affichage. Doute sérieux : retrait immédiat de la consultation commune et retour en attente de vérification, sans supprimer les suivis ni exposer le contenu problématique. Historique utile, auteur/date/motif et référence de version de la candidature conservés ; changement de conditions indiqué dans le suivi, sans modifier automatiquement la candidature ni imposer une notification externe. Pas de suppression physique d'une offre liée à une candidature dans ce parcours.
+
+Contrôles à prévoir : permissions côté serveur et séparation des établissements, signalement sans mutation directe, continuité des suivis, versions, retrait et réouverture, répétition et concurrence sans doublon ni écrasement silencieux. Aucun test applicatif exécuté ni fonctionnalité développée par cet accord. Champs précis, conservation/visibilité de l'historique, saisie rétrospective des candidatures et autres propositions non couvertes restent à spécifier/arbitrer. Aucun nouveau commit/push autorisé par cet accord métier.
+
+## D069 — Commit descriptif et push après chaque validation — Validé, 2026-10-25
+
+Instruction explicite : « apret chaque validation fait une commit descritptive te le pusher ». Après chaque validation explicite de l'utilisateur, consigner puis appliquer uniquement le périmètre approuvé, créer un commit descriptif des fichiers concernés et le pousser vers origin, sans nouvelle demande pour ce même périmètre. Cette autorisation s'applique aussi au lot D068 déjà validé et encore local, ainsi qu'aux mises à jour de suivi nécessaires. Elle complète D064 et étend l'autorisation Git limitée au premier envoi D067 ; elle ne dispense pas de valider les nouvelles décisions.
+
+Avant commit : relire la sélection et le diff, rechercher secrets et données personnelles, effectuer les contrôles pertinents et conserver les instantanés selon D063. Ne pas inclure de changements sans rapport. Push normal sans réécriture de l'historique ; vérifier la concordance du commit local avec la branche distante. En cas de refus, conflit ou échec réseau, conserver le travail et rapporter le blocage ; aucune réussite présumée. Dépôt public accepté D067, données personnelles réelles et secrets toujours exclus. Aucun accord de déploiement, de création d'Issues/Project ou de message externe déduit de cette règle.
+
+## D070 — Informations de soumission et qualification avant publication — Validé, 2026-10-25
+
+Accord explicite « oui je valide » à la proposition de distinguer une contribution simple et une publication suffisamment renseignée. Pour soumettre : intitulé, entreprise, type (stage, préembauche ou emploi), et lien source ou texte de l'annonce accompagné de sa provenance. La soumission rejoint la modération D061 ; ces informations ne valent pas validation de l'offre.
+
+Avant publication, la CME qualifie pays/ville, mode présentiel/hybride/remote, compétences et niveau demandés ; pour un stage, durée et début souhaité lorsqu'ils sont indiqués. Une information absente (notamment durée, niveau, lieu ou restriction géographique) reste explicitement « non précisé » ou « à confirmer », sans invention ni blocage pour cette seule absence. D029 (accessibilité inconnue) et D052 (exigence bac+5 et écart signalés) restent applicables ; publication ne vaut pas éligibilité.
+
+Un moyen de candidature exploitable est nécessaire avant publication : page de candidature, adresse professionnelle publiée ou instructions de l'annonce permettant de comprendre comment candidater. Un simple lien source ne prouve pas à lui seul que ce moyen existe. Si ce moyen manque ou n'est pas exploitable, demander une correction avant publication selon D061. Pas d'envoi automatique ni de contact externe autorisé par cet accord.
+
+Règles et vérifications à prévoir dans docs/scope/offer-lifecycle.md ; première tranche, synthèse et suivi alignés. C09 reste en cours pour droits et autres critères, D007 reste ouverte. Aucun code, choix de stack ni test applicatif réalisé par cette validation. Commit descriptif et push selon D069.
+
+## D071 — Consultation des propositions avant publication — Validé, 2026-10-25
+
+Accord explicite « oui je valide » à la règle présentée : l'auteur rattaché consulte ses propres propositions, leur état et les motifs de correction ou de rejet ; la CME consulte les propositions de son établissement. Les autres membres attendent la publication pour consulter l'offre. Cette règle vaut aussi pour un formateur contributeur : son rôle de formateur ne donne pas accès aux propositions non publiées des autres membres. Les accès restent limités à l'établissement concerné selon D060.
+
+Cette décision précise la consultation individuelle de l'auteur avant la visibilité collective D028, sans lui accorder le droit de publier ni d'accéder aux propositions d'autrui. Correction et nouvelle soumission restent régies par D061 ; modification du contenu publié et retrait pour doute sérieux par D068. Aucun nouveau droit sur les candidatures, les traces détaillées ou le contenu problématique retiré n'est déduit de cette consultation. Aucun privilège de consultation métier automatiquement accordé par l'administration technique.
+
+Règles et contrôles de propriété/rôle/établissement à chaque accès, dont listes et URL directe, détaillés dans docs/scope/offer-lifecycle.md. Scope, synthèse et suivi alignés ; C09 reste en cours pour les autres critères. Documentation validée, aucune fonctionnalité développée ni test applicatif exécuté. D007 inchangée ; commit descriptif et push selon D069.
+
+## D072 — Traitement manuel des propositions en doublon — Validé, 2026-10-25
+
+Accord explicite « oui je valide » à l'approche présentée : pour le pilote, la CME vérifie manuellement si une proposition répète une offre existante, conserve une seule offre dans le catalogue et rejette la proposition répétée avec le motif « déjà présente ». L'offre existante est indiquée à l'auteur seulement s'il a le droit de la consulter selon D071 et l'isolation des établissements. Le motif ne doit pas permettre de contourner ces droits.
+
+Utiliser le rejet motivé D061, sans créer un état supplémentaire ni une fusion automatique. Aucun suivi de candidature n'est supprimé ou fusionné automatiquement. Cette approche ne requiert pas de système complexe de détection automatique. Le périmètre validé concerne l'examen d'une proposition avant publication ; la résolution de doublons déjà publiés, notamment avec des suivis existants, reste à préciser sans supprimer leurs données.
+
+Règles et contrôles attendus dans docs/scope/offer-lifecycle.md ; première tranche, synthèse, scope et suivi alignés. C09 reste en cours, D007 ouverte ; aucun développement ou test applicatif réalisé. Commit descriptif et push selon D069.

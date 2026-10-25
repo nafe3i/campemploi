@@ -27,7 +27,7 @@ Les décisions restent Validé/Proposé/UNKNOWN dans le registre. Les spécifica
 | C06 | Étudier les sources et un échantillon documentaire initial | Terminé | docs/reference/offer-sources-study.md et opportunity-sample-2026-10-17.md ; aucune preuve de gain utilisateur ni de capacité CME |
 | C07 | Définir clôture et modification d'une offre publiée | Terminé | Accord explicite du 25 octobre, D068 ; docs/scope/offer-lifecycle.md et synthèses alignées ; capture 0008. Décision/documentation terminée, aucun développement ni test applicatif |
 | C08 | Préciser classes et revues de documents | À faire | Référent(s), équivalence formateur/responsable, changements d'affectation, version du portfolio et visibilité des commentaires |
-| C09 | Consolider matrice d'accès et critères de la première tranche | En cours | Informations/qualification D070 et consultation avant publication D071 documentées avec contrôles attendus ; docs/scope/first-slice.md et offer-lifecycle.md ; D071 publiée et vérifiée au commit 7fc20ee, capture 0014. Formats/limites, exceptions et autres critères restent ouverts ; aucun test applicatif |
+| C09 | Consolider matrice d'accès et critères de la première tranche | En cours | D070–D072 : informations, consultation et traitement manuel des propositions en doublon documentés avec contrôles attendus ; docs/scope/first-slice.md et offer-lifecycle.md. Formats/limites, exceptions et autres critères restent ouverts ; aucun test applicatif |
 | C10 | Valider globalement le scope et le découpage | À valider | D007 toujours ouverte ; synthèse docs/product/features-v1.md et docs/scope/pilot.md |
 | C11 | Clarifier cadre des essais réels et responsabilité des données | À faire | Engagement institutionnel non confirmé ; aucune attribution juridique inventée |
 | C12 | Mesurer utilité/effort humain et charge CME | À faire | Protocole proposé docs/scope/opportunity-experiment.md ; aucune mesure humaine ni D035 vérifiée |
@@ -58,7 +58,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | Fonctionnalité | Étape actuelle | Prochaine action / décision attendue | Preuve | Difficulté / point ouvert | Version |
 |---|---|---|---|---|---|
 | Comptes, établissements et invitations | Conception métier partielle | Préciser expiration, rôles locaux et cas de rattachement | D056, D059 ; docs/scope/establishment-administration.md | Procédures et étendue des écrans du pilote | Aucune |
-| Offres | Conception métier partielle | Préciser les exceptions restantes, puis consolider critères C09 | D061, D068, D070, D071 ; docs/scope/offer-lifecycle.md | Doublons, correction après rejet, formats/limites, conservation et droits restants | Aucune |
+| Offres | Conception métier partielle | Préciser les exceptions restantes, puis consolider critères C09 | D061, D068, D070–D072 ; docs/scope/offer-lifecycle.md | Correction après rejet, retrait par auteur, doublons déjà publiés, formats/limites et conservation | Aucune |
 | CV et portfolio | Conception métier partielle | Référent de classe, accès aux commentaires et version du portfolio | D057–D058 ; docs/scope/cv-portfolio-review.md | Plusieurs formateurs et modifications externes | Aucune |
 | Candidatures | Cadrage documenté | Spécifier transitions et historique | D036–D037 | Cas limites et partage des brouillons | Aucune |
 | Accompagnement et progression | Cadrage documenté | Spécifier réorientation et mise à jour des actions | D020–D027 | Délais, absence de réponse, droits précis | Aucune |
