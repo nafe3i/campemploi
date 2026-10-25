@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D080 publiée et vérifiée
+
+Commit 316b6546e11ec8583f7e000abcabf558be52bd5a, « docs: valider le remplacement du referent de classe », publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun snapshot créé. État/tableau actualisés et suivi dans un commit distinct selon D069. C08 reste en cours ; effet sur validation courante non décidé, aucune preuve applicative et D007 ouverte.
+
 ## 2026-10-25 — Principes de remplacement du référent validés
 
 Accord « alors je valides » aux principes présentés. D080 consignée : remplacement par CME du même établissement, retrait des accès de l'ancienne affectation, relais du nouveau, anciens avis conservés et attribués ; autres accès indépendants et accompagnements évalués dans leur contexte. Sort de la validation courante explicitement non tranché, de même que visibilité des commentaires historiques et détails de transition. Documents concernés et suivi alignés avec contrôles attendus ; C08 en cours, D007 ouverte, aucun code/test applicatif. Commit/push à vérifier selon D069, sans snapshot D074.
