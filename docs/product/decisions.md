@@ -326,6 +326,8 @@ Clarification et conséquences documentaires alignées ; C08 reste en cours pour
 
 ## D080 — Remplacement du référent de classe — Validé, 2026-10-25
 
+Effet sur les validations courantes clarifié ensuite par D081 ; les principes ci-dessous restent applicables.
+
 Accord explicite « alors je valides » aux principes présentés : la CME du même établissement réalise le remplacement, l'ancien référent perd les accès accordés par cette affectation, le nouveau prend le relais et les anciens avis restent conservés et attribués à leurs auteurs. D078 (un référent par classe, plusieurs classes possibles par formateur) et D079 (rôle commun formateur/responsable technique) restent applicables.
 
 La perte d'accès vise l'affectation remplacée, pas les autres classes ou permissions indépendantes déjà autorisées. Les accès liés à des accompagnements existants gardent leurs propres règles ; cette exception ne rétablit pas un accès général aux documents de la classe. Le nouveau référent accède aux documents de ses classes selon D058, sans devenir auteur des avis précédents ni obtenir automatiquement accès aux bilans d'autres accompagnants.
@@ -333,3 +335,11 @@ La perte d'accès vise l'affectation remplacée, pas les autres classes ou permi
 Le sort de la validation courante des documents est explicitement non tranché par cet accord : ni maintien ni remise à revalider du seul fait du remplacement décidés ici. Visibilité des anciens commentaires, classe sans référent et détails de transition restent à préciser ; la conservation des avis ne vaut pas permission de consultation de leur contenu.
 
 Règles, contrôles attendus et synthèses alignés ; C08 reste en cours, D007 ouverte. Aucun développement ni test applicatif réalisé. Commit/push selon D069, sans nouveau snapshot D074.
+
+## D081 — Validations conservées si seul le référent change — Validé, 2026-10-25
+
+Accord explicite « valide » à la recommandation présentée : le remplacement du référent, à lui seul, ne remet pas les documents à revalider. Pour un contenu inchangé, les validations existantes sont conservées avec le nom du formateur ayant réellement examiné le document. Aucun transfert d'auteur vers le nouveau référent ; conservation des avis et accès selon D080.
+
+Une modification du contenu déclenche toujours une nouvelle revue selon D057, avec avis formateur et CME distincts. Un remplacement n'accorde pas de validation manquante et ne transforme pas un avis non validé ou en attente en avis positif. CV et portfolio restent examinés séparément. La méthode pour identifier le contenu examiné et signaler un changement de portfolio externe reste ouverte : une URL inchangée ne prouve pas que le contenu est identique.
+
+D081 complète D080 sans définir visibilité des commentaires ni mécanisme de révision d'un avis existant. Documents et contrôles attendus alignés ; C08 reste en cours, D007 ouverte, aucun développement ou test applicatif. Commit/push selon D069, sans snapshot D074.

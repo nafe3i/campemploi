@@ -1,6 +1,6 @@
 # Revue des CV et portfolios — cadrage progressif
 
-Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D080. Double validation, cycle de revue, référent, rôle commun et principes de remplacement validés ; modalités restantes à approfondir, pas spécification technique ni fonctionnalité Accepted.
+Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D081. Double validation, cycle de revue, référent et remplacement avec validations conservées sur contenu inchangé validés ; modalités restantes à approfondir, pas spécification technique ni fonctionnalité Accepted.
 
 ## Besoin exprimé
 
@@ -22,7 +22,7 @@ Exemple fictif : CV version 1 validé par le formateur, non validé par la CME �
 ## Questions à trancher par petits groupes
 
 1. Organisation D078, rôle commun D079 et remplacement D080 validés ; classe sans référent et détails de transition à préciser.
-2. Remplacement D080 : fin des accès par l'ancienne affectation, relais par le nouveau et anciens avis attribués/conservés. Sort de la validation courante et visibilité des commentaires historiques encore à arbitrer.
+2. Remplacement D080 et validations sur contenu inchangé D081 validés ; visibilité des commentaires historiques et modalités de révision d'un avis existant encore à préciser.
 3. Deux avis positifs et revues séparées validés (D057) ; autres statuts globaux à spécifier.
 4. En attente/non validé distingués par D057 ; règles détaillées de correction à spécifier.
 5. Modification déclenchant nouvelle revue validée ; historique/versions et détection ou déclaration des changements d'un portfolio externe à préciser.
@@ -47,7 +47,7 @@ L'équivalence des termes formateur et responsable technique est explicitement v
 | Responsable technique non affecté à la classe invoque le rôle commun pour lire ses CV/portfolios | Aucun accès général par classe ; autres accès éventuels uniquement selon leur contexte déjà autorisé, pas par l'équivalence |
 | Référent invoque sa classe pour lire un bilan d'un autre accompagnant | Refus selon droits propres aux bilans ; affectation ne les élargit pas |
 
-Remplacement encadré D080 ci-dessous ; retrait sans successeur, visibilité des anciens avis/commentaires et situation d'une classe sans référent à discuter. Sort de la validation courante après remplacement non tranché.
+Remplacement encadré D080 et maintien des validations sur contenu inchangé D081 ci-dessous ; retrait sans successeur, visibilité des anciens avis/commentaires et situation d'une classe sans référent à discuter.
 
 ## Remplacement du référent — Validé D080
 
@@ -64,7 +64,23 @@ Les autres affectations et permissions indépendantes déjà autorisées restent
 | Nouveau consulte/revoit un document de sa classe | Droits D058 ; anciens avis conservés avec leurs auteurs, sans réattribution |
 | Autre membre sans permission locale ou CME d'un autre établissement remplace | Refus sans modification ni exposition interne |
 
-Les contrôles d'autorisation à chaque requête doivent refléter l'affectation courante selon D060 ; mécanismes techniques et échecs/concurrence à spécifier. Cette décision ne tranche ni maintien ni invalidation des validations courantes au seul remplacement. Elle ne définit pas la visibilité des commentaires historiques ; conservation et consultation sont distinctes.
+Les contrôles d'autorisation à chaque requête doivent refléter l'affectation courante selon D060 ; mécanismes techniques et échecs/concurrence à spécifier. D081 précise désormais les validations courantes ; visibilité des commentaires historiques non définie, conservation et consultation distinctes.
+
+## Validation courante au changement de référent — Validé D081
+
+Un remplacement de référent sans modification du contenu ne remet pas le document à revalider : conserver les validations existantes avec leurs véritables auteurs. Le nouveau référent ne devient pas auteur d'un avis qu'il n'a pas rédigé. Un avis en attente ou non validé ne devient pas positif du seul fait du changement. La règle des deux avis positifs D057 reste applicable séparément au CV et au portfolio.
+
+Toute modification du contenu impose une nouvelle revue selon D057, même si elle coïncide avec le remplacement. La méthode d'identification du contenu d'un portfolio externe et de signalement des changements reste à préciser ; même URL ne signifie pas même contenu. Aucun contrôle automatique du site n'est promis par cet accord.
+
+| Vérification à prévoir | Résultat attendu, non encore testé |
+|---|---|
+| Référent remplacé, contenu examiné inchangé et deux avis positifs | Validations conservées ; pas de passage automatique à revalider, auteurs inchangés |
+| Référent remplacé, avis formateur en attente ou non validé | Aucune validation positive créée par le remplacement |
+| Contenu modifié, avec ou sans remplacement | Nouvelle revue formateur/CME selon D057 ; anciens avis conservés pour le contenu précédemment examiné |
+| Seul le CV change | Nouvelle revue du CV, pas de changement du portfolio pour ce seul motif |
+| Ancien référent tente de consulter après remplacement | D080 toujours appliquée : validation conservée ne maintient pas les accès de l'ancienne affectation |
+
+Visibilité des commentaires et modalités d'une nouvelle appréciation d'un document inchangé à préciser séparément ; cette décision porte sur l'absence d'invalidation automatique au seul changement d'affectation.
 
 ## Limites et articulation
 

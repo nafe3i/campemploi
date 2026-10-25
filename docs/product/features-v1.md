@@ -1,6 +1,6 @@
 # Fonctionnalités de la première version pilote
 
-Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registre jusqu'à D080. Besoins validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
+Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registre jusqu'à D081. Besoins validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
 
 | Bloc | Fonctions principales | Points ouverts |
 |---|---|---|
@@ -10,7 +10,7 @@ Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registr
 | Classes et profils | Référent par classe, plusieurs classes possibles (D078), rôle formateur/responsable commun (D079) ; remplacement CME, accès de l'ancienne affectation retirés, relais du nouveau et anciens avis attribués/conservés (D080) | Classe sans référent, transition, champs du profil et libellés d'interface |
 | Offres | Contributions lien/texte ; modération motivée (D061), disponibilité/versions/suivis préservés (D068), compléments D070–D073/D075 ; doublon déjà publié clôturé par CME avec motif « doublon », suivis liés à l'offre d'origine sans fusion ni modification automatique (D077) | Modalités des demandes, formats/limites des champs, conservation/visibilité détaillée de l'historique et autres détails à spécifier |
 | Entreprises | Liste enrichissable et propositions soumises à validation CME | Position dans les tranches et détails du parcours spontané |
-| CV et portfolio | CV PDF privé remplaçable, portfolio par lien ; avis distincts et nouvelle revue après modification (D057), accès par classes (D058), référent D078 et conservation des avis au remplacement D080 | Sort des validations courantes après remplacement, visibilité des commentaires, autres statuts globaux, version examinée et changements du portfolio externe |
+| CV et portfolio | CV PDF privé remplaçable, portfolio par lien ; avis distincts et nouvelle revue après modification (D057), accès par classes (D058), référent D078, avis attribués/conservés au remplacement D080 ; validations maintenues sur contenu inchangé D081 | Visibilité des commentaires, révision d'un avis existant, autres statuts globaux, contenu examiné et changements du portfolio externe |
 | Candidatures | Checklist, brouillon, retours humains, envoi externe, six états, prochaine action/dates | Transitions, historique et partage du brouillon |
 | Accompagnement | Demandes, choix du destinataire, acceptation/réorientation, simulations humaines | Réorientation, absence de réponse, règles de gestion des échéances |
 | Rendez-vous et progression | Date/lieu/lien/participants/état, bilan, observations séparées, actions à faire/en cours/réalisées | Droits précis, changements et conservation |
