@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D076/D077 publiées et consolidation C09 documentée
+
+Commit a9ebfe0eddb335009b3a7cf01c1342c44e837746, « docs: valider le perimetre administratif et les doublons publies », publié par push normal sur origin/main ; concordance distante vérifiée. Neuf documents relus, diff contrôlé et recherche ciblée sans motif de secret détecté ; aucun snapshot créé/modifié. État et tableau actualisés, suivi dans un commit distinct selon D069. C09 terminée pour la documentation, aucune fonctionnalité développée ou Accepted, C08 à faire et D007 ouverte.
+
 ## 2026-10-25 — Deux arbitrages C09 validés
 
 Accord explicite « je valides les deux propositions ». D076 consigne administration nécessaire au premier établissement/CME/classes/invitations/rattachements/rôles du pilote, écrans complets multi-établissements reportés avec isolation dès conception. D077 consigne clôture du doublon déjà publié avec motif exact, référence si autorisée, suivis liés à leur offre d'origine sans fusion/suppression/changement automatique. Registre, première tranche, administration, offres, synthèse, scope et suivi alignés. C09 terminée comme consolidation documentaire ; D007 ouverte, C08 à faire, détails techniques à spécifier et aucune preuve applicative. Commit/push à vérifier selon D069, sans snapshot D074.

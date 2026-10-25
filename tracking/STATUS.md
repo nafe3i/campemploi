@@ -1,7 +1,7 @@
 # État — 2026-10-25
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
-Consolidation C09 documentaire terminée : parcours, matrice des droits et critères dans docs/scope/first-slice.md ; arbitrages explicitement validés D076 (administration nécessaire au pilote, écrans multi-établissements ultérieurs) et D077 (doublons publiés clôturés, suivis conservés). Documents alignés, lot à publier selon D069 sans snapshot D074. Aucune preuve applicative ; D007 reste ouverte et C08 reste à faire.
+Consolidation C09 documentaire terminée : parcours, matrice des droits et critères dans docs/scope/first-slice.md ; arbitrages explicitement validés D076 (administration nécessaire au pilote, écrans multi-établissements ultérieurs) et D077 (doublons publiés clôturés, suivis conservés). Documents alignés, commit a9ebfe0eddb335009b3a7cf01c1342c44e837746 publié et vérifié sur origin/main ; sans snapshot D074. Aucune preuve applicative ; D007 reste ouverte et C08 reste à faire.
 
 ## Repères documentaires précédents
 
