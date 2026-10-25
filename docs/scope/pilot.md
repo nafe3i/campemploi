@@ -10,7 +10,7 @@ Livrables réalisés : base documentaire et workflow, registre des décisions ju
 
 Décisions métier validées : public et objectifs, organisation administrateur général/CME locale, invitation par classe, principes de revue CV/portfolio, parcours nominal des offres et compléments D068/D070–D073/D075. Préparation/suivi des candidatures, accompagnement humain, rendez-vous/progression, entreprises et tableau de pilotage restent dans le périmètre envisagé, avec détails et placement des tranches encore ouverts. Contributions humaines d'abord, collecte automatique ultérieure.
 
-C07 et C09 sont terminées pour le cadrage documentaire ; C09 comprend parcours, matrice et critères avec arbitrages D076/D077 validés. C08 (classes/revues) reste à faire ; D007 (validation globale du scope) reste ouverte. Les détails techniques de la tranche restent à spécifier avant développement ; validation globale et placement des autres tranches demeurent distincts.
+C07 et C09 sont terminées pour le cadrage documentaire ; C09 comprend parcours, matrice et critères avec arbitrages D076/D077 validés. C08 (classes/revues) en cours : référent validé D078, correspondance formateur/responsable technique UNKNOWN et autres points ouverts. D007 (validation globale du scope) reste ouverte. Détails techniques à spécifier avant développement ; validation globale et placement des autres tranches demeurent distincts.
 
 UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, stack/architecture/hébergement. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
 
@@ -50,6 +50,8 @@ Modération nominale validée D061 : soumission en attente ; décision CME de pu
 - Liste d'entreprises évolutive (D046) : ajout par la CME ; propositions des apprenants et responsables validées par la CME avant ajout à la liste commune. Nom, site et page carrières prévus, caractère obligatoire à préciser. Ajout distinct de l'activation d'une collecte automatique, qui nécessite vérification et configuration. Une fiche d'entreprise ne vaut ni partenariat ni offre active.
 
 ### Préparation et suivi (D036–D037)
+
+Référent D078 : un formateur référent par classe porte l'avis formateur CV/portfolio ; un même formateur peut suivre plusieurs classes et la CME gère les affectations dans son établissement avec permission locale. L'avis CME reste distinct. Correspondance formateur/responsable technique UNKNOWN, remplacement/accès/anciens avis à préciser ; aucune fusion de rôles déduite.
 
 Accès de revue D058 : le formateur consulte et examine les CV/portfolios de ses classes sans demande préalable ; CME sur son établissement. Cette règle précise les questions d'accès ci-dessous et fait évoluer D042 pour les formateurs affectés. Aucun accès général aux autres classes, établissements ou bilans confidentiels. Effet des changements d'affectation à définir.
 

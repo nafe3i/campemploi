@@ -305,3 +305,11 @@ La modalité technique de création initiale reste à comparer en architecture ;
 Même accord explicite sur l'arbitrage B : la CME du même établissement conserve l'offre de référence et clôture l'offre répétée avec un motif explicite « doublon », sans prétendre que le recrutement est terminé. Les suivis restent liés à leur offre d'origine ; aucune fusion, suppression ou modification automatique des candidatures. Référence vers l'offre conservée seulement si consultation autorisée.
 
 D072 concerne les propositions avant publication ; D077 complète la clôture D068 pour les doublons déjà publiés. Les contrôles d'établissement, de rôle, de consultation, de continuité des liens et du motif seront spécifiés et testés avant acceptation applicative. La gestion d'un doublon ne crée aucun droit inter-établissements. Documentation et synthèses alignées ; consolidation C09 terminée comme livrable documentaire avec ses arbitrages, sans validation globale de D007 ni fonctionnalité Accepted. Commit/push selon D069, sans nouveau snapshot D074.
+
+## D078 — Un formateur référent par classe pour la revue — Validé, 2026-10-25
+
+Accord « c est valider » à l'organisation présentée : un formateur référent par classe pour porter l'avis formateur sur les CV et portfolios ; un même formateur peut suivre plusieurs classes. La CME gère ces affectations dans son établissement, avec la permission d'administration locale déjà définie D056. D057 conserve deux avis distincts, formateur et CME, pour chaque document examiné ; D058 limite l'accès aux classes affectées et à l'établissement.
+
+L'équivalence des termes « formateur » et « responsable technique », demandée dans une question séparée, reste UNKNOWN : l'accord d'organisation ne précise pas cette correspondance. Clarification demandée, aucun cumul de permissions ou fusion de rôles déduit. Remplacement du référent, sort des accès et anciens avis lors d'un changement, classes sans référent et modalités d'affectation restent à préciser.
+
+Règles, vérifications attendues et synthèses alignées ; C08 passe en cours, sans développement ni test applicatif et sans validation globale D007. Commit/push selon D069, sans nouveau snapshot D074.

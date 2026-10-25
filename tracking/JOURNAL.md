@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Organisation du référent de classe validée
+
+Accord « c est valider » à l'organisation présentée : un référent par classe pour l'avis formateur CV/portfolio, plusieurs classes possibles par formateur, affectation gérée par CME. D078 consignée et documents concernés alignés ; C08 passe en cours, contrôles attendus documentés sans preuve applicative. La question séparée d'équivalence formateur/responsable technique reste UNKNOWN : clarification demandée, aucun cumul/fusion de permissions déduit de l'accord d'organisation. Remplacement, accès/anciens avis et autres modalités à discuter. D007 ouverte ; commit/push à vérifier selon D069, aucun snapshot D074.
+
 ## 2026-10-25 — D076/D077 publiées et consolidation C09 documentée
 
 Commit a9ebfe0eddb335009b3a7cf01c1342c44e837746, « docs: valider le perimetre administratif et les doublons publies », publié par push normal sur origin/main ; concordance distante vérifiée. Neuf documents relus, diff contrôlé et recherche ciblée sans motif de secret détecté ; aucun snapshot créé/modifié. État et tableau actualisés, suivi dans un commit distinct selon D069. C09 terminée pour la documentation, aucune fonctionnalité développée ou Accepted, C08 à faire et D007 ouverte.
