@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D074 publiée et vérifiée
+
+Commit dc6aeca0455c921c741771cbc19f80c6b7de3e65, « docs: remplacer les nouveaux snapshots par historique Git », publié sur origin/main par push normal et concordance distante vérifiée. Neuf fichiers documentaires revus, diff contrôlé et recherche ciblée sans motif de secret détecté. Aucun fichier de tracking/snapshots modifié ni créé ; index historique conservé. État/tableau mis à jour et suivi dans un commit distinct selon D069, sans nouvel instantané selon D074. C09 reste en cours ; aucun code applicatif ni validation globale de D007.
+
 ## 2026-10-25 — Organisation de suivi simplifiée et passage aux commits
 
 Accord « ok alors suivre cette organisation » et demande de passer à la suite. D074 consignée : Git/GitHub pour les nouveaux états, arrêt immédiat des nouvelles copies snapshots ; 0001–0018 conservées sans réécriture. STATUS pour état courant, BOARD pour tâches/preuves, JOURNAL pour avancées, decisions.md pour décisions ; HISTORY reste index historique et explique la transition. Consignes, workflow, guide Git, bilan et suivi alignés. Aucun nouvel instantané ni suppression de fichier, pas de réécriture Git. G06 documentaire terminée ; C09 reste en cours et D007 ouverte. Contrôles et publication selon D069 à exécuter, sans résultat distant présumé.
