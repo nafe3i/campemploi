@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Première tranche consolidée pour discussion
+
+À la demande de poursuivre, synthèse C09 préparée dans docs/scope/first-slice.md : parcours validés, matrice de consultation/action, critères vérifiables sans preuve applicative, distinction entre tranche d'offres, fonctions ultérieures et détails à spécifier. Deux arbitrages explicitement Proposed : étendue des écrans administratifs du pilote et doublons déjà publiés. Aucun accord déduit sur ces règles ; pas de nouvelle entrée de décision validée, C09 en cours et D007 ouverte. Travail documentaire autorisé par la demande ; contrôles et commit/push à effectuer, sans snapshot selon D074.
+
 ## 2026-10-25 — D075 publiée et vérifiée
 
 Commit fc6af0fc989bd73f05b5ae463272cb999bacff46, « docs: valider le retrait des propositions avant publication », publié sur origin/main par push normal ; concordance distante vérifiée. Huit fichiers documentaires revus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucune capture créée ou modifiée selon D074. État/tableau actualisés et suivi dans un commit distinct selon D069. C09 reste en cours, D007 ouverte ; aucune preuve applicative.
