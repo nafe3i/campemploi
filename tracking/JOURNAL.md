@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Principes de remplacement du référent validés
+
+Accord « alors je valides » aux principes présentés. D080 consignée : remplacement par CME du même établissement, retrait des accès de l'ancienne affectation, relais du nouveau, anciens avis conservés et attribués ; autres accès indépendants et accompagnements évalués dans leur contexte. Sort de la validation courante explicitement non tranché, de même que visibilité des commentaires historiques et détails de transition. Documents concernés et suivi alignés avec contrôles attendus ; C08 en cours, D007 ouverte, aucun code/test applicatif. Commit/push à vérifier selon D069, sans snapshot D074.
+
 ## 2026-10-25 — D079 publiée et vérifiée
 
 Commit eb681532c2cf0a662312c121089099bb17ff1aae, « docs: unifier formateur et responsable technique dans le scope », publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun snapshot créé. État/tableau actualisés et suivi dans un commit distinct selon D069. Clarification levée, C08 reste en cours pour les autres points ; aucune preuve applicative et D007 ouverte.

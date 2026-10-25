@@ -6,7 +6,7 @@ Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, év
 
 ## État du cadrage au 25 octobre 2026 — bilan demandé par l'utilisateur
 
-Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D079, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
+Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D080, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
 
 Décisions métier validées : public et objectifs, organisation administrateur général/CME locale, invitation par classe, principes de revue CV/portfolio, parcours nominal des offres et compléments D068/D070–D073/D075. Préparation/suivi des candidatures, accompagnement humain, rendez-vous/progression, entreprises et tableau de pilotage restent dans le périmètre envisagé, avec détails et placement des tranches encore ouverts. Contributions humaines d'abord, collecte automatique ultérieure.
 
@@ -51,7 +51,9 @@ Modération nominale validée D061 : soumission en attente ; décision CME de pu
 
 ### Préparation et suivi (D036–D037)
 
-Référent D078 : un formateur référent par classe porte l'avis formateur CV/portfolio ; un même formateur peut suivre plusieurs classes et la CME gère les affectations dans son établissement avec permission locale. D079 : formateur et responsable technique désignent le même rôle métier, référent est une affectation. Avis CME distinct, droits d'accompagnement/bilans contextuels inchangés ; remplacement/accès/anciens avis à préciser, pas d'accès général aux autres classes ou bilans.
+Référent D078 : un formateur référent par classe porte l'avis formateur CV/portfolio ; un même formateur peut suivre plusieurs classes et la CME gère les affectations dans son établissement avec permission locale. D079 : formateur et responsable technique désignent le même rôle métier, référent est une affectation. Avis CME distinct et droits d'accompagnement/bilans contextuels inchangés ; remplacement précisé D080 ci-dessous, pas d'accès général aux autres classes ou bilans.
+
+Précision D080 : remplacement par CME, perte des accès issus de l'ancienne affectation, relais par le nouveau, anciens avis conservés et attribués aux auteurs. Autres permissions indépendantes et accompagnements existants gardent leurs propres règles. Sort des validations courantes et visibilité des commentaires historiques encore à préciser ; aucune réattribution des anciens avis.
 
 Accès de revue D058 : le formateur consulte et examine les CV/portfolios de ses classes sans demande préalable ; CME sur son établissement. Cette règle précise les questions d'accès ci-dessous et fait évoluer D042 pour les formateurs affectés. Aucun accès général aux autres classes, établissements ou bilans confidentiels. Effet des changements d'affectation à définir.
 

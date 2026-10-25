@@ -323,3 +323,13 @@ Réponse explicite à la clarification : « Oui, c'est le même rôle ». Dans l
 Être référent d'une classe reste une affectation gérée par la CME selon D078. La revue CV/portfolio dépend des classes affectées selon D058 et les avis formateur/CME restent distincts selon D057. L'accompagnement et les bilans gardent leurs droits propres : une personne de ce rôle n'obtient pas accès aux autres classes, établissements ou bilans d'autres accompagnants du seul fait de l'équivalence des termes. Aucun droit de modération CME ou d'administration locale ajouté.
 
 Clarification et conséquences documentaires alignées ; C08 reste en cours pour remplacement, anciens avis, commentaires et portfolio externe. Aucune fonctionnalité développée ni preuve applicative ; D007 ouverte. Commit/push selon D069, sans nouveau snapshot D074.
+
+## D080 — Remplacement du référent de classe — Validé, 2026-10-25
+
+Accord explicite « alors je valides » aux principes présentés : la CME du même établissement réalise le remplacement, l'ancien référent perd les accès accordés par cette affectation, le nouveau prend le relais et les anciens avis restent conservés et attribués à leurs auteurs. D078 (un référent par classe, plusieurs classes possibles par formateur) et D079 (rôle commun formateur/responsable technique) restent applicables.
+
+La perte d'accès vise l'affectation remplacée, pas les autres classes ou permissions indépendantes déjà autorisées. Les accès liés à des accompagnements existants gardent leurs propres règles ; cette exception ne rétablit pas un accès général aux documents de la classe. Le nouveau référent accède aux documents de ses classes selon D058, sans devenir auteur des avis précédents ni obtenir automatiquement accès aux bilans d'autres accompagnants.
+
+Le sort de la validation courante des documents est explicitement non tranché par cet accord : ni maintien ni remise à revalider du seul fait du remplacement décidés ici. Visibilité des anciens commentaires, classe sans référent et détails de transition restent à préciser ; la conservation des avis ne vaut pas permission de consultation de leur contenu.
+
+Règles, contrôles attendus et synthèses alignés ; C08 reste en cours, D007 ouverte. Aucun développement ni test applicatif réalisé. Commit/push selon D069, sans nouveau snapshot D074.

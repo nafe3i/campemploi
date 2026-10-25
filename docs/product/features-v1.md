@@ -1,16 +1,16 @@
 # Fonctionnalités de la première version pilote
 
-Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registre jusqu'à D079. Besoins validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
+Synthèse mise à jour le 25 octobre 2026, fondée sur les décisions du registre jusqu'à D080. Besoins validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
 
 | Bloc | Fonctions principales | Points ouverts |
 |---|---|---|
 | Administration générale | Premier établissement et CME pour le pilote ; écrans complets multi-établissements reportés, isolation dès la conception (D076) | Modalité de création initiale, procédures de désignation et récupération |
 | Gestion locale | CME avec permission locale : classes, invitations formateurs/personnel, rattachements et rôles locaux | Catégories de personnel et délégations précises |
 | Comptes apprenants | Inscription, rôle apprenant par défaut, validation du rattachement ; lien partagé par classe généré par CME, comptes individuels, expiration/désactivation/renouvellement (D059) | Authentification, durée d'expiration, demandes répétées et changements de classe à spécifier |
-| Classes et profils | Un formateur référent par classe pour l'avis, plusieurs classes possibles par formateur, affectation CME (D078) ; formateur/responsable technique = même rôle métier (D079) ; vue et filtres prévus | Remplacement, classe sans référent, champs du profil et libellés d'interface |
+| Classes et profils | Référent par classe, plusieurs classes possibles (D078), rôle formateur/responsable commun (D079) ; remplacement CME, accès de l'ancienne affectation retirés, relais du nouveau et anciens avis attribués/conservés (D080) | Classe sans référent, transition, champs du profil et libellés d'interface |
 | Offres | Contributions lien/texte ; modération motivée (D061), disponibilité/versions/suivis préservés (D068), compléments D070–D073/D075 ; doublon déjà publié clôturé par CME avec motif « doublon », suivis liés à l'offre d'origine sans fusion ni modification automatique (D077) | Modalités des demandes, formats/limites des champs, conservation/visibilité détaillée de l'historique et autres détails à spécifier |
 | Entreprises | Liste enrichissable et propositions soumises à validation CME | Position dans les tranches et détails du parcours spontané |
-| CV et portfolio | CV PDF privé remplaçable, portfolio par lien ; avis CME/formateur séparés, double validation et nouvelle revue après modification (D057) ; accès par classes (D058) et référent D078 | Changements d'affectation, visibilité des commentaires, autres statuts globaux, version examinée et signalement des changements du portfolio externe |
+| CV et portfolio | CV PDF privé remplaçable, portfolio par lien ; avis distincts et nouvelle revue après modification (D057), accès par classes (D058), référent D078 et conservation des avis au remplacement D080 | Sort des validations courantes après remplacement, visibilité des commentaires, autres statuts globaux, version examinée et changements du portfolio externe |
 | Candidatures | Checklist, brouillon, retours humains, envoi externe, six états, prochaine action/dates | Transitions, historique et partage du brouillon |
 | Accompagnement | Demandes, choix du destinataire, acceptation/réorientation, simulations humaines | Réorientation, absence de réponse, règles de gestion des échéances |
 | Rendez-vous et progression | Date/lieu/lien/participants/état, bilan, observations séparées, actions à faire/en cours/réalisées | Droits précis, changements et conservation |
