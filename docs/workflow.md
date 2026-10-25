@@ -29,6 +29,7 @@ Statuts : Proposed → In Progress → Accepted.
 Accepted exige des critères vérifiés et les tests pertinents réussis ; le code seul ne suffit pas.
 Toute modification d'une décision doit être explicite.
 Accord avant application (D064) : présenter la nouvelle décision et ses conséquences concrètes, poser la question de validation et attendre un accord explicite avant l'action dépendante. Clarifier les réponses ambiguës. Une instruction explicite autorise l'action demandée ; ne pas redemander pour un périmètre déjà approuvé. Consigner l'accord avant application ; documentation de suivi et instantanés déjà autorisés restent à maintenir sans glisser de nouvelle décision.
+Synchronisation après validation (D069) : après application du périmètre validé et mise à jour documentaire, relire la sélection/diff, contrôler secrets/données personnelles et vérifications pertinentes, créer un commit descriptif puis le pousser vers origin sans nouvelle confirmation pour le même périmètre. Vérifier le résultat distant ; rapporter tout blocage. Les instantanés D063 restent conservés ; aucun changement sans rapport ni force push.
 
 ## Vérifications communes et spécifiques — D060
 

@@ -24,7 +24,7 @@ Opportunités au Maroc ou à l'étranger, remote ou sur place, si accessibles au
 
 ### Offres et collecte (D010, D028–D032)
 
-Modération nominale validée D061 : soumission en attente ; décision CME de publier, demander correction ou rejeter ; motif pour correction/rejet, correction par auteur puis nouvelle soumission en attente. Disponibilité/clôture et modification après publication encore ouvertes ; détail dans docs/scope/offer-lifecycle.md.
+Modération nominale validée D061 : soumission en attente ; décision CME de publier, demander correction ou rejeter ; motif pour correction/rejet, correction par auteur puis nouvelle soumission en attente. Complément D068 validé le 25 octobre : disponibilité distincte, clôture/réouverture et modification du contenu publié par CME, signalements des contributeurs, versions et suivis préservés, retrait temporaire si doute sérieux. Échéance dépassée à vérifier, aucun refus automatique ni notification externe imposée. Détail et contrôles dans docs/scope/offer-lifecycle.md ; conservation détaillée et autres exceptions encore ouvertes.
 
 - Première tranche (D053) : contributions des apprenants et du personnel, validation CME puis consultation ; pas de collecte automatique requise dans cette tranche.
 - Collecte mixte à terme : automatisation ciblée prévue dans une tranche ultérieure, vers la même file de validation, après preuve de faisabilité et d'utilité. Étude/expérimentation conservée sans bloquer l'approche humaine ; aucune source intégrée ni promesse de collecte exhaustive.
@@ -130,7 +130,7 @@ Profil détaillé (compétences, mobilité, CV et portfolio), filtres, dédoublo
 
 ## Questions ouvertes avant architecture ou spécification des tranches
 
-- Sources gratuites concrètes, modes de collecte autorisés, fréquence et limites ; critères de validation CME, doublons, expiration et modifications des offres publiées.
+- Sources gratuites concrètes, modes de collecte autorisés, fréquence et limites ; critères de validation CME, doublons et détails des champs/historique. Clôture et modifications publiées désormais encadrées par D068 ; conservation détaillée et autres exceptions restent à préciser.
   Étude initiale disponible dans docs/reference/offer-sources-study.md : pistes documentées, pas de sélection de sources validée ni de couverture Maroc démontrée.
 - Modalités techniques de stockage du CV déposé et partage des CV, liens portfolio et brouillons ; formats, limites et versions ; distinction entre notes privées et observations partagées. Principe dépôt CV / lien portfolio validé par D041.
 - Droits détaillés par champ, création/mise à jour des actions et rendez-vous ; contribution CME hors rôle d'accompagnante ; réorientation, demandes sans réponse, suppression et historique.

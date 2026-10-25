@@ -1,6 +1,6 @@
 # Tableau de suivi du projet
 
-Dernière mise à jour : 24 octobre 2026. Phase active : Scope. Référence de méthode : docs/workflow.md ; D062.
+Dernière mise à jour : 25 octobre 2026. Phase active : Scope. Référence de méthode : docs/workflow.md ; D062.
 
 Ce tableau suit notre réalisation du projet. Il est distinct du futur tableau d'activité des apprenants/CME/formateurs (D045).
 Historique : tracking/HISTORY.md (D063) ; les copies successives de ce tableau conservent son état à chaque capture. Les captures ne sont pas des fonctionnalités applicatives terminées.
@@ -23,9 +23,9 @@ Les décisions restent Validé/Proposé/UNKNOWN dans le registre. Les spécifica
 | C02 | Documenter public, profils, objectifs et langues | Terminé | docs/product/vision.md ; D016–D018, D048–D051 ; détails individuels encore ouverts |
 | C03 | Consigner organisation générale/locale et invitation par classe | Terminé | D056, D059 ; docs/scope/establishment-administration.md ; procédures techniques à spécifier |
 | C04 | Consigner double validation CV/portfolio et accès par classe | Terminé | D057–D058 ; docs/scope/cv-portfolio-review.md ; cas limites encore ouverts |
-| C05 | Consigner modération nominale des offres | Terminé | D061 ; docs/scope/offer-lifecycle.md ; clôture/modifications non validées |
+| C05 | Consigner modération nominale des offres | Terminé | D061 ; docs/scope/offer-lifecycle.md ; complément clôture/modifications traité en C07/D068 |
 | C06 | Étudier les sources et un échantillon documentaire initial | Terminé | docs/reference/offer-sources-study.md et opportunity-sample-2026-10-17.md ; aucune preuve de gain utilisateur ni de capacité CME |
-| C07 | Définir clôture et modification d'une offre publiée | À valider | Proposition dans docs/scope/offer-lifecycle.md ; dernière question sans réponse sur la clôture |
+| C07 | Définir clôture et modification d'une offre publiée | Terminé | Accord explicite du 25 octobre, D068 ; docs/scope/offer-lifecycle.md et synthèses alignées ; capture 0008. Décision/documentation terminée, aucun développement ni test applicatif |
 | C08 | Préciser classes et revues de documents | À faire | Référent(s), équivalence formateur/responsable, changements d'affectation, version du portfolio et visibilité des commentaires |
 | C09 | Consolider matrice d'accès et critères de la première tranche | En cours | docs/scope/first-slice.md et décisions ; compléments après C07/C08 selon leur périmètre |
 | C10 | Valider globalement le scope et le découpage | À valider | D007 toujours ouverte ; synthèse docs/product/features-v1.md et docs/scope/pilot.md |
@@ -53,12 +53,12 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 ## Suivi par fonctionnalité — D065
 
-État observé au 24 octobre 2026 : aucun développement, test applicatif ou déploiement. Versions livrées : aucune. Les références ci-dessous sont des preuves documentaires uniquement.
+État observé au 25 octobre 2026 : aucun développement, test applicatif ou déploiement. Versions livrées : aucune. Les références ci-dessous sont des preuves documentaires uniquement.
 
 | Fonctionnalité | Étape actuelle | Prochaine action / décision attendue | Preuve | Difficulté / point ouvert | Version |
 |---|---|---|---|---|---|
 | Comptes, établissements et invitations | Conception métier partielle | Préciser expiration, rôles locaux et cas de rattachement | D056, D059 ; docs/scope/establishment-administration.md | Procédures et étendue des écrans du pilote | Aucune |
-| Offres | Conception métier partielle | Valider clôture puis modifications publiées | D061 ; docs/scope/offer-lifecycle.md | Exceptions et droits détaillés | Aucune |
+| Offres | Conception métier partielle | Consolider droits, champs et critères de la première tranche (C09) | D061, D068 ; docs/scope/offer-lifecycle.md | Exceptions, conservation et droits détaillés | Aucune |
 | CV et portfolio | Conception métier partielle | Référent de classe, accès aux commentaires et version du portfolio | D057–D058 ; docs/scope/cv-portfolio-review.md | Plusieurs formateurs et modifications externes | Aucune |
 | Candidatures | Cadrage documenté | Spécifier transitions et historique | D036–D037 | Cas limites et partage des brouillons | Aucune |
 | Accompagnement et progression | Cadrage documenté | Spécifier réorientation et mise à jour des actions | D020–D027 | Délais, absence de réponse, droits précis | Aucune |
@@ -75,9 +75,10 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | G02 | Préparer premier contenu et contrôles | Terminé | .gitignore/.gitattributes, docs/git-workflow.md et revue docs/reviews/2026-10-24-initial-git-review.md ; contenu documentaire sélectionné, contrôles avant accord commit |
 | G03 | Créer le premier commit et envoyer le premier état | Terminé | D067 ; commit initial 2082f296e075c6f3a0b1d68a214f1de417c9d54b envoyé et vérifié sur origin/main le 25 octobre 2026 ; dépôt public accepté |
 | G04 | Préparer tâches et Project GitHub | À faire | Modèle à relier au tableau existant avant création externe |
+| G05 | Consigner et appliquer commit/push après chaque validation | En cours | D069 et AGENTS.md, docs/workflow.md, docs/git-workflow.md ; lot D068 et règle prêts pour contrôles puis synchronisation |
 
 ## Prochaine action immédiate
 
-Premier commit publié et concordance local/distant vérifiée. Proposer le contenu des Issues/Project avant création externe ; C07 reste la prochaine tâche produit (clôture puis modifications des offres). Aucune validation de D007 ni réalisation applicative par cette publication.
+Premier état documentaire publié ; D069 autorise désormais la synchronisation du lot D068 et les futurs commits descriptifs/push après validation. G05 en cours, résultat à vérifier. Proposer le contenu des Issues/Project avant création externe. C07 est terminée pour le cadrage ; prochaine tâche produit proposée C09. Aucune validation de D007 ni réalisation applicative.
 
-Prochaine tâche proposée : C07, trancher la clôture des offres puis leurs modifications après publication. Aucune fonctionnalité applicative développée ou Accepted. Mise à jour du tableau après chaque avancée réelle avec preuve, sans transformer une discussion en réalisation.
+Prochaine tâche proposée : C09, consolider les droits, champs et critères restants de la première tranche ; C08 reste ouverte pour les classes et revues. Aucune fonctionnalité applicative développée ou Accepted. Mise à jour du tableau après chaque avancée réelle avec preuve, sans transformer une discussion en réalisation.

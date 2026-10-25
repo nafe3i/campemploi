@@ -1,5 +1,17 @@
 # Journal
 
+## 2026-10-25 — Synchronisation Git après chaque validation autorisée
+
+Instruction explicite de créer un commit descriptif et de le pousser après chaque validation. D069 enregistrée dans le registre, AGENTS.md, workflow et guide Git ; aucun nouvel accord nécessaire pour le même périmètre validé. Le lot D068 et ses captures 0007/0008 sont inclus dans la synchronisation autorisée. Tableau et état alignés ; capture 0009 avant exécution. Contrôles de sélection, confidentialité, conservation des captures et push normal requis ; aucun résultat distant présumé à cette étape. Aucun changement produit supplémentaire ni déploiement.
+
+## 2026-10-25 — Clôture et modification des offres validées
+
+Accord explicite à la proposition finale C07 : « oui on vat suivre cette approche ». D068 consignée : disponibilité distincte, clôture/réouverture et modifications publiées réservées à la CME du même établissement, signalements des contributeurs, versions et suivis conservés, retrait temporaire si doute sérieux. Contrôles définis à prévoir, aucune preuve applicative. Scope, synthèse, première tranche, état et tableau alignés ; C07 terminée pour la décision/documentation uniquement. Prochaine tâche proposée C09 ; autres propositions et D007 restent ouvertes. Capture 0008 selon D063 ; vérification documentaire et empreintes des copies. Aucun code, choix de stack, commit ni push de ce lot.
+
+## 2026-10-25 — Proposition finale du cycle après publication
+
+À la demande de finaliser clôture et modification des offres, section concrète préparée dans docs/scope/offer-lifecycle.md : disponibilité distincte, CME seule actrice de clôture/réouverture/modification, signalements des contributeurs, motifs/versions, suivis conservés et retrait temporaire pour doute sérieux. Contrôles communs/spécifiques traduits en résultats attendus. Première tranche, tableau et état actualisés ; C07 À valider, D061/D007 inchangées. Aucun nouveau comportement considéré validé par la seule demande de finalisation ; pas de code ni commit/push de ce lot. Capture 0007 de la proposition selon D063.
+
 ## 2026-10-25 — Premier commit publié
 
 Accord D067 exécuté. Commit 2082f296e075c6f3a0b1d68a214f1de417c9d54b créé avec le message « docs: initialiser le cadrage et le suivi de CapEmploi Campus », 107 fichiers. Contrôle préalable distant vide ; push -u origin main réussi sans force. Vérification indépendante via ls-remote : même hash sur GitHub. Dépôt public accepté, sans changement de visibilité. Contrôles ciblés sans secret signalé et octets des captures préservés. Aucun code applicatif, Issue, Project ou déploiement. État/tableau/revue actualisés, capture 0006 de fin d'opération ; suivi documentaire dans un commit séparé, sans nouvelle décision produit.

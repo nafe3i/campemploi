@@ -1,6 +1,6 @@
 # Première tranche — proposer, valider et consulter des offres
 
-Date : 24 octobre 2026. Statut : périmètre fondé sur D053–D054 ; règles complémentaires ci-dessous Proposed. D007 encore en attente. Aucune stack ni architecture technique choisie.
+Mise à jour : 25 octobre 2026. Statut : périmètre fondé sur D053–D054, modération D061 et clôture/modifications D068 validées ; règles complémentaires non arbitrées ci-dessous Proposed. D007 encore en attente. Aucune stack ni architecture technique choisie.
 
 ## Résultat utilisateur
 
@@ -16,34 +16,35 @@ Un membre rattaché propose une offre ; la CME de son établissement l'examine e
 - Mention explicite des conditions inconnues d'accessibilité et du niveau demandé, y compris bac+5, sans prétendre l'apprenant éligible (D029, D052).
 - Permissions et séparation des établissements ; administration des comptes distincte de l'accès aux contenus confidentiels.
 
-## Règles proposées à valider avant spécification
+## Règles validées et propositions à trancher avant spécification
 
-Approfondissement du cycle, des transitions, de la disponibilité et des vérifications dans docs/scope/offer-lifecycle.md (Proposed, demandé le 24 octobre 2026). La demande d'explication ne vaut pas validation.
+Approfondissement du cycle, des transitions, de la disponibilité et des vérifications dans docs/scope/offer-lifecycle.md. La demande initiale d'explication ne valait pas validation.
+Proposition finale C07 explicitement validée le 25 octobre (D068) : clôture/réouverture par CME, modifications contrôlées, versions et suivis préservés, retrait temporaire si doute sérieux et contrôles spécifiques. Voir section finale de offer-lifecycle.md. Décision documentée, fonctionnalité non développée.
 
 | Sujet | Proposition | État |
 |---|---|---|
 | États de modération | En attente, à corriger, publiée, rejetée ; décision par CME | Validé D061 |
 | Visibilité avant publication | CME et auteur consultent la proposition ; les autres apprenants ne la voient pas | Proposed pour l'accès auteur ; invisibilité collective avant publication déjà validée |
 | Correction / rejet | Motif communiqué à l'auteur ; correction par l'auteur puis retour en attente de validation | Validé D061 |
-| Modification après publication | Modification du contenu par la CME pour cette première tranche ; le contributeur signale une correction plutôt que modifier directement l'offre publiée | Proposed |
-| Fin de recrutement | Offre marquée clôturée et retirée de la liste des offres ouvertes, sans suppression des liens de suivi ultérieurs | Proposed ; disponibilité distincte de modération |
+| Modification après publication | CME seule modifie/confirme ; signalement par contributeur, version des conditions et mention dans les suivis ; retrait temporaire si doute sérieux | Validé D068 ; conservation détaillée à spécifier |
+| Fin de recrutement | Disponibilité distincte ; CME clôture/rouvre avec trace ; retrait de la recherche courante, suivis existants conservés, sans refus automatique | Validé D068 ; échéance dépassée à vérifier par CME |
 | Informations absentes | Champs de qualification inconnus affichés « à confirmer », sans inventer date, niveau, durée ou accès géographique | Proposed comme règle générale ; géographie déjà encadrée par D029 |
 
-Les quatre états et le cycle correction/rejet ont été validés explicitement par D061 après approfondissement, pas déduits de D054. Les autres propositions restent ouvertes ; transitions et champs obligatoires précis à spécifier.
+Les quatre états et le cycle correction/rejet ont été validés explicitement par D061, puis clôture et modifications par D068. Les autres propositions restent ouvertes ; transitions et champs obligatoires précis à spécifier.
 
 ## Limites de cette première tranche
 
 Préparation/CV et suivi des candidatures, demandes d'accompagnement, rendez-vous/progression et tableau transversal restent dans les fonctions principales à réaliser progressivement ; pas supprimés. Leur disponibilité dans les tranches suivantes ne doit pas être annoncée comme déjà réalisée. Liste d'entreprises à enrichir conservée ; position précise à définir. Prototype de collecte séparé, sans fournisseur ni langage choisis.
 
-## Vérifications à prévoir, encore proposées
+## Vérifications à prévoir, preuves applicatives absentes
 
 - Compte en attente : aucune offre interne accessible ; compte rattaché : offres publiées de son établissement uniquement.
 - Un contributeur ne peut pas publier directement ni usurper le rôle CME.
 - Aucune proposition non validée visible par les autres apprenants, même par URL directe.
 - Refus de tout accès inter-établissements avec un identifiant connu.
-- Cycle de correction et motif vérifiés après validation de leurs règles.
+- Cycle de correction et motif selon D061 ; clôture/réouverture, versions, retrait temporaire et continuité des suivis selon D068.
 - Exigences bac+5 et accessibilité inconnue affichées sans promesse d'éligibilité.
 
 ## Prochaine étape
 
-Trancher le petit groupe de règles de modération/fin de recrutement, consolider le périmètre pour validation, puis comparer la stack et écrire les spécifications d'architecture. Pas de code applicatif avant ces décisions. Portage officiel et responsabilités pour les données réelles toujours non confirmés.
+Consolider les droits, champs et critères restants de la première tranche (C09), puis soumettre le périmètre à validation avant comparaison de stack et spécifications d'architecture. Pas de code applicatif avant ces décisions. Portage officiel et responsabilités pour les données réelles toujours non confirmés.

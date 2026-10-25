@@ -6,7 +6,7 @@ BOARD.md et STATUS.md montrent l'état courant ; JOURNAL.md explique les changem
 
 Créer un instantané après chaque changement significatif de décision, périmètre ou avancement, et en fin de session si le suivi a changé. Utiliser un identifiant croissant même pour plusieurs états le même jour, indiquer prédécesseur, motif, date d'enregistrement et fichiers conservés. Inclure les preuves/documents concernés et leurs références ; une référence à un fichier courant seul ne garantit pas son contenu historique. Ne pas copier de secrets ou de données personnelles réelles.
 
-Ce sont des copies documentaires, pas une sauvegarde complète du poste ou une restauration de l'application. Git n'est pas encore initialisé ; son introduction pourra fournir ensuite l'historique des fichiers/code par commits. Ne pas prétendre que cet historique existe déjà.
+Ce sont des copies documentaires, pas une sauvegarde complète du poste ou une restauration de l'application. Git est désormais initialisé et un premier état a été publié (D066–D067) ; il complète les captures sans les remplacer. D069 autorise désormais commit descriptif et push après chaque validation explicite, après contrôles ; le résultat doit être vérifié avant d'être annoncé.
 
 ## Index
 
@@ -18,6 +18,9 @@ Ce sont des copies documentaires, pas une sauvegarde complète du poste ou une r
 | [0004](snapshots/0004-2026-10-25.zip) | 25 octobre 2026 | 0003 | Reprise D066 ; archive ZIP conservant les octets, dont configuration Git capturée. Copie locale décompressée préservée mais exclue de Git. Référence antérieure au 24 octobre corrigée car capture absente |
 | [0005](snapshots/0005-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0004 | Contrôles finaux du contenu préparé et conservation des captures ; aucun commit/push |
 | [0006](snapshots/0006-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0005 | D067 exécutée : premier commit 2082f29 publié et vérifié ; suivi de fin d'opération |
+| [0007](snapshots/0007-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0006 | Proposition finale C07 de clôture/modification, à valider ; pas de nouvelle décision métier |
+| [0008](snapshots/0008-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0007 | Accord D068 sur clôture/modification, synthèses alignées et C07 documentaire terminée ; aucun code ni commit/push de ce lot |
+| [0009](snapshots/0009-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0008 | D069 : commit descriptif et push après validation autorisés ; synchronisation D068/D069 préparée, non encore vérifiée |
 
 ## Limites du passé et du futur
 

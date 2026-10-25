@@ -1,10 +1,12 @@
 # État — 2026-10-25
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
+Tâche C07 : règles de clôture/réouverture et modifications explicitement validées D068, documentées dans docs/scope/offer-lifecycle.md. C07 terminée pour le cadrage documentaire uniquement ; continuité des candidatures, versions et contrôles à implémenter/vérifier. Capture 0008 de cet accord. D069 autorise maintenant le commit descriptif et le push de ce lot ; exécution en préparation, aucun résultat distant encore annoncé pour ce nouveau lot.
 
 ## Suivi Git et GitHub — D066
 
 - Accord D067 obtenu le 25 octobre 2026 : premier commit et dépôt public acceptés. Exécution réalisée et vérifiée.
+- D069 : commit descriptif et push après chaque validation explicite, sans nouvel accord pour le même périmètre ; contrôles de sélection, confidentialité et résultat distant obligatoires. Règle ajoutée à AGENTS.md, workflow et guide Git ; capture 0009 avant synchronisation.
 
 - Organisation Git/GitHub validée ; dépôt local initialisé sur main.
 - origin configuré : https://github.com/nafe3i/campemploi.git.
@@ -18,7 +20,7 @@ Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code app
 ## Produit : décisions courantes
 
 - Contributions humaines d'abord : proposition d'offre → validation CME → consultation (D053–D054).
-- Modération nominale validée : en attente, à corriger, publiée, rejetée ; motifs et nouvelle soumission après correction (D061). Clôture et modifications publiées encore proposées.
+- Modération nominale validée : en attente, à corriger, publiée, rejetée ; motifs et nouvelle soumission après correction (D061). Disponibilité distincte, clôture/réouverture et modifications par CME validées D068 ; signalements, versions, suivis préservés et retrait temporaire si doute sérieux. Détails de conservation et autres exceptions encore ouverts.
 - Portage officiel de l'établissement non confirmé ; responsabilités des données réelles encore à préciser.
 - Public full stack Java/Angular, MERN, PHP/Laravel ; bac+2/bac+3 ; français et anglais, niveaux individuels inconnus.
 - Première année : deux mois de stage, début flexible avril/mai 2027 ; limites exactes de fin à confirmer. Deuxième année : préembauche et premiers emplois.
@@ -41,4 +43,4 @@ Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code app
 - Matrice complète des permissions, cas limites des classes/revues, protocoles de mesure et données réelles à spécifier.
 - Prototype de collecte automatique prévu ultérieurement, pas une dépendance de la première tranche. Fonctions futures dans docs/product/roadmap.md.
 
-Prochaine tâche produit : C07, arbitrer clôture des offres puis modifications après publication. L'initialisation de Git ne tranche aucune règle produit et n'autorise pas le choix d'une stack ou un démarrage applicatif.
+Prochaine tâche produit proposée : C09, consolider droits, champs et critères restants de la première tranche. C08 (classes/revues) reste à faire pour son périmètre. D007 toujours ouverte ; aucun choix de stack ni démarrage applicatif autorisé par D068.
