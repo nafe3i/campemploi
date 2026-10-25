@@ -251,3 +251,11 @@ Avant publication, la CME qualifie pays/ville, mode présentiel/hybride/remote, 
 Un moyen de candidature exploitable est nécessaire avant publication : page de candidature, adresse professionnelle publiée ou instructions de l'annonce permettant de comprendre comment candidater. Un simple lien source ne prouve pas à lui seul que ce moyen existe. Si ce moyen manque ou n'est pas exploitable, demander une correction avant publication selon D061. Pas d'envoi automatique ni de contact externe autorisé par cet accord.
 
 Règles et vérifications à prévoir dans docs/scope/offer-lifecycle.md ; première tranche, synthèse et suivi alignés. C09 reste en cours pour droits et autres critères, D007 reste ouverte. Aucun code, choix de stack ni test applicatif réalisé par cette validation. Commit descriptif et push selon D069.
+
+## D071 — Consultation des propositions avant publication — Validé, 2026-10-25
+
+Accord explicite « oui je valide » à la règle présentée : l'auteur rattaché consulte ses propres propositions, leur état et les motifs de correction ou de rejet ; la CME consulte les propositions de son établissement. Les autres membres attendent la publication pour consulter l'offre. Cette règle vaut aussi pour un formateur contributeur : son rôle de formateur ne donne pas accès aux propositions non publiées des autres membres. Les accès restent limités à l'établissement concerné selon D060.
+
+Cette décision précise la consultation individuelle de l'auteur avant la visibilité collective D028, sans lui accorder le droit de publier ni d'accéder aux propositions d'autrui. Correction et nouvelle soumission restent régies par D061 ; modification du contenu publié et retrait pour doute sérieux par D068. Aucun nouveau droit sur les candidatures, les traces détaillées ou le contenu problématique retiré n'est déduit de cette consultation. Aucun privilège de consultation métier automatiquement accordé par l'administration technique.
+
+Règles et contrôles de propriété/rôle/établissement à chaque accès, dont listes et URL directe, détaillés dans docs/scope/offer-lifecycle.md. Scope, synthèse et suivi alignés ; C09 reste en cours pour les autres critères. Documentation validée, aucune fonctionnalité développée ni test applicatif exécuté. D007 inchangée ; commit descriptif et push selon D069.

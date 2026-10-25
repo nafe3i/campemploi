@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Consultation avant publication validée
+
+Accord explicite « oui je valide » à la consultation des propositions avant publication. D071 consignée : auteur rattaché sur ses propositions, état et motifs ; CME sur celles de son établissement ; autres membres après publication. Aucun droit de publication par l'auteur, ni accès de formateur aux propositions des autres membres par sa classe. Règles, première tranche, scope, synthèse et suivi alignés ; contrôles attendus de propriété/rôle/établissement, listes et URL directe documentés. C09 reste en cours, aucune réalisation ni preuve applicative, D007 ouverte. Capture 0013 avant commit/push selon D069 ; résultat distant non présumé.
+
 ## 2026-10-25 — D070 publiée et vérifiée
 
 Commit 86d06eaf1d42d1063fc3ab7603ee64959a2bc87d, « docs: valider les informations et la qualification des offres », créé et envoyé sur origin/main sans force ; lecture distante indépendante confirmant le même hash. Sélection documentaire de 19 fichiers relue, diff contrôlé, recherche ciblée sans motif de secret détecté et octets des dix fichiers de capture 0011 préservés dans Git. État et tableau actualisés, capture 0012 du résultat ; commit de suivi distinct selon D069. Aucun code ni test applicatif, C09 reste en cours et D007 ouverte.

@@ -1,18 +1,44 @@
 # Cycle de vie des offres — règles validées et propositions restantes
 
-Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070 valide informations de soumission et qualification avant publication, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068 et D070. Aucun code ni choix technique.
+Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070 valide informations de soumission et qualification ; D071 valide consultation avant publication, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068, D070 et D071. Aucun code ni choix technique.
 
 ## Deux dimensions
 
 Modération : en attente, à corriger, publiée, rejetée (D061). Disponibilité : ouverte, clôturée, à confirmer ; séparation conceptuelle validée D068, sans préjuger du schéma de base de données.
 « Publiée » signifie autorisée à être vue, pas emploi encore ouvert. « Ouverte » reste une observation de la source, pas garantie d'embauche. Sans information suffisante, ne pas inventer une date de clôture ou une ouverture confirmée.
 
-## Responsabilités proposées
+## Responsabilités et points restant à préciser
 
 Auteur rattaché : soumet une offre, consulte ses propositions, corrige après retour et signale une correction/clôture après publication. Ne peut pas publier par lui-même en tant que contributeur.
 CME du même établissement : examine, demande correction, publie ou rejette avec motif, corrige le contenu publié et enregistre la clôture. Une CME peut contribuer ; son droit de publication provient de son rôle CME, avec acte de validation explicite. Pas de second valideur indépendant imposé par les décisions actuelles.
 Autres apprenants rattachés : consultent les offres publiées de leur établissement, pas les propositions en attente, à corriger ou rejetées.
 Administrateur général : pas de droit de validation d'offre automatiquement déduit de l'administration technique.
+
+## Consultation avant publication — Validé D071
+
+Accord explicite du 25 octobre 2026 (« oui je valide »). L'auteur rattaché consulte ses propres propositions, leur état et les motifs de correction ou de rejet ; la CME consulte celles de son établissement. Les autres membres attendent la publication pour consulter l'offre. D028 concerne la visibilité collective ; D071 précise la consultation individuelle de la contribution par son auteur.
+
+| Acteur | Consultation autorisée avant publication |
+|---|---|
+| Auteur apprenant ou membre du personnel rattaché | Ses propres propositions, leur état et les motifs de correction/rejet |
+| CME du même établissement | Propositions de son établissement dans le cadre de la modération |
+| Autre apprenant ou formateur non auteur | Aucune consultation de cette proposition non publiée ; attendre publication |
+| CME d'un autre établissement | Aucun accès à cette proposition interne |
+
+Le droit de consulter ne permet pas de publier, de modifier les décisions de la CME ni de consulter les dossiers des autres candidats. Correction par l'auteur après retour et nouvelle soumission selon D061 ; modifications publiées et retrait pour doute sérieux selon D068. Aucun droit supplémentaire sur le contenu problématique retiré ou l'historique détaillé. Un rôle administratif ne confère pas automatiquement les permissions métier de la CME.
+
+### Contrôles à prévoir — aucune preuve applicative
+
+| Cas | Résultat attendu |
+|---|---|
+| Auteur consulte sa proposition en attente, à corriger ou rejetée | Proposition et état accessibles ; motif de correction/rejet accessible lorsqu'il existe |
+| Autre membre tente le même accès par liste ou URL directe | Accès refusé, contenu et motif non exposés ; données inchangées |
+| Formateur consulte une proposition non publiée d'un apprenant de sa classe | Refus : affectation de classe ne vaut pas permission de modération |
+| CME du même établissement consulte | Accès autorisé pour la modération |
+| CME d'un autre établissement connaît l'identifiant | Refus sans exposition du contenu ou du motif |
+| Auteur tente d'utiliser son droit de consultation pour publier | Refus selon D061, aucune publication |
+
+Vérifier identité, état du compte, rattachement, rôle, propriété et établissement côté serveur à chaque accès selon D060. Détails de présentation, historique et effets d'un changement de rattachement à spécifier ; aucune autorisation supplémentaire inventée pour ces cas.
 
 ## Parcours et transitions proposés
 
@@ -124,4 +150,4 @@ Conserver modération (en attente/à corriger/publiée/rejetée) et disponibilit
 
 Accord consigné D068 ; première tranche et synthèse réalignées. Avant code : spécifier champs/transitions et tests ; détails de conservation, concurrence et affichage à traiter sans choisir la stack implicitement. Ces contrôles sont à réaliser ; aucune preuve applicative disponible.
 
-Parcours nominal et motifs validés D061 ; disponibilité, clôture/réouverture, modifications et historique utile validés D068 ; informations de soumission et qualification validées D070 dans les périmètres ci-dessus. Restent notamment ouverts : accès auteur avant publication, corrections après rejet, retrait par l'auteur, doublons, formats/limites précis des champs, visibilité/conservation détaillée des traces et saisie rétrospective d'une candidature. D007 reste ouverte.
+Parcours nominal et motifs validés D061 ; disponibilité, clôture/réouverture, modifications et historique utile validés D068 ; informations/qualification validées D070 ; consultation avant publication validée D071 dans les périmètres ci-dessus. Restent notamment ouverts : corrections après rejet, retrait par l'auteur, doublons, formats/limites précis des champs, visibilité/conservation détaillée des traces et saisie rétrospective d'une candidature. D007 reste ouverte.
