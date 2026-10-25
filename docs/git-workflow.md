@@ -25,8 +25,8 @@ Avant commit : relire la sélection/diff, contrôler secrets, exclusions et empr
 
 ## À chaque validation — D069
 
-1. Consigner la décision et appliquer le seul périmètre validé ; mettre à jour documents concernés, état, tableau, journal et captures selon D063.
-2. Relire les fichiers sélectionnés et le diff ; vérifier secrets, données personnelles, empreintes des captures et contrôles pertinents. Écarter les changements sans rapport.
+1. Consigner la décision et appliquer le seul périmètre validé ; mettre à jour documents concernés, état, tableau et journal. D074 : les commits remplacent les nouvelles copies snapshots ; anciennes captures inchangées.
+2. Relire les fichiers sélectionnés et le diff ; vérifier secrets, données personnelles et contrôles pertinents. Préserver les anciennes captures sans les recopier. Écarter les changements sans rapport.
 3. Créer un petit commit descriptif, puis le pousser normalement vers origin sur la branche de travail, sans force push ni réécriture.
 4. Vérifier la concordance locale/distante et informer l'utilisateur du résultat. Si l'opération échoue, rapporter ce qui reste local ; ne pas annoncer une publication réussie.
 
@@ -36,4 +36,4 @@ Cette règle autorise la synchronisation du travail validé et de son suivi. Les
 
 Conserver les décisions/spécifications dans les fichiers versionnés. Préparer un petit ensemble de tâches à partir du tableau courant avant d'en créer sur GitHub ; configurer un Project après revue du contenu. Aucune Issue, aucun Project, aucune invitation à collaborateur ni aucun déploiement créé pendant l'initialisation locale.
 
-La suppression ou l'arrêt des captures manuelles demanderait une décision explicite selon D063–D064. Les captures existantes restent inchangées. Après mise en place, les commits conserveront les états enregistrés ; ils ne reconstituent pas des versions passées qui n'ont jamais été sauvegardées.
+Arrêt des nouvelles captures manuelles explicitement validé D074 le 25 octobre 2026. Les captures 0001–0018 restent inchangées, sans suppression ni réécriture de l'historique Git. Les commits conservent désormais les nouveaux états enregistrés ; ils ne reconstituent pas des versions passées jamais sauvegardées. Exemple de consultation sans modifier le dossier de travail : `git show 492951a:docs/scope/pilot.md` ; exemple de comparaison : `git diff 6ad6a5f 492951a -- docs/scope/pilot.md`.

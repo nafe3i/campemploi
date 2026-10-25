@@ -3,7 +3,7 @@
 Dernière mise à jour : 25 octobre 2026. Phase active : Scope. Référence de méthode : docs/workflow.md ; D062.
 
 Ce tableau suit notre réalisation du projet. Il est distinct du futur tableau d'activité des apprenants/CME/formateurs (D045).
-Historique : tracking/HISTORY.md (D063) ; les copies successives de ce tableau conservent son état à chaque capture. Les captures ne sont pas des fonctionnalités applicatives terminées.
+Historique : nouveaux états de ce tableau dans les commits Git (D074), avec push vérifié selon D069. tracking/HISTORY.md conserve l'index des anciennes captures D063, inchangées ; aucune nouvelle copie périodique. Une version documentaire n'est pas une fonctionnalité applicative terminée.
 
 ## Lecture des statuts
 
@@ -76,6 +76,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | G03 | Créer le premier commit et envoyer le premier état | Terminé | D067 ; commit initial 2082f296e075c6f3a0b1d68a214f1de417c9d54b envoyé et vérifié sur origin/main le 25 octobre 2026 ; dépôt public accepté |
 | G04 | Préparer tâches et Project GitHub | À faire | Modèle à relier au tableau existant avant création externe |
 | G05 | Consigner et appliquer commit/push après chaque validation | Terminé | D069 et consignes alignées ; lot D068/D069 publié au commit de732bdaca71bef05aaf62b372c9c052c1c4b870 ; concordance origin/main vérifiée, contrôles documentaires et captures ; capture 0010 du résultat |
+| G06 | Remplacer les nouvelles copies snapshots par Git | Terminé | D074 ; AGENTS.md, docs/workflow.md, docs/git-workflow.md et tracking/HISTORY.md alignés ; anciennes captures préservées, aucune nouvelle copie créée. Publication de ce lot à vérifier |
 
 ## Prochaine action immédiate
 

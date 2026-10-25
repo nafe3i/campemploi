@@ -202,6 +202,8 @@ Conservation temporelle précisée par D063.
 À la demande de l'utilisateur, tenir un tableau de suivi de la réalisation du projet dans tracking/BOARD.md, distinct du tableau d'activité prévu dans l'application. Marquer les tâches et leurs preuves d'avancement ; distinguer décision validée, livrable documentaire terminé et fonctionnalité réellement vérifiée/testée. Convention initiale : à faire, en cours, à valider, terminé, reporté ; pas de changement des statuts de spécification ni de décision du workflow. Actualiser après chaque avancée réelle et conserver le journal des changements. Découper les tâches de réalisation au moment des spécifications ; aucun développement déduit de la création du tableau.
 ## D063 — Historique temporel de notre travail — Validé, 2026-10-24
 
+Évolution validée le 25 octobre 2026 par D074 : arrêt des nouvelles copies, nouveaux états dans Git ; anciennes captures conservées. Le texte suivant décrit la décision initiale.
+
 Accord avant application d'une nouvelle décision : D064.
 
 Conserver les états successifs du projet pour comparer passé, présent et évolutions futures réelles. Tableau courant et journal complétés par instantanés documentaires identifiés, datés et conservés sans réécriture, indexés dans tracking/HISTORY.md. Créer un état après changement significatif et en fin de session si le suivi a changé, avec motif et preuves pertinentes. Aucun faux état historique ou futur inventé ; les périodes antérieures à la première capture ne disposent pas de copies complètes garanties. Première mise en place sans initialisation Git ni sauvegarde globale du poste ; Git pourra ensuite compléter l'historique du code et des fichiers.
@@ -275,3 +277,11 @@ Accord explicite « valider » au parcours présenté : si de nouveaux élément
 Le rejet initial reste dans l'historique ; le motif de réexamen ne l'efface pas. Les droits de consultation D071, les conditions de publication D070 et le traitement des doublons D072 restent applicables. Cette décision ne règle pas le retrait d'une proposition par l'auteur ni la conservation détaillée de toutes les traces.
 
 Règles, transitions, contrôles attendus et synthèses alignés. C09 reste en cours, D007 ouverte ; aucun code ni test applicatif réalisé. État du scope consolidé dans docs/scope/pilot.md à la demande de l'utilisateur. Commit descriptif et push selon D069.
+
+## D074 — Historique courant par Git, arrêt des nouveaux snapshots — Validé, 2026-10-25
+
+Accord explicite « ok alors suivre cette organisation » à la simplification présentée. À partir de cet accord, Git et GitHub conservent les nouveaux états enregistrés/publiés, sans créer de nouveaux dossiers snapshots. Les captures 0001–0018 déjà présentes sont conservées sans suppression, déplacement ni réécriture ; tracking/HISTORY.md reste leur index historique et explique le passage à Git. Cette décision remplace l'obligation de créer des copies périodiques de D063, sans abandonner la traçabilité.
+
+Répartition maintenue : tracking/STATUS.md pour l'état courant, tracking/BOARD.md pour tâches et preuves, tracking/JOURNAL.md pour les avancées, docs/product/decisions.md pour décisions et raisons. Les versions successives des fichiers suivis sont consultées/comparées dans les commits ; seuls les changements enregistrés par commit sont ainsi conservés, le push vérifié confirme leur publication. D069 (commit descriptif/push après validation et contrôles) reste applicable.
+
+Consignes, workflow, guide Git, index historique, bilan et suivi réalignés ; aucun nouvel instantané créé pour ce changement. Aucune réécriture de l'historique Git, suppression des anciennes captures ou fonctionnalité applicative autorisée. D007 reste ouverte, prochaine tâche C09 : consolidation de la première tranche.

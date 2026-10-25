@@ -1,6 +1,7 @@
 # État — 2026-10-25
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
+D074 validée et appliquée à la documentation : nouveaux états par commits Git/push vérifié, sans nouveaux snapshots ; anciennes captures 0001–0018 conservées. STATUS, BOARD, JOURNAL et registre des décisions gardent leurs rôles. Consignes/workflow/index réalignés ; G06 documentaire terminée, publication du lot à vérifier. Prochaine tâche produit C09 : consolidation de la première tranche, sans choix de stack.
 D073 validée et documentée : réexamen d'un rejet autorisé par CME du même établissement avec motif si nouveaux éléments ; auteur corrige puis soumet en attente, rejet initial conservé. Aucun réexamen autonome par l'auteur ni publication automatique. C09 en cours ; bilan du scope demandé par l'utilisateur ajouté dans docs/scope/pilot.md, distinguant documentation réalisée et application non développée. Capture 0017 ; commit 492951a4a85daa2d7a96cbe845b324d93a9a75a3 publié et vérifié sur origin/main. Capture 0018 du résultat, suivi dans un commit distinct selon D069.
 D072 validée et documentée : traitement manuel des propositions en doublon par CME, rejet « déjà présente », offre existante indiquée seulement si accès autorisé, aucun suivi supprimé/fusionné automatiquement. C09 reste en cours ; contrôles attendus documentés, non exécutés. Capture 0015 de cet accord. Commit 1b4ece250cae3e47ff71a349931933728212014d publié et vérifié sur origin/main ; capture 0016 du résultat, suivi dans un commit distinct selon D069.
 D071 validée et documentée : auteur sur ses propres propositions, état et motifs de correction/rejet ; CME sur celles de son établissement ; autres membres après publication. Contrôles de propriété/rôle/établissement documentés, non exécutés dans une application. C09 reste en cours ; capture 0013 de cet accord. Commit 7fc20ee4b3bb6101e79b85403802c7cb78dc4c48 publié et vérifié sur origin/main ; capture 0014 du résultat, suivi dans un commit distinct selon D069.
@@ -44,7 +45,7 @@ Tâche C07 : règles de clôture/réouverture et modifications explicitement val
 
 - Accord explicite avant application d'une nouvelle décision (D064), contrôles communs/spécifiques (D060).
 - Tâches et preuves dans tracking/BOARD.md ; suivi global et par fonctionnalité de conception à production (D062/D065).
-- Historique des captures dans tracking/HISTORY.md. Ne pas remplacer les captures par Git ni migrer BOARD.md vers Projects sans décision précise.
+- D074 : nouveaux états dans Git, anciennes captures indexées dans tracking/HISTORY.md sans réécriture ; aucune nouvelle copie périodique. Migration de BOARD.md vers Projects non validée.
 - Matrice complète des permissions, cas limites des classes/revues, protocoles de mesure et données réelles à spécifier.
 - Prototype de collecte automatique prévu ultérieurement, pas une dépendance de la première tranche. Fonctions futures dans docs/product/roadmap.md.
 

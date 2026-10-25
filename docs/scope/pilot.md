@@ -6,7 +6,7 @@ Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, év
 
 ## État du cadrage au 25 octobre 2026 — bilan demandé par l'utilisateur
 
-Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D073, tableau de suivi, journal, captures successives et dépôt Git/GitHub synchronisé pour les lots déjà publiés. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
+Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D074, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
 
 Décisions métier validées : public et objectifs, organisation administrateur général/CME locale, invitation par classe, principes de revue CV/portfolio, parcours nominal des offres et compléments D068/D070–D073. Préparation/suivi des candidatures, accompagnement humain, rendez-vous/progression, entreprises et tableau de pilotage restent dans le périmètre envisagé, avec détails et placement des tranches encore ouverts. Contributions humaines d'abord, collecte automatique ultérieure.
 

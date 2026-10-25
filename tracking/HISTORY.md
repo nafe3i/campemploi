@@ -1,12 +1,12 @@
 # Historique des états du projet
 
-## Principe — D063
+## Organisation courante — D074, 25 octobre 2026
 
-BOARD.md et STATUS.md montrent l'état courant ; JOURNAL.md explique les changements. Les instantanés dans tracking/snapshots/ conservent les versions observées à un moment précis. Un instantané existant n'est pas réécrit ; toute correction donne lieu à un nouvel instantané et une explication au journal.
+Git conserve désormais les nouveaux états enregistrés des fichiers suivis ; GitHub les reçoit par push vérifié selon D069. STATUS.md décrit l'état courant, BOARD.md les tâches/preuves, JOURNAL.md les avancées et docs/product/decisions.md les décisions et leurs raisons. Plus de nouveaux dossiers snapshots après cet accord.
 
-Créer un instantané après chaque changement significatif de décision, périmètre ou avancement, et en fin de session si le suivi a changé. Utiliser un identifiant croissant même pour plusieurs états le même jour, indiquer prédécesseur, motif, date d'enregistrement et fichiers conservés. Inclure les preuves/documents concernés et leurs références ; une référence à un fichier courant seul ne garantit pas son contenu historique. Ne pas copier de secrets ou de données personnelles réelles.
+Les anciennes captures 0001–0018 ci-dessous sont conservées sans modification ni suppression. Leur index décrit les états réellement capturés sous D063 avant son évolution par D074. Toute correction actuelle se documente dans les fichiers courants et un nouveau commit ; ne pas réécrire les copies historiques.
 
-Ce sont des copies documentaires, pas une sauvegarde complète du poste ou une restauration de l'application. Git est désormais initialisé et un premier état a été publié (D066–D067) ; il complète les captures sans les remplacer. D069 autorise désormais commit descriptif et push après chaque validation explicite, après contrôles ; le résultat doit être vérifié avant d'être annoncé.
+Pour les nouveaux états : consulter `git log`, puis comparer les commits ou lire un fichier à une révision donnée sans modifier le dossier courant (exemples dans docs/git-workflow.md). Seuls les changements enregistrés par commit sont conservés ; publication distante seulement après push vérifié. Aucun historique inventé ni donnée personnelle réelle dans le dépôt. Ce mécanisme ne sauvegarde pas les données applicatives non versionnées.
 
 ## Index
 

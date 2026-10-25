@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Organisation de suivi simplifiée et passage aux commits
+
+Accord « ok alors suivre cette organisation » et demande de passer à la suite. D074 consignée : Git/GitHub pour les nouveaux états, arrêt immédiat des nouvelles copies snapshots ; 0001–0018 conservées sans réécriture. STATUS pour état courant, BOARD pour tâches/preuves, JOURNAL pour avancées, decisions.md pour décisions ; HISTORY reste index historique et explique la transition. Consignes, workflow, guide Git, bilan et suivi alignés. Aucun nouvel instantané ni suppression de fichier, pas de réécriture Git. G06 documentaire terminée ; C09 reste en cours et D007 ouverte. Contrôles et publication selon D069 à exécuter, sans résultat distant présumé.
+
 ## 2026-10-25 — D073 et bilan du scope publiés et vérifiés
 
 Commit 492951a4a85daa2d7a96cbe845b324d93a9a75a3, « docs: valider le reexamen des offres et dresser le bilan du scope », créé et envoyé sur origin/main sans force ; lecture distante indépendante confirmant le même hash. Sélection documentaire de 19 fichiers relue, diff contrôlé, recherche ciblée sans motif de secret détecté et octets des dix fichiers de capture 0017 préservés dans Git. État/tableau actualisés, capture 0018 du résultat et commit de suivi distinct selon D069. Bilan demandé disponible dans le scope ; aucune preuve applicative, C09 en cours et D007 ouverte.
