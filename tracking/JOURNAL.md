@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D083 publiée et vérifiée
+
+Commit afb6f4bc2c60919c81559cead9f1f23f0ac97def, « docs: valider le signalement des changements du portfolio », publié par push normal sur origin/main ; concordance distante vérifiée. Sept documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun nouveau snapshot. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 en cours, D007 ouverte et aucune preuve applicative.
+
 ## 2026-10-25 — Déclaration humaine des changements du portfolio validée
 
 Accord explicite « oui valide ». D083 consignée : signalement par apprenant même URL, date du signalement et bref résumé conservés, portfolio et deux avis à revalider, CV inchangé conservé. Anciens avis historisés, approche déclarative sans preuve de stabilité du site ni surveillance automatique décidée. Documents et contrôles attendus alignés ; C08 en cours pour derniers points de cadrage/autres modalités, D007 ouverte, aucun développement ou test applicatif. Commit/push à vérifier selon D069, sans snapshot D074.
