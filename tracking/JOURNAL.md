@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D082 publiée et vérifiée
+
+Commit 8959092fed90608947e7e590e5dc774bd6e9c1d6, « docs: valider la visibilite des commentaires de revue », publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun snapshot créé. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 en cours, D007 ouverte, aucune preuve applicative.
+
 ## 2026-10-25 — Visibilité des commentaires de revue validée
 
 Accord explicite « oui valide ». D082 consignée : retours CV/portfolio actuels et historiques consultables par apprenant concerné, CME de son établissement et référent actuel ; autres apprenants/formateurs sans accès par leur seul rôle. Continuité au remplacement sans réattribution des auteurs ni maintien de l'ancien accès par sa seule qualité d'auteur. Bilans de rendez-vous séparés, aucune permission d'écriture d'autrui ni fonctionnalité de notes privées déduite. Documents et contrôles attendus alignés ; C08 en cours, portfolio et autres modalités ouverts, D007 ouverte et aucune preuve applicative. Commit/push à vérifier selon D069, sans snapshot D074.
