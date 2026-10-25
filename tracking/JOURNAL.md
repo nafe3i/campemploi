@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D070 publiée et vérifiée
+
+Commit 86d06eaf1d42d1063fc3ab7603ee64959a2bc87d, « docs: valider les informations et la qualification des offres », créé et envoyé sur origin/main sans force ; lecture distante indépendante confirmant le même hash. Sélection documentaire de 19 fichiers relue, diff contrôlé, recherche ciblée sans motif de secret détecté et octets des dix fichiers de capture 0011 préservés dans Git. État et tableau actualisés, capture 0012 du résultat ; commit de suivi distinct selon D069. Aucun code ni test applicatif, C09 reste en cours et D007 ouverte.
+
 ## 2026-10-25 — Informations des offres et qualification validées
 
 Accord explicite « oui je valide » à la distinction soumission simple / publication qualifiée. D070 consignée : intitulé, entreprise, type et lien source ou texte avec provenance ; qualification CME des conditions disponibles et inconnues explicites ; moyen de candidature exploitable requis avant publication, sinon correction selon D061. Règles, première tranche, scope et synthèse alignés ; vérifications normales/refus/cas limites documentées, aucune preuve applicative. C09 reste en cours, D007 ouverte, aucun code ni choix de stack. Capture 0011 avant commit/push selon D069 ; résultat de synchronisation non présumé.
