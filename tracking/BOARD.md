@@ -26,7 +26,7 @@ Les décisions restent Validé/Proposé/UNKNOWN dans le registre. Les spécifica
 | C05 | Consigner modération nominale des offres | Terminé | D061 ; docs/scope/offer-lifecycle.md ; complément clôture/modifications traité en C07/D068 |
 | C06 | Étudier les sources et un échantillon documentaire initial | Terminé | docs/reference/offer-sources-study.md et opportunity-sample-2026-10-17.md ; aucune preuve de gain utilisateur ni de capacité CME |
 | C07 | Définir clôture et modification d'une offre publiée | Terminé | Accord explicite du 25 octobre, D068 ; docs/scope/offer-lifecycle.md et synthèses alignées ; capture 0008. Décision/documentation terminée, aucun développement ni test applicatif |
-| C08 | Préciser classes et revues de documents | En cours | D078–D081 documentées avec contrôles attendus ; D081 publiée/vérifiée au commit fe002b9. docs/scope/cv-portfolio-review.md ; portfolio, commentaires et autres modalités à préciser |
+| C08 | Préciser classes et revues de documents | En cours | D078–D082 documentées avec contrôles attendus ; D082 fixe consultation des commentaires actuels/historiques. docs/scope/cv-portfolio-review.md ; portfolio, écriture/correction et autres modalités à préciser |
 | C09 | Consolider matrice d'accès et critères de la première tranche | Terminé | docs/scope/first-slice.md : parcours, matrice et critères ; arbitrages D076/D077 et documents publiés/vérifiés au commit a9ebfe0. Consolidation documentaire uniquement ; détails techniques à spécifier, aucune preuve applicative ni validation globale D007 |
 | C10 | Valider globalement le scope et le découpage | À valider | D007 toujours ouverte ; synthèse docs/product/features-v1.md et docs/scope/pilot.md |
 | C11 | Clarifier cadre des essais réels et responsabilité des données | À faire | Engagement institutionnel non confirmé ; aucune attribution juridique inventée |
@@ -59,7 +59,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 |---|---|---|---|---|---|
 | Comptes, établissements et invitations | Conception métier partielle | Spécifier activation, expiration, rôles locaux et cas de rattachement après cadrage | D056, D059, D076 ; docs/scope/establishment-administration.md | Modalité initiale et procédures | Aucune |
 | Offres | Cadrage de tranche consolidé | Relire le périmètre global et préparer les spécifications après décisions nécessaires | D061, D068, D070–D073, D075, D077 ; docs/scope/first-slice.md et offer-lifecycle.md | Modalités des demandes, formats/limites et conservation à spécifier | Aucune |
-| CV et portfolio | Conception métier partielle | Discuter visibilité des commentaires et contenu du portfolio examiné | D057–D058, D078–D081 ; docs/scope/cv-portfolio-review.md | Commentaires, révision d'avis et modifications externes | Aucune |
+| CV et portfolio | Conception métier partielle | Discuter contenu du portfolio examiné et signalement des changements | D057–D058, D078–D082 ; docs/scope/cv-portfolio-review.md | Modifications externes, écriture/correction et révision d'avis | Aucune |
 | Candidatures | Cadrage documenté | Spécifier transitions et historique | D036–D037 | Cas limites et partage des brouillons | Aucune |
 | Accompagnement et progression | Cadrage documenté | Spécifier réorientation et mise à jour des actions | D020–D027 | Délais, absence de réponse, droits précis | Aucune |
 | Entreprises et tableau de suivi | Cadrage documenté | Positionner les tranches et préciser calculs/permissions | D043–D046 | Champs et événements des indicateurs | Aucune |

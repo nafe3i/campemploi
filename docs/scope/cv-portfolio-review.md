@@ -1,6 +1,6 @@
 # Revue des CV et portfolios — cadrage progressif
 
-Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D081. Double validation, cycle de revue, référent et remplacement avec validations conservées sur contenu inchangé validés ; modalités restantes à approfondir, pas spécification technique ni fonctionnalité Accepted.
+Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D082. Double validation, référent/remplacement et visibilité des commentaires validés ; modalités restantes à approfondir, pas spécification technique ni fonctionnalité Accepted.
 
 ## Besoin exprimé
 
@@ -22,11 +22,11 @@ Exemple fictif : CV version 1 validé par le formateur, non validé par la CME �
 ## Questions à trancher par petits groupes
 
 1. Organisation D078, rôle commun D079 et remplacement D080 validés ; classe sans référent et détails de transition à préciser.
-2. Remplacement D080 et validations sur contenu inchangé D081 validés ; visibilité des commentaires historiques et modalités de révision d'un avis existant encore à préciser.
+2. Remplacement D080, validations sur contenu inchangé D081 et visibilité des commentaires historiques D082 validés ; modalités de révision d'un avis existant à préciser.
 3. Deux avis positifs et revues séparées validés (D057) ; autres statuts globaux à spécifier.
 4. En attente/non validé distingués par D057 ; règles détaillées de correction à spécifier.
 5. Modification déclenchant nouvelle revue validée ; historique/versions et détection ou déclaration des changements d'un portfolio externe à préciser.
-6. Qui voit les commentaires de revue ? Ne pas les assimiler automatiquement aux bilans de rendez-vous D025 ni aux notes privées.
+6. Visibilité des commentaires D082 validée : apprenant concerné, CME et référent actuel, y compris anciens retours. Droits d'écriture/correction et conservation détaillée à spécifier ; bilans et notes privées distincts.
 7. Les filtres et compteurs sont-ils destinés à la CME, au formateur limité à sa classe et/ou au tableau porteur ? Voir un statut ne donne pas automatiquement accès au fichier.
 8. Une absence de validation empêche-t-elle de candidater ? Aucun blocage de candidature décidé ; ne pas inventer de condition supplémentaire.
 
@@ -47,7 +47,7 @@ L'équivalence des termes formateur et responsable technique est explicitement v
 | Responsable technique non affecté à la classe invoque le rôle commun pour lire ses CV/portfolios | Aucun accès général par classe ; autres accès éventuels uniquement selon leur contexte déjà autorisé, pas par l'équivalence |
 | Référent invoque sa classe pour lire un bilan d'un autre accompagnant | Refus selon droits propres aux bilans ; affectation ne les élargit pas |
 
-Remplacement encadré D080 et maintien des validations sur contenu inchangé D081 ci-dessous ; retrait sans successeur, visibilité des anciens avis/commentaires et situation d'une classe sans référent à discuter.
+Remplacement D080, maintien des validations D081 et consultation des retours historiques D082 ci-dessous ; retrait sans successeur, classe sans référent et modalités d'écriture/correction à discuter.
 
 ## Remplacement du référent — Validé D080
 
@@ -64,7 +64,7 @@ Les autres affectations et permissions indépendantes déjà autorisées restent
 | Nouveau consulte/revoit un document de sa classe | Droits D058 ; anciens avis conservés avec leurs auteurs, sans réattribution |
 | Autre membre sans permission locale ou CME d'un autre établissement remplace | Refus sans modification ni exposition interne |
 
-Les contrôles d'autorisation à chaque requête doivent refléter l'affectation courante selon D060 ; mécanismes techniques et échecs/concurrence à spécifier. D081 précise désormais les validations courantes ; visibilité des commentaires historiques non définie, conservation et consultation distinctes.
+Les contrôles d'autorisation à chaque requête doivent refléter l'affectation courante selon D060 ; mécanismes techniques et échecs/concurrence à spécifier. D081 précise les validations courantes ; D082 la consultation des retours historiques, sans réattribuer les anciens avis.
 
 ## Validation courante au changement de référent — Validé D081
 
@@ -80,7 +80,24 @@ Toute modification du contenu impose une nouvelle revue selon D057, même si ell
 | Seul le CV change | Nouvelle revue du CV, pas de changement du portfolio pour ce seul motif |
 | Ancien référent tente de consulter après remplacement | D080 toujours appliquée : validation conservée ne maintient pas les accès de l'ancienne affectation |
 
-Visibilité des commentaires et modalités d'une nouvelle appréciation d'un document inchangé à préciser séparément ; cette décision porte sur l'absence d'invalidation automatique au seul changement d'affectation.
+Visibilité des commentaires précisée D082 ; modalités d'une nouvelle appréciation d'un document inchangé encore à définir. D081 porte sur l'absence d'invalidation automatique au seul changement d'affectation.
+
+## Commentaires de revue — Visibilité validée D082
+
+Les retours de revue CV/portfolio, actuels et historiques, sont visibles par l'apprenant concerné, la CME de son établissement et le référent actuel de sa classe. Les autres apprenants et formateurs n'y ont pas accès par leur seul rôle. Le nouveau référent consulte les anciens retours pour assurer la continuité ; leurs auteurs ne changent pas.
+
+L'ancien référent n'accède plus à ces retours par son ancienne affectation ni par sa seule qualité d'auteur. Évaluer toute autre permission indépendante dans son propre contexte, sans transformer un accès d'accompagnement en accès général aux retours de revue. Les bilans de rendez-vous restent régis par D025 ; ils ne deviennent pas visibles au référent du seul fait de sa classe.
+
+| Vérification à prévoir | Résultat attendu, non encore testé |
+|---|---|
+| Apprenant consulte les retours de ses propres documents | Retours actuels et anciens accessibles, auteurs conservés |
+| CME locale ou référent actuel consulte dans son périmètre | Accès aux retours, y compris historiques |
+| Nouveau référent remplace l'ancien | Retours historiques consultables selon nouvelle affectation, sans réattribution |
+| Ancien référent invoque son ancienne affectation ou sa qualité d'auteur | Aucun maintien d'accès par ces seuls motifs ; D080 appliquée |
+| Autre apprenant, formateur non affecté ou membre d'un autre établissement connaît le lien | Refus sans exposer commentaire ou document |
+| Référent invoque la revue pour consulter un bilan d'un autre accompagnant | Refus selon les règles propres aux bilans |
+
+Contrôles serveur à chaque accès selon D060, y compris listes et URL directe. Droits d'écriture/correction, liens avec les versions et conservation détaillée à spécifier. Cette visibilité n'autorise ni modification des retours d'autrui ni création d'un espace de notes privées ; aucune preuve applicative disponible.
 
 ## Limites et articulation
 

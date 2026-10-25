@@ -343,3 +343,13 @@ Accord explicite « valide » à la recommandation présentée : le remplacement
 Une modification du contenu déclenche toujours une nouvelle revue selon D057, avec avis formateur et CME distincts. Un remplacement n'accorde pas de validation manquante et ne transforme pas un avis non validé ou en attente en avis positif. CV et portfolio restent examinés séparément. La méthode pour identifier le contenu examiné et signaler un changement de portfolio externe reste ouverte : une URL inchangée ne prouve pas que le contenu est identique.
 
 D081 complète D080 sans définir visibilité des commentaires ni mécanisme de révision d'un avis existant. Documents et contrôles attendus alignés ; C08 reste en cours, D007 ouverte, aucun développement ou test applicatif. Commit/push selon D069, sans snapshot D074.
+
+## D082 — Visibilité des commentaires de revue CV/portfolio — Validé, 2026-10-25
+
+Accord explicite « oui valide » à la proposition présentée : les commentaires de revue CV/portfolio, y compris les anciens retours pour assurer la continuité, sont visibles par l'apprenant concerné, la CME de son établissement et le référent actuel de sa classe. Les autres apprenants et formateurs n'y accèdent pas par leur seul rôle.
+
+Après remplacement, le nouveau référent peut consulter ces retours historiques dans son périmètre ; l'ancien ne conserve pas cet accès du seul fait d'avoir écrit un avis, conformément au retrait des accès d'affectation D080. Avis et commentaires restent attribués à leurs véritables auteurs. Les contrôles d'établissement et d'affectation courante restent requis selon D058/D060.
+
+Bilans de rendez-vous et accompagnements gardent leurs règles propres D025/D080 : leur accès ne donne pas à lui seul accès aux commentaires de revue, et la classe ne donne pas accès aux bilans d'autres accompagnants. Cette décision concerne la consultation des retours de revue ; elle n'autorise pas leur modification par un tiers, ni une fonctionnalité de notes privées ou un partage collectif. Droits d'écriture/correction et conservation détaillée à spécifier.
+
+Documents et contrôles attendus alignés ; C08 reste en cours pour portfolio externe et autres modalités, D007 ouverte. Aucun développement ni test applicatif. Commit/push selon D069, sans snapshot D074.

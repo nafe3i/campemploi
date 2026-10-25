@@ -16,7 +16,7 @@ Le découpage global/local facilite l'autonomie des établissements. Distinguer 
 - Apprenants : inscription/rattachement selon D038 ; l'invitation du personnel ne remplace pas implicitement cette règle.
 - Aucun administrateur local ne crée d'administrateur général ni ne gère un autre établissement.
 - « Staff » reste à définir en permissions précises, sans rôle unique donnant accès à tout.
-- Affectations D078/D079 : référent par classe, plusieurs classes possibles, rôle commun. Remplacement D080 : fin des accès de l'ancienne affectation, relais du nouveau et avis conservés/attribués ; autres permissions indépendantes selon leur contexte. D081 : contenu inchangé, validations conservées sans passage automatique à revalider ; détails de transition/commentaires à préciser, aucun accès général aux autres classes/bilans ajouté.
+- Affectations D078/D079 : référent par classe, plusieurs classes possibles, rôle commun. Remplacement D080 : fin des accès de l'ancienne affectation et relais du nouveau, avis conservés/attribués ; autres permissions selon leur contexte. D081 : validations conservées sur contenu inchangé. D082 : retours de revue, anciens compris, visibles par apprenant concerné/CME/référent actuel ; aucun accès général aux autres classes/bilans. Détails de transition et droits d'écriture à préciser.
 
 Périmètre pilote validé D076 : mise en place du premier établissement et de sa CME par l'administrateur général, puis classes, invitations/rattachements et rôles nécessaires par CME avec permission locale. Écrans complets de gestion simultanée de plusieurs établissements reportés ; limites d'établissement et séparation des rôles dès la conception. Modalité de création initiale à comparer en architecture, sans choix technique implicite.
 
