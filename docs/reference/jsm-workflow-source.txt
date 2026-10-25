@@ -1,0 +1,295 @@
+Nine agent skills · one per phase
+The JSM Engineering Workflow Your
+Agent has to Follow
+From vague idea to shipped, verified, documented code. The context lives in files in your repo, not in a chat session.
+
+Install the skills
+Read the workflow guide
+todo-app · agent session
+$ /scope → docs/scope/todo-app.md
+Workflow tier: Beta Tracer bullet build approach
+$ /architect auth → docs/specs/0002-auth.md (Proposed)
+$ /develop auth
+check: spec found ✓ · ui + backend · AC 1–6
+spec → In Progress · scope advanced
+$ /check verify
+sign up ✓ sign in ✓ sees only own list ✓
+$ /test 12 passing · spec → Accepted
+$
+The loop
+One skill per phase. Run only the ones a change needs.
+A bug goes straight to /debug. A small change can be /develop then /check verify. Nothing is a track you're locked onto.
+
+idea
+yours
+a sentence
+01
+/scope
+what to build
+docs/scope/
+02
+/audit
+context files
+AGENTS.md
+03
+/architect
+the decision
+docs/specs/
+04
+/develop
+the build
+source · design.md
+05
+/check verify
+it runs
+verify.md
+06
+/test
+it stays
+test suite
+07
+/check review
+other model
+docs/reviews/
+08
+/document
+the docs
+CHANGELOG.md
+09
+/sync
+fresh context
+surgical edits
+Off the rail, run anytime
+/debug: something breaks, no scope or spec needed
+/scope bare: a status read, not a step
+The skills
+Nine skills. Each one owns a phase, and the files that phase produces.
+/scope
+01
+Turns a product idea into a high-level plan of what to build, in order, and keeps it current as you ship.
+Start a new product, or plan the next feature. Run bare anytime to see where things stand.
+docs/scope/
+/audit
+02
+Writes the AGENTS.md context files every other skill reads.
+On an existing codebase, run it first. On a new one, after the stack is chosen and the project is set up.
+AGENTS.md + CLAUDE.md pointer
+/architect
+03
+Makes a decision the build depends on, and writes it as a build spec.
+A stack, a data model, a provider, a page design: any decision the build depends on gets made here.
+docs/specs/ · status Proposed
+/develop
+04
+Builds a feature, UI or backend, from its spec, runs migrations, advances the scope.
+Run it once the decision exists. If something is still undecided, it stops and points you to /architect first.
+your source tree · design.md
+/check
+05
+Confirms a change before merge, in two modes: verify runs the real app, review reads the code with a fresh pair of eyes, on a different model.
+verify after /develop; review before a PR.
+docs/reviews/
+/test
+06
+Writes a real test suite for the code you just changed, and remembers your framework.
+After building a feature or fixing a bug.
+your test dirs
+/document
+07
+Writes the PR body, changelog, release note or postmortem from the real diff.
+A finished change needs writing up. No code, no specs.
+CHANGELOG.md · docs/releases/
+/sync
+08
+Brings AGENTS.md, the scope and spec statuses back in line with what the repo now shows.
+The last step around merge. Keeps your context files fresh for the next session.
+surgical edits only
+/debug
+09
+Works through the real cause step by step, then hands a regression test to /test.
+Anytime something is failing, throwing, or behaving wrong. No scope or spec needed.
+the smallest fix that works
+Why files, not chat
+Context in a chat is a single point of failure.
+A chat can end, a session can be cleared, a teammate can pull the branch. Everything the workflow knows is written into your repo, so the knowledge is still there because it was never trapped in a conversation.
+
+Each skill suggests /clear at handoffs, so a fresh session reads from disk again and long chats do not pile up cost.
+
+Context in the chat
+session cleared → context gone
+teammate pulls branch → knows nothing
+new model → re-explain everything
+decision made at 2pm → lost by 5pm
+long chat → cost climbs, agent drifts
+Context in the repo
+docs/scope/ → what to build, in order
+docs/specs/ → the decision, as a contract
+AGENTS.md → your stack and conventions
+design.md → art direction, values in CSS
+tests → the proof, run on every commit
+Workflow depth
+Pick how much checking a project earns. Override it per feature, anytime.
+Depth just sets which checks are suggested after /develop. Skip any of them and mark a feature done when you say it is. The only thing asked at every depth: write the decision down.
+
+Prototype
+throwaway
+Just /develop, self-checked. For work you intend to throw away.
+✓
+/develop
+·
+/check verify
+·
+/test
+·
+/check review
+·
+/document
+Alpha
+internal
+Adds /check verify, so the feature is proven against its spec in the real app.
+✓
+/develop
+✓
+/check verify
+·
+/test
+·
+/check review
+·
+/document
+Beta
+real users
+Adds /test, so what was proven once stays proven.
+✓
+/develop
+✓
+/check verify
+✓
+/test
+·
+/check review
+·
+/document
+GA
+shipping
+Adds a fresh-eyes /check review and /document, for anything you put your name on.
+✓
+/develop
+✓
+/check verify
+✓
+/test
+✓
+/check review
+✓
+/document
+What gets written, and where
+Ownership is fixed. That's what keeps the files from turning into mush.
+Only /architect writes the content of a spec. Only /develop moves its status line. No skill rewrites your prose.
+
+Scope
+docs/scope/
+scope
+develop moves it forward; scope and sync bring it back in line with the code.
+Specs
+docs/specs/
+architect
+Proposed → In Progress → Accepted. develop moves the status line only.
+Context files
+AGENTS.md
+audit
+Read by every skill, kept current by sync. Nested per folder.
+Design system
+design.md
+develop
+Art direction here; the real token values live in your CSS.
+Review findings
+docs/reviews/
+check
+Written by review mode, sorted worst-first. It reads, never edits.
+Tests
+your test dirs
+test
+Normal path, edge cases, error states, accessibility.
+App code
+your source tree
+develop
+Old code deleted when replaced, so two versions never sit side by side.
+Human docs
+CHANGELOG.md · docs/releases/
+document
+Written from the real diff, at the moment a change is finished.
+Where to start
+Three starting points. Same loop after that.
+Greenfield
+New product
+Scope the idea, decide the stack, set up the project, then audit reads a real project instead of an empty folder.
+/scope
+/architect
+set up project
+/audit
+loop
+Brownfield
+Existing codebase
+Audit first so every skill understands your stack and conventions, then scope the next slice on top of what exists.
+/audit
+/scope
+loop
+Monorepo
+Several projects, one repo
+Everything scopes to the target workspace, which has its own AGENTS.md, scope, stack and commands. A change to one app never reaches into another.
+per workspace
+nested AGENTS.md
+A worked example
+One idea, followed all the way to shipped.
+A small app where people sign in and keep their own to-do list. Brand new project, so it touches almost every stage, and every question the workflow asks along the way.
+
+Read the full walkthrough
+01
+Scope the idea
+A high-level plan into docs/scope/. You pick a delivery style: tracer bullet, MVP (skateboard), UI-first prototype (facade), or vertical slice.
+02
+Decide the stack
+architect in stack mode. It works out what it can, asks only what you alone know, recommends the rest with a runner-up.
+03
+Set up and read the project
+You set up the project with the stack’s own tool; audit reads the real project and writes AGENTS.md.
+04
+Design the sign-in feature
+architect in feature mode. New spec, linked to its scope row, born Proposed.
+05
+Build it
+develop confirms nothing is left undecided, sorts UI from backend, and builds each in a fixed order with a senior engineering rule baked into every phase.
+06
+Prove it runs
+check verify drives the real app: sign up, sign in, see only your own list.
+07
+Write the tests
+test covers the normal path, edge cases, error states and accessibility. Spec moves to Accepted.
+08
+Get a second opinion
+check review runs on a different model than the one that wrote the code, and writes findings to docs/reviews/.
+09
+Write it up
+document reads the real commits and diff and writes the PR body, changelog or release note.
+10
+Bring the knowledge back in line
+sync reconciles the context files, the scope and stale specs. The loop is closed; clear the session.
+What it will not do.
+The limits matter as much as the features.
+
+Will not
+Mark a feature done on its own
+Built is not done. Done waits for /check verify to pass and for tests to be in.
+Will not
+Invent a decision you have not made
+develop stops & sends you to architect. Override it & the guess is recorded as an Assumed spec, flagged until confirmed.
+Will not
+Reach the internet without your go-ahead
+It asks before searching for a connector or looking anything up, and records what it used.
+Will not
+Edit your code during review
+The review reads and reports, sorted worst-first. You decide what to change.
+Will not
+Rewrite your prose
+No skill reaches into another skill’s files. Ownership is fixed, which is what keeps them trustworthy.

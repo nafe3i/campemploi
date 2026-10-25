@@ -1,0 +1,27 @@
+# CapEmploi Campus
+
+Nom de travail proposé le 17 octobre 2026 ; nom définitif à confirmer.
+
+Plateforme collaborative de recherche de stage, de stage de préembauche et de premier emploi. Pilote dans un établissement marocain, avec une vision d'ouverture à plusieurs écoles et aux recruteurs.
+
+## Reprendre le projet
+
+1. Lire AGENTS.md.
+2. Lire tracking/STATUS.md et tracking/JOURNAL.md.
+3. Lire docs/product/vision.md, docs/scope/pilot.md et docs/workflow.md.
+4. Continuer le cadrage avant de choisir la stack ou de développer.
+
+Les fichiers locaux constituent la référence. Aucune synchronisation automatique avec un projet ChatGPT n'est configurée.
+
+## Documents
+
+- [Tableau de suivi du travail](tracking/BOARD.md)
+- [Historique des états](tracking/HISTORY.md)
+
+- [Vision](docs/product/vision.md)
+- [Décisions](docs/product/decisions.md)
+- [Scope proposé](docs/scope/pilot.md)
+- [Workflow](docs/workflow.md)
+- [Liaison à l'application](docs/project-setup.md)
+
+Aucune stack choisie, aucun code applicatif, aucun déploiement.

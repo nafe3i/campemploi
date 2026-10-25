@@ -1,0 +1,36 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.codex/
+
+# Données utilisateur et exports locaux : jamais de CV réels dans le dépôt
+uploads/
+private-data/
+backups/
+
+# Dépendances et fichiers générés courants ; à adapter après choix de stack
+node_modules/
+vendor/
+.venv/
+__pycache__/
+.next/
+dist/
+build/
+target/
+coverage/
+*.log
+
+# Fichiers du système
+.DS_Store
+Thumbs.db
+
+# Copie locale figée contenant une configuration Git imbriquée :
+# conserver ses octets dans l'archive .zip suivie plutôt que sous forme active.
+/tracking/snapshots/0004-2026-10-25/
