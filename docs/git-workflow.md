@@ -1,14 +1,15 @@
 # Mise en place du suivi Git/GitHub
 
-Date : 24 octobre 2026. Adoption validée D066 ; premier commit et publication en préparation pour accord final. Aucun code applicatif.
+Date : 25 octobre 2026. Adoption D066, premier commit et publication autorisés par D067 et réalisés. Aucun code applicatif.
 Accord reçu le 25 octobre 2026 (D067) : premier commit et envoi documentaire autorisés, dépôt public accepté. Les mentions d'accord en attente ci-dessous décrivent la préparation antérieure et ne sont plus un blocage. Aucun changement de visibilité demandé.
 Vérification renouvelée le 25 octobre 2026 : main/origin déjà présents, aucun commit ; API publique confirmant private=false, taille 0 et aucune référence Git distante annoncée. Pas de réinitialisation, modification de visibilité ou push. Capture 0004 réellement créée lors de cette reprise ; pas de capture du même identifiant présente avant.
 
 ## État vérifié
 
 - Git installé, dépôt local initialisé sur main.
+- Premier commit : 2082f296e075c6f3a0b1d68a214f1de417c9d54b, envoyé sur origin/main le 25 octobre 2026. Concordance vérifiée par lecture distante ; suivi local de origin/main établi. Les descriptions de préparation ci-dessous restent historiques.
 - origin : https://github.com/nafe3i/campemploi.git ; URL sans identifiant secret.
-- Dépôt distant lisible via Git et aucune référence annoncée lors de la vérification. API GitHub : private=false, dépôt actuellement public, taille 0 ; ne pas envoyer en supposant qu'il est privé. Clarification requise avant publication, sans modification de visibilité à cette étape.
+- Dépôt public confirmé avant envoi puis explicitement accepté par l'utilisateur D067 ; aucun changement de visibilité. Il contient désormais le commit documentaire initial ; les contrôles de taille nulle concernaient l'état antérieur.
 - Identité d'auteur déjà configurée ; aucune identité inventée ni configuration globale modifiée.
 - .gitignore protège les chemins prévus pour secrets, données utilisateur, dépendances et sorties générées. C'est un garde-fou, pas une preuve que tout fichier hors de ces chemins est sûr.
 - .gitattributes normalise les documents courants et préserve les octets des anciens instantanés pour leurs empreintes.
@@ -19,7 +20,7 @@ README.md, AGENTS.md, docs/, tracking/ et les deux fichiers de configuration Git
 
 Message de commit proposé : `docs: initialiser le cadrage et le suivi de CapEmploi Campus`.
 
-Avant commit : relire les fichiers sélectionnés et le résumé du diff, contrôler les secrets, les exclusions et les empreintes des copies. Avant push : vérifier ou faire confirmer la visibilité privée du dépôt puis obtenir l'accord sur le contenu et l'envoi. Ne pas écraser un historique distant, ne pas utiliser de force push. Un push ultérieur devra être précédé d'une nouvelle vérification de l'état distant.
+Avant commit : relire la sélection/diff, contrôler secrets, exclusions et empreintes. Avant push : vérifier le dépôt et l'autorisation de publication ; le dépôt public fourni est accepté D067 pour ce contenu. Ne pas écraser un historique distant ni utiliser force push. Conserver les opérations de suivi dans de petits commits distincts ; un nouvel envoi respecte le périmètre d'accord.
 
 ## Suite prévue, non encore exécutée
 

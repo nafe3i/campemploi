@@ -17,6 +17,7 @@ Ce sont des copies documentaires, pas une sauvegarde complète du poste ou une r
 | [0003](snapshots/0003-2026-10-24/SNAPSHOT.md) | 24 octobre 2026 | 0002 | Suivi global/par fonctionnalité validé D065 et comparaison des outils temporels proposée |
 | [0004](snapshots/0004-2026-10-25.zip) | 25 octobre 2026 | 0003 | Reprise D066 ; archive ZIP conservant les octets, dont configuration Git capturée. Copie locale décompressée préservée mais exclue de Git. Référence antérieure au 24 octobre corrigée car capture absente |
 | [0005](snapshots/0005-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0004 | Contrôles finaux du contenu préparé et conservation des captures ; aucun commit/push |
+| [0006](snapshots/0006-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0005 | D067 exécutée : premier commit 2082f29 publié et vérifié ; suivi de fin d'opération |
 
 ## Limites du passé et du futur
 

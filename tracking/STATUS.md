@@ -4,16 +4,16 @@ Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code app
 
 ## Suivi Git et GitHub — D066
 
-- Accord D067 obtenu le 25 octobre 2026 : réaliser le premier commit et envoyer le contenu documentaire sur le dépôt public accepté. Exécution en cours ; aucun résultat de publication encore déclaré par cette entrée.
+- Accord D067 obtenu le 25 octobre 2026 : premier commit et dépôt public acceptés. Exécution réalisée et vérifiée.
 
 - Organisation Git/GitHub validée ; dépôt local initialisé sur main.
 - origin configuré : https://github.com/nafe3i/campemploi.git.
-- Contrôle renouvelé le 25 octobre 2026 : aucune référence distante annoncée ; API GitHub indiquant private=false et taille 0. Dépôt public, contrairement au choix privé prévu ; aucun envoi effectué.
-- Premier contenu documentaire préparé et contrôlé pour présentation avant accord. Aucun commit, push, Issue ou Project créé.
+- Avant envoi : dépôt public et sans référence Git distante. Après accord : commit initial 2082f296e075c6f3a0b1d68a214f1de417c9d54b envoyé sur origin/main ; lecture distante confirmant exactement ce commit. Aucun changement de visibilité.
+- Premier état documentaire publié. Aucun code applicatif, Issue, Project ou déploiement créé. Synchronisation documentaire de fin d'opération enregistrée séparément.
 - .gitignore exclut secrets/configuration locale, répertoires de données utilisateur, dépendances et sorties générées. Recherche ciblée de secrets sans motif détecté, sans garantie absolue.
 - Instantanés existants 0001–0003 préservés ; capture 0004 créée le 25 octobre 2026 pour la reprise Git. L'ancienne mention du 24 octobre annonçait une capture non présente sur disque et n'est pas une preuve de capture à cette date.
 - Capture 0004 conservée dans une archive ZIP pour neutraliser la configuration Git imbriquée sans altérer ses octets ; copie décompressée locale exclue de Git, pas supprimée. Capture 0005 documentaire des contrôles finaux, sans configuration imbriquée.
-- Prochaine action de suivi : accord sur premier commit et clarification du dépôt public avant tout envoi. Voir docs/git-workflow.md et revue docs/reviews/2026-10-24-initial-git-review.md.
+- Prochaine action de suivi : proposer les Issues et le Project avant création externe. Première publication acquise ; capture 0006 de fin d'opération et mise à jour du suivi selon D063. Voir docs/git-workflow.md.
 
 ## Produit : décisions courantes
 

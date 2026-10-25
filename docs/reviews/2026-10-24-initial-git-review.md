@@ -4,6 +4,10 @@ Date : 24 octobre 2026. Portée : préparation de la documentation et du suivi a
 
 ## Résultat
 
+### Exécution autorisée et vérifiée le 25 octobre 2026
+
+Accord utilisateur D067 sur commit et dépôt public. Dernière lecture distante avant envoi : aucune référence. Contrôles du diff, motifs sensibles et octets historiques réussis. Commit initial 2082f296e075c6f3a0b1d68a214f1de417c9d54b créé (107 fichiers), puis push main accepté sans force. Lecture refs/heads/main distante identique au commit local ; origin/main suivie. Aucun code, test applicatif, Issue, Project ou déploiement. Les paragraphes de préparation suivants décrivent l'état avant accord, pas un blocage actuel. Mise à jour du suivi et capture 0006 dans un commit documentaire distinct.
+
 ### Reprise du 25 octobre 2026
 
 Précision technique : la capture 0004 contient une copie de .gitattributes qui influencerait ses propres fichiers si elle était suivie comme configuration active. Elle est donc conservée dans une archive ZIP, avec vérification des empreintes des entrées. Copie décompressée préservée localement et exclue de l'index, sans suppression. Capture 0005 documentaire sans configuration Git imbriquée. Les captures 0001–0003 restent inchangées. Les contrôles finaux portent sur les octets sélectionnés pour Git, pas seulement les copies de travail.

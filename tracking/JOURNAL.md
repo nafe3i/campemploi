@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Premier commit publié
+
+Accord D067 exécuté. Commit 2082f296e075c6f3a0b1d68a214f1de417c9d54b créé avec le message « docs: initialiser le cadrage et le suivi de CapEmploi Campus », 107 fichiers. Contrôle préalable distant vide ; push -u origin main réussi sans force. Vérification indépendante via ls-remote : même hash sur GitHub. Dépôt public accepté, sans changement de visibilité. Contrôles ciblés sans secret signalé et octets des captures préservés. Aucun code applicatif, Issue, Project ou déploiement. État/tableau/revue actualisés, capture 0006 de fin d'opération ; suivi documentaire dans un commit séparé, sans nouvelle décision produit.
+
 ## 2026-10-25 — Autorisation du commit et du dépôt public
 
 Réponse utilisateur : « 1 realiser ; 2 public pas de problem ». D067 consignée : premier commit et envoi documentaire sur le dépôt public autorisés, remplaçant l'intention privée de D066. Préparation existante conservée ; contrôles à renouveler avant exécution. Aucun résultat de push présumé, aucune application ou Issue/Project créé.

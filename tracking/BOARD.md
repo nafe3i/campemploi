@@ -73,11 +73,11 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 |---|---|---|---|
 | G01 | Initialiser Git local et configurer origin fourni | Terminé | main, origin configuré ; dépôt distant sans références lors du contrôle |
 | G02 | Préparer premier contenu et contrôles | Terminé | .gitignore/.gitattributes, docs/git-workflow.md et revue docs/reviews/2026-10-24-initial-git-review.md ; contenu documentaire sélectionné, contrôles avant accord commit |
-| G03 | Créer le premier commit et envoyer le premier état | En cours | Accord D067 obtenu ; dépôt public accepté, lecture distante sans références ; contrôles avant commit/envoi |
+| G03 | Créer le premier commit et envoyer le premier état | Terminé | D067 ; commit initial 2082f296e075c6f3a0b1d68a214f1de417c9d54b envoyé et vérifié sur origin/main le 25 octobre 2026 ; dépôt public accepté |
 | G04 | Préparer tâches et Project GitHub | À faire | Modèle à relier au tableau existant avant création externe |
 
 ## Prochaine action immédiate
 
-Exécuter le premier commit et l'envoi autorisés D067, puis vérifier la concordance local/distant. C07 reste la prochaine tâche produit ; la mise en place Git ne valide pas la clôture des offres ni D007.
+Premier commit publié et concordance local/distant vérifiée. Proposer le contenu des Issues/Project avant création externe ; C07 reste la prochaine tâche produit (clôture puis modifications des offres). Aucune validation de D007 ni réalisation applicative par cette publication.
 
 Prochaine tâche proposée : C07, trancher la clôture des offres puis leurs modifications après publication. Aucune fonctionnalité applicative développée ou Accepted. Mise à jour du tableau après chaque avancée réelle avec preuve, sans transformer une discussion en réalisation.
