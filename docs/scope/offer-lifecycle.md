@@ -1,6 +1,6 @@
 # Cycle de vie des offres — règles validées et propositions restantes
 
-Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication, selon la section finale ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061 et D068. Aucun code ni choix technique.
+Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070 valide informations de soumission et qualification avant publication, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068 et D070. Aucun code ni choix technique.
 
 ## Deux dimensions
 
@@ -18,10 +18,10 @@ Administrateur général : pas de droit de validation d'offre automatiquement d�
 
 | Départ | Action et acteur | Arrivée | Condition / résultat |
 |---|---|---|---|
-| Nouvelle proposition | Soumettre, contributeur | En attente | Source/provenance, entreprise, intitulé et type ; validation minimale des champs |
+| Nouvelle proposition | Soumettre, contributeur | En attente | Intitulé, entreprise, type et lien source ou texte avec provenance selon D070 |
 | En attente | Demander correction, CME | À corriger | Commentaire expliquant l'information ou correction attendue |
 | À corriger | Corriger et soumettre, auteur | En attente | Nouvelle lecture CME nécessaire ; pas de publication automatique |
-| En attente | Publier, CME | Publiée | Examen du contenu et signalement des incertitudes ; choix explicite |
+| En attente | Publier, CME | Publiée | Qualification et moyen de candidature exploitable selon D070 ; incertitudes signalées et choix explicite |
 | En attente | Rejeter, CME | Rejetée | Motif expliqué à l'auteur |
 | Publiée | Signaler correction, utilisateur autorisé | Publiée, signalement à traiter | Signaler ne remplace pas le contenu validé |
 | Publiée | Corriger et confirmer, CME | Publiée | Trace et version selon D068 ; source et incertitudes mises à jour |
@@ -29,9 +29,41 @@ Administrateur général : pas de droit de validation d'offre automatiquement d�
 
 Proposition : pas de réouverture autonome d'un rejet par l'auteur ; une nouvelle soumission pourra être décidée après échange. Corrections après rejet et retrait d'une proposition par l'auteur restent à arbitrer. Le retrait temporaire pour doute sérieux est désormais validé D068, selon la section finale. Rien n'impose un état brouillon sauvegardé dans cette première version.
 
-## Informations et travail de la CME proposés
+## Informations de soumission et qualification — Validé D070
 
-Afficher ensemble : lien/provenance, entreprise, intitulé/type, lieu/mode de travail, niveau demandé, compétences, durée/début/échéance quand connus et disponibilité observée. Champs de qualification inconnus signalés sans bloquer systématiquement la soumission. Niveau demandé bac+5 conservable et publiable avec écart signalé (D052). Accessibilité depuis le Maroc inconnue publiable après validation avec mention explicite (D029). Qualification ne doit pas inventer le consentement de l'entreprise à d'autres profils.
+Proposition explicitement validée le 25 octobre 2026 (« oui je valide »). Deux niveaux pour faciliter les contributions tout en rendant les offres publiées utilisables.
+
+| Étape | Informations et règle validées |
+|---|---|
+| Soumettre | Intitulé, entreprise, type : stage, préembauche ou emploi |
+| Fournir la source | Lien source, ou texte de l'annonce accompagné de sa provenance ; les deux ne sont pas exigés ensemble |
+| Qualifier avant publication, CME | Pays/ville, mode présentiel/hybride/remote, compétences et niveau demandés, selon les informations disponibles |
+| Qualifier un stage, CME | Durée et début souhaité lorsqu'ils sont indiqués |
+| Permettre la candidature avant publication | Page de candidature, adresse professionnelle publiée ou instructions exploitables de l'annonce |
+
+Une information de qualification absente reste « non précisé » ou « à confirmer » ; ne pas inventer durée, niveau, lieu ni restriction géographique. Cette seule absence ne bloque pas systématiquement la publication. Niveau bac+5 conservable avec exigence et écart signalés (D052) ; accessibilité depuis le Maroc inconnue publiable avec mention explicite après validation CME (D029). Ne pas inventer le consentement de l'entreprise à d'autres profils.
+
+La CME demande correction selon D061 si aucun moyen exploitable ne permet de comprendre comment candidater ; ne pas publier dans cette situation. Un lien source peut aussi être le canal de candidature, s'il permet effectivement la démarche ; sa seule présence ne suffit pas. Cette vérification humaine ne garantit ni disponibilité permanente du canal ni résultat de la candidature. Aucun contact externe ou envoi automatique.
+
+Exemple illustratif : stage Laravel exigeant bac+5, durée absente et page de candidature utilisable. Conserver « bac+5 demandé », signaler l'écart au public bac+2/+3 et afficher « durée non précisée » ; examen CME sans présumer l'éligibilité.
+
+### Vérifications à prévoir — aucune preuve applicative
+
+| Cas | Résultat attendu |
+|---|---|
+| Intitulé, entreprise, type ou source/provenance requis manquant | Soumission refusée avec explication du champ manquant ; aucune publication |
+| Texte avec provenance, sans URL | Soumission possible si les autres informations requises sont présentes |
+| Soumission sans moyen de candidature | Peut entrer en attente ; la CME demande correction avant publication |
+| Tentative de publication sans moyen exploitable, même avec lien source | Publication refusée ; correction demandée, motif explicite selon D061 |
+| Durée, lieu ou niveau absent, moyen de candidature exploitable | Valeur inconnue explicite ; pas de blocage pour cette seule absence, validation CME toujours nécessaire |
+| Niveau bac+5 ou accessibilité inconnue | Exigence/écart ou incertitude affichés selon D052/D029, sans promesse d'éligibilité |
+| Contributeur tente de contourner la qualification/publication | Refus selon permissions D060/D061 ; pas de publication directe |
+
+Champs, formats, longueurs, validation des liens et détails d'interface à spécifier ; cette décision ne choisit pas un formulaire technique ni une collecte automatique. Les contrôles D060 de permissions, établissement, entrées et confidentialité restent à couvrir.
+
+## Travail de la CME et informations supplémentaires proposés
+
+Affichage complémentaire proposé : échéance quand connue et disponibilité observée, distinctes de la date de début. Les règles de clôture D068 restent applicables.
 
 Liste de travail CME : propositions en attente, date de soumission, auteur et éléments manquants. Détail/commentaire/action accessibles sans ouvrir tous les dossiers apprenants. Temps de traitement et ancienneté du stock mesurables à terme ; aucun délai garanti ni alerte automatique décidé.
 
@@ -92,4 +124,4 @@ Conserver modération (en attente/à corriger/publiée/rejetée) et disponibilit
 
 Accord consigné D068 ; première tranche et synthèse réalignées. Avant code : spécifier champs/transitions et tests ; détails de conservation, concurrence et affichage à traiter sans choisir la stack implicitement. Ces contrôles sont à réaliser ; aucune preuve applicative disponible.
 
-Parcours nominal et motifs validés D061 ; disponibilité, clôture/réouverture, modifications et historique utile validés D068 dans le périmètre ci-dessus. Restent notamment ouverts : accès auteur avant publication, corrections après rejet, retrait par l'auteur, doublons, champs obligatoires précis, visibilité/conservation détaillée des traces et saisie rétrospective d'une candidature. D007 reste ouverte.
+Parcours nominal et motifs validés D061 ; disponibilité, clôture/réouverture, modifications et historique utile validés D068 ; informations de soumission et qualification validées D070 dans les périmètres ci-dessus. Restent notamment ouverts : accès auteur avant publication, corrections après rejet, retrait par l'auteur, doublons, formats/limites précis des champs, visibilité/conservation détaillée des traces et saisie rétrospective d'une candidature. D007 reste ouverte.

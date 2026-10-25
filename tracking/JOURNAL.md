@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Informations des offres et qualification validées
+
+Accord explicite « oui je valide » à la distinction soumission simple / publication qualifiée. D070 consignée : intitulé, entreprise, type et lien source ou texte avec provenance ; qualification CME des conditions disponibles et inconnues explicites ; moyen de candidature exploitable requis avant publication, sinon correction selon D061. Règles, première tranche, scope et synthèse alignés ; vérifications normales/refus/cas limites documentées, aucune preuve applicative. C09 reste en cours, D007 ouverte, aucun code ni choix de stack. Capture 0011 avant commit/push selon D069 ; résultat de synchronisation non présumé.
+
 ## 2026-10-25 — Lot D068/D069 publié et vérifié
 
 Commit de732bdaca71bef05aaf62b372c9c052c1c4b870 : « docs: valider le cycle des offres et synchroniser chaque decision ». Les 42 fichiers sélectionnés concernent décisions, méthode, scope et suivi, dont captures 0007–0009 ; aucun motif de secret détecté par recherche ciblée, diff contrôlé et 30 fichiers de captures identiques entre disque et index Git. Push normal vers origin/main réussi ; lecture distante indépendante confirmant exactement le commit local. G05 terminée et suivi aligné ; capture 0010 du résultat observé, puis commit de suivi distinct selon D069. Aucun code applicatif, test applicatif ni déploiement.

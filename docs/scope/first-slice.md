@@ -1,6 +1,6 @@
 # Première tranche — proposer, valider et consulter des offres
 
-Mise à jour : 25 octobre 2026. Statut : périmètre fondé sur D053–D054, modération D061 et clôture/modifications D068 validées ; règles complémentaires non arbitrées ci-dessous Proposed. D007 encore en attente. Aucune stack ni architecture technique choisie.
+Mise à jour : 25 octobre 2026. Statut : périmètre fondé sur D053–D054, modération D061, clôture/modifications D068 et informations/qualification D070 validées ; règles complémentaires non arbitrées ci-dessous Proposed. D007 encore en attente. Aucune stack ni architecture technique choisie.
 
 ## Résultat utilisateur
 
@@ -12,6 +12,7 @@ Un membre rattaché propose une offre ; la CME de son établissement l'examine e
 
 - Inscription ouverte, rôle apprenant par défaut, attente du rattachement validé par l'administrateur ; changement de rôle sur demande par ce dernier (D038–D039).
 - Proposition d'offre par apprenants et personnel, lien ou texte avec provenance, entreprise, intitulé, type (D031–D032).
+- D070 : soumission avec intitulé, entreprise, type et lien source ou texte accompagné de sa provenance. Avant publication, qualification CME du lieu/mode, compétences/niveau et durée/début des stages selon les informations disponibles ; inconnues explicites. Moyen exploitable de candidature requis avant publication, sinon correction demandée selon D061.
 - Validation par CME avant visibilité aux apprenants de l'établissement (D028).
 - Mention explicite des conditions inconnues d'accessibilité et du niveau demandé, y compris bac+5, sans prétendre l'apprenant éligible (D029, D052).
 - Permissions et séparation des établissements ; administration des comptes distincte de l'accès aux contenus confidentiels.
@@ -28,9 +29,11 @@ Proposition finale C07 explicitement validée le 25 octobre (D068) : clôture/r�
 | Correction / rejet | Motif communiqué à l'auteur ; correction par l'auteur puis retour en attente de validation | Validé D061 |
 | Modification après publication | CME seule modifie/confirme ; signalement par contributeur, version des conditions et mention dans les suivis ; retrait temporaire si doute sérieux | Validé D068 ; conservation détaillée à spécifier |
 | Fin de recrutement | Disponibilité distincte ; CME clôture/rouvre avec trace ; retrait de la recherche courante, suivis existants conservés, sans refus automatique | Validé D068 ; échéance dépassée à vérifier par CME |
-| Informations absentes | Champs de qualification inconnus affichés « à confirmer », sans inventer date, niveau, durée ou accès géographique | Proposed comme règle générale ; géographie déjà encadrée par D029 |
+| Informations de soumission | Intitulé, entreprise, type et lien source ou texte avec provenance | Validé D070 ; formats et limites à spécifier |
+| Qualification et informations absentes | CME renseigne les conditions disponibles ; absences explicites « non précisé » ou « à confirmer », sans invention | Validé D070 ; géographie D029 et niveau D052 conservés |
+| Moyen de candidature | Page, adresse professionnelle publiée ou instructions exploitables nécessaires avant publication ; correction si absent | Validé D070 ; présence du seul lien source insuffisante |
 
-Les quatre états et le cycle correction/rejet ont été validés explicitement par D061, puis clôture et modifications par D068. Les autres propositions restent ouvertes ; transitions et champs obligatoires précis à spécifier.
+Les quatre états et le cycle correction/rejet ont été validés explicitement par D061, puis clôture/modifications D068 et informations/qualification D070. Les autres propositions restent ouvertes ; droits, formats/limites des champs et transitions restantes à préciser.
 
 ## Limites de cette première tranche
 
@@ -44,6 +47,7 @@ Préparation/CV et suivi des candidatures, demandes d'accompagnement, rendez-vou
 - Refus de tout accès inter-établissements avec un identifiant connu.
 - Cycle de correction et motif selon D061 ; clôture/réouverture, versions, retrait temporaire et continuité des suivis selon D068.
 - Exigences bac+5 et accessibilité inconnue affichées sans promesse d'éligibilité.
+- D070 : informations minimales exigées à la soumission ; texte avec provenance accepté sans URL ; inconnues de qualification explicites ; publication refusée sans moyen de candidature exploitable, sans bloquer la soumission initiale pour ce seul manque. Détail dans offer-lifecycle.md.
 
 ## Prochaine étape
 
