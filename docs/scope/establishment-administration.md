@@ -1,6 +1,6 @@
 # Administration des établissements — organisation validée
 
-Date : 24 octobre 2026. Référence D056. Statut : organisation validée après discussion ; procédures détaillées et étendue au pilote à spécifier. Aucun code applicatif.
+Mise à jour : 25 octobre 2026. Références D056 et D076. Statut : organisation et périmètre administratif du pilote validés ; procédures techniques détaillées à spécifier. Aucun code applicatif.
 
 ## Organisation proposée par l'utilisateur
 
@@ -17,7 +17,7 @@ Le découpage global/local facilite l'autonomie des établissements. Distinguer 
 - Aucun administrateur local ne crée d'administrateur général ni ne gère un autre établissement.
 - « Staff » reste à définir en permissions précises, sans rôle unique donnant accès à tout.
 
-Prévoir les limites d'établissement dès la conception ; décider séparément si l'interface de création de plusieurs établissements appartient au pilote.
+Périmètre pilote validé D076 : mise en place du premier établissement et de sa CME par l'administrateur général, puis classes, invitations/rattachements et rôles nécessaires par CME avec permission locale. Écrans complets de gestion simultanée de plusieurs établissements reportés ; limites d'établissement et séparation des rôles dès la conception. Modalité de création initiale à comparer en architecture, sans choix technique implicite.
 
 ## Arbitrages ouverts
 
@@ -27,10 +27,10 @@ La CME génère un lien réutilisable propre à une classe de son établissement
 
 Durée d'expiration, demandes multiples et changement de classe/établissement à définir dans les spécifications. Ce parcours ne remplace pas les invitations du personnel ni n'attribue leurs rôles.
 
-1. Administration générale par le porteur et gestion locale par la CME validées ; périmètre détaillé des écrans du pilote à spécifier. D039 modifiée par D056.
+1. Administration générale par le porteur et gestion locale par la CME validées ; périmètre pilote précisé D076, écrans détaillés à spécifier. D039 modifiée par D056.
 2. Distinction CME/administration locale et invitations du personnel retenues ; modalités d'activation à spécifier.
 3. Quels membres du personnel et quelles délégations locales sont nécessaires ?
 4. Désignation, remplacement et récupération d'accès d'un administrateur local ; création du premier administrateur général.
-5. Périmètre de l'interface multi-établissements dans le pilote versus évolution ultérieure.
+5. Écrans complets multi-établissements reportés D076 ; détails de leur évolution ultérieure à spécifier.
 
 Décision documentaire enregistrée, aucune permission technique appliquée et aucun code applicatif. Les protections des documents et observations restent régies par les décisions existantes.

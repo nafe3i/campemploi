@@ -1,6 +1,6 @@
 # Cycle de vie des offres — règles validées et propositions restantes
 
-Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070–D073 valident qualification, consultation, doublons et réexamen ; D075 valide retrait demandé par auteur avant publication, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068, D070–D073 et D075. Aucun code ni choix technique.
+Mise à jour : 25 octobre 2026. Statut : règles référencées validées, détails restants signalés. D061 : parcours nominal ; D068 : disponibilité/modifications ; D070–D073 : qualification, consultation, doublons et réexamen ; D075 : retrait demandé ; D077 : doublons déjà publiés. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068, D070–D073, D075 et D077. Aucun code ni choix technique.
 
 ## Deux dimensions
 
@@ -151,11 +151,26 @@ Indiquer l'offre existante à l'auteur seulement s'il a le droit de la consulter
 | Suivis de candidatures déjà présents sur l'offre conservée | Aucun suivi supprimé, fusionné ni changé automatiquement par le rejet du doublon |
 | Autre contributeur tente de rejeter comme doublon | Refus selon D061 ; seul le rôle CME autorisé prend cette décision |
 
-Un intitulé similaire ne suffit pas à prouver que deux annonces sont la même opportunité : examen humain des informations disponibles, sans décision automatique. Nouvelle campagne/poste distinct reste une nouvelle offre selon D068. La résolution de doublons déjà publiés, notamment avec des suivis existants, reste à préciser ; D072 n'autorise pas leur suppression ou fusion automatique. Aucun outil automatique de rapprochement choisi.
+Un intitulé similaire ne suffit pas à prouver que deux annonces sont la même opportunité : examen humain des informations disponibles, sans décision automatique. Nouvelle campagne/poste distinct reste une nouvelle offre selon D068. Doublons déjà publiés désormais encadrés par D077 ci-dessous ; D072 n'autorise pas leur suppression ou fusion automatique. Aucun outil automatique de rapprochement choisi.
+
+## Doublons après publication — Validé D077
+
+Accord explicite du 25 octobre 2026 (« je valides les deux propositions », arbitrage B). La CME du même établissement conserve l'offre de référence et clôture l'offre répétée avec motif explicite « doublon », sans annoncer une fin de recrutement. Appliquer la clôture D068 : retrait de la recherche courante, conservation de l'offre et des suivis existants. Les candidatures restent liées à leur offre d'origine, sans fusion, suppression ou changement automatique.
+
+Indiquer la référence conservée seulement si l'utilisateur peut la consulter selon D071 et les droits d'établissement. Aucune comparaison entre établissements ne crée un droit d'accès. Cette règle complète le rejet de proposition en doublon D072 ; ce ne sont pas les mêmes transitions.
+
+| Contrôle à prévoir | Résultat attendu, non encore testé |
+|---|---|
+| CME traite le doublon déjà publié | Offre répétée clôturée avec motif « doublon », référence conservée ; pas de faux message « recrutement terminé » |
+| Suivi existant sur l'offre répétée | Même offre liée, état/notes/actions conservés ; mention de clôture selon D068, sans transfert automatique |
+| Référence conservée inaccessible à l'utilisateur | Aucun lien ou contenu interne non autorisé exposé |
+| Autre membre ou CME d'un autre établissement tente l'action | Refus sans modification ni exposition interne |
+
+Représentation de la référence et protections contre répétition/concurrence à spécifier selon D060. Aucun système automatique de détection/fusion ajouté.
 
 ## Autres cas limites et vérifications proposés
 
-- Doublon d'une proposition : traitement manuel validé D072 ci-dessus ; cas des doublons déjà publiés encore à préciser.
+- Doublon d'une proposition : rejet motivé D072 ; doublon déjà publié : clôture motivée D077, suivis conservés.
 - Lien inaccessible : proposer une provenance et un texte utile ; statut à corriger ou vérification supplémentaire selon décision CME, pas fausse ouverture.
 - Annonce expirée avant publication : ne pas la proposer comme recrutement ouvert ; conservation comme référence ou rejet à arbitrer.
 - Date limite explicite dépassée : signalement à vérifier et confirmation CME de la clôture validés D068 ; toujours distinguer date limite de candidature et date de début.
@@ -208,4 +223,4 @@ Conserver modération (en attente/à corriger/publiée/rejetée) et disponibilit
 
 Accord consigné D068 ; première tranche et synthèse réalignées. Avant code : spécifier champs/transitions et tests ; détails de conservation, concurrence et affichage à traiter sans choisir la stack implicitement. Ces contrôles sont à réaliser ; aucune preuve applicative disponible.
 
-Parcours nominal et motifs D061, disponibilité/modifications D068, compléments D070–D073 et retrait demandé avant publication D075 validés dans les périmètres ci-dessus. Restent notamment ouverts : doublons déjà publiés, formats/limites précis des champs, visibilité/conservation détaillée des traces, détails de traitement des demandes et saisie rétrospective d'une candidature. D007 reste ouverte.
+Parcours nominal et motifs D061, disponibilité/modifications D068, compléments D070–D073, retrait demandé D075 et doublons déjà publiés D077 validés dans les périmètres ci-dessus. Restent à spécifier : formats/limites précis des champs, visibilité/conservation détaillée des traces, détails de traitement des demandes et saisie rétrospective d'une candidature. D007 reste ouverte.

@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Deux arbitrages C09 validés
+
+Accord explicite « je valides les deux propositions ». D076 consigne administration nécessaire au premier établissement/CME/classes/invitations/rattachements/rôles du pilote, écrans complets multi-établissements reportés avec isolation dès conception. D077 consigne clôture du doublon déjà publié avec motif exact, référence si autorisée, suivis liés à leur offre d'origine sans fusion/suppression/changement automatique. Registre, première tranche, administration, offres, synthèse, scope et suivi alignés. C09 terminée comme consolidation documentaire ; D007 ouverte, C08 à faire, détails techniques à spécifier et aucune preuve applicative. Commit/push à vérifier selon D069, sans snapshot D074.
+
 ## 2026-10-25 — Synthèse C09 publiée pour arbitrage
 
 Commit 790547e3300e24040d9a30e6e9559615d778128b, « docs: consolider la premiere tranche pour arbitrage », publié sur origin/main par push normal ; concordance distante vérifiée. Quatre documents relus, diff contrôlé et recherche ciblée sans motif de secret détecté. Aucun nouveau snapshot ni test applicatif. La publication de cette proposition ne valide pas les deux arbitrages ; C09 reste en cours et D007 ouverte. Suivi du résultat dans un commit distinct.

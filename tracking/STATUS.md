@@ -1,7 +1,11 @@
 # État — 2026-10-25
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
-Consolidation C09 préparée dans docs/scope/first-slice.md : synthèse des parcours et droits validés, critères à vérifier, séparation avec les autres tranches et détails de spécification. Deux arbitrages Proposed soumis à discussion : étendue de l'administration du pilote, traitement des doublons déjà publiés. Aucune nouvelle décision métier validée par la demande de poursuivre ; C09 reste en cours. Proposition documentaire publiée et vérifiée au commit 790547e3300e24040d9a30e6e9559615d778128b, sans nouveau snapshot selon D074.
+Consolidation C09 documentaire terminée : parcours, matrice des droits et critères dans docs/scope/first-slice.md ; arbitrages explicitement validés D076 (administration nécessaire au pilote, écrans multi-établissements ultérieurs) et D077 (doublons publiés clôturés, suivis conservés). Documents alignés, lot à publier selon D069 sans snapshot D074. Aucune preuve applicative ; D007 reste ouverte et C08 reste à faire.
+
+## Repères documentaires précédents
+
+Les statuts C09 cités ci-dessous décrivent les étapes antérieures ; l'état courant de consolidation est indiqué ci-dessus et dans BOARD.md.
 D075 validée et documentée : auteur demande retrait avant publication ; CME du même établissement rejette avec motif prévu, sans supprimer proposition/historique ni ajouter un état. Après publication, clôture D068. Contrôles attendus documentés, non exécutés ; C09 reste en cours. Commit fc6af0fc989bd73f05b5ae463272cb999bacff46 publié et vérifié sur origin/main selon D069, aucun nouveau snapshot selon D074.
 D074 validée et appliquée à la documentation : nouveaux états par commits Git/push vérifié, sans nouveaux snapshots ; anciennes captures 0001–0018 conservées. STATUS, BOARD, JOURNAL et registre des décisions gardent leurs rôles. Consignes/workflow/index réalignés ; G06 terminée, commit dc6aeca0455c921c741771cbc19f80c6b7de3e65 publié et vérifié sur origin/main. Prochaine tâche produit C09 : consolidation de la première tranche, sans choix de stack.
 D073 validée et documentée : réexamen d'un rejet autorisé par CME du même établissement avec motif si nouveaux éléments ; auteur corrige puis soumet en attente, rejet initial conservé. Aucun réexamen autonome par l'auteur ni publication automatique. C09 en cours ; bilan du scope demandé par l'utilisateur ajouté dans docs/scope/pilot.md, distinguant documentation réalisée et application non développée. Capture 0017 ; commit 492951a4a85daa2d7a96cbe845b324d93a9a75a3 publié et vérifié sur origin/main. Capture 0018 du résultat, suivi dans un commit distinct selon D069.
@@ -51,4 +55,4 @@ Tâche C07 : règles de clôture/réouverture et modifications explicitement val
 - Matrice complète des permissions, cas limites des classes/revues, protocoles de mesure et données réelles à spécifier.
 - Prototype de collecte automatique prévu ultérieurement, pas une dépendance de la première tranche. Fonctions futures dans docs/product/roadmap.md.
 
-Prochaine tâche produit proposée : C09, consolider droits, champs et critères restants de la première tranche. C08 (classes/revues) reste à faire pour son périmètre. D007 toujours ouverte ; aucun choix de stack ni démarrage applicatif autorisé par D068.
+Prochaine tâche produit proposée : C08, préciser les points de cadrage classes/revues puis relire le scope global C10/D007. C09 est terminée pour la consolidation documentaire ; détails de spécification encore à traiter avant développement. Aucun choix de stack ni démarrage applicatif autorisé par les deux arbitrages.

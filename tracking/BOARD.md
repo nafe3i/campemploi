@@ -27,7 +27,7 @@ Les décisions restent Validé/Proposé/UNKNOWN dans le registre. Les spécifica
 | C06 | Étudier les sources et un échantillon documentaire initial | Terminé | docs/reference/offer-sources-study.md et opportunity-sample-2026-10-17.md ; aucune preuve de gain utilisateur ni de capacité CME |
 | C07 | Définir clôture et modification d'une offre publiée | Terminé | Accord explicite du 25 octobre, D068 ; docs/scope/offer-lifecycle.md et synthèses alignées ; capture 0008. Décision/documentation terminée, aucun développement ni test applicatif |
 | C08 | Préciser classes et revues de documents | À faire | Référent(s), équivalence formateur/responsable, changements d'affectation, version du portfolio et visibilité des commentaires |
-| C09 | Consolider matrice d'accès et critères de la première tranche | En cours | Synthèse docs/scope/first-slice.md publiée/vérifiée au commit 790547e : parcours, matrice des droits acquis et critères vérifiables. Deux arbitrages Proposed : étendue administration pilote et doublons déjà publiés. Accord attendu ; aucun nouveau comportement validé ni test applicatif |
+| C09 | Consolider matrice d'accès et critères de la première tranche | Terminé | docs/scope/first-slice.md : parcours, matrice et critères ; arbitrages A/B explicitement validés D076/D077 et documents alignés. Consolidation documentaire uniquement ; détails techniques à spécifier, aucune preuve applicative ni validation globale D007 |
 | C10 | Valider globalement le scope et le découpage | À valider | D007 toujours ouverte ; synthèse docs/product/features-v1.md et docs/scope/pilot.md |
 | C11 | Clarifier cadre des essais réels et responsabilité des données | À faire | Engagement institutionnel non confirmé ; aucune attribution juridique inventée |
 | C12 | Mesurer utilité/effort humain et charge CME | À faire | Protocole proposé docs/scope/opportunity-experiment.md ; aucune mesure humaine ni D035 vérifiée |
@@ -57,8 +57,8 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 | Fonctionnalité | Étape actuelle | Prochaine action / décision attendue | Preuve | Difficulté / point ouvert | Version |
 |---|---|---|---|---|---|
-| Comptes, établissements et invitations | Conception métier partielle | Préciser expiration, rôles locaux et cas de rattachement | D056, D059 ; docs/scope/establishment-administration.md | Procédures et étendue des écrans du pilote | Aucune |
-| Offres | Conception métier partielle | Consolider règles et limites restantes de la première tranche (C09) | D061, D068, D070–D073, D075 ; docs/scope/offer-lifecycle.md | Modalités des demandes, doublons déjà publiés, formats/limites et conservation | Aucune |
+| Comptes, établissements et invitations | Conception métier partielle | Spécifier activation, expiration, rôles locaux et cas de rattachement après cadrage | D056, D059, D076 ; docs/scope/establishment-administration.md | Modalité initiale et procédures | Aucune |
+| Offres | Cadrage de tranche consolidé | Relire le périmètre global et préparer les spécifications après décisions nécessaires | D061, D068, D070–D073, D075, D077 ; docs/scope/first-slice.md et offer-lifecycle.md | Modalités des demandes, formats/limites et conservation à spécifier | Aucune |
 | CV et portfolio | Conception métier partielle | Référent de classe, accès aux commentaires et version du portfolio | D057–D058 ; docs/scope/cv-portfolio-review.md | Plusieurs formateurs et modifications externes | Aucune |
 | Candidatures | Cadrage documenté | Spécifier transitions et historique | D036–D037 | Cas limites et partage des brouillons | Aucune |
 | Accompagnement et progression | Cadrage documenté | Spécifier réorientation et mise à jour des actions | D020–D027 | Délais, absence de réponse, droits précis | Aucune |
@@ -80,6 +80,6 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 ## Prochaine action immédiate
 
-Lot D068/D069 publié et vérifié (de732bd), G05 terminée ; suivi du résultat dans un commit distinct selon D069. Proposer le contenu des Issues/Project avant création externe. C07 est terminée pour le cadrage ; prochaine tâche produit proposée C09. Aucune validation de D007 ni réalisation applicative.
+Consolidation documentaire C09 terminée après accord D076/D077 ; aucune réalisation applicative. Prochaine tâche produit proposée C08 (classes/revues), puis relecture globale C10/D007. Proposer le contenu des Issues/Project avant création externe.
 
-Prochaine tâche proposée : C09, consolider les droits, champs et critères restants de la première tranche ; C08 reste ouverte pour les classes et revues. Aucune fonctionnalité applicative développée ou Accepted. Mise à jour du tableau après chaque avancée réelle avec preuve, sans transformer une discussion en réalisation.
+Prochaine tâche proposée : C08, clarifier les points de cadrage des classes et revues, sans détailler prématurément la technique. D007 reste ouverte. Aucune fonctionnalité applicative développée ou Accepted ; mise à jour après chaque avancée réelle avec preuve.

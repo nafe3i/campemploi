@@ -293,3 +293,15 @@ Accord explicite « valider » au parcours présenté : avant publication, l'aut
 Réutiliser les états actuels, sans nouvel état de retrait. L'auteur ne rejette pas directement sa proposition ; les droits D071 restent applicables. Pour une offre déjà publiée, appliquer les règles existantes de clôture D068, pas ce parcours de rejet avant publication. Le réexamen éventuel d'une proposition rejetée reste encadré par D073.
 
 Règles et contrôles attendus dans docs/scope/offer-lifecycle.md ; première tranche, synthèse, scope et suivi alignés. Demande en cours de traitement, répétition/concurrence et détails d'interface à spécifier avant implémentation. C09 reste en cours, D007 ouverte ; aucun développement ou test applicatif réalisé. Commit/push selon D069, aucun nouveau snapshot selon D074.
+
+## D076 — Administration nécessaire au pilote, écrans multi-établissements ultérieurs — Validé, 2026-10-25
+
+Accord explicite « je valides les deux propositions » sur l'arbitrage A présenté dans la consolidation C09. Inclure la mise en place du premier établissement et de sa CME par l'administrateur général, puis les classes, invitations/rattachements et rôles nécessaires par la CME avec permission d'administration locale. Reporter les écrans complets de gestion simultanée de plusieurs établissements ; séparation des rôles et isolation des données exigées dès la conception. D056 est précisée, pas supprimée.
+
+La modalité technique de création initiale reste à comparer en architecture ; aucun outil ni écran détaillé choisi. Procédures d'activation/récupération, expiration et changements de rattachement à spécifier avant implémentation. Cette décision n'accorde aucun accès métier/confidentiel automatique au rôle administratif. Documentation mise à jour ; aucun développement, test applicatif ou validation globale de D007.
+
+## D077 — Doublons découverts après publication — Validé, 2026-10-25
+
+Même accord explicite sur l'arbitrage B : la CME du même établissement conserve l'offre de référence et clôture l'offre répétée avec un motif explicite « doublon », sans prétendre que le recrutement est terminé. Les suivis restent liés à leur offre d'origine ; aucune fusion, suppression ou modification automatique des candidatures. Référence vers l'offre conservée seulement si consultation autorisée.
+
+D072 concerne les propositions avant publication ; D077 complète la clôture D068 pour les doublons déjà publiés. Les contrôles d'établissement, de rôle, de consultation, de continuité des liens et du motif seront spécifiés et testés avant acceptation applicative. La gestion d'un doublon ne crée aucun droit inter-établissements. Documentation et synthèses alignées ; consolidation C09 terminée comme livrable documentaire avec ses arbitrages, sans validation globale de D007 ni fonctionnalité Accepted. Commit/push selon D069, sans nouveau snapshot D074.

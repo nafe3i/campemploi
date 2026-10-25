@@ -1,6 +1,6 @@
 # Première tranche — proposer, valider et consulter des offres
 
-Mise à jour : 25 octobre 2026. Statut : périmètre fondé sur D053–D054, modération D061, clôture/modifications D068, compléments D070–D073 et retrait demandé avant publication D075 validés ; règles complémentaires non arbitrées ci-dessous Proposed. D007 encore en attente. Aucune stack ni architecture technique choisie.
+Mise à jour : 25 octobre 2026. Statut : règles référencées D053–D054, D061, D068, D070–D073 et D075–D077 validées ; consolidation documentaire C09 terminée. Détails restant à spécifier signalés ci-dessous ; D007 encore en attente. Aucune stack ni architecture technique choisie.
 
 ## Résultat utilisateur
 
@@ -36,16 +36,18 @@ Proposition finale C07 explicitement validée le 25 octobre (D068) : clôture/r�
 | Proposition en doublon | Vérification manuelle CME ; une seule offre au catalogue, proposition répétée rejetée avec motif « déjà présente » ; référence existante seulement si consultable par l'auteur | Validé D072 ; aucun suivi supprimé/fusionné automatiquement |
 | Réexamen après rejet | CME seule remet à corriger avec motif si nouveaux éléments ; auteur corrige puis retour en attente ; rejet initial conservé | Validé D073 ; aucune réouverture autonome ni publication automatique |
 | Retrait demandé avant publication | Auteur demande à CME ; CME rejette avec motif « retrait demandé par l'auteur », proposition et historique conservés | Validé D075 ; pas de suppression ni nouvel état ; après publication, clôture D068 |
+| Administration pilote | Premier établissement/CME et gestion locale nécessaire ; écrans complets multi-établissements ultérieurs | Validé D076 ; isolation dès conception |
+| Doublon déjà publié | CME clôture la répétition avec motif « doublon », garde la référence et les suivis à leur offre d'origine | Validé D077 ; aucune fusion/suppression/modification automatique |
 
 Les quatre états et le cycle correction/rejet ont été validés explicitement par D061, puis clôture/modifications D068 et compléments D070–D073/D075. Les autres propositions restent ouvertes ; autres droits, formats/limites des champs et transitions restantes à préciser.
 
 ## Synthèse de consolidation C09 — 25 octobre 2026
 
-Synthèse préparée à la demande de poursuivre le travail ; aucune nouvelle décision métier déduite de cette demande. Les références ci-dessous identifient les exigences déjà validées. Les deux arbitrages suivants sont Proposed, pas appliqués. D007 reste ouverte.
+Synthèse préparée à la demande de poursuivre le travail, puis deux arbitrages explicitement validés (« je valides les deux propositions »), enregistrés D076/D077. Les références ci-dessous identifient les exigences validées. Consolidation C09 documentaire terminée ; aucune fonctionnalité développée ou Accepted. D007 reste ouverte.
 
 ### Parcours à couvrir selon les décisions acquises
 
-1. Préparer les accès et rattachements nécessaires dans l'établissement pilote, en respectant D056/D059 ; l'étendue exacte des écrans d'administration du pilote reste à trancher ci-dessous.
+1. Préparer le premier établissement, sa CME, les classes, invitations/rattachements et rôles nécessaires au pilote selon D056/D059/D076 ; écrans complets multi-établissements reportés, isolation requise dès la conception.
 2. Permettre une contribution humaine avec les informations de D070 ; l'auteur suit sa proposition selon D071.
 3. Faire examiner la proposition par CME : publier, demander correction ou rejeter avec motif (D061), qualifier les conditions et le moyen de candidature (D070).
 4. Consulter les offres publiées de son établissement avec exigences et inconnues explicites (D029/D052/D071).
@@ -80,13 +82,13 @@ La matrice résume les décisions ; elle ne règle pas les effets des changement
 
 Ces critères sont des exigences de vérification, pas des tests exécutés ni une spécification technique Accepted. Le plan de tests précis, formats/limites des entrées, activation/récupération des comptes, expiration et changements de rattachement seront définis en spécification avant développement des parcours concernés. Les critères de réussite du pilote D035 (autonomie, utilité, charge, accompagnement) restent à mesurer sur leur périmètre ; ils ne sont pas tous des critères de sortie de cette seule tranche.
 
-### Deux arbitrages de périmètre proposés — accord attendu
+### Deux arbitrages de périmètre — Validés D076/D077
 
-**A — Étendue de l'administration du pilote.** Inclure la mise en place du premier établissement et de sa CME par l'administrateur général, puis classes, invitations/rattachements et rôles nécessaires par la CME avec permission locale. Proposer de reporter les écrans complets de gestion simultanée de plusieurs établissements ; isolation et séparation des rôles exigées dès la conception. D056 n'est pas supprimée. Modalité de création initiale à comparer en architecture, sans choix technique à ce stade.
+**A — Étendue de l'administration du pilote, D076.** Inclure la mise en place du premier établissement et de sa CME par l'administrateur général, puis classes, invitations/rattachements et rôles nécessaires par la CME avec permission locale. Reporter les écrans complets de gestion simultanée de plusieurs établissements ; isolation et séparation des rôles exigées dès la conception. D056 n'est pas supprimée. Modalité de création initiale à comparer en architecture, sans choix technique à ce stade.
 
-**B — Doublons découverts après publication.** Proposer que la CME conserve une référence commune et clôture l'offre répétée avec un motif explicite « doublon », sans prétendre que le recrutement est terminé. Les suivis resteraient liés à leur offre d'origine ; aucune fusion, suppression ou modification automatique de candidature. Référence vers l'offre conservée seulement si consultation autorisée. Cette extension n'est pas déjà couverte par D072 et attend validation.
+**B — Doublons découverts après publication, D077.** La CME conserve l'offre de référence et clôture l'offre répétée avec un motif explicite « doublon », sans prétendre que le recrutement est terminé. Les suivis restent liés à leur offre d'origine ; aucune fusion, suppression ou modification automatique de candidature. Référence vers l'offre conservée seulement si consultation autorisée. D077 complète D072 pour le cas déjà publié et D068 pour le motif de clôture.
 
-Ces deux propositions ne sont pas des décisions. Avant validation de la tranche, consigner l'arbitrage retenu et réaligner le périmètre ; les détails techniques restants seront ensuite spécifiés. D007, cadre des données réelles et protocole du pilote demeurent ouverts.
+Deux décisions enregistrées, périmètre et synthèses réalignés ; détails techniques à spécifier avant développement. Vérifications spécifiques à prévoir : administration locale sans accès inter-établissements ou confidentiel automatique ; doublon publié clôturé avec motif exact, sorti de la recherche courante, suivis inchangés et référence visible seulement si autorisée. Aucune preuve applicative. D007, cadre des données réelles et protocole du pilote demeurent ouverts ; cet accord ne vaut pas leur validation.
 
 ## Limites de cette première tranche
 
@@ -101,10 +103,10 @@ Préparation/CV et suivi des candidatures, demandes d'accompagnement, rendez-vou
 - Cycle de correction et motif selon D061 ; clôture/réouverture, versions, retrait temporaire et continuité des suivis selon D068.
 - Exigences bac+5 et accessibilité inconnue affichées sans promesse d'éligibilité.
 - D070 : informations minimales exigées à la soumission ; texte avec provenance accepté sans URL ; inconnues de qualification explicites ; publication refusée sans moyen de candidature exploitable, sans bloquer la soumission initiale pour ce seul manque. Détail dans offer-lifecycle.md.
-- D072 : doublon confirmé manuellement par CME rejeté avec motif ; référence de l'offre existante seulement si accès autorisé ; aucun suivi de candidature supprimé/fusionné automatiquement. Cas de doublons déjà publiés à préciser.
+- D072 : proposition en doublon confirmée manuellement par CME rejetée avec motif ; D077 : doublon déjà publié clôturé avec motif « doublon ». Référence de l'offre conservée seulement si accès autorisé ; aucun suivi supprimé/fusionné ou changé automatiquement.
 - D073 : réexamen autorisé uniquement par CME du même établissement avec motif ; auteur ne rouvre pas seul ; après correction retour en attente ; rejet initial conservé. Vérifier aussi absence de motif et accès inter-établissements.
 - D075 : auteur sur sa propre demande de retrait avant publication ; rejet motivé par CME seulement, données conservées ; refus d'accès d'autrui et autre établissement ; si déjà publiée, clôture D068. Détails de demande/concurrence à spécifier.
 
 ## Prochaine étape
 
-Consolider les droits, champs et critères restants de la première tranche (C09), puis soumettre le périmètre à validation avant comparaison de stack et spécifications d'architecture. Pas de code applicatif avant ces décisions. Portage officiel et responsabilités pour les données réelles toujours non confirmés.
+Consolidation C09 documentaire terminée. Poursuivre les points de cadrage globaux restants (dont C08 classes/revues et D007), puis comparer ensemble stack/architecture et spécifier les détails des parcours concernés avant développement. Les deux arbitrages D076/D077 ne valident pas implicitement l'ensemble du scope. Portage officiel et responsabilités pour les données réelles toujours non confirmés.
