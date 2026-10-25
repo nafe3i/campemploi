@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D073 et bilan du scope publiés et vérifiés
+
+Commit 492951a4a85daa2d7a96cbe845b324d93a9a75a3, « docs: valider le reexamen des offres et dresser le bilan du scope », créé et envoyé sur origin/main sans force ; lecture distante indépendante confirmant le même hash. Sélection documentaire de 19 fichiers relue, diff contrôlé, recherche ciblée sans motif de secret détecté et octets des dix fichiers de capture 0017 préservés dans Git. État/tableau actualisés, capture 0018 du résultat et commit de suivi distinct selon D069. Bilan demandé disponible dans le scope ; aucune preuve applicative, C09 en cours et D007 ouverte.
+
 ## 2026-10-25 — Réexamen après rejet validé et bilan du scope
 
 Accord explicite « valider » et demande du bilan du scope. D073 consignée : CME seule autorise réexamen justifié avec motif, passage à corriger, auteur corrige puis retour en attente ; rejet initial conservé et pas de réouverture autonome. Documents métier, contrôles attendus et suivi alignés ; bilan de conception ajouté au scope pilote. C01–C07 sont des livrables de cadrage terminés ; C08 à faire, C09 en cours, D007 ouverte ; aucune réalisation applicative ni preuve de gain utilisateur. Capture 0017 avant commit/push selon D069, résultat distant non présumé.

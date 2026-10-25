@@ -29,6 +29,7 @@ Ce sont des copies documentaires, pas une sauvegarde complète du poste ou une r
 | [0015](snapshots/0015-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0014 | Accord D072 sur traitement manuel des propositions en doublon ; documents et contrôles attendus alignés, C09 en cours |
 | [0016](snapshots/0016-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0015 | D072 publiée au commit 1b4ece2 et concordance distante vérifiée ; suivi de fin d'opération |
 | [0017](snapshots/0017-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0016 | Accord D073 sur réexamen après rejet et bilan courant du scope ; documentation alignée, C09 en cours |
+| [0018](snapshots/0018-2026-10-25/SNAPSHOT.md) | 25 octobre 2026 | 0017 | D073 et bilan du scope publiés au commit 492951a et concordance distante vérifiée ; suivi de fin d'opération |
 
 ## Limites du passé et du futur
 
