@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D072 publiée et vérifiée
+
+Commit 1b4ece250cae3e47ff71a349931933728212014d, « docs: valider le traitement manuel des offres en doublon », créé et envoyé sur origin/main sans force ; lecture distante indépendante confirmant le même hash. Sélection documentaire de 19 fichiers relue, diff contrôlé, recherche ciblée sans motif de secret détecté et octets des dix fichiers de capture 0015 préservés dans Git. État/tableau actualisés, capture 0016 du résultat et commit de suivi distinct selon D069. Aucune preuve applicative, C09 reste en cours et D007 ouverte.
+
 ## 2026-10-25 — Traitement manuel des propositions en doublon validé
 
 Accord explicite « oui je valide » à la vérification manuelle CME : une seule offre au catalogue, proposition répétée rejetée avec motif « déjà présente », référence existante uniquement si l'auteur peut la consulter, aucun suivi de candidature supprimé ou fusionné automatiquement. D072 consignée ; règles, première tranche, scope, synthèse et suivi alignés avec contrôles attendus. Le traitement de doublons déjà publiés reste ouvert ; C09 en cours, D007 ouverte, aucune preuve applicative. Capture 0015 avant commit/push selon D069 ; résultat distant non présumé.
