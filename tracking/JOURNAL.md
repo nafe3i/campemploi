@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — D075 publiée et vérifiée
+
+Commit fc6af0fc989bd73f05b5ae463272cb999bacff46, « docs: valider le retrait des propositions avant publication », publié sur origin/main par push normal ; concordance distante vérifiée. Huit fichiers documentaires revus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucune capture créée ou modifiée selon D074. État/tableau actualisés et suivi dans un commit distinct selon D069. C09 reste en cours, D007 ouverte ; aucune preuve applicative.
+
 ## 2026-10-25 — Retrait demandé avant publication validé
 
 Accord explicite « valider ». D075 consignée : auteur demande retrait à CME, CME du même établissement termine par rejet motivé « retrait demandé par l'auteur », proposition et historique conservés, aucun nouvel état. Après publication, règles de clôture D068. Règles, première tranche, scope, synthèse et suivi alignés ; contrôles attendus de propriété/rôle/établissement et état au traitement documentés. Détails des demandes et concurrence à spécifier ; C09 en cours, D007 ouverte, aucune preuve applicative. Aucun snapshot selon D074 ; commit/push à exécuter selon D069 sans résultat distant présumé.
