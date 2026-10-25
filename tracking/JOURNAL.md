@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Synthèse C09 publiée pour arbitrage
+
+Commit 790547e3300e24040d9a30e6e9559615d778128b, « docs: consolider la premiere tranche pour arbitrage », publié sur origin/main par push normal ; concordance distante vérifiée. Quatre documents relus, diff contrôlé et recherche ciblée sans motif de secret détecté. Aucun nouveau snapshot ni test applicatif. La publication de cette proposition ne valide pas les deux arbitrages ; C09 reste en cours et D007 ouverte. Suivi du résultat dans un commit distinct.
+
 ## 2026-10-25 — Première tranche consolidée pour discussion
 
 À la demande de poursuivre, synthèse C09 préparée dans docs/scope/first-slice.md : parcours validés, matrice de consultation/action, critères vérifiables sans preuve applicative, distinction entre tranche d'offres, fonctions ultérieures et détails à spécifier. Deux arbitrages explicitement Proposed : étendue des écrans administratifs du pilote et doublons déjà publiés. Aucun accord déduit sur ces règles ; pas de nouvelle entrée de décision validée, C09 en cours et D007 ouverte. Travail documentaire autorisé par la demande ; contrôles et commit/push à effectuer, sans snapshot selon D074.
