@@ -285,3 +285,11 @@ Accord explicite « ok alors suivre cette organisation » à la simplification p
 Répartition maintenue : tracking/STATUS.md pour l'état courant, tracking/BOARD.md pour tâches et preuves, tracking/JOURNAL.md pour les avancées, docs/product/decisions.md pour décisions et raisons. Les versions successives des fichiers suivis sont consultées/comparées dans les commits ; seuls les changements enregistrés par commit sont ainsi conservés, le push vérifié confirme leur publication. D069 (commit descriptif/push après validation et contrôles) reste applicable.
 
 Consignes, workflow, guide Git, index historique, bilan et suivi réalignés ; aucun nouvel instantané créé pour ce changement. Aucune réécriture de l'historique Git, suppression des anciennes captures ou fonctionnalité applicative autorisée. D007 reste ouverte, prochaine tâche C09 : consolidation de la première tranche.
+
+## D075 — Retrait demandé par l'auteur avant publication — Validé, 2026-10-25
+
+Accord explicite « valider » au parcours présenté : avant publication, l'auteur peut demander le retrait de sa proposition à la CME. La CME du même établissement termine le traitement par un rejet motivé « retrait demandé par l'auteur ». La proposition et son historique sont conservés ; la demande ne supprime pas la contribution ni ne change automatiquement sa modération.
+
+Réutiliser les états actuels, sans nouvel état de retrait. L'auteur ne rejette pas directement sa proposition ; les droits D071 restent applicables. Pour une offre déjà publiée, appliquer les règles existantes de clôture D068, pas ce parcours de rejet avant publication. Le réexamen éventuel d'une proposition rejetée reste encadré par D073.
+
+Règles et contrôles attendus dans docs/scope/offer-lifecycle.md ; première tranche, synthèse, scope et suivi alignés. Demande en cours de traitement, répétition/concurrence et détails d'interface à spécifier avant implémentation. C09 reste en cours, D007 ouverte ; aucun développement ou test applicatif réalisé. Commit/push selon D069, aucun nouveau snapshot selon D074.

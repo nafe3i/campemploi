@@ -1,6 +1,6 @@
 # Cycle de vie des offres — règles validées et propositions restantes
 
-Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070 valide informations/qualification ; D071 valide consultation ; D072 valide traitement manuel des propositions en doublon ; D073 valide réexamen après rejet, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068 et D070–D073. Aucun code ni choix technique.
+Mise à jour : 25 octobre 2026. Statut : partiellement validé. D061 valide le parcours nominal ; D068 valide disponibilité, clôture/réouverture et modifications après publication ; D070–D073 valident qualification, consultation, doublons et réexamen ; D075 valide retrait demandé par auteur avant publication, dans les sections dédiées ci-dessous. Les autres propositions restent Proposed. Références : D028–D032, D052–D054, D060–D061, D068, D070–D073 et D075. Aucun code ni choix technique.
 
 ## Deux dimensions
 
@@ -50,11 +50,31 @@ Vérifier identité, état du compte, rattachement, rôle, propriété et établ
 | En attente | Publier, CME | Publiée | Qualification et moyen de candidature exploitable selon D070 ; incertitudes signalées et choix explicite |
 | En attente | Rejeter, CME | Rejetée | Motif expliqué à l'auteur |
 | Rejetée | Autoriser un réexamen, CME du même établissement | À corriger | Nouveaux éléments justifiant réexamen, motif et rejet initial conservé selon D073 |
+| Proposition non publiée encore à traiter | Traiter la demande de retrait de l'auteur, CME du même établissement | Rejetée | Motif « retrait demandé par l'auteur » ; proposition et historique conservés selon D075 |
 | Publiée | Signaler correction, utilisateur autorisé | Publiée, signalement à traiter | Signaler ne remplace pas le contenu validé |
 | Publiée | Corriger et confirmer, CME | Publiée | Trace et version selon D068 ; source et incertitudes mises à jour |
 | Publiée / disponibilité ouverte ou incertaine | Constater fin, CME | Publiée / clôturée | Source ou motif de clôture enregistré ; hors liste des offres ouvertes |
 
-Réexamen après rejet désormais validé D073 ci-dessous, sans réouverture autonome par l'auteur. Retrait d'une proposition par l'auteur encore à arbitrer. Le retrait temporaire pour doute sérieux est validé D068, selon la section dédiée. Rien n'impose un état brouillon sauvegardé dans cette première version.
+Réexamen après rejet validé D073 ci-dessous, sans réouverture autonome par l'auteur. Retrait demandé par auteur avant publication validé D075, traité par CME sans suppression. Le retrait temporaire pour doute sérieux reste régi par D068. Rien n'impose un état brouillon sauvegardé dans cette première version.
+
+## Retrait demandé par auteur avant publication — Validé D075
+
+Accord explicite du 25 octobre 2026 (« valider »). Avant publication, l'auteur rattaché peut demander le retrait de sa propre proposition à la CME du même établissement. La demande ne vaut ni suppression ni rejet automatique. La CME termine le traitement par un rejet motivé « retrait demandé par l'auteur » ; proposition et historique restent conservés. Aucun nouvel état de modération.
+
+Les autres membres ne peuvent pas demander ce retrait au nom de l'auteur ni rejeter eux-mêmes la proposition. Consultation selon D071 et réexamen éventuel du rejet selon D073. Pour une offre déjà publiée, appliquer les règles de clôture D068 : une demande de retrait avant publication ne permet pas de contourner ce parcours ni d'effacer les suivis.
+
+### Contrôles à prévoir — aucune preuve applicative
+
+| Cas | Résultat attendu |
+|---|---|
+| Auteur demande retrait de sa proposition non publiée | Demande adressée à la CME ; pas de suppression ou de rejet automatique |
+| CME du même établissement traite la demande | Rejet avec motif prévu, proposition et historique conservés et consultables selon D071 |
+| Autre membre tente de retirer une proposition dont il n'est pas auteur | Refus sans modification ni exposition non autorisée |
+| Auteur tente de rejeter/supprimer directement | Refus, données conservées |
+| CME d'un autre établissement tente de traiter | Refus sans modification ni exposition interne |
+| Offre déjà publiée au moment du traitement | Ne pas appliquer ce rejet avant publication ; règles de clôture D068, suivis conservés |
+
+Modalités de la demande, traitement d'une demande encore en attente, actions répétées et concurrence publication/retrait à spécifier selon D060 ; aucun automatisme supplémentaire décidé.
 
 ## Réexamen après rejet — Validé D073
 
@@ -188,4 +208,4 @@ Conserver modération (en attente/à corriger/publiée/rejetée) et disponibilit
 
 Accord consigné D068 ; première tranche et synthèse réalignées. Avant code : spécifier champs/transitions et tests ; détails de conservation, concurrence et affichage à traiter sans choisir la stack implicitement. Ces contrôles sont à réaliser ; aucune preuve applicative disponible.
 
-Parcours nominal et motifs validés D061 ; disponibilité, clôture/réouverture, modifications et historique utile validés D068 ; informations/qualification D070, consultation D071, propositions en doublon D072 et réexamen après rejet D073 validés dans les périmètres ci-dessus. Restent notamment ouverts : retrait par l'auteur, doublons déjà publiés, formats/limites précis des champs, visibilité/conservation détaillée des traces et saisie rétrospective d'une candidature. D007 reste ouverte.
+Parcours nominal et motifs D061, disponibilité/modifications D068, compléments D070–D073 et retrait demandé avant publication D075 validés dans les périmètres ci-dessus. Restent notamment ouverts : doublons déjà publiés, formats/limites précis des champs, visibilité/conservation détaillée des traces, détails de traitement des demandes et saisie rétrospective d'une candidature. D007 reste ouverte.

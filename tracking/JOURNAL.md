@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Retrait demandé avant publication validé
+
+Accord explicite « valider ». D075 consignée : auteur demande retrait à CME, CME du même établissement termine par rejet motivé « retrait demandé par l'auteur », proposition et historique conservés, aucun nouvel état. Après publication, règles de clôture D068. Règles, première tranche, scope, synthèse et suivi alignés ; contrôles attendus de propriété/rôle/établissement et état au traitement documentés. Détails des demandes et concurrence à spécifier ; C09 en cours, D007 ouverte, aucune preuve applicative. Aucun snapshot selon D074 ; commit/push à exécuter selon D069 sans résultat distant présumé.
+
 ## 2026-10-25 — D074 publiée et vérifiée
 
 Commit dc6aeca0455c921c741771cbc19f80c6b7de3e65, « docs: remplacer les nouveaux snapshots par historique Git », publié sur origin/main par push normal et concordance distante vérifiée. Neuf fichiers documentaires revus, diff contrôlé et recherche ciblée sans motif de secret détecté. Aucun fichier de tracking/snapshots modifié ni créé ; index historique conservé. État/tableau mis à jour et suivi dans un commit distinct selon D069, sans nouvel instantané selon D074. C09 reste en cours ; aucun code applicatif ni validation globale de D007.
