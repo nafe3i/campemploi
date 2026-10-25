@@ -267,3 +267,11 @@ Accord explicite « oui je valide » à l'approche présentée : pour le pilote,
 Utiliser le rejet motivé D061, sans créer un état supplémentaire ni une fusion automatique. Aucun suivi de candidature n'est supprimé ou fusionné automatiquement. Cette approche ne requiert pas de système complexe de détection automatique. Le périmètre validé concerne l'examen d'une proposition avant publication ; la résolution de doublons déjà publiés, notamment avec des suivis existants, reste à préciser sans supprimer leurs données.
 
 Règles et contrôles attendus dans docs/scope/offer-lifecycle.md ; première tranche, synthèse, scope et suivi alignés. C09 reste en cours, D007 ouverte ; aucun développement ou test applicatif réalisé. Commit descriptif et push selon D069.
+
+## D073 — Réexamen d'une proposition rejetée — Validé, 2026-10-25
+
+Accord explicite « valider » au parcours présenté : si de nouveaux éléments justifient un réexamen, seule la CME du même établissement peut remettre une proposition rejetée à l'état « à corriger », avec un motif. L'auteur corrige puis soumet de nouveau ; la proposition revient en attente selon D061, sans publication automatique. L'auteur ne peut pas rouvrir lui-même un rejet.
+
+Le rejet initial reste dans l'historique ; le motif de réexamen ne l'efface pas. Les droits de consultation D071, les conditions de publication D070 et le traitement des doublons D072 restent applicables. Cette décision ne règle pas le retrait d'une proposition par l'auteur ni la conservation détaillée de toutes les traces.
+
+Règles, transitions, contrôles attendus et synthèses alignés. C09 reste en cours, D007 ouverte ; aucun code ni test applicatif réalisé. État du scope consolidé dans docs/scope/pilot.md à la demande de l'utilisateur. Commit descriptif et push selon D069.

@@ -4,7 +4,17 @@ Statut : décisions individuelles validées, scope consolidé à relire avant va
 Référence : docs/product/decisions.md. Cette consolidation ne transforme pas les propositions restantes en décisions.
 Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, évolutions globales ensuite. Prototype de collecte par API/flux/script gardé comme expérimentation indépendante ultérieure, sans bloquer la première tranche humaine. Cadrage de cette tranche dans docs/scope/first-slice.md ; règles proposées non automatiquement validées.
 
-## Objectif et public validés
+## État du cadrage au 25 octobre 2026 — bilan demandé par l'utilisateur
+
+Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D073, tableau de suivi, journal, captures successives et dépôt Git/GitHub synchronisé pour les lots déjà publiés. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
+
+Décisions métier validées : public et objectifs, organisation administrateur général/CME locale, invitation par classe, principes de revue CV/portfolio, parcours nominal des offres et compléments D068/D070–D073. Préparation/suivi des candidatures, accompagnement humain, rendez-vous/progression, entreprises et tableau de pilotage restent dans le périmètre envisagé, avec détails et placement des tranches encore ouverts. Contributions humaines d'abord, collecte automatique ultérieure.
+
+C07 est terminée pour le cadrage documentaire ; C08 (classes/revues) reste à faire ; C09 (droits et critères de la première tranche) reste en cours ; D007 (validation globale du scope) reste ouverte. Prochain travail proposé : consolider les règles et limites restantes de la première tranche puis la soumettre à validation, sans transformer tous les détails techniques en décisions de scope.
+
+UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, stack/architecture/hébergement. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
+
+## Objectif et public validés — détail
 
 Priorité de preuve validée (D047) : pertinence, accessibilité et effort de recherche. Changement de séquencement D053 : première tranche par contributions humaines pour mutualiser et qualifier les offres ; collecte automatique maintenue pour une tranche ultérieure avec étude/expérimentation, sans bloquer le démarrage de l'approche humaine. Aucun gain de découverte automatique revendiqué. Protocole proposé dans docs/scope/opportunity-experiment.md ; suivi et accompagnement conservés, D007 en attente. Portage officiel non confirmé.
 
@@ -32,6 +42,7 @@ Modération nominale validée D061 : soumission en attente ; décision CME de pu
 - Informations D070 : intitulé/entreprise/type et lien source ou texte avec provenance requis à la soumission. Qualification CME avant publication : lieu/mode, compétences/niveau, durée/début des stages selon les indications disponibles ; absences explicitement signalées sans invention. Moyen de candidature exploitable obligatoire avant publication (page, adresse professionnelle publiée ou instructions), sinon correction selon D061. Détails et contrôles dans docs/scope/offer-lifecycle.md.
 - Toutes les offres collectées passent par la validation de la CME avant visibilité collective. D071 : l'auteur rattaché consulte ses propres propositions, leur état et les motifs de correction/rejet ; la CME voit celles de son établissement. Les autres membres attendent publication. Cette consultation individuelle ne permet pas à l'auteur de publier ni de voir les propositions d'autrui.
 - D072 : traitement manuel des propositions en doublon par CME ; une seule offre au catalogue, proposition répétée rejetée avec motif « déjà présente ». Offre existante indiquée seulement si l'auteur peut la consulter. Aucun suivi supprimé ou fusionné automatiquement ; traitement des doublons déjà publiés encore à préciser.
+- D073 : réexamen d'un rejet par CME du même établissement si nouveaux éléments, avec motif ; passage à corriger, correction par auteur puis retour en attente, rejet initial conservé. Pas de réouverture autonome par l'auteur ni publication automatique.
 - Niveau demandé (D052) : une offre exigeant bac+5 peut être conservée et publiée après validation CME, avec exigence et écart au profil bac+2/+3 clairement signalés. Aucun rejet automatique pour ce seul motif ; aucune éligibilité ou dérogation présumée. Visibilité distincte de la pertinence vérifiée.
 - Une offre sans information d'accessibilité peut être publiée après validation CME avec « Accessibilité depuis le Maroc à confirmer ». Une restriction explicite n'est pas une information inconnue.
 - Recherche d'entreprises à prospecter et candidatures spontanées incluse dans le besoin (D012) ; détail du parcours et position dans les tranches à préciser.
