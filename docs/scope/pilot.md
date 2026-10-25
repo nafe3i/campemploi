@@ -6,11 +6,11 @@ Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, év
 
 ## État du cadrage au 25 octobre 2026 — bilan demandé par l'utilisateur
 
-Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D077, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
+Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D079, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
 
 Décisions métier validées : public et objectifs, organisation administrateur général/CME locale, invitation par classe, principes de revue CV/portfolio, parcours nominal des offres et compléments D068/D070–D073/D075. Préparation/suivi des candidatures, accompagnement humain, rendez-vous/progression, entreprises et tableau de pilotage restent dans le périmètre envisagé, avec détails et placement des tranches encore ouverts. Contributions humaines d'abord, collecte automatique ultérieure.
 
-C07 et C09 sont terminées pour le cadrage documentaire ; C09 comprend parcours, matrice et critères avec arbitrages D076/D077 validés. C08 (classes/revues) en cours : référent validé D078, correspondance formateur/responsable technique UNKNOWN et autres points ouverts. D007 (validation globale du scope) reste ouverte. Détails techniques à spécifier avant développement ; validation globale et placement des autres tranches demeurent distincts.
+C07 et C09 sont terminées pour le cadrage documentaire ; C09 comprend parcours, matrice et critères avec arbitrages D076/D077 validés. C08 (classes/revues) en cours : référent D078 et rôle commun formateur/responsable technique D079 validés, autres points ouverts. D007 (validation globale du scope) reste ouverte. Détails techniques à spécifier avant développement ; validation globale et placement des autres tranches demeurent distincts.
 
 UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, stack/architecture/hébergement. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
 
@@ -51,7 +51,7 @@ Modération nominale validée D061 : soumission en attente ; décision CME de pu
 
 ### Préparation et suivi (D036–D037)
 
-Référent D078 : un formateur référent par classe porte l'avis formateur CV/portfolio ; un même formateur peut suivre plusieurs classes et la CME gère les affectations dans son établissement avec permission locale. L'avis CME reste distinct. Correspondance formateur/responsable technique UNKNOWN, remplacement/accès/anciens avis à préciser ; aucune fusion de rôles déduite.
+Référent D078 : un formateur référent par classe porte l'avis formateur CV/portfolio ; un même formateur peut suivre plusieurs classes et la CME gère les affectations dans son établissement avec permission locale. D079 : formateur et responsable technique désignent le même rôle métier, référent est une affectation. Avis CME distinct, droits d'accompagnement/bilans contextuels inchangés ; remplacement/accès/anciens avis à préciser, pas d'accès général aux autres classes ou bilans.
 
 Accès de revue D058 : le formateur consulte et examine les CV/portfolios de ses classes sans demande préalable ; CME sur son établissement. Cette règle précise les questions d'accès ci-dessous et fait évoluer D042 pour les formateurs affectés. Aucun accès général aux autres classes, établissements ou bilans confidentiels. Effet des changements d'affectation à définir.
 

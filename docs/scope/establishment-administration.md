@@ -16,7 +16,7 @@ Le découpage global/local facilite l'autonomie des établissements. Distinguer 
 - Apprenants : inscription/rattachement selon D038 ; l'invitation du personnel ne remplace pas implicitement cette règle.
 - Aucun administrateur local ne crée d'administrateur général ni ne gère un autre établissement.
 - « Staff » reste à définir en permissions précises, sans rôle unique donnant accès à tout.
-- Affectations de revue D078 : CME avec permission locale gère un formateur référent par classe ; un formateur peut suivre plusieurs classes. Correspondance avec le rôle responsable technique et remplacement à préciser, sans extension de permissions.
+- Affectations de revue D078 : CME avec permission locale gère un formateur référent par classe ; un formateur peut suivre plusieurs classes. D079 : formateur et responsable technique sont le même rôle métier ; référent est une affectation. Remplacement à préciser, sans accès automatique aux autres classes/bilans ni permission d'administration ajoutée.
 
 Périmètre pilote validé D076 : mise en place du premier établissement et de sa CME par l'administrateur général, puis classes, invitations/rattachements et rôles nécessaires par CME avec permission locale. Écrans complets de gestion simultanée de plusieurs établissements reportés ; limites d'établissement et séparation des rôles dès la conception. Modalité de création initiale à comparer en architecture, sans choix technique implicite.
 

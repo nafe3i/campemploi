@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Correspondance formateur et responsable technique confirmée
+
+Réponse explicite à la clarification : « Oui, c'est le même rôle ». D079 consignée : rôle métier unique, deux appellations documentaires ; référent est une affectation de classe D078 et les droits de revue D058/accompagnement/bilans restent contextuels. Aucun rôle supplémentaire, accès général aux autres classes/bilans ou permission d'administration/modération ajouté. Documents de revue, administration, scope, synthèse et suivi alignés ; contrôles attendus documentés. C08 en cours, D007 ouverte, aucun développement ni test applicatif. Commit/push à vérifier selon D069, aucun snapshot D074.
+
 ## 2026-10-25 — D078 publiée et vérifiée
 
 Commit 957a2e309d2d5125317e587add5dcc424def5c09, « docs: valider le formateur referent de chaque classe », publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun nouveau snapshot. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 reste en cours, correspondance formateur/responsable technique UNKNOWN, aucune preuve applicative.

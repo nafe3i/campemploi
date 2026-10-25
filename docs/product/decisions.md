@@ -308,8 +308,18 @@ D072 concerne les propositions avant publication ; D077 complète la clôture D0
 
 ## D078 — Un formateur référent par classe pour la revue — Validé, 2026-10-25
 
+Correspondance des appellations clarifiée ensuite par D079 ; l'organisation du référent ci-dessous reste valide.
+
 Accord « c est valider » à l'organisation présentée : un formateur référent par classe pour porter l'avis formateur sur les CV et portfolios ; un même formateur peut suivre plusieurs classes. La CME gère ces affectations dans son établissement, avec la permission d'administration locale déjà définie D056. D057 conserve deux avis distincts, formateur et CME, pour chaque document examiné ; D058 limite l'accès aux classes affectées et à l'établissement.
 
 L'équivalence des termes « formateur » et « responsable technique », demandée dans une question séparée, reste UNKNOWN : l'accord d'organisation ne précise pas cette correspondance. Clarification demandée, aucun cumul de permissions ou fusion de rôles déduit. Remplacement du référent, sort des accès et anciens avis lors d'un changement, classes sans référent et modalités d'affectation restent à préciser.
 
 Règles, vérifications attendues et synthèses alignées ; C08 passe en cours, sans développement ni test applicatif et sans validation globale D007. Commit/push selon D069, sans nouveau snapshot D074.
+
+## D079 — Formateur et responsable technique : même rôle métier — Validé, 2026-10-25
+
+Réponse explicite à la clarification : « Oui, c'est le même rôle ». Dans l'application, formateur et responsable technique désignent un seul rôle métier, pas deux rôles à attribuer séparément. Les deux appellations des documents renvoient à ce rôle ; aucun libellé définitif d'interface ni identifiant technique choisi à ce stade.
+
+Être référent d'une classe reste une affectation gérée par la CME selon D078. La revue CV/portfolio dépend des classes affectées selon D058 et les avis formateur/CME restent distincts selon D057. L'accompagnement et les bilans gardent leurs droits propres : une personne de ce rôle n'obtient pas accès aux autres classes, établissements ou bilans d'autres accompagnants du seul fait de l'équivalence des termes. Aucun droit de modération CME ou d'administration locale ajouté.
+
+Clarification et conséquences documentaires alignées ; C08 reste en cours pour remplacement, anciens avis, commentaires et portfolio externe. Aucune fonctionnalité développée ni preuve applicative ; D007 ouverte. Commit/push selon D069, sans nouveau snapshot D074.
