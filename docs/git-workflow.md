@@ -1,7 +1,7 @@
 # Mise en place du suivi Git/GitHub
 
 Date : 25 octobre 2026. Adoption D066, premier commit et publication autorisés par D067 et réalisés. Aucun code applicatif.
-Règle courante D069 : après chaque validation explicite, commit descriptif et push des changements concernés autorisés, sans confirmation supplémentaire pour le même périmètre. Le lot D068 encore local est inclus. Les restrictions d'accord individuel ci-dessous décrivent la préparation historique, désormais complétée par cette règle.
+Règle courante D069 : après chaque validation explicite, commit descriptif et push des changements concernés autorisés, sans confirmation supplémentaire pour le même périmètre. Le lot D068 est inclus et publié avec D069 au commit de732bdaca71bef05aaf62b372c9c052c1c4b870, concordance distante vérifiée. Les restrictions d'accord individuel ci-dessous décrivent la préparation historique, désormais complétée par cette règle.
 Accord reçu le 25 octobre 2026 (D067) : premier commit et envoi documentaire autorisés, dépôt public accepté. Les mentions d'accord en attente ci-dessous décrivent la préparation antérieure et ne sont plus un blocage. Aucun changement de visibilité demandé.
 Vérification renouvelée le 25 octobre 2026 : main/origin déjà présents, aucun commit ; API publique confirmant private=false, taille 0 et aucune référence Git distante annoncée. Pas de réinitialisation, modification de visibilité ou push. Capture 0004 réellement créée lors de cette reprise ; pas de capture du même identifiant présente avant.
 

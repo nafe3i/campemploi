@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-25 — Lot D068/D069 publié et vérifié
+
+Commit de732bdaca71bef05aaf62b372c9c052c1c4b870 : « docs: valider le cycle des offres et synchroniser chaque decision ». Les 42 fichiers sélectionnés concernent décisions, méthode, scope et suivi, dont captures 0007–0009 ; aucun motif de secret détecté par recherche ciblée, diff contrôlé et 30 fichiers de captures identiques entre disque et index Git. Push normal vers origin/main réussi ; lecture distante indépendante confirmant exactement le commit local. G05 terminée et suivi aligné ; capture 0010 du résultat observé, puis commit de suivi distinct selon D069. Aucun code applicatif, test applicatif ni déploiement.
+
 ## 2026-10-25 — Synchronisation Git après chaque validation autorisée
 
 Instruction explicite de créer un commit descriptif et de le pousser après chaque validation. D069 enregistrée dans le registre, AGENTS.md, workflow et guide Git ; aucun nouvel accord nécessaire pour le même périmètre validé. Le lot D068 et ses captures 0007/0008 sont inclus dans la synchronisation autorisée. Tableau et état alignés ; capture 0009 avant exécution. Contrôles de sélection, confidentialité, conservation des captures et push normal requis ; aucun résultat distant présumé à cette étape. Aucun changement produit supplémentaire ni déploiement.

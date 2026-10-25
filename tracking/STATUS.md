@@ -1,12 +1,13 @@
 # État — 2026-10-25
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
-Tâche C07 : règles de clôture/réouverture et modifications explicitement validées D068, documentées dans docs/scope/offer-lifecycle.md. C07 terminée pour le cadrage documentaire uniquement ; continuité des candidatures, versions et contrôles à implémenter/vérifier. Capture 0008 de cet accord. D069 autorise maintenant le commit descriptif et le push de ce lot ; exécution en préparation, aucun résultat distant encore annoncé pour ce nouveau lot.
+Tâche C07 : règles de clôture/réouverture et modifications explicitement validées D068, documentées dans docs/scope/offer-lifecycle.md. C07 terminée pour le cadrage documentaire uniquement ; continuité des candidatures, versions et contrôles à implémenter/vérifier. Capture 0008 de cet accord. D068/D069 publiées au commit de732bdaca71bef05aaf62b372c9c052c1c4b870 ; concordance avec origin/main vérifiée après push normal. Capture 0010 du suivi de cette exécution ; publication de ce suivi traitée dans un commit distinct.
 
 ## Suivi Git et GitHub — D066
 
 - Accord D067 obtenu le 25 octobre 2026 : premier commit et dépôt public acceptés. Exécution réalisée et vérifiée.
 - D069 : commit descriptif et push après chaque validation explicite, sans nouvel accord pour le même périmètre ; contrôles de sélection, confidentialité et résultat distant obligatoires. Règle ajoutée à AGENTS.md, workflow et guide Git ; capture 0009 avant synchronisation.
+- Application D069 réalisée : commit de732bd publié et vérifié ; diff contrôlé, recherche ciblée de secrets sans motif détecté, 30 fichiers de captures sélectionnés aux octets identiques. Aucun code applicatif ni déploiement.
 
 - Organisation Git/GitHub validée ; dépôt local initialisé sur main.
 - origin configuré : https://github.com/nafe3i/campemploi.git.

@@ -75,10 +75,10 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | G02 | Préparer premier contenu et contrôles | Terminé | .gitignore/.gitattributes, docs/git-workflow.md et revue docs/reviews/2026-10-24-initial-git-review.md ; contenu documentaire sélectionné, contrôles avant accord commit |
 | G03 | Créer le premier commit et envoyer le premier état | Terminé | D067 ; commit initial 2082f296e075c6f3a0b1d68a214f1de417c9d54b envoyé et vérifié sur origin/main le 25 octobre 2026 ; dépôt public accepté |
 | G04 | Préparer tâches et Project GitHub | À faire | Modèle à relier au tableau existant avant création externe |
-| G05 | Consigner et appliquer commit/push après chaque validation | En cours | D069 et AGENTS.md, docs/workflow.md, docs/git-workflow.md ; lot D068 et règle prêts pour contrôles puis synchronisation |
+| G05 | Consigner et appliquer commit/push après chaque validation | Terminé | D069 et consignes alignées ; lot D068/D069 publié au commit de732bdaca71bef05aaf62b372c9c052c1c4b870 ; concordance origin/main vérifiée, contrôles documentaires et captures ; capture 0010 du résultat |
 
 ## Prochaine action immédiate
 
-Premier état documentaire publié ; D069 autorise désormais la synchronisation du lot D068 et les futurs commits descriptifs/push après validation. G05 en cours, résultat à vérifier. Proposer le contenu des Issues/Project avant création externe. C07 est terminée pour le cadrage ; prochaine tâche produit proposée C09. Aucune validation de D007 ni réalisation applicative.
+Lot D068/D069 publié et vérifié (de732bd), G05 terminée ; suivi du résultat dans un commit distinct selon D069. Proposer le contenu des Issues/Project avant création externe. C07 est terminée pour le cadrage ; prochaine tâche produit proposée C09. Aucune validation de D007 ni réalisation applicative.
 
 Prochaine tâche proposée : C09, consolider les droits, champs et critères restants de la première tranche ; C08 reste ouverte pour les classes et revues. Aucune fonctionnalité applicative développée ou Accepted. Mise à jour du tableau après chaque avancée réelle avec preuve, sans transformer une discussion en réalisation.
