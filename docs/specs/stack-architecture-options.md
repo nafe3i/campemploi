@@ -22,7 +22,19 @@ Alternative si priorité à la simplicité PHP : Laravel avec Blade/Livewire, r�
 
 La recommandation initiale conditionnelle Laravel/PHP est à réexaminer selon la préférence JavaScript/React D087 et les besoins réels du campus. La comparaison doit porter sur les permissions, la séparation des établissements, les parcours métier, les tests, la maintenabilité et les moyens de réalisation/exploitation. Aucune recommandation finale validée. Versions, dépendances, hébergement et budget restent à décider.
 
-## Architecture proposée, indépendante du choix final
+## Proposition concrète après D087 — en attente de validation
+
+Recommandation : React avec Vite et TypeScript pour l'interface, Node.js avec NestJS et TypeScript pour une API REST, PostgreSQL pour les données ; serveur organisé en monolithe modulaire. Cette proposition ne constitue pas une décision D008 et ne déclenche ni installation ni développement.
+
+Motifs : préférence JavaScript/React, interface de gestion interactive, nombreuses règles de rôles/établissements et transitions métier. NestJS propose modules, contrôleurs, services, validation et mécanismes de contrôle d'accès ; leur présence ne remplace pas la conception de nos permissions. TypeScript aide à détecter des incohérences de types avant exécution, sans remplacer la validation des données reçues. PostgreSQL proposé pour les relations et contraintes d'intégrité ; les autres bases SQL restent possibles.
+
+Comparaison déterminante : Next.js intégré permet de réunir interface et fonctions serveur dans une application, avec moins de séparation opérationnelle ; il reste viable pour le pilote. React + NestJS fournit une frontière API explicite et un cadre serveur structuré, au prix de deux composants à intégrer, sécuriser et exploiter. Cette séparation est un choix de maintenabilité proposé pour nos règles métier, pas un besoin de volume ni une obligation pour du multi-établissements. React recommande généralement un framework ; le choix Vite suppose de prévoir explicitement routage, appels réseau, chargements et erreurs. Express seul constitue une autre option plus légère, avec davantage de conventions à définir et maintenir nous-mêmes.
+
+Périmètre exact de l'accord à demander : React/Vite, TypeScript, Node.js/NestJS, PostgreSQL et organisation serveur en monolithe modulaire. Les modules seraient introduits par tranches : identité/organisation et offres d'abord ; autres domaines ensuite. Aucun microservice requis pour le pilote proposé. Frontend et serveur séparés ne constituent pas à eux seuls des microservices.
+
+ORM, authentification/sessions, stratégie précise de séparation des établissements, stockage privé, bibliothèque UI, versions et hébergement restent à comparer et valider. Les conséquences d'intégration et de déploiement devront être spécifiées avant initialisation. Si accord : préciser D008 dans le registre et aligner docs/specs/, README et suivi, commit/push D069 ; aucune initialisation applicative incluse dans cet accord.
+
+## Organisation métier proposée
 
 Un monolithe modulaire : un serveur métier déployable comme une unité, organisé par responsabilités. Une interface séparée reste possible avec Spring ; elle ajoute un composant à exploiter sans imposer plusieurs services métier.
 
@@ -44,5 +56,8 @@ Préférence JavaScript/React précisée D087 ; comparer les options adaptées a
 - [Next.js : backend pour le frontend et limites](https://nextjs.org/docs/app/guides/backend-for-frontend)
 - [Next.js : authentification, sessions et autorisation](https://nextjs.org/docs/app/guides/authentication)
 - [PostgreSQL : contraintes relationnelles](https://www.postgresql.org/docs/current/ddl-constraints.html)
+- [NestJS : organisation du serveur et fonctionnalités](https://docs.nestjs.com/)
+- [React : création d'application et recommandation de frameworks](https://react.dev/learn/creating-a-react-app)
+- [Vite : outil de développement et de build](https://vite.dev/guide/)
 
 Les pages consultées ne fixent pas les versions du projet. Ces choix restent ouverts.

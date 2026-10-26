@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Proposition concrète de stack soumise
+
+Après préférence JavaScript/React et rappel de la finalité réelle du campus, comparaison complémentaire des sources officielles NestJS, React, Vite et Next.js. Proposition documentée : React/Vite, TypeScript, Node.js/NestJS, PostgreSQL et serveur en monolithe modulaire. Alternative Next.js intégré reconnue viable ; contreparties de deux composants, conventions frontend et complexité Nest explicitées. Accord attendu, D008 reste UNKNOWN ; aucun code, installation ni architecture appliquée. Authentification, ORM, séparation détaillée des établissements et hébergement restent ouverts. Suivi actualisé, commit/push selon D069, sans snapshot D074.
+
 ## 2026-10-26 — Rectification du sens de D087
 
 L'utilisateur rappelle que nous construisons un projet réel pour son campus. La qualification précédente de priorité pédagogique était une interprétation de l'assistant, rectifiée : JavaScript/React est une préférence technologique à évaluer selon les besoins du produit. D087, comparaison et suivi corrigés. Les entrées antérieures décrivent l'interprétation initiale, pas un nouvel accord. Accompagnement de mentor conservé ; aucun mandat institutionnel, choix complet de stack ou architecture déduit. Aucun code ni installation ; commit/push selon D069, sans snapshot D074.
