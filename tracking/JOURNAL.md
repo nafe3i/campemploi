@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — D086 publiée et vérifiée
+
+Commit 97cf0f270eaa29b5b04d3058152288280a744d70, « docs: valider le decoupage du pilote en trois tranches », publié par push normal sur origin/main ; concordance distante vérifiée. Sept documents relus, diff contrôlé, entrée D086 unique et recherche ciblée sans motif de secret détecté ; aucune capture créée/modifiée. État/tableau actualisés, suivi dans un commit distinct selon D069. C10/D007 encore ouverts pour accord global, C11/C12 pour cadre/essais ; aucun code ni preuve applicative.
+
 ## 2026-10-26 — Découpage en trois tranches validé
 
 Accord explicite « oui je valide » à l'ordre présenté. D086 consignée : accès/organisation nécessaire et offres en tranche 1 ; CV/portfolio/revues, préparation/suivi et liste d'entreprises en tranche 2 ; accompagnement, simulations humaines, rendez-vous/progression et tableau en tranche 3. Collecte automatique maintenue comme évolution indépendante ultérieure. Placement des blocs documenté sans date fixe ni choix technique. Scope, synthèse, première tranche et suivi alignés ; C10 en cours, D007 toujours ouverte, C11/C12 ouverts pour données et essais. Aucun code/test applicatif ; commit/push à vérifier selon D069, aucun snapshot D074.
