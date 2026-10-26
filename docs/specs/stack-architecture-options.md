@@ -1,6 +1,6 @@
 # Stack et architecture — comparaison initiale
 
-Date : 26 octobre 2026. Statut courant : stack et architecture générale validées D008 ; Docker retenu D088. React/Vite + TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire. R01 en cours pour les détails et hébergement ; aucun code ni installation réalisés. Les comparaisons et mentions de propositions ci-dessous décrivent les étapes ayant précédé cet accord.
+Date : 26 octobre 2026. Statut courant : stack et architecture générale validées D008 ; Docker retenu D088 ; Docker Compose et conteneurisation complète en développement validés D089. React/Vite + TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire. R01 en cours pour les détails et hébergement ; aucun code ni installation réalisés. Les comparaisons et mentions de propositions ci-dessous décrivent les étapes ayant précédé cet accord.
 
 ## Contraintes de référence
 
@@ -46,7 +46,7 @@ Exemple de responsabilités : interface de publication → réception et validat
 
 ## Prochaine discussion
 
-Stack et architecture générale validées D008, Docker retenu D088. Prochaine discussion : organisation du dépôt et périmètre Docker en développement, puis détails de données/authentification/hébergement. Aucun accord global implicite sur ces modalités.
+Stack et architecture générale validées D008, Docker retenu D088 ; Docker Compose et conteneurisation complète en développement validés D089. Prochaine discussion : organisation du dépôt et spécification du socle de démarrage, puis détails de données/authentification/hébergement ; périmètre Docker de développement validé D089. Aucun accord global implicite sur ces modalités.
 
 ## Sources officielles consultées
 
@@ -64,6 +64,14 @@ Les pages consultées ne fixent pas les versions du projet. Ces choix restent ou
 
 ## Docker — ajout validé D088, modalités ouvertes
 
-Docker est retenu. Proposition à discuter : Docker Compose pour décrire et démarrer les services nécessaires au développement ; interface, API et PostgreSQL pourraient être conteneurisés, ou seulement la base avec applications lancées localement. Tout conteneuriser uniformise davantage les commandes ; la base seule allège le démarrage mais requiert Node.js local. Choix pas encore arbitré. Volumes persistants, secrets, accès réseau, images et différences développement/production devront être spécifiés avant configuration. Aucun outil installé, aucune image téléchargée, aucun conteneur lancé.
+D089 validée : Docker Compose en développement avec interface React/Vite, API NestJS et PostgreSQL conteneurisés, rechargement automatique. Alternative base seule examinée puis non retenue pour ce périmètre. Production étudiée séparément. Images/versions, volumes persistants, secrets, accès réseau, commandes et preuves de démarrage restent à spécifier avant configuration. Aucun outil installé, aucune image téléchargée, aucun conteneur lancé.
 
 Sources : [Docker, présentation](https://docs.docker.com/get-started/docker-overview/) et [Docker Compose](https://docs.docker.com/compose/).
+
+## Application de la référence JSM et du workflow local
+
+Référence docs/reference/jsm-workflow-source.txt relue intégralement après la question de l'utilisateur. Elle définit architect comme la phase produisant une spécification de construction pour toute décision dont dépend le développement : stack, modèle de données, fournisseur, page ou fonctionnalité. Sur un projet neuf : scope, choix de stack, initialisation avec les outils de la stack, audit du projet réel ; puis spécifications fonctionnelles et développement par petites tranches. Ne pas confondre spécification de stack avec toutes les spécifications fonctionnelles à produire avant chaque implémentation.
+
+Le présent document conserve comparaison, décisions et limites ; il ne constitue pas encore une spécification complète du socle exécutable. Prochain livrable à proposer : spécification du socle de démarrage dans docs/specs/, avec contexte, décisions D008/D088/D089, alternatives, structure du dépôt, responsabilités, choix restant à valider et critères de vérification. Les fonctionnalités auront ensuite leurs propres spécifications liées au scope, avant développement.
+
+Les statuts locaux Proposed → In Progress → Accepted suivent docs/workflow.md. Décision validée ne signifie pas fonctionnalité Accepted : preuves réelles et tests pertinents requis. Vérifier notamment permissions, séparation des établissements, cas d'erreur et absence d'effets non autorisés. Audit après initialisation pour documenter les commandes et conventions réelles dans AGENTS.md. Noms JSM utilisés comme phases, aucun skill installé présumé. Révision par autre agent/modèle seulement si autorisée explicitement, selon les consignes locales.

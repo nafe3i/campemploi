@@ -25,4 +25,4 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Workflow](docs/workflow.md)
 - [Liaison à l'application](docs/project-setup.md)
 
-Stack validée D008 : React/Vite + TypeScript, Node.js/NestJS et PostgreSQL ; serveur en monolithe modulaire, API REST. Docker retenu D088, modalités à préciser. Aucun code applicatif ni déploiement.
+Stack validée D008 : React/Vite + TypeScript, Node.js/NestJS et PostgreSQL ; serveur en monolithe modulaire, API REST. Docker retenu D088 ; Docker Compose et conteneurisation complète en développement validés D089, production à préciser. Aucun code applicatif ni déploiement.

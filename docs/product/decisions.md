@@ -411,3 +411,7 @@ Accord appliqué aux documents et au suivi, pas à une initialisation applicativ
 ## D088 — Utilisation de Docker — Validé, 2026-10-26
 
 Ajout explicite de l'utilisateur : « on vat travailler avec docker aussi ». Docker retenu comme outil du projet pour un environnement reproductible. Aucun choix implicite de Docker Desktop, version, images, services conteneurisés, ports, volumes, hébergeur ou environnement de production. Périmètre développement/tests/production et mise en place à préciser ; Docker Compose proposé pour décrire les services ensemble, non encore validé. Ni installation système ni création de configuration réalisée par cet accord documentaire. Docker ne remplace pas les sauvegardes ni les contrôles métier de séparation des établissements. Documentation et suivi alignés, commit/push selon D069, sans snapshot D074.
+
+## D089 — Docker Compose et conteneurisation complète en développement — Validé, 2026-10-26
+
+Accord explicite « oui » à la recommandation précédente : Docker Compose pour le développement, avec interface React/Vite, API NestJS et PostgreSQL conteneurisés ; rechargement automatique pendant les modifications. Précise D088. Configuration de production étudiée séparément. Versions/images, commandes, ports, volumes, secrets, vérifications et ressources locales restent à spécifier avant setup ; aucune installation système ou configuration créée par cette validation documentaire. Registre, document technique et suivi actualisés, commit/push selon D069, sans snapshot D074.

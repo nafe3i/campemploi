@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — D089 validée et référence JSM relue intégralement
+
+Accord explicite « oui » pour Compose et conteneurisation React/Vite, NestJS et PostgreSQL en développement avec rechargement automatique. D089 consignée ; production séparée et détails ouverts. À la question sur la référence : relecture intégrale de docs/reference/jsm-workflow-source.txt et docs/workflow.md ; distinction explicitée entre comparaison de stack, spécification de socle, setup/audit et spécifications fonctionnelles. Socle à préparer avec décisions, responsabilités, critères et questions restantes ; aucune nouvelle décision technique inventée. README, comparaison et suivi alignés ; aucun code, installation ou test applicatif, aucun agent délégué. Commit/push selon D069, sans snapshot D074.
+
 ## 2026-10-26 — Stack et architecture générale validées, Docker ajouté
 
 Accord explicite « ok et on vat travailler avec docker aussi » : D008 validée pour React/Vite, TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire ; Docker retenu D088. Registre, comparaison, README, scope et suivi alignés. Docker Compose et périmètre développement/production restent à discuter ; ORM, authentification, séparation détaillée des établissements, versions et hébergement encore ouverts. Aucun code, installation, conteneur, test applicatif ou déploiement ; R01 en cours. Commit/push selon D069, sans snapshot D074.
