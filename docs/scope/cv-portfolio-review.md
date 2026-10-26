@@ -1,6 +1,6 @@
 # Revue des CV et portfolios — cadrage progressif
 
-Mise à jour : 25 octobre 2026. Références : D055, D057–D058 et D078–D083. Double validation, référent/remplacement, commentaires et déclaration des modifications du portfolio validés ; modalités restantes à approfondir, pas spécification technique ni fonctionnalité Accepted.
+Mise à jour : 26 octobre 2026. Références : D055, D057–D058 et D078–D085. Cadrage principal documenté : double validation, référent/remplacement, commentaires, déclaration portfolio, absence temporaire de référent et non-blocage des candidatures. Modalités restantes à spécifier ; aucune fonctionnalité Accepted ni preuve applicative.
 
 ## Besoin exprimé
 
@@ -19,16 +19,16 @@ Compléments proposés : auteur, date et référence de version pour chaque avis
 
 Exemple fictif : CV version 1 validé par le formateur, non validé par la CME → pas de validation globale. Deux avis positifs → globalement validé. Remplacement par version 2 → nouvelle revue, anciens avis conservés comme historique de version 1.
 
-## Questions à trancher par petits groupes
+## Bilan du cadrage et points à spécifier
 
-1. Organisation D078, rôle commun D079 et remplacement D080 validés ; classe sans référent et détails de transition à préciser.
+1. Organisation D078, rôle commun D079, remplacement D080 et classe temporairement sans référent D084 validés ; détails de transition à spécifier.
 2. Remplacement D080, validations sur contenu inchangé D081 et visibilité des commentaires historiques D082 validés ; modalités de révision d'un avis existant à préciser.
 3. Deux avis positifs et revues séparées validés (D057) ; autres statuts globaux à spécifier.
 4. En attente/non validé distingués par D057 ; règles détaillées de correction à spécifier.
 5. Signalement humain des modifications du portfolio validé D083 ; méthode technique de référence au contenu examiné et historique détaillé à spécifier.
 6. Visibilité des commentaires D082 validée : apprenant concerné, CME et référent actuel, y compris anciens retours. Droits d'écriture/correction et conservation détaillée à spécifier ; bilans et notes privées distincts.
 7. Les filtres et compteurs sont-ils destinés à la CME, au formateur limité à sa classe et/ou au tableau porteur ? Voir un statut ne donne pas automatiquement accès au fichier.
-8. Une absence de validation empêche-t-elle de candidater ? Aucun blocage de candidature décidé ; ne pas inventer de condition supplémentaire.
+8. D085 : état non validé du CV/portfolio non bloquant pour préparer/suivre ses candidatures ; état réel et corrections affichés, autres contrôles maintenus.
 
 ## Organisation du référent — Validé D078
 
@@ -47,7 +47,7 @@ L'équivalence des termes formateur et responsable technique est explicitement v
 | Responsable technique non affecté à la classe invoque le rôle commun pour lire ses CV/portfolios | Aucun accès général par classe ; autres accès éventuels uniquement selon leur contexte déjà autorisé, pas par l'équivalence |
 | Référent invoque sa classe pour lire un bilan d'un autre accompagnant | Refus selon droits propres aux bilans ; affectation ne les élargit pas |
 
-Remplacement D080, maintien des validations D081 et consultation des retours historiques D082 ci-dessous ; retrait sans successeur, classe sans référent et modalités d'écriture/correction à discuter.
+Remplacement D080, maintien des validations D081, retours historiques D082 et classe temporairement sans référent D084 ci-dessous ; détails de transition et modalités d'écriture/correction à spécifier.
 
 ## Remplacement du référent — Validé D080
 
@@ -116,6 +116,33 @@ Le portfolio passe à revalider et les deux revues formateur/CME sont de nouveau
 
 Approche déclarative : aucune preuve de stabilité du site entre revues, aucune surveillance automatique ni copie complète du portfolio décidée. Référence technique au contenu examiné, limites du résumé, affichage, conservation et erreurs à spécifier avant développement. D083 n'ajoute aucun envoi externe ni condition bloquant une candidature.
 
+## Classe temporairement sans référent — Validé D084
+
+L'apprenant peut déposer ses documents et la CME examiner/renseigner son propre avis pendant l'absence temporaire de référent. Pour une double validation encore incomplète, attendre l'avis du référent désigné selon D057/D078. Ne pas créer de validation formateur implicite, ni donner par défaut accès à un autre formateur. Les avis précédents restent conservés avec leurs auteurs selon les règles existantes ; pas de modification automatique des données par la seule absence de référent.
+
+| Vérification à prévoir | Résultat attendu, non encore testé |
+|---|---|
+| Apprenant rattaché dépose CV/portfolio, classe sans référent | Dépôt possible selon ses droits, sans validation automatique |
+| CME locale examine sans référent affecté | Son avis reste distinct ; aucun avis formateur positif créé |
+| Avis formateur manquant et avis CME positif | Pas de validation globale malgré l'absence temporaire de référent |
+| CME affecte ensuite le référent | Celui-ci peut effectuer son examen selon les droits de classe ; pas d'avis créé par la seule affectation |
+| Formateur non affecté invoque l'absence de référent | Aucun accès de classe accordé par défaut |
+
+Délais et procédures d'affectation, transitions et présentation des avis antérieurs à spécifier ; aucune délégation automatique décidée.
+
+## Documents non encore validés et candidatures — Validé D085
+
+Un CV ou portfolio non encore validé ne bloque pas la préparation et le suivi des candidatures. Afficher l'état réel et les corrections attendues pour guider l'apprenant ; l'absence de blocage ne vaut pas validation du document. Ce principe conserve les contrôles d'accès, de rattachement et des offres (dont clôture D068), et les exigences du canal externe. Aucun envoi effectué ou automatisé par cette décision.
+
+| Vérification à prévoir | Résultat attendu, non encore testé |
+|---|---|
+| Document en attente, non validé ou à revalider | Préparation et suivi possibles selon leurs droits ; état réel/corrections visibles, aucun avis positif inventé |
+| Compte sans accès interne ou candidature d'autrui | Refus selon les règles d'accès, malgré le non-blocage documentaire |
+| Nouvelle candidature depuis une offre clôturée | D068 reste applicable ; D085 ne contourne pas ce contrôle |
+| Entreprise exige une pièce ou un format | Exigence conservée ; aucune affirmation que le dossier est conforme du seul fait du non-blocage |
+
+Ces contrôles seront exercés lors de la réalisation des parcours concernés ; le suivi des candidatures n'est pas développé ni ajouté automatiquement à la première tranche.
+
 ## Limites et articulation
 
-Pas de choix de stack. Pas d'accès général aux bilans confidentiels via la classe. Droits à arbitrer avant implémentation, avec tests d'accès inter-classes et inter-établissements. Aucun changement implicite du parcours initial offres D053. Les quatre états d'offre proposés restent distincts de ceux de la revue CV.
+Consolidation documentaire C08 terminée, pas de choix de stack ni de fonctionnalité développée/Accepted. Pas d'accès général aux bilans confidentiels via la classe. Détails de droits d'écriture/correction, révision d'avis, filtres/compteurs, référence au contenu examiné et autres modalités à spécifier avant implémentation, avec tests inter-classes/établissements. Aucun changement implicite du parcours initial offres D053 ; états d'offre distincts des états de revue.

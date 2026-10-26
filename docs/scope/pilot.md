@@ -4,13 +4,13 @@ Statut : décisions individuelles validées, scope consolidé à relire avant va
 Référence : docs/product/decisions.md. Cette consolidation ne transforme pas les propositions restantes en décisions.
 Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, évolutions globales ensuite. Prototype de collecte par API/flux/script gardé comme expérimentation indépendante ultérieure, sans bloquer la première tranche humaine. Cadrage de cette tranche dans docs/scope/first-slice.md ; règles proposées non automatiquement validées.
 
-## État du cadrage au 25 octobre 2026 — bilan demandé par l'utilisateur
+## Bilan courant du cadrage — mise à jour du 26 octobre 2026
 
-Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D083, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées.
+Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D085, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées. Complément du 26 octobre 2026 : D084/D085 et fin de la consolidation documentaire C08.
 
 Décisions métier validées : public et objectifs, organisation administrateur général/CME locale, invitation par classe, principes de revue CV/portfolio, parcours nominal des offres et compléments D068/D070–D073/D075. Préparation/suivi des candidatures, accompagnement humain, rendez-vous/progression, entreprises et tableau de pilotage restent dans le périmètre envisagé, avec détails et placement des tranches encore ouverts. Contributions humaines d'abord, collecte automatique ultérieure.
 
-C07 et C09 sont terminées pour le cadrage documentaire ; C09 comprend parcours, matrice et critères avec arbitrages D076/D077 validés. C08 (classes/revues) en cours : référent D078 et rôle commun formateur/responsable technique D079 validés, autres points ouverts. D007 (validation globale du scope) reste ouverte. Détails techniques à spécifier avant développement ; validation globale et placement des autres tranches demeurent distincts.
+C07, C08 et C09 sont terminées pour le cadrage documentaire : offres et droits de première tranche consolidés, référent/revues documentés jusqu'à D085. D007 (validation globale du scope) reste ouverte. Détails techniques et droits restants à spécifier avant développement ; validation globale et placement des autres tranches demeurent distincts.
 
 UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, stack/architecture/hébergement. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
 
@@ -50,6 +50,8 @@ Modération nominale validée D061 : soumission en attente ; décision CME de pu
 - Liste d'entreprises évolutive (D046) : ajout par la CME ; propositions des apprenants et responsables validées par la CME avant ajout à la liste commune. Nom, site et page carrières prévus, caractère obligatoire à préciser. Ajout distinct de l'activation d'une collecte automatique, qui nécessite vérification et configuration. Une fiche d'entreprise ne vaut ni partenariat ni offre active.
 
 ### Préparation et suivi (D036–D037)
+
+D084/D085, validées le 26 octobre 2026 : classe temporairement sans référent, dépôt des documents et avis CME possibles ; double validation encore incomplète attend l'avis du référent désigné. CV/portfolio non encore validé ne bloque pas préparation/suivi des candidatures ; état réel et corrections affichés, autres règles d'accès/offres et exigences externes conservées. Aucun avis positif implicite ni envoi automatique.
 
 Référent D078 : un formateur référent par classe porte l'avis formateur CV/portfolio ; un même formateur peut suivre plusieurs classes et la CME gère les affectations dans son établissement avec permission locale. D079 : formateur et responsable technique désignent le même rôle métier, référent est une affectation. Avis CME distinct et droits d'accompagnement/bilans contextuels inchangés ; remplacement précisé D080 ci-dessous, pas d'accès général aux autres classes ou bilans.
 

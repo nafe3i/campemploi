@@ -1,6 +1,11 @@
-# État — 2026-10-25
+# État — 2026-10-26
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
+D084/D085 validées le 26 octobre 2026 : sans référent temporaire, dépôt et avis CME possibles, double validation incomplète attend l'avis formateur ; préparation/suivi des candidatures non bloqués par documents non encore validés, état/corrections affichés et autres contrôles maintenus. C08 terminée pour le cadrage documentaire principal ; détails d'écriture/correction et autres modalités à spécifier. C10/D007 prochaine tâche proposée ; C11/C12 ouverts. Documents alignés, lot à publier selon D069 sans snapshot D074.
+
+## Repères des étapes précédentes
+
+Les mentions C08/C09 en cours ci-dessous décrivent l'état lors des décisions antérieures ; l'état courant est celui indiqué ci-dessus et dans BOARD.md.
 D083 validée et documentée : apprenant signale un changement du portfolio même URL, date/résumé conservés ; portfolio à revalider et deux revues requises, CV inchangé conservé. Approche déclarative sans preuve de stabilité du site ni suivi automatique décidé. Commit afb6f4bc2c60919c81559cead9f1f23f0ac97def publié et vérifié sur origin/main ; C08 en cours, aucune preuve applicative ni snapshot D074.
 D082 validée et documentée : retours de revue CV/portfolio, anciens compris, visibles par apprenant concerné, CME locale et référent actuel. Autres membres sans accès par leur seul rôle, auteurs conservés et bilans séparés. C08 en cours pour portfolio/autres modalités ; commit 8959092fed90608947e7e590e5dc774bd6e9c1d6 publié et vérifié sur origin/main, sans preuve applicative ni snapshot D074.
 D081 validée et documentée : remplacement seul et contenu inchangé ne remettent pas les documents à revalider ; validations et auteurs conservés, aucun avis positif créé. Modification du contenu : nouvelle revue D057. C08 en cours pour commentaires/portfolio et autres modalités ; commit fe002b9ac62aa601fcb87f687969dc4b3de43215 publié et vérifié sur origin/main, sans preuve applicative ni snapshot D074.

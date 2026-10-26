@@ -361,3 +361,17 @@ Accord explicite « oui valide » à la proposition présentée : pour le pilote
 Les avis précédents restent conservés pour le contenu précédemment examiné, sans validation automatique du nouveau contenu. Cette approche est déclarative ; un signalement, une URL inchangée ou l'absence de signalement ne prouvent pas que le site est resté identique entre deux revues. Aucun suivi automatique du site ou copie complète du contenu décidé. Méthode technique de référence au contenu examiné et gestion des erreurs/répétitions à spécifier.
 
 Les droits sur les documents et retours restent D058/D082, bilans séparés. Documents et contrôles attendus alignés ; C08 reste en cours pour autres modalités, D007 ouverte. Aucun développement ou test applicatif ; commit/push selon D069, sans snapshot D074.
+
+## D084 — Dépôt et avis CME sans référent temporairement affecté — Validé, 2026-10-26
+
+Accord explicite « valide » aux deux propositions présentées. Pour une classe temporairement sans référent, l'apprenant peut déposer ses documents et la CME donner son propre avis. L'obtention d'une double validation encore incomplète attend l'avis du référent désigné ; l'absence de référent ne crée pas d'avis formateur positif ni ne permet de remplacer automatiquement cet avis par celui de la CME. D057 garde les deux avis distincts et D078 l'affectation par CME.
+
+Les droits existants restent applicables : aucun autre formateur n'accède à la classe par défaut. Conservation des avis précédents selon D080/D081, sans réattribution ni modification automatique des données par cette règle. Modalités d'affectation et transitions précises à spécifier. Aucun délai d'affectation ni nouvel état technique imposé.
+
+## D085 — État des documents non bloquant pour préparer et suivre une candidature — Validé, 2026-10-26
+
+Même accord explicite sur la seconde proposition : CV ou portfolio non encore validé n'empêchent pas la préparation et le suivi des candidatures dans la plateforme. Afficher l'état réel et les corrections attendues ; ne pas transformer ce non-blocage en validation du document ni en garantie de qualité ou d'éligibilité.
+
+Les autres règles d'accès et de candidature restent applicables, notamment validation du rattachement, droits personnels et clôture d'une offre D068. Les exigences du canal externe/entreprise ne sont pas supprimées ; aucun envoi automatique ni nouvelle autorisation d'envoi externe. Cette décision n'ajoute pas le développement des candidatures à la première tranche d'offres.
+
+Règles, contrôles attendus et synthèses alignés. C08 terminée pour le cadrage documentaire principal (référent, accès, avis, commentaires, déclaration portfolio, absence de référent et non-blocage) ; droits d'écriture/correction, révision d'avis et autres modalités restent à spécifier avant développement. D007 demeure ouverte ; aucune fonctionnalité développée ni test applicatif. Commit/push selon D069, aucun snapshot D074.

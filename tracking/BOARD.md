@@ -1,6 +1,6 @@
 # Tableau de suivi du projet
 
-Dernière mise à jour : 25 octobre 2026. Phase active : Scope. Référence de méthode : docs/workflow.md ; D062.
+Dernière mise à jour : 26 octobre 2026. Phase active : Scope. Référence de méthode : docs/workflow.md ; D062.
 
 Ce tableau suit notre réalisation du projet. Il est distinct du futur tableau d'activité des apprenants/CME/formateurs (D045).
 Historique : nouveaux états de ce tableau dans les commits Git (D074), avec push vérifié selon D069. tracking/HISTORY.md conserve l'index des anciennes captures D063, inchangées ; aucune nouvelle copie périodique. Une version documentaire n'est pas une fonctionnalité applicative terminée.
@@ -26,7 +26,7 @@ Les décisions restent Validé/Proposé/UNKNOWN dans le registre. Les spécifica
 | C05 | Consigner modération nominale des offres | Terminé | D061 ; docs/scope/offer-lifecycle.md ; complément clôture/modifications traité en C07/D068 |
 | C06 | Étudier les sources et un échantillon documentaire initial | Terminé | docs/reference/offer-sources-study.md et opportunity-sample-2026-10-17.md ; aucune preuve de gain utilisateur ni de capacité CME |
 | C07 | Définir clôture et modification d'une offre publiée | Terminé | Accord explicite du 25 octobre, D068 ; docs/scope/offer-lifecycle.md et synthèses alignées ; capture 0008. Décision/documentation terminée, aucun développement ni test applicatif |
-| C08 | Préciser classes et revues de documents | En cours | D078–D083 documentées avec contrôles attendus ; D083 publiée/vérifiée au commit afb6f4b. docs/scope/cv-portfolio-review.md ; écriture/correction, classe sans référent et autres modalités à préciser |
+| C08 | Préciser classes et revues de documents | Terminé | Cadrage principal D078–D085 documenté avec contrôles attendus dans docs/scope/cv-portfolio-review.md ; classe sans référent et non-blocage validés. Livrable documentaire, pas spécification complète : écriture/correction et autres détails à spécifier, aucune preuve applicative |
 | C09 | Consolider matrice d'accès et critères de la première tranche | Terminé | docs/scope/first-slice.md : parcours, matrice et critères ; arbitrages D076/D077 et documents publiés/vérifiés au commit a9ebfe0. Consolidation documentaire uniquement ; détails techniques à spécifier, aucune preuve applicative ni validation globale D007 |
 | C10 | Valider globalement le scope et le découpage | À valider | D007 toujours ouverte ; synthèse docs/product/features-v1.md et docs/scope/pilot.md |
 | C11 | Clarifier cadre des essais réels et responsabilité des données | À faire | Engagement institutionnel non confirmé ; aucune attribution juridique inventée |
@@ -59,7 +59,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 |---|---|---|---|---|---|
 | Comptes, établissements et invitations | Conception métier partielle | Spécifier activation, expiration, rôles locaux et cas de rattachement après cadrage | D056, D059, D076 ; docs/scope/establishment-administration.md | Modalité initiale et procédures | Aucune |
 | Offres | Cadrage de tranche consolidé | Relire le périmètre global et préparer les spécifications après décisions nécessaires | D061, D068, D070–D073, D075, D077 ; docs/scope/first-slice.md et offer-lifecycle.md | Modalités des demandes, formats/limites et conservation à spécifier | Aucune |
-| CV et portfolio | Conception métier partielle | Consolider les derniers points de cadrage C08, distinguer détails à spécifier | D057–D058, D078–D083 ; docs/scope/cv-portfolio-review.md | Écriture/correction, classe sans référent, référence technique au contenu | Aucune |
+| CV et portfolio | Cadrage principal documenté | Relecture du scope global puis spécifications des parcours concernés | D057–D058, D078–D085 ; docs/scope/cv-portfolio-review.md | Écriture/correction, révision d'avis, référence technique au contenu à spécifier | Aucune |
 | Candidatures | Cadrage documenté | Spécifier transitions et historique | D036–D037 | Cas limites et partage des brouillons | Aucune |
 | Accompagnement et progression | Cadrage documenté | Spécifier réorientation et mise à jour des actions | D020–D027 | Délais, absence de réponse, droits précis | Aucune |
 | Entreprises et tableau de suivi | Cadrage documenté | Positionner les tranches et préciser calculs/permissions | D043–D046 | Champs et événements des indicateurs | Aucune |
@@ -80,6 +80,6 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 ## Prochaine action immédiate
 
-Consolidation documentaire C09 terminée après accord D076/D077 ; aucune réalisation applicative. Prochaine tâche produit proposée C08 (classes/revues), puis relecture globale C10/D007. Proposer le contenu des Issues/Project avant création externe.
+Consolidations documentaires C08/C09 terminées, aucune réalisation applicative. Prochaine tâche produit proposée C10 : relecture du scope global et découpage, D007 toujours ouverte. Proposer le contenu des Issues/Project avant création externe.
 
-Prochaine tâche proposée : C08, clarifier les points de cadrage des classes et revues, sans détailler prématurément la technique. D007 reste ouverte. Aucune fonctionnalité applicative développée ou Accepted ; mise à jour après chaque avancée réelle avec preuve.
+Prochaine tâche proposée : C10, relire le périmètre global et son découpage avant validation D007. C11/C12 restent ouverts pour cadre et essais réels. Aucune fonctionnalité applicative développée ou Accepted ; mise à jour après chaque avancée réelle avec preuve.
