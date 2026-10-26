@@ -8,7 +8,7 @@
 | D004 | Types d'opportunités | Validé | Stage, stage de préembauche, emploi |
 | D005 | Méthode | Orientation retenue | Workflow inspiré du document JSM fourni ; adaptation à préciser |
 | D006 | Nom | Proposé | CapEmploi Campus |
-| D007 | Scope pilote | Consolidé, validation globale ouverte | Voir docs/scope/pilot.md ; consolidation des décisions individuelles, sans validation automatique des propositions restantes |
+| D007 | Scope pilote | Validé le 2026-10-26 | Scope de référence et passage à la phase Architecture ; voir validation globale ci-dessous, docs/scope/pilot.md et découpage D086. Propositions restantes non validées automatiquement |
 | D008 | Stack et hébergement | UNKNOWN | À comparer après cadrage |
 | D009 | Droits et confidentialité | Partiellement validé | Règles définies par D019–D026 et D037–D039 ; matrice détaillée et droits restants à spécifier |
 | D010 | Collecte d'offres | Objectif validé ; modalités ouvertes | Automatiser la recherche et le rassemblement d'offres ; sources, faisabilité et périmètre initial à définir. Le partage manuel seul ne répond pas au besoin. |
@@ -375,6 +375,14 @@ Même accord explicite sur la seconde proposition : CV ou portfolio non encore v
 Les autres règles d'accès et de candidature restent applicables, notamment validation du rattachement, droits personnels et clôture d'une offre D068. Les exigences du canal externe/entreprise ne sont pas supprimées ; aucun envoi automatique ni nouvelle autorisation d'envoi externe. Cette décision n'ajoute pas le développement des candidatures à la première tranche d'offres.
 
 Règles, contrôles attendus et synthèses alignés. C08 terminée pour le cadrage documentaire principal (référent, accès, avis, commentaires, déclaration portfolio, absence de référent et non-blocage) ; droits d'écriture/correction, révision d'avis et autres modalités restent à spécifier avant développement. D007 demeure ouverte ; aucune fonctionnalité développée ni test applicatif. Commit/push selon D069, aucun snapshot D074.
+
+## D007 — Validation globale du scope de référence — Validé, 2026-10-26
+
+Accord explicite « valider » à la proposition de clôturer le cadrage produit C10, de retenir le scope consolidé comme référence D007 et de passer à la comparaison de stack et à l'architecture. Références : docs/scope/pilot.md, docs/product/features-v1.md et docs/scope/first-slice.md ; décisions individuelles conservées et ordre D086 : accès/offres humaines, puis préparation/suivi et entreprises, puis accompagnement/pilotage. Collecte automatique ultérieure indépendante, sans bloquer la première tranche.
+
+Cette validation globale ne valide pas les propositions ou UNKNOWN signalés dans ces documents. Stack, architecture détaillée, hébergement et spécifications restent à comparer et décider ensemble avant développement. Portage officiel, responsabilités des données et protocole des essais réels restent ouverts (C11/C12) et doivent être précisés avant ces essais. Aucun démarrage applicatif, essai réel ou déploiement autorisé par ce seul accord ; aucune fonctionnalité Accepted.
+
+C10 terminée pour la validation documentaire du périmètre ; phase active Architecture, prochaine tâche R01. Les mentions antérieures de D007 ouverte décrivent leur état à la date des décisions et journaux concernés. Documentation et suivi actualisés, commit/push selon D069, sans nouveau snapshot D074.
 
 ## D086 — Découpage de réalisation en trois tranches — Validé, 2026-10-26
 

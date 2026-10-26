@@ -1,6 +1,6 @@
 # Scope du pilote — consolidation du 17 octobre 2026
 
-Statut : décisions individuelles validées, scope consolidé à relire avant validation globale (D007). Aucun code applicatif, aucune stack choisie, aucune fonctionnalité Accepted.
+Statut : scope consolidé validé comme référence D007 le 26 octobre 2026 ; passage à la phase Architecture. Aucun code applicatif, aucune stack choisie, aucune fonctionnalité Accepted.
 Référence : docs/product/decisions.md. Cette consolidation ne transforme pas les propositions restantes en décisions.
 Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, évolutions globales ensuite. Prototype de collecte par API/flux/script gardé comme expérimentation indépendante ultérieure, sans bloquer la première tranche humaine. Cadrage de cette tranche dans docs/scope/first-slice.md ; règles proposées non automatiquement validées.
 
@@ -10,13 +10,13 @@ Livrables réalisés : base documentaire et workflow, registre des décisions ju
 
 Décisions validées : public/objectifs, organisation générale/locale, invitation par classe, règles de revue et des offres ; D086 place CV/portfolio, préparation/suivi et liste d'entreprises en tranche 2, accompagnement/rendez-vous/progression et tableau en tranche 3 après les accès/offres de tranche 1. Détails des parcours à spécifier. Contributions humaines d'abord, collecte automatique ultérieure indépendante.
 
-C07, C08 et C09 terminées pour le cadrage documentaire ; C10 en cours, découpage validé D086 mais accord global D007 encore attendu. Détails techniques et droits restants à spécifier avant développement ; aucun choix de stack ou démarrage applicatif autorisé par cet ordre de réalisation.
+C07, C08 et C09 terminées pour le cadrage documentaire ; C10 terminée par accord global D007 du 26 octobre 2026, découpage D086 conservé. Prochaine tâche R01 : comparaison de stack et architecture avec l'utilisateur. Détails techniques et droits restants à spécifier avant développement ; aucun choix de stack ou démarrage applicatif autorisé par cette validation du scope.
 
 UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, stack/architecture/hébergement. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
 
 ## Objectif et public validés — détail
 
-Priorité de preuve validée (D047) : pertinence, accessibilité et effort de recherche. Changement de séquencement D053 : première tranche par contributions humaines pour mutualiser et qualifier les offres ; collecte automatique maintenue pour une tranche ultérieure avec étude/expérimentation, sans bloquer le démarrage de l'approche humaine. Aucun gain de découverte automatique revendiqué. Protocole proposé dans docs/scope/opportunity-experiment.md ; suivi et accompagnement conservés, D007 en attente. Portage officiel non confirmé.
+Priorité de preuve validée (D047) : pertinence, accessibilité et effort de recherche. Changement de séquencement D053 : première tranche par contributions humaines pour mutualiser et qualifier les offres ; collecte automatique maintenue pour une tranche ultérieure avec étude/expérimentation, sans bloquer le démarrage de l'approche humaine. Aucun gain de découverte automatique revendiqué. Protocole proposé dans docs/scope/opportunity-experiment.md ; suivi et accompagnement conservés ; scope global désormais validé D007 le 26 octobre 2026. Portage officiel non confirmé.
 
 Réduire la difficulté de découverte des offres, guider la préparation et le suivi des candidatures, et permettre un accompagnement humain traçable.
 Pilote interne dans un établissement au Maroc : environ 43 apprenants de première année, 36 de deuxième année, une CME et 3 à 4 responsables techniques (effectif exact à confirmer).
@@ -156,5 +156,5 @@ Profil détaillé (compétences, mobilité, CV et portfolio), filtres, détectio
 - Droits détaillés par champ, création/mise à jour des actions et rendez-vous ; contribution CME hors rôle d'accompagnante ; réorientation, demandes sans réponse, suppression et historique.
 - Périmètre initial de la prospection d'entreprises et des candidatures spontanées.
 - Pouvoirs administrateur précis, création du premier compte et éventuelle administration globale future.
-- Validation globale du scope ; protocole du pilote. Les exclusions listées par D040 sont désormais validées comme fonctionnalités futures.
+- Protocole du pilote à préciser (C12) et cadre des données/portage à clarifier (C11) avant essais réels. Validation globale du scope obtenue D007 le 26 octobre 2026 ; exclusions D040 conservées comme fonctionnalités futures.
 - Stack, architecture technique et hébergement : UNKNOWN, à comparer ensemble après cadrage.

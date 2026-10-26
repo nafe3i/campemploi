@@ -1,8 +1,8 @@
 # État — 2026-10-26
 
-Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
-D086 validée : tranche 1 accès/organisation nécessaire et offres humaines ; tranche 2 CV/portfolio/revues, préparation/suivi et liste d'entreprises ; tranche 3 accompagnement, simulations humaines, rendez-vous/progression et tableau. Collecte automatique ultérieure indépendante. Scope, synthèse et suivi alignés ; commit 97cf0f270eaa29b5b04d3058152288280a744d70 publié et vérifié sur origin/main. C10/D007 et données/essais réels C11/C12 restent ouverts, aucun snapshot D074.
-D084/D085 validées le 26 octobre 2026 : sans référent temporaire, dépôt et avis CME possibles, double validation incomplète attend l'avis formateur ; préparation/suivi des candidatures non bloqués par documents non encore validés, état/corrections affichés et autres contrôles maintenus. C08 terminée pour le cadrage documentaire principal ; autres modalités à spécifier. Commit fe30587a20ed9fb63ee606c507f85f1f8faf0450 publié et vérifié sur origin/main ; C10/D007 prochaine tâche proposée, C11/C12 ouverts, sans snapshot D074.
+Phase active : Architecture. D007 validée le 26 octobre 2026 : scope de référence adopté et C10 documentaire terminée. Prochaine tâche R01 : comparaison commune de stack/architecture ; aucune option technique encore retenue. Aucun code applicatif, stack, build, test applicatif ou déploiement.
+D086 validée : tranche 1 accès/organisation nécessaire et offres humaines ; tranche 2 CV/portfolio/revues, préparation/suivi et liste d'entreprises ; tranche 3 accompagnement, simulations humaines, rendez-vous/progression et tableau. Collecte automatique ultérieure indépendante. Scope, synthèse et suivi alignés ; commit 97cf0f270eaa29b5b04d3058152288280a744d70 publié et vérifié sur origin/main. D007 désormais validée ; données/essais réels C11/C12 restent ouverts, aucun snapshot D074.
+D084/D085 validées le 26 octobre 2026 : sans référent temporaire, dépôt et avis CME possibles, double validation incomplète attend l'avis formateur ; préparation/suivi des candidatures non bloqués par documents non encore validés, état/corrections affichés et autres contrôles maintenus. C08 terminée pour le cadrage documentaire principal ; autres modalités à spécifier. Commit fe30587a20ed9fb63ee606c507f85f1f8faf0450 publié et vérifié sur origin/main ; C10/D007 clôturées depuis cet accord ; C11/C12 ouverts, sans snapshot D074.
 
 ## Repères des étapes précédentes
 
@@ -66,4 +66,4 @@ Tâche C07 : règles de clôture/réouverture et modifications explicitement val
 - Matrice complète des permissions, cas limites des classes/revues, protocoles de mesure et données réelles à spécifier.
 - Prototype de collecte automatique prévu ultérieurement, pas une dépendance de la première tranche. Fonctions futures dans docs/product/roadmap.md.
 
-Prochaine tâche produit proposée : C08, préciser les points de cadrage classes/revues puis relire le scope global C10/D007. C09 est terminée pour la consolidation documentaire ; détails de spécification encore à traiter avant développement. Aucun choix de stack ni démarrage applicatif autorisé par les deux arbitrages.
+Prochaine tâche produit : R01, comparer ensemble les options de stack et architecture pour la tranche accès/offres, puis décider. C11/C12 restent ouverts avant essais réels. Aucun développement ni choix technique autorisé par la seule validation du scope.

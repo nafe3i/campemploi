@@ -1,6 +1,6 @@
 # Première tranche — proposer, valider et consulter des offres
 
-Mise à jour : 25 octobre 2026. Statut : règles référencées D053–D054, D061, D068, D070–D073 et D075–D077 validées ; consolidation documentaire C09 terminée. Détails restant à spécifier signalés ci-dessous ; D007 encore en attente. Aucune stack ni architecture technique choisie.
+Mise à jour : 26 octobre 2026. Statut : règles référencées D053–D054, D061, D068, D070–D073 et D075–D077 validées ; consolidation documentaire C09 terminée et scope global D007 validé. Détails restant à spécifier signalés ci-dessous. Aucune stack ni architecture technique choisie.
 
 ## Résultat utilisateur
 
@@ -109,4 +109,4 @@ D086 : CV/portfolio et revues, préparation/suivi et liste d'entreprises en tran
 
 ## Prochaine étape
 
-Consolidations C08/C09 documentaires terminées, ordre des trois tranches validé D086. Relecture/accord global D007 encore attendu, puis comparaison commune stack/architecture et spécifications des parcours concernés avant développement. Portage officiel, responsabilités des données et protocole d'essais réels toujours à préciser.
+Consolidations C08/C09 documentaires terminées, ordre des trois tranches validé D086 et accord global D007 obtenu le 26 octobre 2026. Phase Architecture : comparaison commune stack/architecture puis spécifications des parcours concernés avant développement. Portage officiel, responsabilités des données et protocole d'essais réels toujours à préciser avant ces essais.

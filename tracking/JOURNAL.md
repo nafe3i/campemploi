@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Scope global D007 validé, passage à Architecture
+
+Accord explicite « valider » à la proposition de retenir le périmètre consolidé comme référence et de clôturer C10. D007 mise à jour et accord détaillé consigné ; ordre D086 conservé. README, scope, synthèse, première tranche, état et tableau alignés. Phase Architecture, prochaine tâche R01 encore à faire : comparaison des options ensemble. Aucune stack choisie, aucun code, test applicatif ou déploiement ; aucune fonctionnalité Accepted. Propositions et UNKNOWN non validés automatiquement ; C11/C12 restent ouverts avant essais réels. Commit/push à vérifier selon D069 ; aucune nouvelle capture D074, historique préservé.
+
 ## 2026-10-26 — D086 publiée et vérifiée
 
 Commit 97cf0f270eaa29b5b04d3058152288280a744d70, « docs: valider le decoupage du pilote en trois tranches », publié par push normal sur origin/main ; concordance distante vérifiée. Sept documents relus, diff contrôlé, entrée D086 unique et recherche ciblée sans motif de secret détecté ; aucune capture créée/modifiée. État/tableau actualisés, suivi dans un commit distinct selon D069. C10/D007 encore ouverts pour accord global, C11/C12 pour cadre/essais ; aucun code ni preuve applicative.
