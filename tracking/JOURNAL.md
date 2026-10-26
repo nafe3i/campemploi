@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Publication de la validation globale D007 vérifiée
+
+Commit c5f8bdd6214d21699d90af75ef95fd7a139d7b05 publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents contrôlés, diff et sélection vérifiés, recherche ciblée sans motif de secret détecté. C10 documentaire terminée, phase Architecture, R01 à faire ; C11/C12 ouverts. Aucun code, preuve applicative ou nouveau snapshot. État et tableau complétés par cette preuve ; suivi conservé dans un commit distinct selon D069.
+
 ## 2026-10-26 — Scope global D007 validé, passage à Architecture
 
 Accord explicite « valider » à la proposition de retenir le périmètre consolidé comme référence et de clôturer C10. D007 mise à jour et accord détaillé consigné ; ordre D086 conservé. README, scope, synthèse, première tranche, état et tableau alignés. Phase Architecture, prochaine tâche R01 encore à faire : comparaison des options ensemble. Aucune stack choisie, aucun code, test applicatif ou déploiement ; aucune fonctionnalité Accepted. Propositions et UNKNOWN non validés automatiquement ; C11/C12 restent ouverts avant essais réels. Commit/push à vérifier selon D069 ; aucune nouvelle capture D074, historique préservé.
