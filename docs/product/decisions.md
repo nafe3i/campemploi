@@ -375,3 +375,17 @@ Même accord explicite sur la seconde proposition : CV ou portfolio non encore v
 Les autres règles d'accès et de candidature restent applicables, notamment validation du rattachement, droits personnels et clôture d'une offre D068. Les exigences du canal externe/entreprise ne sont pas supprimées ; aucun envoi automatique ni nouvelle autorisation d'envoi externe. Cette décision n'ajoute pas le développement des candidatures à la première tranche d'offres.
 
 Règles, contrôles attendus et synthèses alignés. C08 terminée pour le cadrage documentaire principal (référent, accès, avis, commentaires, déclaration portfolio, absence de référent et non-blocage) ; droits d'écriture/correction, révision d'avis et autres modalités restent à spécifier avant développement. D007 demeure ouverte ; aucune fonctionnalité développée ni test applicatif. Commit/push selon D069, aucun snapshot D074.
+
+## D086 — Découpage de réalisation en trois tranches — Validé, 2026-10-26
+
+Accord explicite « oui je valide » au découpage présenté :
+
+1. Accès et offres : premier établissement, CME, classes, comptes/invitations et rattachements nécessaires ; proposition, validation, consultation et gestion des offres humaines.
+2. Préparer et suivre : CV/portfolio et leurs revues ; préparation/suivi des candidatures ; liste d'entreprises pour la prospection.
+3. Accompagnement et pilotage : demandes, simulations humaines, rendez-vous, progression et tableau de suivi des trois rôles.
+
+Ce découpage précise le placement des blocs jusque-là ouvert, sans supprimer leurs règles validées ni imposer de date fixe. Chaque tranche sera spécifiée et découpée en petites étapes vérifiables avant développement ; dépendances et droits nécessaires anticipés. La conservation des liens/suivis déjà exigée par les règles des offres est une contrainte d'intégration, pas une réalisation immédiate du parcours candidatures en tranche 1.
+
+Collecte automatique maintenue comme évolution ultérieure indépendante après étude/expérimentation, sans bloquer la première tranche ; aucun ordre plus précis d'intégration ni fournisseur choisi. Fonctions après pilote D040 inchangées. Cette validation porte sur l'ordre de réalisation, pas sur une stack, un démarrage applicatif ou la validation globale distincte D007. Portage et responsabilités des données, participants/durée/protocole de mesure restent à préciser avant essais réels.
+
+Scope, synthèse, première tranche et suivi alignés. C10 en cours : découpage validé, relecture/accord global D007 encore attendu. Aucun code, test applicatif ou déploiement. Commit/push selon D069, sans snapshot D074.

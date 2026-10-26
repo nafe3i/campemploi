@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Découpage en trois tranches validé
+
+Accord explicite « oui je valide » à l'ordre présenté. D086 consignée : accès/organisation nécessaire et offres en tranche 1 ; CV/portfolio/revues, préparation/suivi et liste d'entreprises en tranche 2 ; accompagnement, simulations humaines, rendez-vous/progression et tableau en tranche 3. Collecte automatique maintenue comme évolution indépendante ultérieure. Placement des blocs documenté sans date fixe ni choix technique. Scope, synthèse, première tranche et suivi alignés ; C10 en cours, D007 toujours ouverte, C11/C12 ouverts pour données et essais. Aucun code/test applicatif ; commit/push à vérifier selon D069, aucun snapshot D074.
+
 ## 2026-10-26 — D084/D085 publiées et vérifiées
 
 Commit fe30587a20ed9fb63ee606c507f85f1f8faf0450, « docs: valider la revue sans referent et les candidatures non bloquees », publié par push normal sur origin/main ; concordance distante vérifiée. Sept documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun nouveau snapshot. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 terminée pour le cadrage documentaire principal, C10/D007 à relire/valider, aucune fonctionnalité développée ni preuve applicative.

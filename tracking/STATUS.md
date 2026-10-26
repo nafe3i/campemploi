@@ -1,6 +1,7 @@
 # État — 2026-10-26
 
 Phase active : Scope. D007 (validation globale) toujours ouverte. Aucun code applicatif, stack, build, test applicatif ou déploiement.
+D086 validée : tranche 1 accès/organisation nécessaire et offres humaines ; tranche 2 CV/portfolio/revues, préparation/suivi et liste d'entreprises ; tranche 3 accompagnement, simulations humaines, rendez-vous/progression et tableau. Collecte automatique ultérieure indépendante. Scope, synthèse et suivi alignés ; C10 en cours pour accord global D007, données/essais réels C11/C12 toujours ouverts. Lot à publier selon D069, sans snapshot D074.
 D084/D085 validées le 26 octobre 2026 : sans référent temporaire, dépôt et avis CME possibles, double validation incomplète attend l'avis formateur ; préparation/suivi des candidatures non bloqués par documents non encore validés, état/corrections affichés et autres contrôles maintenus. C08 terminée pour le cadrage documentaire principal ; autres modalités à spécifier. Commit fe30587a20ed9fb63ee606c507f85f1f8faf0450 publié et vérifié sur origin/main ; C10/D007 prochaine tâche proposée, C11/C12 ouverts, sans snapshot D074.
 
 ## Repères des étapes précédentes

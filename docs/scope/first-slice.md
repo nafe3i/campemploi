@@ -54,7 +54,7 @@ Synthèse préparée à la demande de poursuivre le travail, puis deux arbitrage
 5. Traiter signalements, modifications, versions, disponibilité, clôture/réouverture et retrait temporaire (D068).
 6. Traiter propositions répétées, réexamen après rejet et retrait demandé avant publication (D072/D073/D075).
 
-Préparation et suivi des candidatures, CV/portfolio, accompagnement, rendez-vous/progression, prospection d'entreprises et tableau transversal restent dans le produit, sans devenir automatiquement des écrans de cette tranche. Leur position détaillée reste à confirmer. La conservation des liens de candidatures prévue D068 est une contrainte pour leur intégration, pas une annonce que le parcours candidatures est développé ou inclus maintenant.
+D086 fixe leur placement : CV/portfolio, revues, préparation/suivi et liste d'entreprises en tranche 2 ; accompagnement, rendez-vous/progression et tableau transversal en tranche 3. Ces blocs ne deviennent pas des écrans de la tranche 1. La conservation des liens de candidatures D068 est une contrainte d'intégration, pas une annonce que leur parcours est développé ou inclus maintenant.
 
 ### Matrice de consultation et d'action — synthèse des droits acquis
 
@@ -92,7 +92,7 @@ Deux décisions enregistrées, périmètre et synthèses réalignés ; détails 
 
 ## Limites de cette première tranche
 
-Préparation/CV et suivi des candidatures, demandes d'accompagnement, rendez-vous/progression et tableau transversal restent dans les fonctions principales à réaliser progressivement ; pas supprimés. Leur disponibilité dans les tranches suivantes ne doit pas être annoncée comme déjà réalisée. Liste d'entreprises à enrichir conservée ; position précise à définir. Prototype de collecte séparé, sans fournisseur ni langage choisis.
+D086 : CV/portfolio et revues, préparation/suivi et liste d'entreprises en tranche 2 ; accompagnement, rendez-vous/progression et tableau en tranche 3. Ces fonctions restent à réaliser et ne sont pas déjà disponibles. Prototype de collecte séparé, sans fournisseur ni langage choisis, indépendant de la première tranche.
 
 ## Vérifications à prévoir, preuves applicatives absentes
 
@@ -109,4 +109,4 @@ Préparation/CV et suivi des candidatures, demandes d'accompagnement, rendez-vou
 
 ## Prochaine étape
 
-Consolidation C09 documentaire terminée. Poursuivre les points de cadrage globaux restants (dont C08 classes/revues et D007), puis comparer ensemble stack/architecture et spécifier les détails des parcours concernés avant développement. Les deux arbitrages D076/D077 ne valident pas implicitement l'ensemble du scope. Portage officiel et responsabilités pour les données réelles toujours non confirmés.
+Consolidations C08/C09 documentaires terminées, ordre des trois tranches validé D086. Relecture/accord global D007 encore attendu, puis comparaison commune stack/architecture et spécifications des parcours concernés avant développement. Portage officiel, responsabilités des données et protocole d'essais réels toujours à préciser.

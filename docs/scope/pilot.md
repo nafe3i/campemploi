@@ -6,11 +6,11 @@ Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, év
 
 ## Bilan courant du cadrage — mise à jour du 26 octobre 2026
 
-Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D085, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot ; rôles des documents de suivi maintenus. Ce sont des réalisations documentaires, pas des fonctionnalités développées. Complément du 26 octobre 2026 : D084/D085 et fin de la consolidation documentaire C08.
+Livrables réalisés : base documentaire et workflow, registre des décisions jusqu'à D086, tableau de suivi, journal, anciennes captures conservées et dépôt Git/GitHub synchronisé pour les lots déjà publiés. D074 : nouveaux états dans les commits, sans nouvelle copie snapshot. Complément du 26 octobre : C08/C09 documentaires terminées et ordre des trois tranches validé D086 ; aucune fonctionnalité développée.
 
-Décisions métier validées : public et objectifs, organisation administrateur général/CME locale, invitation par classe, principes de revue CV/portfolio, parcours nominal des offres et compléments D068/D070–D073/D075. Préparation/suivi des candidatures, accompagnement humain, rendez-vous/progression, entreprises et tableau de pilotage restent dans le périmètre envisagé, avec détails et placement des tranches encore ouverts. Contributions humaines d'abord, collecte automatique ultérieure.
+Décisions validées : public/objectifs, organisation générale/locale, invitation par classe, règles de revue et des offres ; D086 place CV/portfolio, préparation/suivi et liste d'entreprises en tranche 2, accompagnement/rendez-vous/progression et tableau en tranche 3 après les accès/offres de tranche 1. Détails des parcours à spécifier. Contributions humaines d'abord, collecte automatique ultérieure indépendante.
 
-C07, C08 et C09 sont terminées pour le cadrage documentaire : offres et droits de première tranche consolidés, référent/revues documentés jusqu'à D085. D007 (validation globale du scope) reste ouverte. Détails techniques et droits restants à spécifier avant développement ; validation globale et placement des autres tranches demeurent distincts.
+C07, C08 et C09 terminées pour le cadrage documentaire ; C10 en cours, découpage validé D086 mais accord global D007 encore attendu. Détails techniques et droits restants à spécifier avant développement ; aucun choix de stack ou démarrage applicatif autorisé par cet ordre de réalisation.
 
 UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, stack/architecture/hébergement. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
 
@@ -46,7 +46,7 @@ Modération nominale validée D061 : soumission en attente ; décision CME de pu
 - D075 : avant publication, auteur demande retrait à CME ; CME rejette avec motif « retrait demandé par l'auteur », sans suppression de la proposition ni de l'historique et sans nouvel état. Après publication, règles de clôture D068.
 - Niveau demandé (D052) : une offre exigeant bac+5 peut être conservée et publiée après validation CME, avec exigence et écart au profil bac+2/+3 clairement signalés. Aucun rejet automatique pour ce seul motif ; aucune éligibilité ou dérogation présumée. Visibilité distincte de la pertinence vérifiée.
 - Une offre sans information d'accessibilité peut être publiée après validation CME avec « Accessibilité depuis le Maroc à confirmer ». Une restriction explicite n'est pas une information inconnue.
-- Recherche d'entreprises à prospecter et candidatures spontanées incluse dans le besoin (D012) ; détail du parcours et position dans les tranches à préciser.
+- Recherche d'entreprises à prospecter et candidatures spontanées incluse dans le besoin D012 ; liste d'entreprises positionnée en tranche 2 par D086, détail du parcours spontané à spécifier.
 - Liste d'entreprises évolutive (D046) : ajout par la CME ; propositions des apprenants et responsables validées par la CME avant ajout à la liste commune. Nom, site et page carrières prévus, caractère obligatoire à préciser. Ajout distinct de l'activation d'une collecte automatique, qui nécessite vérification et configuration. Une fiche d'entreprise ne vaut ni partenariat ni offre active.
 
 ### Préparation et suivi (D036–D037)
@@ -117,9 +117,9 @@ Consultation par le porteur du projet dans son établissement (D044). Première 
 | CME | Offres en attente et traitées, demandes d'accompagnement, rendez-vous réalisés |
 | Responsable technique | Demandes en attente et traitées, rendez-vous réalisés, bilans renseignés |
 
-Filtre par période et signalement des échéances dépassées. L'existence d'un bilan est visible sans son contenu. Sans échéance définie, aucun retard déduit. Définition des calculs et dates de référence, résumé des actions sans contenu confidentiel et droits d'attribution des échéances à spécifier. Aucun score ni classement validé. Position de cette vue dans les tranches à préciser ; elle n'élargit pas les droits d'accès aux observations et CV.
+Filtre par période et signalement des échéances dépassées. L'existence d'un bilan est visible sans son contenu. Sans échéance définie, aucun retard déduit. Calculs/dates de référence, résumé sans contenu confidentiel et droits d'attribution des échéances à spécifier. Aucun score ni classement validé. Vue en tranche 3 selon D086, sans élargir les droits sur observations et CV.
 
-- Ordre fonctionnel (D032 précisé par D053) : offres proposées par les utilisateurs et validation → candidatures et suivi → accompagnement et progression. Collecte automatique dans une tranche ultérieure à positionner après étude ; elle ne bloque pas la première tranche.
+- Ordre D086 précisant D032/D053 : tranche 1 accès/organisation nécessaire et offres humaines ; tranche 2 CV/portfolio et revues, préparation/suivi et liste d'entreprises ; tranche 3 accompagnement, simulations humaines, rendez-vous/progression et tableau de suivi. Collecte automatique ultérieure indépendante après étude/expérimentation, non bloquante.
 - Prévoir l'accès et l'isolation nécessaires à chaque tranche avant de l'exposer aux utilisateurs ; détail technique à spécifier.
 - Solutions gratuites initialement ; évolution payante possible après décision explicite (D030).
 - Avancement progressif sans date fixe, avec développement accompagné et participation de l'utilisateur (D011, D014).

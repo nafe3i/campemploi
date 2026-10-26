@@ -1,6 +1,6 @@
 # Fonctionnalités de la première version pilote
 
-Synthèse mise à jour le 26 octobre 2026, fondée sur les décisions du registre jusqu'à D085. Besoins validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
+Synthèse mise à jour le 26 octobre 2026, fondée sur les décisions du registre jusqu'à D086. Besoins et découpage en tranches validés, règles encore ouvertes signalées. Pas de validation globale de D007, de stack ni de fonctionnalité Accepted.
 
 | Bloc | Fonctions principales | Points ouverts |
 |---|---|---|
@@ -9,15 +9,23 @@ Synthèse mise à jour le 26 octobre 2026, fondée sur les décisions du registr
 | Comptes apprenants | Inscription, rôle apprenant par défaut, validation du rattachement ; lien partagé par classe généré par CME, comptes individuels, expiration/désactivation/renouvellement (D059) | Authentification, durée d'expiration, demandes répétées et changements de classe à spécifier |
 | Classes et profils | Référent par classe et rôle commun D078/D079, remplacement et avis conservés D080 ; sans référent temporaire, dépôt et avis CME possibles, double validation incomplète attend l'avis formateur D084 | Transition, champs du profil, filtres/compteurs et libellés d'interface |
 | Offres | Contributions lien/texte ; modération motivée (D061), disponibilité/versions/suivis préservés (D068), compléments D070–D073/D075 ; doublon déjà publié clôturé par CME avec motif « doublon », suivis liés à l'offre d'origine sans fusion ni modification automatique (D077) | Modalités des demandes, formats/limites des champs, conservation/visibilité détaillée de l'historique et autres détails à spécifier |
-| Entreprises | Liste enrichissable et propositions soumises à validation CME | Position dans les tranches et détails du parcours spontané |
+| Entreprises | Liste enrichissable et propositions validées par CME ; tranche 2 avec préparation/suivi (D086) | Détails du parcours spontané et champs obligatoires |
 | CV et portfolio | PDF/lien et double avis D057 ; classes/référent D058/D078–D081 ; retours partagés dans le périmètre D082 ; déclaration des changements portfolio avec date/résumé, deux avis à revalider et CV inchangé conservé D083 | Écriture/correction des commentaires, révision d'avis, autres statuts globaux, référence technique au contenu examiné et conservation |
 | Candidatures | Checklist, brouillon, retours humains, envoi externe, six états, prochaine action/dates ; préparation/suivi non bloqués par CV/portfolio non encore validé, avec état/corrections affichés D085 | Transitions, historique et partage du brouillon ; autres contrôles maintenus |
 | Accompagnement | Demandes, choix du destinataire, acceptation/réorientation, simulations humaines | Réorientation, absence de réponse, règles de gestion des échéances |
 | Rendez-vous et progression | Date/lieu/lien/participants/état, bilan, observations séparées, actions à faire/en cours/réalisées | Droits précis, changements et conservation |
-| Tableau de suivi | Vue porteur sur apprenants, CME et responsables, filtre période et échéances, existence de bilans sans contenu | Calculs précis et position de la tranche |
+| Tableau de suivi | Vue porteur sur apprenants, CME et responsables, filtre période/échéances, existence de bilans sans contenu ; tranche 3 (D086) | Calculs précis et permissions détaillées |
 
 ## Ordre et limites
 
-Construire progressivement : accès nécessaires et offres humaines/validation/consultation → préparation et suivi → accompagnement/progression. Affectations, revue des documents, entreprises et tableau à positionner précisément sans les supprimer. Organisation administrative D056 à intégrer au cadrage d'accès ; cela n'autorise pas à coder avant spécification et choix de stack.
+Découpage validé D086, réalisation progressive sans date fixe :
+
+| Tranche | Périmètre validé |
+|---|---|
+| 1 — Accès et offres | Premier établissement/CME/classes, comptes/invitations/rattachements nécessaires ; proposition, validation, consultation et gestion des offres humaines |
+| 2 — Préparer et suivre | CV/portfolio et revues ; préparation et suivi des candidatures ; liste d'entreprises pour la prospection |
+| 3 — Accompagnement et pilotage | Demandes, simulations humaines, rendez-vous, progression et tableau de suivi des trois rôles |
+
+Les affectations et permissions nécessaires se spécifient avec chaque parcours, notamment D056/D059/D076 en tranche 1 et D078–D085 pour les revues. Sous-étapes, architecture, choix de stack et tests restent à définir avant développement ; un numéro de tranche ne prouve ni livraison ni validation applicative. D007 reste ouverte.
 
 Collecte automatique : étude/prototype indépendant et intégration ultérieure, non bloquante (D053–D054). Chat, envoi automatique, simulation automatique, matching complexe, espace recruteur et facturation prévus pour les versions futures (D040). Isolation des établissements anticipée dès la conception ; pas d'accès général aux documents sensibles via un rôle administratif.

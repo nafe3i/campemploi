@@ -28,7 +28,7 @@ Les décisions restent Validé/Proposé/UNKNOWN dans le registre. Les spécifica
 | C07 | Définir clôture et modification d'une offre publiée | Terminé | Accord explicite du 25 octobre, D068 ; docs/scope/offer-lifecycle.md et synthèses alignées ; capture 0008. Décision/documentation terminée, aucun développement ni test applicatif |
 | C08 | Préciser classes et revues de documents | Terminé | Cadrage principal D078–D085 et contrôles attendus documentés ; D084/D085 publiées/vérifiées au commit fe30587. docs/scope/cv-portfolio-review.md ; livrable documentaire, pas spécification complète ni preuve applicative, écriture/correction et autres détails à spécifier |
 | C09 | Consolider matrice d'accès et critères de la première tranche | Terminé | docs/scope/first-slice.md : parcours, matrice et critères ; arbitrages D076/D077 et documents publiés/vérifiés au commit a9ebfe0. Consolidation documentaire uniquement ; détails techniques à spécifier, aucune preuve applicative ni validation globale D007 |
-| C10 | Valider globalement le scope et le découpage | À valider | D007 toujours ouverte ; synthèse docs/product/features-v1.md et docs/scope/pilot.md |
+| C10 | Valider globalement le scope et le découpage | En cours | Découpage en trois tranches validé D086 et synthèses alignées ; accord global distinct D007 encore attendu. docs/product/features-v1.md et docs/scope/pilot.md ; aucune réalisation applicative |
 | C11 | Clarifier cadre des essais réels et responsabilité des données | À faire | Engagement institutionnel non confirmé ; aucune attribution juridique inventée |
 | C12 | Mesurer utilité/effort humain et charge CME | À faire | Protocole proposé docs/scope/opportunity-experiment.md ; aucune mesure humaine ni D035 vérifiée |
 
@@ -42,9 +42,9 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | R02 | Spécifier accès, comptes, organisation et offres | À faire | R01 et règles métier pertinentes arbitrées ; critères/tests de permissions |
 | R03 | Initialiser le projet et inspecter la structure réelle | À faire | Stack validée ; setup puis audit |
 | R04 | Réaliser accès nécessaires et parcours d'offres humaines | À faire | Spécification ; développement → vérification → tests → revue → documentation |
-| R05 | Réaliser CV/portfolio et suivi des candidatures | À faire | Spécifications propres ; tranche à positionner précisément |
-| R06 | Réaliser accompagnement, rendez-vous et progression | À faire | Spécifications et accès propres |
-| R07 | Réaliser entreprises et tableau de pilotage | À faire | Placement dans les tranches à préciser ; indicateurs et accès testés |
+| R05 | Réaliser CV/portfolio et suivi des candidatures | À faire | Tranche 2 D086 ; spécifications propres, revues et accès |
+| R06 | Réaliser accompagnement, rendez-vous et progression | À faire | Tranche 3 D086 ; spécifications et accès propres |
+| R07 | Réaliser entreprises et tableau de pilotage | À faire | Entreprises tranche 2, tableau tranche 3 D086 ; sous-tâches à séparer en spécification, indicateurs/accès à tester |
 | R08 | Organiser le pilote puis l'élargissement | À faire | Cadre des données, vérifications, corrections et critères D035 |
 | R09 | Prototype et intégration de collecte automatique | Reporté | D053–D054 ; source/faisabilité à choisir ; ne bloque pas R04 |
 | R10 | Fonctions de la vision future | Reporté | docs/product/roadmap.md ; aucun calendrier imposé |
@@ -62,7 +62,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | CV et portfolio | Cadrage principal documenté | Relecture du scope global puis spécifications des parcours concernés | D057–D058, D078–D085 ; docs/scope/cv-portfolio-review.md | Écriture/correction, révision d'avis, référence technique au contenu à spécifier | Aucune |
 | Candidatures | Cadrage documenté | Spécifier transitions et historique | D036–D037 | Cas limites et partage des brouillons | Aucune |
 | Accompagnement et progression | Cadrage documenté | Spécifier réorientation et mise à jour des actions | D020–D027 | Délais, absence de réponse, droits précis | Aucune |
-| Entreprises et tableau de suivi | Cadrage documenté | Positionner les tranches et préciser calculs/permissions | D043–D046 | Champs et événements des indicateurs | Aucune |
+| Entreprises et tableau de suivi | Cadrage documenté | Spécifier entreprises en tranche 2 et tableau en tranche 3, calculs/permissions | D043–D046, D086 | Champs et événements des indicateurs | Aucune |
 | Collecte automatique | Reportée, étude exploratoire disponible | Choisir une expérimentation après accord | D053–D054 ; docs/reference/offer-sources-study.md | Source utile et collecte autorisée non démontrées | Aucune |
 
 ## Reprise courante
