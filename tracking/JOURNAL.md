@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Priorité JavaScript/React confirmée D087
+
+Préférence explicite « JavaScript/React » pour l'apprentissage. D087 consignée, comparaison et suivi actualisés ; recommandation finale à réexaminer selon cette préférence et l'expérience encore inconnue. Aucun choix de serveur, framework, base, architecture ou hébergement déduit ; D008 reste UNKNOWN, R01 en cours. Aucun code ni installation ; commit/push selon D069, sans snapshot D074.
+
 ## 2026-10-26 — Comparaison initiale de stack et architecture
 
 Demande explicite de passer à la stack et architecture. Contraintes relues et sources officielles consultées ; comparaison Laravel/React-Inertia, Spring Boot avec interface séparée, Next.js/TypeScript. Monolithe modulaire et base relationnelle proposés, non validés. Document docs/specs/stack-architecture-options.md créé ; R01 en cours, D008 reste UNKNOWN. Priorité pédagogique et expérience réelle à clarifier avant choix. Aucun code, installation, changement métier ou nouvelle décision technique appliqué. Documentation et suivi seuls ; publication selon D069, sans snapshot D074.

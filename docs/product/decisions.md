@@ -397,3 +397,7 @@ Ce découpage précise le placement des blocs jusque-là ouvert, sans supprimer 
 Collecte automatique maintenue comme évolution ultérieure indépendante après étude/expérimentation, sans bloquer la première tranche ; aucun ordre plus précis d'intégration ni fournisseur choisi. Fonctions après pilote D040 inchangées. Cette validation porte sur l'ordre de réalisation, pas sur une stack, un démarrage applicatif ou la validation globale distincte D007. Portage et responsabilités des données, participants/durée/protocole de mesure restent à préciser avant essais réels.
 
 Scope, synthèse, première tranche et suivi alignés. C10 en cours : découpage validé, relecture/accord global D007 encore attendu. Aucun code, test applicatif ou déploiement. Commit/push selon D069, sans snapshot D074.
+
+## D087 — Priorité pédagogique JavaScript/React — Confirmée, 2026-10-26
+
+Réponse explicite « JavaScript/React » à la question sur le domaine à approfondir avec le projet. Comparaison de stack à orienter vers cette priorité ; expérience en application complète encore inconnue. Cette préférence ne choisit pas Next.js, Node.js, TypeScript, une base de données ou une architecture et ne valide pas automatiquement la stack. D008 reste UNKNOWN, R01 en cours. Préférence consignée dans la comparaison et le suivi ; aucun code ni installation. Commit/push selon D069, sans snapshot D074.

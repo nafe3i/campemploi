@@ -6,6 +6,10 @@ Date : 26 octobre 2026. Statut : propositions, aucune stack ni architecture tech
 
 Scope D007 validé, ordre D086 conservé. Première tranche : accès, établissement/classes et offres humaines ; autres domaines ajoutés progressivement. Comptes individuels, rôles contextualisés, confidentialité et séparation des établissements dès la conception. Pilotage initial par un développeur en apprentissage, sans date fixe. Automatisation ultérieure indépendante.
 
+## Priorité confirmée D087
+
+JavaScript/React est la priorité pédagogique explicitement indiquée par l'utilisateur. Expérience en application complète encore à préciser. Le serveur, la base et l'architecture restent ouverts ; aucune technologie déduite automatiquement.
+
 ## Comparaison préliminaire
 
 | Option | Intérêt pour le projet et apprentissage | Contrepartie |
@@ -16,7 +20,7 @@ Scope D007 validé, ordre D086 conservé. Première tranche : accès, établisse
 
 Alternative si priorité à la simplicité PHP : Laravel avec Blade/Livewire, réduisant la place de React mais impliquant les concepts Livewire. Aucun gain de temps chiffré, coût d'hébergement ou supériorité universelle affirmé. Les comparaisons de charge sont des appréciations pour ce contexte, pas des mesures.
 
-Recommandation provisoire : Laravel + React/Inertia + PostgreSQL si priorité à la réalisation progressive du produit avec PHP/React. Spring Boot devient préférable si l'objectif pédagogique principal est Java. La priorité et l'expérience réelle de l'utilisateur restent à clarifier avant recommandation finale. Versions, dépendances, hébergement et budget restent à décider ultérieurement.
+Recommandation initiale conditionnelle, avant réponse D087 : Laravel + React/Inertia + PostgreSQL si priorité à la réalisation progressive du produit avec PHP/React. Spring Boot devient préférable si l'objectif pédagogique principal est Java. D087 confirme désormais JavaScript/React comme priorité ; la recommandation finale doit être réexaminée en conséquence, après clarification de l'expérience réelle. Versions, dépendances, hébergement et budget restent à décider ultérieurement.
 
 ## Architecture proposée, indépendante du choix final
 
@@ -30,7 +34,7 @@ Exemple de responsabilités : interface de publication → réception et validat
 
 ## Prochaine discussion
 
-Clarifier la priorité d'apprentissage et les réalisations déjà maîtrisées : PHP/Laravel, Java/Spring ou JavaScript/React. Puis soumettre une proposition concrète de stack à validation avant de modifier D008. Architecture détaillée, modèle de données, authentification et hébergement nécessiteront leurs arbitrages ; aucun accord global implicite.
+Priorité JavaScript/React confirmée D087 ; clarifier les réalisations déjà maîtrisées, notamment connexion, API et base de données. Puis soumettre une proposition concrète de stack à validation avant de modifier D008. Architecture détaillée, modèle de données, authentification et hébergement nécessiteront leurs arbitrages ; aucun accord global implicite.
 
 ## Sources officielles consultées
 
