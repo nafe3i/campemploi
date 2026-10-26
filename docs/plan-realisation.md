@@ -23,6 +23,8 @@ Construire une plateforme utilisable par le campus : trouver des opportunités p
 
 Cette organisation reprend [notre workflow](workflow.md) et la [référence JSM](reference/jsm-workflow-source.txt).
 
+Précision demandée ensuite par le porteur : discuter les approches techniques avant leur mise en œuvre. Le document [Approches et principes techniques](specs/technical-guidelines.md), proposé D091, prépare cette discussion : responsabilités, SOLID, injection/interfaces, authentification, permissions, accès PostgreSQL et autres conventions. Ses propositions attendent une validation par groupe ; D090 reste également proposée.
+
 - **Le porteur du projet** précise le besoin du campus, décide après comparaison des options, participe à la réalisation et donne ses retours sur le résultat visible. Son rôle ne se limite pas à approuver du code.
 - **L'assistant** analyse les documents et le projet réel, recommande avec les compromis, aide à concevoir et implémenter dans le périmètre autorisé, vérifie et explique les résultats, puis tient les documents à jour.
 - **La CME, les formateurs et les apprenants**, lorsque leur participation est organisée, pourront vérifier les usages et apporter leurs retours. Aucune disponibilité ni participation effective n'est présumée.
@@ -124,7 +126,7 @@ Nous conservons les anciennes captures 0001–0018 sans créer de nouveaux snaps
 
 ## 9. Ce qui reste à décider, dans le bon ordre
 
-**Première discussion : valider l'organisation de réalisation proposée dans ce fichier**, notamment les étapes et les conditions de passage. Cette validation n'autorise pas toute la feuille de route d'un seul accord.
+**Priorité de discussion demandée par le porteur : définir les approches techniques dans docs/specs/technical-guidelines.md**, en commençant par responsabilités, SOLID et injection/interfaces. Le plan général de ce fichier reste à valider ; aucun accord global sur la feuille de route n'est déduit de cette discussion.
 
 Ensuite, recommander et arbitrer les choix nécessaires au socle : organisation du dépôt, versions, environnement Docker et commandes de démarrage. Concevoir les relations et limites d'accès principales, puis choisir les mécanismes adaptés : accès aux données, authentification, séparation des établissements et configuration du stockage au moment concerné. Les bibliothèques, fournisseurs et détails d'interface restent ouverts tant qu'ils ne sont pas explicitement retenus.
 

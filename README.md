@@ -19,6 +19,7 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Historique des états](tracking/HISTORY.md)
 - [Suivi Git et GitHub](docs/git-workflow.md)
 - [Comment nous réaliserons le projet — plan proposé](docs/plan-realisation.md)
+- [Approches et principes techniques — propositions à discuter](docs/specs/technical-guidelines.md)
 
 - [Vision](docs/product/vision.md)
 - [Décisions](docs/product/decisions.md)

@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Approches techniques demandées avant développement
+
+Le porteur précise sa demande : préparer les approches auth, SOLID, injection, interfaces et base, ainsi que les autres conventions. Sources officielles consultées ; docs/specs/technical-guidelines.md créé en Proposed, D091 proposée. Dix sujets : responsabilités, SOLID, DI/interfaces, auth, autorisations/isolation, PostgreSQL/connexions/ORM, API, React, fichiers/exploitation et tests. Compromis et preuves explicités ; validation par groupes, T01–T03 en premier. D090 non validée par cette précision, stack/Docker déjà retenus conservés. README, plan et suivi alignés ; aucun code, installation, configuration, test applicatif ou délégation. Contrôles documentaires puis commit/push D069, sans snapshot D074.
+
 ## 2026-10-26 — Plan global de réalisation demandé et rédigé
 
 Le porteur demande un fichier pour décider comment réaliser le projet avant de continuer le socle technique. docs/plan-realisation.md créé : décisions acquises, responsabilités, étapes du cadrage à la production, boucle par parcours complet, critères de passage, essais réels, exploitation et suivi temporel. D090 proposée ; création autorisée, contenu nouveau en attente de validation. README et suivi actualisés, décisions antérieures préservées. Document relu et onze liens locaux vérifiés ; diff et confidentialité contrôlés avant commit/push D069 ; aucun code, installation, test applicatif, déploiement ou agent délégué, aucun snapshot D074.

@@ -421,3 +421,9 @@ Accord explicite « oui » à la recommandation précédente : Docker Compose po
 Demande explicite : décider comment réaliser le projet et créer un fichier décrivant cette réalisation avant de poursuivre l'architecture détaillée. Livrable demandé produit dans docs/plan-realisation.md : acquis, responsabilités, étapes de conception à production, petites fonctionnalités complètes, preuves, suivi et décisions restantes. L'instruction autorise la création de ce document ; les propositions nouvelles, dont le déroulement détaillé, ne sont pas validées par la seule demande de rédaction.
 
 D007/D008/D086/D088/D089 et la méthode déjà retenue restent applicables ; aucun choix technique ou date ajouté. Plan à relire et valider avant reprise des décisions détaillées du socle. README et suivi actualisés ; aucun code, installation, test applicatif ou déploiement. Aucun agent délégué. Commit/push documentaire selon D069 ; aucune capture nouvelle D074.
+
+## D091 — Approches et principes techniques — Proposé, 2026-10-26
+
+Le porteur précise vouloir définir avant développement les approches d'authentification, SOLID, dependency injection, dépendance aux interfaces et accès à la base, ainsi que les autres conventions nécessaires. Document de propositions demandé et produit dans docs/specs/technical-guidelines.md : dix sujets, compromis, exemples métier, critères et preuves attendues. PostgreSQL et stack D008 conservés ; mécanismes d'accès, sessions, ORM et nouvelles conventions restent proposés.
+
+Premier groupe soumis à discussion : séparation des responsabilités, SOLID pragmatique, injection par constructeur et contrats ciblés aux frontières. Aucun accord d'application déduit de la demande d'analyse ; D090 reste également proposée. Registre, README, plan général et suivi actualisés. Aucun code, installation, configuration, test applicatif ou déploiement. Aucun agent délégué. Publication documentaire selon D069, sans snapshot D074.
