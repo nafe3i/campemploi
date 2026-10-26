@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Rectification du sens de D087
+
+L'utilisateur rappelle que nous construisons un projet réel pour son campus. La qualification précédente de priorité pédagogique était une interprétation de l'assistant, rectifiée : JavaScript/React est une préférence technologique à évaluer selon les besoins du produit. D087, comparaison et suivi corrigés. Les entrées antérieures décrivent l'interprétation initiale, pas un nouvel accord. Accompagnement de mentor conservé ; aucun mandat institutionnel, choix complet de stack ou architecture déduit. Aucun code ni installation ; commit/push selon D069, sans snapshot D074.
+
 ## 2026-10-26 — Priorité JavaScript/React confirmée D087
 
 Préférence explicite « JavaScript/React » pour l'apprentissage. D087 consignée, comparaison et suivi actualisés ; recommandation finale à réexaminer selon cette préférence et l'expérience encore inconnue. Aucun choix de serveur, framework, base, architecture ou hébergement déduit ; D008 reste UNKNOWN, R01 en cours. Aucun code ni installation ; commit/push selon D069, sans snapshot D074.
