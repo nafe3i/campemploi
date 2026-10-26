@@ -415,3 +415,9 @@ Ajout explicite de l'utilisateur : « on vat travailler avec docker aussi ». Do
 ## D089 — Docker Compose et conteneurisation complète en développement — Validé, 2026-10-26
 
 Accord explicite « oui » à la recommandation précédente : Docker Compose pour le développement, avec interface React/Vite, API NestJS et PostgreSQL conteneurisés ; rechargement automatique pendant les modifications. Précise D088. Configuration de production étudiée séparément. Versions/images, commandes, ports, volumes, secrets, vérifications et ressources locales restent à spécifier avant setup ; aucune installation système ou configuration créée par cette validation documentaire. Registre, document technique et suivi actualisés, commit/push selon D069, sans snapshot D074.
+
+## D090 — Plan de réalisation du projet — Proposé, 2026-10-26
+
+Demande explicite : décider comment réaliser le projet et créer un fichier décrivant cette réalisation avant de poursuivre l'architecture détaillée. Livrable demandé produit dans docs/plan-realisation.md : acquis, responsabilités, étapes de conception à production, petites fonctionnalités complètes, preuves, suivi et décisions restantes. L'instruction autorise la création de ce document ; les propositions nouvelles, dont le déroulement détaillé, ne sont pas validées par la seule demande de rédaction.
+
+D007/D008/D086/D088/D089 et la méthode déjà retenue restent applicables ; aucun choix technique ou date ajouté. Plan à relire et valider avant reprise des décisions détaillées du socle. README et suivi actualisés ; aucun code, installation, test applicatif ou déploiement. Aucun agent délégué. Commit/push documentaire selon D069 ; aucune capture nouvelle D074.

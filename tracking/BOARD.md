@@ -38,7 +38,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 | ID | Travail | Statut | Dépendance / validation attendue |
 |---|---|---|---|
-| R01 | Comparer et décider stack/architecture/hébergement | En cours | Stack et architecture générale validées D008 ; Docker retenu D088, docs/specs/stack-architecture-options.md. D089 : Compose et conteneurisation complète en développement validés ; socle à spécifier selon référence JSM relue, détails et hébergement ouverts ; aucun code ou installation |
+| R01 | Comparer et décider stack/architecture/hébergement | En cours | D008/D088/D089 validées ; plan global de réalisation demandé et produit dans docs/plan-realisation.md, proposé et à valider avant reprise du socle. Détails techniques et hébergement ouverts ; aucun code ou installation |
 | R02 | Spécifier accès, comptes, organisation et offres | À faire | R01 et règles métier pertinentes arbitrées ; critères/tests de permissions |
 | R03 | Initialiser le projet et inspecter la structure réelle | À faire | Stack validée ; setup puis audit |
 | R04 | Réaliser accès nécessaires et parcours d'offres humaines | À faire | Spécification ; développement → vérification → tests → revue → documentation |
@@ -80,6 +80,6 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 ## Prochaine action immédiate
 
-Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. Prochaine tâche R01 : préparer la spécification du socle de démarrage après D008/D088/D089 : organisation du dépôt, modalités Docker et choix nécessaires avant setup puis audit réel. Proposer le contenu des Issues/Project avant création externe.
+Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. À la demande du porteur, relire et valider d'abord docs/plan-realisation.md (plan proposé D090), puis reprendre R01 et la spécification du socle de démarrage après D008/D088/D089. Proposer le contenu des Issues/Project avant création externe.
 
 Prochaine tâche : R01. C11/C12 restent ouverts pour cadre et essais réels. Aucune fonctionnalité applicative développée ou Accepted ; mise à jour après chaque avancée réelle avec preuve.

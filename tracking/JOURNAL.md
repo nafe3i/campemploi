@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Plan global de réalisation demandé et rédigé
+
+Le porteur demande un fichier pour décider comment réaliser le projet avant de continuer le socle technique. docs/plan-realisation.md créé : décisions acquises, responsabilités, étapes du cadrage à la production, boucle par parcours complet, critères de passage, essais réels, exploitation et suivi temporel. D090 proposée ; création autorisée, contenu nouveau en attente de validation. README et suivi actualisés, décisions antérieures préservées. Document relu et onze liens locaux vérifiés ; diff et confidentialité contrôlés avant commit/push D069 ; aucun code, installation, test applicatif, déploiement ou agent délégué, aucun snapshot D074.
+
 ## 2026-10-26 — D089 validée et référence JSM relue intégralement
 
 Accord explicite « oui » pour Compose et conteneurisation React/Vite, NestJS et PostgreSQL en développement avec rechargement automatique. D089 consignée ; production séparée et détails ouverts. À la question sur la référence : relecture intégrale de docs/reference/jsm-workflow-source.txt et docs/workflow.md ; distinction explicitée entre comparaison de stack, spécification de socle, setup/audit et spécifications fonctionnelles. Socle à préparer avec décisions, responsabilités, critères et questions restantes ; aucune nouvelle décision technique inventée. README, comparaison et suivi alignés ; aucun code, installation ou test applicatif, aucun agent délégué. Commit/push selon D069, sans snapshot D074.

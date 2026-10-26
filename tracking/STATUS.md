@@ -1,6 +1,7 @@
 # État — 2026-10-26
 
 Phase active : Architecture. D007/C10 documentaire terminées ; stack validée D008 : React/Vite + TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire. Docker retenu D088 ; Compose et conteneurisation complète en développement validés D089. Référence JSM relue intégralement ; comparaison distincte de la spécification du socle à préparer. R01 en cours pour organisation détaillée, modalités Docker, données/authentification et hébergement ; aucun code, build, test applicatif, installation ou déploiement. C11/C12 ouverts avant essais réels.
+Priorité demandée par le porteur : définir comment réaliser le projet avant les détails du socle. Plan docs/plan-realisation.md créé, D090 proposée ; organisation détaillée à valider, acquis D007/D008/D086/D088/D089 conservés. Aucun nouveau choix appliqué.
 D086 validée : tranche 1 accès/organisation nécessaire et offres humaines ; tranche 2 CV/portfolio/revues, préparation/suivi et liste d'entreprises ; tranche 3 accompagnement, simulations humaines, rendez-vous/progression et tableau. Collecte automatique ultérieure indépendante. Scope, synthèse et suivi alignés ; commit 97cf0f270eaa29b5b04d3058152288280a744d70 publié et vérifié sur origin/main. D007 désormais validée ; données/essais réels C11/C12 restent ouverts, aucun snapshot D074.
 D084/D085 validées le 26 octobre 2026 : sans référent temporaire, dépôt et avis CME possibles, double validation incomplète attend l'avis formateur ; préparation/suivi des candidatures non bloqués par documents non encore validés, état/corrections affichés et autres contrôles maintenus. C08 terminée pour le cadrage documentaire principal ; autres modalités à spécifier. Commit fe30587a20ed9fb63ee606c507f85f1f8faf0450 publié et vérifié sur origin/main ; C10/D007 clôturées depuis cet accord ; C11/C12 ouverts, sans snapshot D074.
 
@@ -66,4 +67,4 @@ Tâche C07 : règles de clôture/réouverture et modifications explicitement val
 - Matrice complète des permissions, cas limites des classes/revues, protocoles de mesure et données réelles à spécifier.
 - Prototype de collecte automatique prévu ultérieurement, pas une dépendance de la première tranche. Fonctions futures dans docs/product/roadmap.md.
 
-Prochaine tâche produit : R01, préciser ensemble organisation du dépôt et spécification du socle Docker validé D089, puis les autres choix techniques pour la tranche accès/offres. C11/C12 restent ouverts avant essais réels. Aucun développement ni choix technique autorisé par la seule validation du scope.
+Prochaine tâche produit : relire et valider le plan de réalisation D090, puis reprendre R01 et la spécification du socle. C11/C12 ouverts avant essais réels ; aucun démarrage applicatif par la seule rédaction du plan.

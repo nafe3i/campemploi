@@ -18,6 +18,7 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Tableau de suivi du travail](tracking/BOARD.md)
 - [Historique des états](tracking/HISTORY.md)
 - [Suivi Git et GitHub](docs/git-workflow.md)
+- [Comment nous réaliserons le projet — plan proposé](docs/plan-realisation.md)
 
 - [Vision](docs/product/vision.md)
 - [Décisions](docs/product/decisions.md)
