@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — D084/D085 publiées et vérifiées
+
+Commit fe30587a20ed9fb63ee606c507f85f1f8faf0450, « docs: valider la revue sans referent et les candidatures non bloquees », publié par push normal sur origin/main ; concordance distante vérifiée. Sept documents relus, diff contrôlé, recherche ciblée sans motif de secret détecté ; aucun nouveau snapshot. État/tableau actualisés, suivi dans un commit distinct selon D069. C08 terminée pour le cadrage documentaire principal, C10/D007 à relire/valider, aucune fonctionnalité développée ni preuve applicative.
+
 ## 2026-10-26 — Classe sans référent et documents non bloquants validés
 
 Accord explicite « valide » aux deux propositions : D084 (dépôt et avis CME possibles sans référent temporaire, double validation incomplète attend son avis) et D085 (CV/portfolio non encore validé ne bloque pas préparation/suivi, état/corrections visibles et autres contrôles conservés). Registre, revue, scope, synthèse et suivi alignés avec vérifications attendues. C08 terminée comme cadrage documentaire principal ; détails d'écriture/correction, références au contenu et autres modalités à spécifier avant développement. Prochaine tâche proposée C10/D007, encore ouverte ; C11/C12 restent ouverts pour cadre/essais. Aucun code ou test applicatif, aucun snapshot ; commit/push à vérifier selon D069/D074.
