@@ -1,6 +1,6 @@
 # Scope du pilote — consolidation du 17 octobre 2026
 
-Statut : scope consolidé validé comme référence D007 le 26 octobre 2026 ; passage à la phase Architecture. Aucun code applicatif, aucune stack choisie, aucune fonctionnalité Accepted.
+Statut : scope consolidé validé comme référence D007 le 26 octobre 2026 ; passage à la phase Architecture. Stack et architecture générale validées D008, Docker retenu D088. Aucun code applicatif ni fonctionnalité Accepted.
 Référence : docs/product/decisions.md. Cette consolidation ne transforme pas les propositions restantes en décisions.
 Mise à jour du 24 octobre 2026 (D054) : fonctions principales en priorité, évolutions globales ensuite. Prototype de collecte par API/flux/script gardé comme expérimentation indépendante ultérieure, sans bloquer la première tranche humaine. Cadrage de cette tranche dans docs/scope/first-slice.md ; règles proposées non automatiquement validées.
 
@@ -10,9 +10,9 @@ Livrables réalisés : base documentaire et workflow, registre des décisions ju
 
 Décisions validées : public/objectifs, organisation générale/locale, invitation par classe, règles de revue et des offres ; D086 place CV/portfolio, préparation/suivi et liste d'entreprises en tranche 2, accompagnement/rendez-vous/progression et tableau en tranche 3 après les accès/offres de tranche 1. Détails des parcours à spécifier. Contributions humaines d'abord, collecte automatique ultérieure indépendante.
 
-C07, C08 et C09 terminées pour le cadrage documentaire ; C10 terminée par accord global D007 du 26 octobre 2026, découpage D086 conservé. Prochaine tâche R01 : comparaison de stack et architecture avec l'utilisateur. Détails techniques et droits restants à spécifier avant développement ; aucun choix de stack ou démarrage applicatif autorisé par cette validation du scope.
+C07, C08 et C09 terminées pour le cadrage documentaire ; C10 terminée par accord global D007 du 26 octobre 2026, découpage D086 conservé. R01 en cours : stack et architecture générale validées D008, Docker retenu D088 ; détails techniques et hébergement à préciser ensemble. Détails techniques et droits restants à spécifier avant développement ; choix de stack validé séparément D008, aucun démarrage applicatif par la seule validation du scope.
 
-UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, stack/architecture/hébergement. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
+UNKNOWN : portage officiel et responsabilités des données réelles, protocole/participants précis et résultats des essais, architecture détaillée/hébergement ; stack et architecture générale désormais validées D008. Aucun code applicatif, test applicatif, build, déploiement ni fonctionnalité Accepted. Sources et échantillon documentaire étudiés, sans preuve de gain utilisateur ou de charge CME réelle. Voir tracking/BOARD.md et docs/product/features-v1.md.
 
 ## Objectif et public validés — détail
 
@@ -157,4 +157,4 @@ Profil détaillé (compétences, mobilité, CV et portfolio), filtres, détectio
 - Périmètre initial de la prospection d'entreprises et des candidatures spontanées.
 - Pouvoirs administrateur précis, création du premier compte et éventuelle administration globale future.
 - Protocole du pilote à préciser (C12) et cadre des données/portage à clarifier (C11) avant essais réels. Validation globale du scope obtenue D007 le 26 octobre 2026 ; exclusions D040 conservées comme fonctionnalités futures.
-- Stack, architecture technique et hébergement : UNKNOWN, à comparer ensemble après cadrage.
+- Stack et architecture générale validées D008, Docker retenu D088 ; architecture détaillée, modalités Docker et hébergement à préciser ensemble.

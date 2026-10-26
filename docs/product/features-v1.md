@@ -1,6 +1,6 @@
 # Fonctionnalités de la première version pilote
 
-Synthèse mise à jour le 26 octobre 2026, fondée sur les décisions du registre jusqu'à D086 et la validation globale D007 de ce jour. Scope de référence et découpage en tranches validés ; règles encore ouvertes signalées. Aucune stack choisie ni fonctionnalité Accepted.
+Synthèse mise à jour le 26 octobre 2026, fondée sur les décisions du registre jusqu'à D086 et la validation globale D007 de ce jour. Scope de référence et découpage en tranches validés ; règles encore ouvertes signalées. Stack et architecture générale validées D008 ; Docker retenu D088, modalités techniques encore ouvertes. Aucune fonctionnalité Accepted.
 
 | Bloc | Fonctions principales | Points ouverts |
 |---|---|---|
@@ -26,6 +26,6 @@ Découpage validé D086, réalisation progressive sans date fixe :
 | 2 — Préparer et suivre | CV/portfolio et revues ; préparation et suivi des candidatures ; liste d'entreprises pour la prospection |
 | 3 — Accompagnement et pilotage | Demandes, simulations humaines, rendez-vous, progression et tableau de suivi des trois rôles |
 
-Les affectations et permissions nécessaires se spécifient avec chaque parcours, notamment D056/D059/D076 en tranche 1 et D078–D085 pour les revues. Sous-étapes, architecture, choix de stack et tests restent à définir avant développement ; un numéro de tranche ne prouve ni livraison ni validation applicative. D007 validée : passage à la phase Architecture ; C11/C12 restent ouverts avant essais réels.
+Les affectations et permissions nécessaires se spécifient avec chaque parcours, notamment D056/D059/D076 en tranche 1 et D078–D085 pour les revues. Stack et architecture générale validées D008 ; sous-étapes, architecture détaillée et tests restent à définir avant développement ; un numéro de tranche ne prouve ni livraison ni validation applicative. D007 validée : passage à la phase Architecture ; C11/C12 restent ouverts avant essais réels.
 
 Collecte automatique : étude/prototype indépendant et intégration ultérieure, non bloquante (D053–D054). Chat, envoi automatique, simulation automatique, matching complexe, espace recruteur et facturation prévus pour les versions futures (D040). Isolation des établissements anticipée dès la conception ; pas d'accès général aux documents sensibles via un rôle administratif.

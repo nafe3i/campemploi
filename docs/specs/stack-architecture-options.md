@@ -1,6 +1,6 @@
 # Stack et architecture — comparaison initiale
 
-Date : 26 octobre 2026. Statut : propositions, aucune stack ni architecture technique validée. R01 en cours ; D008 reste UNKNOWN. Aucun code ni installation autorisé par cette comparaison.
+Date : 26 octobre 2026. Statut courant : stack et architecture générale validées D008 ; Docker retenu D088. React/Vite + TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire. R01 en cours pour les détails et hébergement ; aucun code ni installation réalisés. Les comparaisons et mentions de propositions ci-dessous décrivent les étapes ayant précédé cet accord.
 
 ## Contraintes de référence
 
@@ -20,11 +20,11 @@ JavaScript/React est la préférence technologique indiquée par l'utilisateur. 
 
 Alternative si priorité à la simplicité PHP : Laravel avec Blade/Livewire, réduisant la place de React mais impliquant les concepts Livewire. Aucun gain de temps chiffré, coût d'hébergement ou supériorité universelle affirmé. Les comparaisons de charge sont des appréciations pour ce contexte, pas des mesures.
 
-La recommandation initiale conditionnelle Laravel/PHP est à réexaminer selon la préférence JavaScript/React D087 et les besoins réels du campus. La comparaison doit porter sur les permissions, la séparation des établissements, les parcours métier, les tests, la maintenabilité et les moyens de réalisation/exploitation. Aucune recommandation finale validée. Versions, dépendances, hébergement et budget restent à décider.
+La recommandation initiale conditionnelle Laravel/PHP est à réexaminer selon la préférence JavaScript/React D087 et les besoins réels du campus. La comparaison doit porter sur les permissions, la séparation des établissements, les parcours métier, les tests, la maintenabilité et les moyens de réalisation/exploitation. La recommandation JavaScript concrète ci-dessous est désormais validée D008 ; versions, dépendances détaillées, hébergement et budget restent à décider.
 
-## Proposition concrète après D087 — en attente de validation
+## Proposition concrète après D087 — validée D008
 
-Recommandation : React avec Vite et TypeScript pour l'interface, Node.js avec NestJS et TypeScript pour une API REST, PostgreSQL pour les données ; serveur organisé en monolithe modulaire. Cette proposition ne constitue pas une décision D008 et ne déclenche ni installation ni développement.
+Recommandation : React avec Vite et TypeScript pour l'interface, Node.js avec NestJS et TypeScript pour une API REST, PostgreSQL pour les données ; serveur organisé en monolithe modulaire. Proposition désormais validée par accord explicite D008 ; aucun démarrage applicatif inclus.
 
 Motifs : préférence JavaScript/React, interface de gestion interactive, nombreuses règles de rôles/établissements et transitions métier. NestJS propose modules, contrôleurs, services, validation et mécanismes de contrôle d'accès ; leur présence ne remplace pas la conception de nos permissions. TypeScript aide à détecter des incohérences de types avant exécution, sans remplacer la validation des données reçues. PostgreSQL proposé pour les relations et contraintes d'intégrité ; les autres bases SQL restent possibles.
 
@@ -32,7 +32,7 @@ Comparaison déterminante : Next.js intégré permet de réunir interface et fon
 
 Périmètre exact de l'accord à demander : React/Vite, TypeScript, Node.js/NestJS, PostgreSQL et organisation serveur en monolithe modulaire. Les modules seraient introduits par tranches : identité/organisation et offres d'abord ; autres domaines ensuite. Aucun microservice requis pour le pilote proposé. Frontend et serveur séparés ne constituent pas à eux seuls des microservices.
 
-ORM, authentification/sessions, stratégie précise de séparation des établissements, stockage privé, bibliothèque UI, versions et hébergement restent à comparer et valider. Les conséquences d'intégration et de déploiement devront être spécifiées avant initialisation. Si accord : préciser D008 dans le registre et aligner docs/specs/, README et suivi, commit/push D069 ; aucune initialisation applicative incluse dans cet accord.
+ORM, authentification/sessions, stratégie précise de séparation des établissements, stockage privé, bibliothèque UI, versions et hébergement restent à comparer et valider. Conséquences de déploiement à spécifier avant initialisation ; documentation D008 et suivi mis à jour sans code applicatif.
 
 ## Organisation métier proposée
 
@@ -46,7 +46,7 @@ Exemple de responsabilités : interface de publication → réception et validat
 
 ## Prochaine discussion
 
-Préférence JavaScript/React précisée D087 ; comparer les options adaptées au produit réel, en tenant compte des moyens disponibles. Puis soumettre une proposition concrète de stack à validation avant de modifier D008. Architecture détaillée, modèle de données, authentification et hébergement nécessiteront leurs arbitrages ; aucun accord global implicite.
+Stack et architecture générale validées D008, Docker retenu D088. Prochaine discussion : organisation du dépôt et périmètre Docker en développement, puis détails de données/authentification/hébergement. Aucun accord global implicite sur ces modalités.
 
 ## Sources officielles consultées
 
@@ -61,3 +61,9 @@ Préférence JavaScript/React précisée D087 ; comparer les options adaptées a
 - [Vite : outil de développement et de build](https://vite.dev/guide/)
 
 Les pages consultées ne fixent pas les versions du projet. Ces choix restent ouverts.
+
+## Docker — ajout validé D088, modalités ouvertes
+
+Docker est retenu. Proposition à discuter : Docker Compose pour décrire et démarrer les services nécessaires au développement ; interface, API et PostgreSQL pourraient être conteneurisés, ou seulement la base avec applications lancées localement. Tout conteneuriser uniformise davantage les commandes ; la base seule allège le démarrage mais requiert Node.js local. Choix pas encore arbitré. Volumes persistants, secrets, accès réseau, images et différences développement/production devront être spécifiés avant configuration. Aucun outil installé, aucune image téléchargée, aucun conteneur lancé.
+
+Sources : [Docker, présentation](https://docs.docker.com/get-started/docker-overview/) et [Docker Compose](https://docs.docker.com/compose/).

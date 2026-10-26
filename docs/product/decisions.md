@@ -9,7 +9,7 @@
 | D005 | Méthode | Orientation retenue | Workflow inspiré du document JSM fourni ; adaptation à préciser |
 | D006 | Nom | Proposé | CapEmploi Campus |
 | D007 | Scope pilote | Validé le 2026-10-26 | Scope de référence et passage à la phase Architecture ; voir validation globale ci-dessous, docs/scope/pilot.md et découpage D086. Propositions restantes non validées automatiquement |
-| D008 | Stack et hébergement | UNKNOWN | À comparer après cadrage |
+| D008 | Stack et hébergement | Stack et architecture générale validées, hébergement ouvert | React/Vite + TypeScript, Node.js/NestJS, PostgreSQL ; API REST et serveur en monolithe modulaire. Accord du 26 octobre 2026 détaillé ci-dessous ; Docker D088, détails techniques et hébergement à préciser |
 | D009 | Droits et confidentialité | Partiellement validé | Règles définies par D019–D026 et D037–D039 ; matrice détaillée et droits restants à spécifier |
 | D010 | Collecte d'offres | Objectif validé ; modalités ouvertes | Automatiser la recherche et le rassemblement d'offres ; sources, faisabilité et périmètre initial à définir. Le partage manuel seul ne répond pas au besoin. |
 | D011 | Rythme | Validé | Avancer progressivement, sans date fixe de livraison |
@@ -401,3 +401,13 @@ Scope, synthèse, première tranche et suivi alignés. C10 en cours : découpage
 ## D087 — Préférence technologique JavaScript/React — Précisée, 2026-10-26
 
 Réponse « JavaScript/React », puis correction explicite : nous travaillons sur un projet réel pour le campus. L'assistant avait présenté cette réponse comme une priorité pédagogique ; cette interprétation est rectifiée. JavaScript/React est une préférence technologique pour la comparaison, à évaluer selon les besoins du campus, la sécurité, la maintenabilité et les moyens de réalisation/exploitation. Les explications de mentor restent adaptées au profil utilisateur, sans transformer le produit en exercice d'apprentissage. Cette préférence ne choisit pas Next.js, Node.js, TypeScript, une base de données ou une architecture et ne valide pas automatiquement la stack. D008 reste UNKNOWN, R01 en cours. Documents et suivi corrigés ; aucun code ni installation. Commit/push selon D069, sans snapshot D074. Cette précision ne confirme pas un mandat officiel de l'établissement (C11).
+
+## D008 — Validation de la stack et architecture générale — 2026-10-26
+
+Accord explicite « ok et on vat travailler avec docker aussi » à la proposition React/Vite + TypeScript, serveur Node.js/NestJS avec API REST, PostgreSQL et organisation serveur en monolithe modulaire. Interface et serveur distincts, un seul serveur métier organisé en modules introduits au rythme des tranches. Conséquences de deux composants à intégrer/exploiter et alternatives présentées avant accord. Cette validation remplace le statut UNKNOWN de la stack ; hébergement, versions, ORM, authentification, stockage privé et séparation détaillée des établissements restent ouverts.
+
+Accord appliqué aux documents et au suivi, pas à une initialisation applicative. Architecture détaillée et spécifications à préparer avant setup/développement. R01 reste en cours pour les arbitrages techniques restants. Aucun code, installation, test applicatif ou déploiement. Commit/push selon D069 ; pas de nouveau snapshot D074.
+
+## D088 — Utilisation de Docker — Validé, 2026-10-26
+
+Ajout explicite de l'utilisateur : « on vat travailler avec docker aussi ». Docker retenu comme outil du projet pour un environnement reproductible. Aucun choix implicite de Docker Desktop, version, images, services conteneurisés, ports, volumes, hébergeur ou environnement de production. Périmètre développement/tests/production et mise en place à préciser ; Docker Compose proposé pour décrire les services ensemble, non encore validé. Ni installation système ni création de configuration réalisée par cet accord documentaire. Docker ne remplace pas les sauvegardes ni les contrôles métier de séparation des établissements. Documentation et suivi alignés, commit/push selon D069, sans snapshot D074.

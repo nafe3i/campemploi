@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Stack et architecture générale validées, Docker ajouté
+
+Accord explicite « ok et on vat travailler avec docker aussi » : D008 validée pour React/Vite, TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire ; Docker retenu D088. Registre, comparaison, README, scope et suivi alignés. Docker Compose et périmètre développement/production restent à discuter ; ORM, authentification, séparation détaillée des établissements, versions et hébergement encore ouverts. Aucun code, installation, conteneur, test applicatif ou déploiement ; R01 en cours. Commit/push selon D069, sans snapshot D074.
+
 ## 2026-10-26 — Proposition concrète de stack soumise
 
 Après préférence JavaScript/React et rappel de la finalité réelle du campus, comparaison complémentaire des sources officielles NestJS, React, Vite et Next.js. Proposition documentée : React/Vite, TypeScript, Node.js/NestJS, PostgreSQL et serveur en monolithe modulaire. Alternative Next.js intégré reconnue viable ; contreparties de deux composants, conventions frontend et complexité Nest explicitées. Accord attendu, D008 reste UNKNOWN ; aucun code, installation ni architecture appliquée. Authentification, ORM, séparation détaillée des établissements et hébergement restent ouverts. Suivi actualisé, commit/push selon D069, sans snapshot D074.
