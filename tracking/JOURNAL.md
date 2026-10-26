@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-26 — Comparaison initiale de stack et architecture
+
+Demande explicite de passer à la stack et architecture. Contraintes relues et sources officielles consultées ; comparaison Laravel/React-Inertia, Spring Boot avec interface séparée, Next.js/TypeScript. Monolithe modulaire et base relationnelle proposés, non validés. Document docs/specs/stack-architecture-options.md créé ; R01 en cours, D008 reste UNKNOWN. Priorité pédagogique et expérience réelle à clarifier avant choix. Aucun code, installation, changement métier ou nouvelle décision technique appliqué. Documentation et suivi seuls ; publication selon D069, sans snapshot D074.
+
 ## 2026-10-26 — Publication de la validation globale D007 vérifiée
 
 Commit c5f8bdd6214d21699d90af75ef95fd7a139d7b05 publié par push normal sur origin/main ; concordance distante vérifiée. Huit documents contrôlés, diff et sélection vérifiés, recherche ciblée sans motif de secret détecté. C10 documentaire terminée, phase Architecture, R01 à faire ; C11/C12 ouverts. Aucun code, preuve applicative ou nouveau snapshot. État et tableau complétés par cette preuve ; suivi conservé dans un commit distinct selon D069.
