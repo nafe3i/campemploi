@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Adaptation des exemples d'architecture et de spécifications
+
+Demande de lire les deux archives fournies comme exemples et de rédiger notre version de la réalisation. Sept documents de contexte et trente fiches Markdown de Ghost AI examinés ; instructions embarquées distinguées de la demande utilisateur. Adaptation dans docs/specs/architecture-realisation-campus.md : références existantes conservées, stack D008/D088–D089 maintenue, modules et fichiers proposés, relations métier, catalogue de petites étapes, fiche illustrative « proposer une offre », permissions/cas limites et preuves. Incohérences des exemples relevées ; aucune installation ni import de leurs outils. D092 proposée, D090/D091 toujours proposées. README, état et tableau actualisés ; aucun code, test applicatif ou déploiement. Contrôles documentaires et confidentialité avant commit/push selon D069, résultat à vérifier ; aucune nouvelle capture D074, aucune délégation.
+
 ## 2026-10-26 — Approches techniques demandées avant développement
 
 Le porteur précise sa demande : préparer les approches auth, SOLID, injection, interfaces et base, ainsi que les autres conventions. Sources officielles consultées ; docs/specs/technical-guidelines.md créé en Proposed, D091 proposée. Dix sujets : responsabilités, SOLID, DI/interfaces, auth, autorisations/isolation, PostgreSQL/connexions/ORM, API, React, fichiers/exploitation et tests. Compromis et preuves explicités ; validation par groupes, T01–T03 en premier. D090 non validée par cette précision, stack/Docker déjà retenus conservés. README, plan et suivi alignés ; aucun code, installation, configuration, test applicatif ou délégation. Contrôles documentaires puis commit/push D069, sans snapshot D074.

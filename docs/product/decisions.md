@@ -427,3 +427,10 @@ D007/D008/D086/D088/D089 et la méthode déjà retenue restent applicables ; auc
 Le porteur précise vouloir définir avant développement les approches d'authentification, SOLID, dependency injection, dépendance aux interfaces et accès à la base, ainsi que les autres conventions nécessaires. Document de propositions demandé et produit dans docs/specs/technical-guidelines.md : dix sujets, compromis, exemples métier, critères et preuves attendues. PostgreSQL et stack D008 conservés ; mécanismes d'accès, sessions, ORM et nouvelles conventions restent proposés.
 
 Premier groupe soumis à discussion : séparation des responsabilités, SOLID pragmatique, injection par constructeur et contrats ciblés aux frontières. Aucun accord d'application déduit de la demande d'analyse ; D090 reste également proposée. Registre, README, plan général et suivi actualisés. Aucun code, installation, configuration, test applicatif ou déploiement. Aucun agent délégué. Publication documentaire selon D069, sans snapshot D074.
+
+
+## D092 — Adaptation des exemples de contexte et de spécifications — Proposé, 2026-10-27
+
+Demande explicite de lire context.zip et feature-specs.zip comme exemples d'architecture/réalisation et de préparer une version propre à notre projet. Rédaction autorisée et réalisée dans docs/specs/architecture-realisation-campus.md : analyse des références Ghost AI, distinction des instructions embarquées, architecture campus, modules et responsabilités, données, catalogue de fiches et exemple complet de soumission d'offre avec contrôles et preuves attendues.
+
+Les choix validés D007/D008/D086/D088/D089 sont conservés ; D090/D091 restent proposées. L'organisation détaillée, les noms de dossiers/routes et l'ordre fin sont des propositions, sans validation implicite de fournisseur, ORM, authentification, UI ou hébergement. Aucun code, configuration, installation, test applicatif ou déploiement. Document et suivi mis à jour ; publication documentaire selon D069, résultat à vérifier, sans snapshot D074 ni délégation.
