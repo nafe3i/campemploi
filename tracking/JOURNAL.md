@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication D101/D102 et préparation IA-Q04 vérifiée
+
+Commit 0f89f0dc672ef7fe409f37b8ec9fcd1fa7c7cdda publié sur origin/main, concordance distante exacte vérifiée. Douze fichiers documentaires conservés ; D101 et D102 distinctes, HP01–HP08 proposés et nouveaux droits HP05/06 non adoptés. Preuve reportée dans comparaison et suivi selon D069/D074. Aucun code/migration/configuration, mécanisme technique ou implémentation autorisé.
+
 ## 2026-10-27 — IA-Q04 rédigé et contrôles documentaires réussis
 
 Comparaison Proposed : conservation à l’origine distincte d’accès après départ et de portabilité ; A sans accès local résiduel, B personnel limité, C export/import explicites distingués. Recommandation ciblée et huit HP non adoptés, notamment HP05/06 nouveaux droits ; dix-huit scénarios, matrice par catégorie, questions et correspondance F/S. D101/D102 alignées jusque dans administration/revues. Douze fichiers/84 liens et tableaux/encodage contrôlés ; registre antérieur, D059/D068/D064/D081/D099/D100, fichiers IA-Q01/02, matrices/invariants/scénarios et IA-Q05–IA-Q12 préservés ; F/S intacts. Diff et recherche ciblée de secrets sans anomalie détectée ; aucun test applicatif ni code/migration/configuration. Publication à vérifier.
