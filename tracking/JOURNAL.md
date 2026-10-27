@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Relecture de la revue d’architecture transmise
+
+Pièce jointe lue puis confrontée au registre et aux règles réelles, notamment D056/D059/D064/D068/D078–D082/D094–D096. Rapport docs/reviews/2026-10-27-architecture-cross-review.md : conception identité/rattachements/JWT/isolation encore ouverte, distinction modération/disponibilité déjà acquise, lien de classe volontairement réutilisable, historique de stack déjà signalé mais ambiguïtés locales, correspondance F/S et gouvernance à discuter. Sources OWASP/CNDP vérifiées ; pas de conformité juridique ni sécurité applicative déclarée. R01e documentaire terminée, R01f À valider pour priorité Identité / Organisation / Accès ; aucun changement de décision, du socle, du code ou de D064 appliqué. Suivi actualisé, contrôles documentaires/confidentialité avant commit/push D069 ; publication à vérifier, aucun test applicatif ni délégation.
+
 ## 2026-10-27 — Publication du socle D096 vérifiée
 
 Commit 41e8a6ec807ae525c126973c15a2b2ccc2533c8b publié sur origin/main, concordance distante vérifiée. Neuf documents contrôlés, 46 liens locaux valides, dix-sept sections du socle, six unités, douze critères et neuf questions vérifiés ; entrée D096 unique et recherche ciblée sans motif de secret détecté. Deux archives relues (7 + 30 documents). Socle Proposed, aucun code ou test applicatif. État et tableau complétés par cette preuve ; suivi conservé séparément selon D069/D074.
