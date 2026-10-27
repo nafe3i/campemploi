@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication de la relecture vérifiée
+
+Rapport et suivi publiés au commit 272d30e4f449ab0c67810d21256cbe2d926957f4, concordance origin/main vérifiée. Quatre documents contrôlés, liens locaux et recherche ciblée de secrets sans anomalie détectée ; aucune décision technique appliquée ni code modifié. R01f reste À valider. Preuve consignée séparément selon D069/D074.
+
 ## 2026-10-27 — Relecture de la revue d’architecture transmise
 
 Pièce jointe lue puis confrontée au registre et aux règles réelles, notamment D056/D059/D064/D068/D078–D082/D094–D096. Rapport docs/reviews/2026-10-27-architecture-cross-review.md : conception identité/rattachements/JWT/isolation encore ouverte, distinction modération/disponibilité déjà acquise, lien de classe volontairement réutilisable, historique de stack déjà signalé mais ambiguïtés locales, correspondance F/S et gouvernance à discuter. Sources OWASP/CNDP vérifiées ; pas de conformité juridique ni sécurité applicative déclarée. R01e documentaire terminée, R01f À valider pour priorité Identité / Organisation / Accès ; aucun changement de décision, du socle, du code ou de D064 appliqué. Suivi actualisé, contrôles documentaires/confidentialité avant commit/push D069 ; publication à vérifier, aucun test applicatif ni délégation.
