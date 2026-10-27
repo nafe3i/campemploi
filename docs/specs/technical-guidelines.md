@@ -1,14 +1,14 @@
 # Approches et principes techniques de CapEmploi Campus
 
-Statut de spécification : **Proposed**, sans preuve applicative. Mise à jour : 27 octobre 2026. D091 partiellement validée : principes T01–T03 retenus par D093 ; T04–T10 proposés.
+Statut de spécification : **Proposed**, sans preuve applicative. Mise à jour : 27 octobre 2026. D091 partiellement validée : principes T01–T03 retenus par D093 ; choix JWT de T04 validé D094, modalités ouvertes ; T05–T10 proposés.
 
 ## Contexte et objectif
 
 À la demande du porteur, définir comment concevoir le logiciel avant d'implémenter ses fonctionnalités : responsabilités, SOLID, dependency injection, interfaces, authentification, permissions et accès à la base, avec les contrôles associés.
 
-Ce document distingue les principes retenus et les recommandations restant à discuter par groupes. Accord « oui c est ça » du 27 octobre 2026 : T01–T03 validés dans le périmètre D093. Aucun choix de bibliothèque ni démarrage applicatif ; D090 reste proposée.
+Ce document distingue les principes retenus et les recommandations restant à discuter par groupes. Accord « oui c est ça » du 27 octobre 2026 : T01–T03 validés dans le périmètre D093. Choix JWT ajouté D094 le 27 octobre 2026. Aucun choix de bibliothèque ni démarrage applicatif ; D090 reste proposée.
 
-Acquis conservés : scope D007, React/Vite et TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire D008 ; Docker Compose et conteneurisation complète en développement D088–D089. Les principes T01–T03 sont retenus par D093 ; les choix détaillés et T04–T10 restent proposés. Aucun code, installation ou configuration applicative créé.
+Acquis conservés : scope D007, React/Vite et TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire D008 ; Docker Compose et conteneurisation complète en développement D088–D089. Les principes T01–T03 sont retenus par D093 ; le choix JWT est retenu D094, ses modalités et T05–T10 restent ouverts ou proposés. Aucun code, installation ou configuration applicative créé.
 
 ## 1. Responsabilités et organisation du serveur — T01 validé, D093
 
@@ -50,21 +50,28 @@ Principe retenu : injection par constructeur pour les dépendances de services ;
 
 **Particularité TypeScript :** les interfaces disparaissent à la compilation. NestJS a donc besoin d'un identifiant présent à l'exécution pour associer un contrat à une implémentation. Mécanisme à préciser dans le socle : interface TypeScript et token partagé de type Symbol aux frontières retenues est une option ; une classe abstraite est une alternative. D093 valide les principes de fourniture des dépendances et de contrats ciblés, sans figer ce mécanisme. [Source NestJS](https://docs.nestjs.com/fundamentals/custom-providers)
 
-## 4. Authentification et sessions — proposition T04
+## 4. Authentification JWT — choix validé D094, modalités ouvertes T04
 
-Authentification : reconnaître le compte connecté. Autorisation : déterminer ce que ce compte peut faire sur une ressource. Le statut de rattachement de l'apprenant reste une condition métier même après une connexion réussie.
+Instruction explicite du 27 octobre 2026 : authentification par JWT retenue pour l'API. La recommandation initiale de session serveur avec identifiant opaque était proposée ; elle est remplacée par ce choix. Aucune bibliothèque ni configuration choisie ou installée.
 
-| Option | Intérêt | Contraintes |
-|---|---|---|
-| Session serveur et cookie contenant un identifiant opaque | Adaptée au navigateur ; révocation et déconnexion pilotées côté serveur | Stockage de sessions, expiration, protection CSRF et configuration des cookies à prévoir |
-| Jetons d'accès JWT et mécanisme de renouvellement | Peut convenir à plusieurs types de clients | Renouvellement, révocation, vol de jeton et fraîcheur des permissions à concevoir |
-| Fournisseur d'identité externe | Délègue une partie de la gestion des identités | Dépendance, conditions de service, coût éventuel et intégration à évaluer |
+**Concept.** Un JWT porte des informations appelées claims, par exemple un identifiant de compte. Pour notre authentification, un jeton signé permettrait à l'API de vérifier l'origine et l'intégrité de ces informations. Décoder le contenu ne suffit pas à le valider ; une signature n'en chiffre pas le contenu. [Format JWT, RFC 7519](https://www.rfc-editor.org/rfc/rfc7519.txt)
 
-**Recommandation initiale à valider :** session côté serveur pour l'application web du pilote. L'API REST ne nécessite pas automatiquement des JWT. Bibliothèque de session/authentification et stockage précis à comparer ; ne pas inventer de protocole cryptographique.
+**Parcours conceptuel à spécifier.** Connexion vérifiée → émission d'un jeton → présentation par le navigateur → validation par l'API → contrôles d'accès métier. Transport et stockage restent ouverts. Le jeton ne remplace ni la validation du rattachement D059 ni les droits sur l'établissement, la classe ou la ressource. Les claims de rôle ou d'affectation peuvent devenir anciens : définir comment appliquer les retraits de droits sans attendre arbitrairement un renouvellement.
 
-Contrôles proposés : cookie HttpOnly, Secure en environnement HTTPS et SameSite adapté ; protection CSRF, renouvellement de session après connexion et révocation à la déconnexion. Définir les expirations et la réaction aux changements de compte ou de droits. L'attribut HttpOnly limite l'accès au cookie par JavaScript, sans éliminer les risques XSS et CSRF. [Source OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
+**Conception de sécurité à compléter avant implémentation.** Définir les algorithmes autorisés côté serveur, la vérification cryptographique avec les bonnes clés, l'expiration, l'émetteur et le destinataire attendus, l'identité du sujet et les règles distinguant les différents usages de jetons. Utiliser une bibliothèque maintenue ; clés hors du code et des journaux. Limiter les claims aux données nécessaires, sans CV, mot de passe ou contenu confidentiel. La signature ne suffit pas à protéger contre le vol ou la réutilisation d'un jeton. [Bonnes pratiques JWT, RFC 8725](https://www.rfc-editor.org/rfc/rfc8725.txt)
 
-Le parcours devra aussi spécifier : inscription/activation, première CME, vérification d'adresse si retenue, récupération du compte, hachage adapté des mots de passe, limitation des tentatives et absence de secrets dans les journaux. Ces modalités ne sont pas déjà validées par la proposition de session. Les liens de classe gardent les règles D059 et ne constituent pas des sessions de connexion.
+| Décision à préparer | Comparaison / conséquence |
+|---|---|
+| Durée du jeton d'accès | Une durée courte limite la fenêtre d'utilisation d'un jeton volé, mais demande reconnexion ou renouvellement ; aucune durée fixée |
+| Renouvellement | Refresh token possible pour conserver une connexion ; format, stockage serveur, rotation, réutilisation et révocation à concevoir ; pas retenu implicitement |
+| Stockage et transport navigateur | Mémoire et en-tête, cookie ou stockage persistant ont des compromis différents ; examiner XSS, CSRF, rechargement de page et topologie web/API ; aucun choix acquis |
+| Déconnexion et révocation | Effacer le jeton côté navigateur ne rend pas une copie déjà volée invalide ; définir le comportement des jetons existants et la stratégie serveur nécessaire |
+| Comptes et permissions courants | Définir contrôles et invalidation lors de désactivation, remplacement de référent ou changement de rattachement, selon les règles métier acquises |
+| Bibliothèque, signature et clés | Comparer l'intégration NestJS après définition des besoins ; version, algorithme, rotation et secrets restent à décider |
+
+La connexion, l'activation, la récupération du compte, la première CME, la vérification d'adresse si retenue, le hachage des mots de passe et la limitation des tentatives restent à spécifier. JWT ne définit pas à lui seul ces parcours. Les cookies éventuels nécessitent leur propre politique de protection ; aucun fournisseur ni nouveau service choisi.
+
+**Preuves attendues.** Jeton manquant, altéré, expiré, mal signé ou destiné à un autre usage refusé sans données ni effet ; identité authentifiée mais accès métier interdit refusé ; comportement après déconnexion, renouvellement et retrait de droits conforme aux politiques décidées. Les outils et modalités techniques restent proposés T10. Aucun test exécuté à ce stade.
 
 ## 5. Autorisations et séparation des établissements — proposition T05
 
@@ -145,18 +152,18 @@ Typage, formatage, lint, tests et build seront des contrôles reproductibles du 
 | Groupe | Proposition soumise à discussion | Statut courant |
 |---|---|---|
 | 1 | Responsabilités séparées T01, SOLID pragmatique T02, injection par constructeur et contrats ciblés T03 | Principes validés D093 le 27 octobre 2026 ; application au code à vérifier lors du développement |
-| 2 | Authentification/sessions T04 et autorisations/isolation T05 | Proposed ; mécanismes et bibliothèque à préciser |
+| 2 | Authentification JWT T04 et autorisations/isolation T05 | JWT validé D094 ; cycle de vie et bibliothèque ouverts ; mécanismes T05 proposés |
 | 3 | Choix d'accès PostgreSQL, connexions, migrations et transactions T06 | Proposed ; ORM non choisi |
 | 4 | Contrats API/erreurs T07 et organisation React T08 | Proposed ; conventions et outils non choisis |
 | 5 | Fichiers/exploitation T09 et stratégie concrète de tests T10 | Proposed ; exigences existantes conservées |
 
-T01–T03 sont validés dans le périmètre D093. Les autres groupes restent à discuter et peuvent être ajustés avant validation ; leurs technologies citées ne sont pas retenues implicitement.
+T01–T03 sont validés dans le périmètre D093. Le choix JWT de T04 est validé D094 ; ses modalités et les autres groupes restent à discuter et peuvent être ajustés avant validation ; leurs technologies citées ne sont pas retenues implicitement.
 
 ## Critères du livrable et questions ouvertes
 
-Les principes T01–T03 constituent une référence de conception validée D093 ; les autres sections restent proposées. Pour vérifier la mise en œuvre, chaque spécification fonctionnelle indiquera les principes applicables, les décisions précises, les contrôles et les preuves attendues. Les principes devront se retrouver dans le code et les tests avant toute acceptation applicative.
+Les principes T01–T03 constituent une référence de conception validée D093 ; le choix JWT est retenu D094 ; ses modalités et les autres sections restent proposées ou ouvertes. Pour vérifier la mise en œuvre, chaque spécification fonctionnelle indiquera les principes applicables, les décisions précises, les contrôles et les preuves attendues. Les principes devront se retrouver dans le code et les tests avant toute acceptation applicative.
 
-Questions restantes : stratégie de session et bibliothèque ; modèle de permissions et isolation ; ORM et gestion du pool ; organisation du dépôt ; outils React/API/test ; versions ; hébergement, coût et exploitation. Les questions seront posées au moment utile, par petits groupes.
+Questions restantes : cycle de vie JWT, stockage/transport, renouvellement, révocation et bibliothèque ; modèle de permissions et isolation ; ORM et gestion du pool ; organisation du dépôt ; outils React/API/test ; versions ; hébergement, coût et exploitation. Les questions seront posées au moment utile, par petits groupes.
 
 ## Références du projet
 

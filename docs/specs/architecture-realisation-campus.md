@@ -2,7 +2,7 @@
 
 Date : 27 octobre 2026. Statut : **Proposed**. Référence : D092 proposée.
 
-Livrable demandé : une version adaptée à CapEmploi Campus des documents fournis dans `context.zip` et `feature-specs.zip`. La rédaction est autorisée ; les nouveaux choix décrits restent à discuter. Aucun code, configuration, installation ou déploiement n'est réalisé ici. D090 reste proposée ; D091 est partiellement validée pour T01–T03 par D093 le 27 octobre 2026.
+Livrable demandé : une version adaptée à CapEmploi Campus des documents fournis dans `context.zip` et `feature-specs.zip`. La rédaction est autorisée ; les nouveaux choix décrits restent à discuter. Aucun code, configuration, installation ou déploiement n'est réalisé ici. D090 reste proposée ; D091 est partiellement validée pour T01–T03 par D093 et le choix JWT de T04 par D094 le 27 octobre 2026.
 
 ## 1. Ce que les archives nous apportent
 
@@ -36,8 +36,9 @@ Quelques incohérences montrent pourquoi une adaptation critique est nécessaire
 | **Validé** | Docker et Compose en développement avec interface, API et base conteneurisées, rechargement automatique D088–D089 |
 | **Validé** | Trois tranches D086 ; contrôles communs et spécifiques D060 ; accord avant nouvelle décision D064 ; suivi et synchronisation D062/D069/D074 |
 | **Validé** | Principes T01–T03 : responsabilités, SOLID pragmatique et injection ciblée D093 ; mise en œuvre future à vérifier |
-| **Proposé** | D090 : plan général ; D091 T04–T10 : auth, permissions, données et autres conventions ; D092 : présente adaptation globale |
-| **UNKNOWN** | Organisation exacte du dépôt, versions, ORM, mécanisme/bibliothèque d'authentification, modèle détaillé d'isolation, outils UI/tests et hébergement |
+| **Validé** | Authentification par JWT D094 ; cycle de vie, stockage, renouvellement et bibliothèque à décider |
+| **Proposé** | D090 : plan général ; modalités JWT T04 et D091 T05–T10 : permissions, données et autres conventions ; D092 : présente adaptation globale |
+| **UNKNOWN** | Organisation exacte du dépôt, versions, ORM, modalités JWT et bibliothèque d'authentification, modèle détaillé d'isolation, outils UI/tests et hébergement |
 | **UNKNOWN avant essais réels** | Responsabilités des données C11 et protocole de mesure C12 |
 
 La suite expose une proposition concrète. Une phrase au futur décrit la cible proposée, pas une réalisation existante ni un accord implicite.
@@ -136,7 +137,7 @@ Les trois tranches sont validées D086 ; l'ordre fin et les identifiants ci-dess
 |---|---|---|
 | F00 — Socle | Interface/API/base démarrent en développement Docker ; migration et configuration reproductibles | Choix techniques nécessaires validés ; preuve de démarrage et persistance après redémarrage |
 | F01 — Première organisation | Premier établissement et CME préparés dans le périmètre administratif autorisé | Mode d'initialisation à décider ; pas d'accès métier implicite pour l'administration |
-| F02 — Identité et session | Connexion/déconnexion et refus d'accès sans identité valable | Mécanisme choisi ; expiration/récupération et politiques à spécifier |
+| F02 — Identité et JWT | Connexion/déconnexion et refus d'accès sans identité valable | JWT retenu D094 ; cycle de vie, stockage, renouvellement/révocation, récupération et bibliothèque à spécifier |
 | F03 — Classes et personnel | Administration locale des classes, invitations du personnel et affectations nécessaires | D056/D078–D080 ; droits locaux et retrait des accès d'affectation à vérifier |
 | F04 — Invitation apprenant | Compte individuel, demande et validation du rattachement par CME | D059 ; expiration/désactivation/renouvellement, répétition et absence d'accès avant accord |
 | F05 — Proposer une offre | Soumission et consultation personnelle de sa proposition | D061/D070–D071 ; fiche détaillée illustrative ci-dessous |
@@ -202,7 +203,7 @@ Outils et seuils restent à décider. Utiliser des données fictives en dévelop
 
 T01–T03 de D091 sont validés par D093 : responsabilités/controller/service/persistance, SOLID pragmatique et injection ciblée. Conséquence : principes à respecter dans le futur socle, sans sélection d'ORM, d'authentification ou de dossiers précis par cet accord.
 
-Prochaine discussion : identité/session et permissions/isolation ; accès PostgreSQL ; structure du dépôt et outils UI/API/tests ; configuration Docker et versions ; stockage/exploitation au moment nécessaire. Ne pas produire toutes les fiches détaillées avant ces choix : compléter les premières, puis avancer progressivement.
+JWT retenu D094. Prochaine discussion : cycle de vie JWT, stockage/transport et permissions/isolation ; accès PostgreSQL ; structure du dépôt et outils UI/API/tests ; configuration Docker et versions ; stockage/exploitation au moment nécessaire. Ne pas produire toutes les fiches détaillées avant ces choix : compléter les premières, puis avancer progressivement.
 
 La validation de cette adaptation porterait sur son organisation documentaire et son catalogue de travail. Les choix explicitement Proposed/UNKNOWN et les règles encore ouvertes restent à valider séparément. Aucun démarrage applicatif n'est déduit de la demande de lecture et rédaction.
 

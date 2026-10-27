@@ -23,7 +23,7 @@ Construire une plateforme utilisable par le campus : trouver des opportunités p
 
 Cette organisation reprend [notre workflow](workflow.md) et la [référence JSM](reference/jsm-workflow-source.txt).
 
-Précision demandée ensuite par le porteur : discuter les approches techniques avant leur mise en œuvre. Le document [Approches et principes techniques](specs/technical-guidelines.md), partiellement validé D091/D093, prépare cette discussion : responsabilités, SOLID, injection/interfaces, authentification, permissions, accès PostgreSQL et autres conventions. T01–T03 (responsabilités, SOLID pragmatique et injection ciblée) sont validés D093 ; T04–T10 restent à discuter. D090 reste proposée, sans démarrage applicatif.
+Précision demandée ensuite par le porteur : discuter les approches techniques avant leur mise en œuvre. Le document [Approches et principes techniques](specs/technical-guidelines.md), partiellement validé D091/D093, prépare cette discussion : responsabilités, SOLID, injection/interfaces, authentification, permissions, accès PostgreSQL et autres conventions. T01–T03 (responsabilités, SOLID pragmatique et injection ciblée) sont validés D093 ; Le choix JWT de T04 est retenu D094 ; ses modalités et T05–T10 restent à discuter. D090 reste proposée, sans démarrage applicatif.
 
 - **Le porteur du projet** précise le besoin du campus, décide après comparaison des options, participe à la réalisation et donne ses retours sur le résultat visible. Son rôle ne se limite pas à approuver du code.
 - **L'assistant** analyse les documents et le projet réel, recommande avec les compromis, aide à concevoir et implémenter dans le périmètre autorisé, vérifie et explique les résultats, puis tient les documents à jour.
@@ -128,7 +128,7 @@ Nous conservons les anciennes captures 0001–0018 sans créer de nouveaux snaps
 
 **Priorité de discussion demandée par le porteur : définir les approches techniques dans docs/specs/technical-guidelines.md**, en commençant par responsabilités, SOLID et injection/interfaces. Le plan général de ce fichier reste à valider ; aucun accord global sur la feuille de route n'est déduit de cette discussion.
 
-Ensuite, recommander et arbitrer les choix nécessaires au socle : organisation du dépôt, versions, environnement Docker et commandes de démarrage. Concevoir les relations et limites d'accès principales, puis choisir les mécanismes adaptés : accès aux données, authentification, séparation des établissements et configuration du stockage au moment concerné. Les bibliothèques, fournisseurs et détails d'interface restent ouverts tant qu'ils ne sont pas explicitement retenus.
+Ensuite, recommander et arbitrer les choix nécessaires au socle : organisation du dépôt, versions, environnement Docker et commandes de démarrage. Concevoir les relations et limites d'accès principales, puis choisir les mécanismes adaptés : accès aux données, modalités de l'authentification JWT retenue D094, séparation des établissements et configuration du stockage au moment concerné. Les bibliothèques, fournisseurs et détails d'interface restent ouverts tant qu'ils ne sont pas explicitement retenus.
 
 La collecte automatique est une évolution ultérieure indépendante, fondée sur l'étude existante et une expérimentation à décider (D053–D054). Elle ne bloque pas les trois tranches validées. Chat, envoi automatique de candidatures, simulations automatiques, matching complexe, espace recruteur et facturation restent dans la vision future D040.
 

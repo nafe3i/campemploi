@@ -424,7 +424,7 @@ D007/D008/D086/D088/D089 et la méthode déjà retenue restent applicables ; auc
 
 ## D091 — Approches et principes techniques — Partiellement validé, mise à jour 2026-10-27
 
-État courant : T01–T03 validés D093 le 27 octobre 2026 ; T04–T10 restent proposés. Les paragraphes suivants retracent la proposition initiale du 26 octobre.
+État courant : T01–T03 validés D093 ; choix JWT de T04 validé D094 le 27 octobre 2026. Cycle de vie JWT et bibliothèque ouverts ; T05–T10 restent proposés. Les paragraphes suivants retracent la proposition initiale du 26 octobre.
 
 Le porteur précise vouloir définir avant développement les approches d'authentification, SOLID, dependency injection, dépendance aux interfaces et accès à la base, ainsi que les autres conventions nécessaires. Document de propositions demandé et produit dans docs/specs/technical-guidelines.md : dix sujets, compromis, exemples métier, critères et preuves attendues. PostgreSQL et stack D008 conservés ; mécanismes d'accès, sessions, ORM et nouvelles conventions restent proposés.
 
@@ -449,3 +449,12 @@ Accord explicite « oui c est ça » à la proposition T01–T03 présentée ave
 Conséquence autorisée maintenant : consigner ces principes dans le registre et les documents techniques/de suivi, puis commit et push vérifié D069. Aucun démarrage applicatif. Authentification, ORM, mécanisme d'isolation, dossiers précis et bibliothèques restent à décider ; le mécanisme concret d'association interface/provider sera précisé dans le socle. Les exemples de stockage, messagerie ou sources ne créent aucune fonctionnalité supplémentaire.
 
 D091 est partiellement validée pour ce seul groupe ; T04–T10 restent proposés, D090 et D092 restent proposées globalement. Les passages cohérents de l'adaptation D092 sont alignés sur D093 sans valider son catalogue ni sa structure de fichiers. Aucun code, installation, test applicatif ou statut Accepted. Prochaine discussion : identité/session et autorisations/isolation T04–T05.
+
+
+## D094 — Authentification par JWT — Validé, 2026-10-27
+
+Instruction explicite « et pour l authetification je veu une auth jwt » : retenir une authentification par JWT pour l'API du campus. Cette instruction autorise le choix et sa consignation, sans nouvelle confirmation D064. Elle remplace la recommandation de session serveur opaque de T04, qui était proposée et n'avait pas été validée.
+
+Périmètre acquis : JWT comme format de jeton d'authentification pour l'API. Restent à spécifier et décider avant développement : bibliothèque/version, signature et gestion des clés, contenu et validation des claims, transport/stockage navigateur, durées, renouvellement éventuel, révocation/déconnexion, multi-appareils et réaction aux changements de compte/rattachement/droits. Aucun choix implicite de localStorage, cookie, refresh token, fournisseur externe ou fonctionnement entièrement sans état serveur.
+
+Les permissions et la séparation entre établissements restent obligatoires selon les décisions métier/D060 ; un jeton valide ne donne aucun accès global et ne dispense pas du contrôle de la ressource. D091 est partiellement validée pour T01–T03 et le seul choix JWT de T04 ; T05–T10 et les modalités restantes gardent leurs statuts. Documents techniques et suivi alignés, sans code, installation, test applicatif, déploiement ou Accepted. Commit/push et vérification selon D069, sans snapshot D074 ni délégation.
