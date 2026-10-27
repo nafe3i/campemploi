@@ -23,7 +23,8 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Approches techniques — T01–T03 et JWT validés, modalités à préciser](docs/specs/technical-guidelines.md)
 - [Socle technique — spécification préparatoire, Proposed](docs/specs/socle-technique.md)
 - [Identité / Organisation / Accès — priorité D097, spécification Proposed](docs/specs/identity-organization-access.md)
-- [IA-Q01 — comparaison des comptes, rattachements et contextes, Proposed](docs/specs/ia-q01-account-membership-options.md)
+- [IA-Q01 — principes validés D099, modalités ouvertes](docs/specs/ia-q01-account-membership-options.md)
+- [IA-Q02 — rôles et permissions, comparaison Proposed](docs/specs/ia-q02-roles-permissions-options.md)
 
 - [Vision](docs/product/vision.md)
 - [Décisions](docs/product/decisions.md)

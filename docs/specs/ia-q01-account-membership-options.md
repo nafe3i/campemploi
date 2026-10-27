@@ -1,12 +1,12 @@
 # IA-Q01 — Compte, rattachements et contexte d'action
 
-Date : 27 octobre 2026. Statut : **Proposed — arbitrage préparé, aucune option adoptée**. Mandat documentaire : D098. Référence de conception : [Identité / Organisation / Accès](identity-organization-access.md).
+Date : 27 octobre 2026. Statut de spécification : **Proposed — principes P01–P06 validés D099, modalités ouvertes**. Mandat documentaire : D098. Référence de conception : [Identité / Organisation / Accès](identity-organization-access.md).
 
 ## 1. Problème reformulé et périmètre
 
 La formulation précédente comparait ensemble des choix de nature différente. Un compte global peut avoir plusieurs rattachements distincts dans son histoire, un seul rattachement actif pendant le pilote, puis éventuellement plusieurs actifs après une décision future. Dans tous ces cas, une action métier peut être limitée à un seul contexte d'établissement vérifié. Ces propriétés ne sont pas contradictoires.
 
-Cette étude prépare les décisions IA-Q01. Elle ne valide ni le modèle recommandé ni une capacité multi-rattachement en production. IA-Q02–IA-Q12 restent ouverts, en particulier cumuls de rôles, classes, transferts, conflits d'intérêts, invitations, bootstrap, retrait concurrent, isolation, JWT, champs exposés et conservation. D059/D068/D064 restent intégralement applicables. Aucun code, migration, configuration ou schéma SQL produit.
+Cette étude conserve la comparaison préparée D098 ; les principes P01–P06 ont depuis été approuvés D099. Le pilote retient au plus un rattachement actif, sans autoriser une simultanéité future. IA-Q02–IA-Q12 restent ouverts, en particulier cumuls de rôles, classes, transferts, conflits d'intérêts, invitations, bootstrap, retrait concurrent, isolation, JWT, champs exposés et conservation. D059/D068/D064 restent intégralement applicables. Aucun code, migration, configuration ou schéma SQL produit.
 
 ## 2. Cinq axes indépendants
 
@@ -38,7 +38,7 @@ Sources métier : [vision](../product/vision.md), [administration](../scope/esta
 
 ## 4. Combinaisons de modèles comparées
 
-Toutes les combinaisons ci-dessous sont PROPOSÉES pour comparaison. La capacité historique et le contexte unique peuvent s'appliquer à plusieurs modèles.
+Les combinaisons ci-dessous conservent la comparaison préparatoire ; D099 retient les principes de M2 au pilote, sans activation de M3. La capacité historique et le contexte unique peuvent s'appliquer à plusieurs modèles.
 
 | Modèle | Identité | Rattachements | Contexte d'une action métier | Positionnement |
 |---|---|---|---|---|
@@ -68,7 +68,7 @@ Ces coûts sont une appréciation de conception, pas un benchmark ni un engageme
 | M1 : mauvais établissement à la connexion ou récupération | Identification du mauvais compte ou confusion de périmètre | Distinguer namespace local et login ; pas de rapprochement automatique d'emails |
 | M1 : même personne avec plusieurs comptes | Fusion erronée, anciennes permissions ou historique dissocié | Procédure explicite de rapprochement si un besoin apparaît ; non décidée ici |
 | M2/M3 : compte global compromis | Plusieurs relations historiques ou actuelles potentiellement concernées | Protection de récupération/changement d'email au niveau plateforme ; aucune permission locale ne suffit à prendre le contrôle de l'identité globale |
-| M2 : limite d'un rattachement actif vérifiée seulement par l'interface | Deux approbations concurrentes contournent la restriction proposée | Si retenue, garantie serveur/transactionnelle à définir et tester |
+| M2 : limite d'un rattachement actif vérifiée seulement par l'interface | Deux approbations concurrentes contournent la restriction validée D099 | Garantie serveur/transactionnelle à définir et tester avant implémentation |
 | M3 : contexte de l'interface différent du contexte de requête | Accès ou écriture dans le mauvais établissement | Contexte vérifiable pour chaque action et ressource ; pas de bascule silencieuse entre onglets |
 | Tous : fin de rattachement sans retrait effectif | Ancien accès conservé malgré JWT valide | Exigence D060/D080/D097 ; mécanisme et concurrence restent IA-Q08/10 |
 | Tous : utilisation de l'identité commune comme droit de partage | Dossiers E1 visibles à E2 | Propriété/périmètre de chaque ressource conservés, pas de union de droits ni transfert automatique |
@@ -77,7 +77,7 @@ La séparation de contexte et sa validation côté serveur sont cohérentes avec
 
 ## 5. Contexte d'action : principe et alternatives de sélection
 
-Recommandation PROPOSÉE : une action portant sur les données d'un établissement possède un contexte d'établissement unique, compatible avec la ressource et un droit courant de l'acteur. « Unique » concerne l'action, pas le nombre de relations de l'identité. La sélection ne vaut jamais autorisation.
+Principe P04 ACQUIS D099 : une action portant sur les données d'un établissement possède un contexte d'établissement unique, compatible avec la ressource et un droit courant de l'acteur. « Unique » concerne l'action, pas le nombre de relations de l'identité. La sélection ne vaut jamais autorisation.
 
 | Sélection possible | Intérêt | Coût / risque à traiter |
 |---|---|---|
@@ -88,7 +88,7 @@ Recommandation PROPOSÉE : une action portant sur les données d'un établisseme
 
 **Aucune de ces options de transport, état ou jeton n'est retenue.** IA-Q10 définit la politique JWT ; IA-Q09 définit l'isolation ; IA-Q08 définit la fraîcheur et la concurrence. Une exigence de contexte unique reste compatible avec plusieurs implémentations.
 
-Pour le pilote, le seul rattachement approuvé pourrait préremplir le contexte de l'interface si la restriction proposée est approuvée. Le serveur le contrôlerait toujours. Pas de sélecteur multi-écoles nécessaire au pilote par ce seul principe ; comportement exact en absence de rattachement, changement en cours ou sélection périmée à spécifier.
+Pour le pilote, le seul rattachement approuvé pourrait préremplir le contexte de l'interface dans la restriction pilote validée D099. Le serveur le contrôlerait toujours. Pas de sélecteur multi-écoles nécessaire au pilote par ce seul principe ; comportement exact en absence de rattachement, changement en cours ou sélection périmée à spécifier.
 
 Exceptions explicites : connexion, récupération du compte et opérations générales D056 ne sont pas artificiellement rattachées à une classe ou à un établissement. Elles ont leur propre autorisation et ne permettent aucune consultation globale des offres, CV ou bilans. Les tableaux multi-établissements et opérations métier transversales ne sont pas autorisés par l'exception.
 
@@ -96,16 +96,16 @@ Exceptions explicites : connexion, récupération du compte et opérations gén�
 
 | Choix | Avantage | Conséquence et état |
 |---|---|---|
-| Identifiant technique stable, email modifiable comme moyen de contact/login | Historique et liens indépendants des changements d'adresse | Recommandé, non retenu ; type/génération de clé non choisis |
+| Identifiant technique stable, email modifiable comme moyen de contact/login | Historique et liens indépendants des changements d'adresse | Principe validé D099 ; type/génération de clé non choisis |
 | Email comme clé d'identité immuable | Modèle apparent plus court | Changement d'adresse et réattribution de boîtes compliquent les liens ; non recommandé pour les relations métier |
 | Login email unique à la plateforme pour un compte global | Recherche du compte et récupération plus simples | Politique de vérification, normalisation et conflit à définir ; empêcher découverte et prise de contrôle d'un compte existant |
 | Unicité établissement + login pour comptes locaux | Même adresse possible dans plusieurs établissements | Établissement requis pour la bonne identité ; récupération et UX plus complexes |
 
-Recommandation PROPOSÉE pour le modèle global : identifiant stable indépendant de l'email et un email de connexion vérifié, unique au niveau plateforme pour le périmètre des comptes concernés. Les règles exactes de normalisation, changement d'adresse, unicité après fermeture et adresses alternatives restent ouvertes. Ne pas assimiler possession d'une boîte email à appartenance institutionnelle ou à identité civile garantie.
+Principes P01/P05 ACQUIS D099 : identifiant stable indépendant de l'email et email de connexion vérifié, unique à la plateforme, modifiable sans changer l'identifiant du compte. Les règles exactes de normalisation, changement d'adresse, unicité après fermeture et adresses alternatives restent ouvertes. Ne pas assimiler possession d'une boîte email à appartenance institutionnelle ou à identité civile garantie.
 
 La vérification d'adresse et la récupération de compte ont des exigences de sécurité à définir : contrôle de la nouvelle adresse, récupération après perte de l'adresse institutionnelle, réattribution d'une boîte, réponses évitant la découverte de comptes. Aucun canal, durée, jeton d'activation ou envoi effectif n'est choisi ici. [OWASP Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
 
-Pour D059 : le lien de classe reste partagé/réutilisable ; une personne se connecte à son compte individuel ou en crée un, puis demande l'approbation locale. Reconnaître le compte n'approuve pas la demande. Pour le personnel D056 : invitation et activation personnelles restent distinctes de la création des droits locaux. Si une adresse correspond à un compte existant, ne pas créer ni fusionner une identité ni rattacher ce compte sur cette seule correspondance ; procédure à définir avant ce parcours.
+Pour D059 : le lien de classe reste partagé/réutilisable ; une personne se connecte à son compte individuel ou en crée un, puis demande l'approbation locale. Reconnaître le compte n'approuve pas la demande. Pour le personnel D056 : invitation et activation personnelles restent distinctes de la création des droits locaux. La possession d'une adresse ne prouve pas la propriété d'un compte historique (D099) ; ni création/fusion d'identité, ni nouveau rattachement ne sont automatiques sur cette seule correspondance. Procédure à définir avant ce parcours.
 
 Proposition de séparation des responsabilités dans M2/M3 : la CME locale gère les relations/rôles autorisés de son établissement, sans réinitialiser les secrets du compte global ni voir ses autres affiliations par défaut. Les pouvoirs précis d'administration de l'identité globale restent IA-Q07/10/11 ; aucun rôle ou fournisseur nouveau n'est créé.
 
@@ -114,7 +114,7 @@ Proposition de séparation des responsabilités dans M2/M3 : la CME locale gère
 | Sujet | M1 | M2 | M3 |
 |---|---|---|---|
 | Identité authentifiée | Compte local dont le namespace doit être clair | Compte global distinct du contexte métier | Même identité globale, plusieurs droits locaux possibles |
-| Contexte d'action | Vérifier établissement du compte, action et ressource | Vérifier rattachement actif unique si restriction retenue | Vérifier relation sélectionnée ; jamais union de toutes les relations |
+| Contexte d'action | Vérifier établissement du compte, action et ressource | Vérifier rattachement actif unique au pilote D099, activité à formaliser | Vérifier relation sélectionnée ; jamais union de toutes les relations |
 | Fin d'une relation | Retirer ses accès locaux ; récupération de l'identité locale à décider | Le compte peut exister sans accès interne | Retirer seulement le périmètre terminé, autres droits indépendants réévalués |
 | Reconnexion / renouvellement | Ne recrée pas une appartenance retirée | Ne réactive pas l'ancien rattachement | Ne rétablit aucun ancien contexte ni droit local |
 
@@ -124,15 +124,15 @@ Un rattachement terminé doit cesser d'autoriser l'action concernée malgré un 
 
 ## 8. Conséquences conceptuelles sur PostgreSQL
 
-Les relations ci-dessous sont des implications à vérifier après décision, pas des tables ou migrations validées.
+Les relations ci-dessous conservent les implications des modèles comparés. Pour M2, les principes D099 sont acquis ; leur traduction technique reste à vérifier, sans table ni migration validée.
 
 | Aspect | M1 | M2/M3 |
 |---|---|---|
 | Référence d'identité | Compte local et établissement cohérents dans les références | Compte indépendant ; rattachement relie compte et établissement |
 | Attribution locale | Compte local ou relation locale explicite | Attribution attachée au bon contexte local, pas automatiquement au compte global |
-| Unicité du login | Clé dans le namespace décidé, souvent liée à l'établissement | Unicité de plateforme si l'option correspondante est approuvée |
+| Unicité du login | Clé dans le namespace décidé, souvent liée à l'établissement | Unicité de plateforme acquise D099 ; normalisation et réattribution ouvertes |
 | Historique de rattachement | Périodes éventuellement portées par relation locale | Relations/périodes distinctes ; existence historique ne signifie pas validité courante |
-| Limite d'un actif | Peut découler du compte local sans empêcher plusieurs comptes pour une personne | Garantie spécifique si restriction pilote retenue ; approbations concurrentes à traiter |
+| Limite d'un actif | Peut découler du compte local sans empêcher plusieurs comptes pour une personne | Restriction pilote acquise D099 ; activité et garantie concurrente à définir |
 | Ressource et acteur | Conserver établissement de la ressource et identité locale d'auteur | Conserver établissement de la ressource, auteur global et contexte pertinent ; identité commune ne déplace pas la ressource |
 | Fin d'appartenance | Ne pas effacer l'auteur/historique par cascade non décidée | Fin de validité locale distincte de suppression d'identité ou de contenu |
 
@@ -149,18 +149,18 @@ Scénario étudié : la même personne quitte E1 et souhaite rejoindre E2.
 | Modèle | Enchaînement conceptuel | Risque à éviter |
 |---|---|---|
 | M1 | Mettre fin aux droits du compte E1 et créer/activer l'identité E2 selon procédure | Fusion d'identités sur email ou transfert de dossiers sans règle |
-| M2 | Garder l'identité si option approuvée, terminer relation E1, examiner nouvelle demande E2 | Activer deux relations malgré restriction du pilote ; présenter fin E1 comme approbation E2 |
+| M2 | Conserver l'identité D099, terminer relation E1 selon procédure à définir, examiner nouvelle demande E2 | Activer deux relations malgré restriction du pilote ; présenter fin E1 comme approbation E2 |
 | M3 | Gérer indépendamment fin E1 et demande E2 ; coexistence possible seulement si autorisée | Réutiliser le rôle E1 en E2 ou laisser l'interface écrire dans l'ancien contexte |
 
 Dans tous les modèles, D059 interdit le transfert automatique au moyen d'un nouveau lien. D068 conserve les offres et leurs suivis selon les règles acquises ; les avis/auteurs restent régis par D080–D082. Aucun dossier, historique de revue ou bilan ne rejoint le nouvel établissement par simple continuité de l'identité.
 
-Recommandation PROPOSÉE : la fin d'un rattachement ne supprime pas à elle seule le compte global ni les références d'auteur ; elle retire les accès provenant de cette relation. Cela n'accorde pas un accès personnel perpétuel aux anciens dossiers. Consultation par l'ancien établissement, accès de l'ancien membre, éventuelle portabilité, suppression et durées restent IA-Q04/12. Fermeture globale du compte et changement de rattachement sont des opérations distinctes à spécifier.
+Principe P06 ACQUIS D099 : la fin d'un rattachement ne supprime pas à elle seule le compte global ni les références d'auteur ; elle retire les accès provenant de cette relation. Cela n'accorde pas un accès personnel perpétuel aux anciens dossiers. Consultation par l'ancien établissement, accès de l'ancien membre, éventuelle portabilité, suppression et durées restent IA-Q04/12. Fermeture globale du compte et changement de rattachement sont des opérations distinctes à spécifier.
 
 Ne pas effacer immédiatement les rattachements pour « réinitialiser » la sécurité : les traces utiles et relations doivent rester cohérentes selon la politique à décider. Inversement, « historique » ne signifie pas conservation illimitée. Le responsable des données et le cadre des essais réels restent C11/C12, sans ouverture à des données réelles par cette étude.
 
-## 10. Recommandation proportionnée — non adoptée
+## 10. Orientation proportionnée — principes retenus D099, modalités ouvertes
 
-Je recommande comme cible conceptuelle **un compte de plateforme, des rattachements distincts et un contexte unique par action métier**. Pour le pilote, je recommande **au plus un rattachement d'établissement actif par compte**, tout en prévoyant que plusieurs relations puissent exister dans son histoire.
+D099 retient **un compte de plateforme, des rattachements distincts et un contexte unique par action métier**, avec **au plus un rattachement d'établissement actif par compte au pilote** et plusieurs relations possibles dans son histoire. Demande en attente, relation active et historique sont distincts. La notion d'activité et la garantie face aux approbations concurrentes restent à formaliser avant implémentation.
 
 Justification : le pilote n'a pas de besoin confirmé de simultanéité multi-écoles. Séparer compte et rattachement évite de faire dépendre toute l'identité d'une classe ou d'une école, permet de concevoir le départ sans réécrire l'auteur des ressources et prépare raisonnablement l'ouverture. La restriction d'activité limite les parcours du pilote ; elle ne doit pas être une unicité à vie cachée.
 
@@ -168,44 +168,46 @@ Cette recommandation se situe entre M2 au pilote et une capacité conceptuelle p
 
 Coût accepté à discuter : identité et récupération de plateforme à protéger, relation d'appartenance explicite, garantie de la restriction pilote et examen des anciens dossiers. Si le besoin réel impose que chaque établissement contrôle intégralement son identité, M1 devrait être reconsidéré sur ce critère ; ce besoin n'est pas établi dans les décisions actuelles.
 
-## 11. Décisions précises soumises à approbation
+## 11. Principes P01–P06 approuvés D099
 
-Les propositions P01–P06 sont des sous-questions de préparation IA-Q01, pas de nouveaux identifiants de tâches ni des décisions acquises. Chaque accord peut être donné séparément ou ajusté. IA-Q02–IA-Q12 restent ouverts après un éventuel accord sur IA-Q01.
+Les six principes P01–P06 ci-dessous sont approuvés D099 comme orientations architecturales ; aucune implémentation autorisée. Le tableau conserve les formulations présentées et leurs limites. IA-Q02–IA-Q12 restent ouverts. D099 complète P03 par la définition d'activité et sa garantie contre approbations concurrentes ; P05 ne permet pas de s'approprier un compte historique par simple possession de l'adresse.
 
-| Proposition | Formulation à approuver ou modifier | Effet et limite |
+| Principe validé D099 | Formulation approuvée | Effet et limite |
 |---|---|---|
 | P01 — Identité | Retenir une identité de compte de plateforme, indépendante des établissements ; identifiant stable distinct de l'email | Influence les références d'auteur et la récupération ; aucun fournisseur, format de clé ou mécanisme JWT choisi |
 | P02 — Relations | Représenter des rattachements distincts du compte, avec validité et histoire, sans imposer un seul établissement à vie | Prépare les relations futures ; épisodes/statuts et droits historiques restent à préciser |
 | P03 — Pilote | Limiter le pilote à au plus un rattachement d'établissement actif par compte ; plusieurs actifs futurs nécessitent un accord distinct | Une plateforme avec deux établissements de test reste possible ; pouvoir administratif général D056 n'exige pas un rattachement local ni accès métier global |
 | P04 — Contexte | Exiger un contexte d'établissement unique et autorisé pour chaque action métier locale, compatible avec la ressource ; opérations générales explicitement distinctes | Aucun rôle/droit croisé ; mode de sélection/transport, JWT et isolation restent à arbitrer |
-| P05 — Identification | Pour le compte global proposé, retenir le principe d'un email de connexion vérifié et unique à la plateforme, modifiable sans changer l'identifiant stable | Ne tranche pas normalisation, adresses alternatives, cas de compte fermé, activation/récupération concrètes, ni pouvoirs d'administration ; ces règles bloquent leur implémentation |
+| P05 — Identification | Pour le compte global validé, retenir le principe d'un email de connexion vérifié et unique à la plateforme, modifiable sans changer l'identifiant stable | Ne tranche pas normalisation, adresses alternatives, cas de compte fermé, activation/récupération concrètes, ni pouvoirs d'administration ; ces règles bloquent leur implémentation |
 | P06 — Fin de relation | La fin d'un rattachement retire ses droits sans supprimer à elle seule l'identité ou déplacer les ressources ; approbation d'un nouvel établissement distincte | D059/D068 conservées ; aucun accès historique perpétuel, durée, transfert de données ou mécanisme de révocation adopté |
 
-P02/P03 combinent capacité conceptuelle et restriction du pilote ; elles ne sont pas deux alternatives exclusives. P05 dépend de P01 et devra être revue si un modèle local est choisi. P06 fixe une séparation de responsabilités proposée, sans clôturer IA-Q04/08/12. Si une réponse est ambiguë, D064 impose de clarifier avant d'appliquer la partie dépendante.
+P02/P03 combinent capacité conceptuelle et restriction du pilote, sans limite permanente. P05 s'appuie sur P01 acquis ; ses règles de normalisation/récupération/réattribution restent ouvertes. P06 fixe la séparation de responsabilités sans clôturer IA-Q04/08/12. Aucune nouvelle relation, aucun rôle ou accès automatique au changement d'établissement. L'isolation demeure exigée malgré l'identité commune ; D064 reste applicable aux modalités et autres décisions.
 
 ## 12. Points laissés ouverts et preuves à prévoir
 
-IA-Q01 reste **OUVERT** tant que les propositions n'ont pas été approuvées. Paramètres restants : règles exactes du login/email et réattribution d'adresse, cycle de récupération, réentrée dans un établissement, droits lorsque tous les rattachements sont terminés, garantie de la restriction pilote et historique des épisodes.
+IA-Q01 est **VALIDÉ sur P01–P06** ; ses modalités restent **OUVERTES**. Paramètres restants : règles exactes du login/email et réattribution d'adresse, cycle de récupération, réentrée dans un établissement, droits lorsque tous les rattachements sont terminés, garantie de la restriction pilote et historique des épisodes.
 
-IA-Q02–IA-Q12 restent **OUVERTS et inchangés** dans le registre de la spécification principale. L'étude peut exposer leurs dépendances sans choisir leur solution. En particulier : ni durée/refresh token, ni encodage du contexte dans JWT, ni base partagée/RLS, ni fusion automatique d'identités ou de dossiers.
+IA-Q02–IA-Q12 restent **OUVERTS** dans le registre de la spécification principale ; IA-Q02 est désormais préparé, sans décision sur ses propositions. L'étude peut exposer leurs dépendances sans choisir leur solution. En particulier : ni durée/refresh token, ni encodage du contexte dans JWT, ni base partagée/RLS, ni fusion automatique d'identités ou de dossiers.
 
 Preuves futures après décision :
 
 - Une personne en attente ou sans rattachement actif n'accède pas aux données internes ; opérations de compte prévues séparément.
-- Même compte global hypothétique et deux établissements fictifs : aucun droit ou contenu traversant les contextes sans règle acquise.
-- Deux approbations concurrentes ne contournent pas la restriction d'activité si P03 est retenue ; résultat du conflit à définir.
+- Compte global et deux établissements fictifs : aucun droit ou contenu traversant les contextes sans règle acquise.
+- Deux approbations concurrentes ne contournent pas la restriction d'activité P03 validée ; résultat du conflit à définir.
 - Départ E1 et demande E2 : ni accès E1 maintenu par ancien JWT, ni activation E2 automatique, ni copie de dossier.
 - Changement d'email et email institutionnel réattribué : identité/historique non déplacés et pas de prise de contrôle par simple correspondance d'adresse.
 - Si la simultanéité est décidée ultérieurement : actions multi-onglets conservent leur contexte explicite, retrait E1 sans suppression des droits E2 autorisés.
 
 Ces scénarios sont préparatoires, non exécutés. Ils ne valent pas des tests d'un code ou des migrations inexistants. La [spécification principale](identity-organization-access.md) et le [socle](socle-technique.md) gardent leur statut Proposed.
 
-## 13. Vérification documentaire et conservation
+## 13. Vérification documentaire et conservation — historique D098 et mise à jour D099
 
-Fichiers du périmètre : présente comparaison, section 10.1 et ligne IA-Q01 de la spécification principale, référence du socle, README, ajout du mandat D098 au registre et suivi BOARD/STATUS/JOURNAL. Les autres questions IA-Q02–IA-Q12 et les catalogues F/S ne sont pas modifiés.
+Lors de la préparation D098, fichiers du périmètre : présente comparaison, section 10.1 et ligne IA-Q01 de la spécification principale, référence du socle, README, ajout du mandat D098 au registre et suivi BOARD/STATUS/JOURNAL. Lors de cette préparation D098, les autres questions IA-Q02–IA-Q12 et les catalogues F/S n’étaient pas modifiés ; D099 autorise depuis l’alignement et la préparation IA-Q02, sans modifier leurs décisions.
 
 Vérifications documentaires exécutées : huit fichiers Markdown concernés ; 43 liens locaux valides ; treize sections et six propositions P01–P06 identifiées ; D098 unique, ancien registre conservé intégralement. Blocs D059/D068/D064, lignes IA-Q02–IA-Q12, invariants/matrice/scénarios IA-I/IA-A/IA-S et identifiants/intitulés F/S comparés à HEAD avant ce travail : inchangés. Diff sans erreur d'espacement ; recherche ciblée de secrets sans résultat et relecture manuelle sans donnée personnelle réelle détectée, sans garantie absolue.
 
 Fichiers réellement concernés : `docs/specs/ia-q01-account-membership-options.md`, `docs/specs/identity-organization-access.md`, `docs/specs/socle-technique.md`, `docs/product/decisions.md`, `README.md`, `tracking/BOARD.md`, `tracking/STATUS.md` et `tracking/JOURNAL.md`. Aucun test applicatif, build, migration ou configuration exécuté.
 
-Comparaison et alignement publiés au commit f1bd0b6bf8ce9aaea034d993c32b4b4193ccb039 sur origin/main ; concordance distante vérifiée le 27 octobre 2026. Preuve ajoutée dans un commit de suivi distinct. Aucune application de P01–P06 par la publication du document ; toute adoption reste soumise à D064.
+Comparaison et alignement publiés au commit f1bd0b6bf8ce9aaea034d993c32b4b4193ccb039 sur origin/main ; concordance distante vérifiée le 27 octobre 2026. Preuve ajoutée dans un commit de suivi distinct. La publication préparatoire ne constituait pas l'approbation ; D099 a depuis validé les principes. Les modalités restent soumises à D064 et aucun code n'est autorisé.
+
+Mise à jour D099 : statuts/références P01–P06 alignés après accord explicite ; prochaine préparation [IA-Q02 — rôles et permissions](ia-q02-roles-permissions-options.md), Proposed. La preuve Git ci-dessus concerne la préparation D098 ; la nouvelle publication sera consignée après vérification.

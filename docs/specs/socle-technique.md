@@ -18,7 +18,7 @@ Une décision validée ne rend pas cette spécification **Accepted**. L'acceptat
 
 ## 2. Références et adaptation des ressources
 
-Priorité de conception validée D097 : [Identité / Organisation / Accès](identity-organization-access.md), spécification Proposed. Ses invariants, cardinalités et arbitrages conditionnent JWT et les migrations métier ; aucune option nouvelle n’est validée par cette référence.
+Priorité de conception validée D097 : [Identité / Organisation / Accès](identity-organization-access.md), spécification Proposed. Principes IA-Q01 P01–P06 validés D099 ; activité/concurrence, normalisation/récupération/réattribution et autres modalités restent ouvertes. Préparation [IA-Q02](ia-q02-roles-permissions-options.md) autorisée avant IA-Q03 ; aucune proposition de rôles, politique JWT ou isolation nouvelle adoptée.
 
 Références du projet : [décisions](../product/decisions.md), [workflow](../workflow.md), [première tranche](../scope/first-slice.md), [approches techniques](technical-guidelines.md), [administration](../scope/establishment-administration.md), [cycle des offres](../scope/offer-lifecycle.md), [adaptation des exemples](architecture-realisation-campus.md) et [organisation GitHub](../git-workflow.md).
 
@@ -176,7 +176,7 @@ Isolation UNKNOWN : base/tables partagées avec périmètre explicite, schémas 
 
 ## 9. Modèle conceptuel et persistance
 
-Ce modèle est une proposition de travail ; il ne fixe ni tables, cardinalités complètes, identifiants, valeurs d'enum ou suppressions en cascade.
+Les principes IA-Q01 D099 sont acquis : identité globale stable, rattachements distincts, au plus un actif au pilote et email vérifié/unique indépendant de l'identifiant. Le modèle détaillé reste proposé : aucune table, cardinalité de classe, valeur d'enum ou suppression en cascade fixée ; demande en attente/activité/historique distincts, garantie concurrente à définir.
 
 ```text
 Compte ── rattachement et rôles locaux ── Établissement
@@ -319,4 +319,4 @@ Priorité de conception validée D097 : traiter Identité / Organisation / Accè
 
 Livrable : spécification préparatoire du socle, liée aux décisions D007/D008/D086/D088/D089/D093/D094/D095 et inspirée des deux archives relues. Vérification documentaire : cohérence des références/statuts, liens locaux et distinction entre prérequis, propositions et preuves ; résultat consigné dans le suivi.
 
-Prochaine action : examiner la [comparaison IA-Q01](ia-q01-account-membership-options.md) préparée selon D098 et approuver/modifier ses propositions avant adoption ; IA-Q01 reste ouvert et prioritaire avant IA-Q02/03 de [Identité / Organisation / Accès](identity-organization-access.md). Compléter ensuite politique JWT et modèle relationnel minimal avant leurs implémentations ; versions/outillage/configuration du socle restent à décider au moment nécessaire. Aucune option ouverte, aucun fichier applicatif, installation ou test applicatif produit par cette rédaction.
+Prochaine action : examiner la [comparaison IA-Q02](ia-q02-roles-permissions-options.md) et RP01–RP06 avant nouvelle décision, puis préparer IA-Q03. Les principes [IA-Q01](ia-q01-account-membership-options.md) sont validés D099, leurs modalités non résolues restent ouvertes dans [Identité / Organisation / Accès](identity-organization-access.md). Compléter ensuite politique JWT et modèle relationnel minimal avant leurs implémentations ; versions/outillage/configuration du socle restent à décider au moment nécessaire. Aucune option ouverte, aucun fichier applicatif, installation ou test applicatif produit par cette rédaction.

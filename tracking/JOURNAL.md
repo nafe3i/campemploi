@@ -1,5 +1,17 @@
 # Journal
 
+## 2026-10-27 — Contrôles D099 et préparation IA-Q02 réussis
+
+Dix fichiers Markdown/70 liens locaux, D099 unique, ancien registre intégral et blocs D059/D068/D064 préservés ; IA-Q03–IA-Q12, matrice/invariants et F/S inchangés. Six propositions RP et dix scénarios vérifiés ; diff/confidentialité contrôlés sans anomalie détectée. R01h documentaire terminée, comparaison IA-Q02 Proposed ; aucune décision RP, politique JWT ou isolation adoptée, aucun code/migration/configuration ni test applicatif. Commit/push D069 à vérifier.
+
+## 2026-10-27 — IA-Q01 aligné, préparation IA-Q02 rédigée
+
+P01–P06 et exigences complémentaires D099 reportés dans comparaison IA-Q01, concepts/cardinalités/registre de la spécification et socle ; demandes/activité/historique distincts, limite pilote non permanente et identité email sans appropriation historique. Comparaison docs/specs/ia-q02-roles-permissions-options.md Proposed : rôle principal A, attributions locales/catalogue fermé B, personnalisation C ; recommandation B et RP01–RP06 non adoptées. Aucun nouveau cumul, pouvoir administratif, bibliothèque ou mécanisme adopté ; IA-Q03 et questions restantes ouvertes. Références et suivi alignés, vérifications à terminer avant conservation Git D069.
+
+## 2026-10-27 — Principes IA-Q01 validés, D099
+
+Décision explicite enregistrée avant alignement : P01–P06 approuvés, identité globale et rattachements distincts, restriction pilote d’un actif à définir/garantir face à concurrence, contexte unique, email vérifié/unique indépendant de l’identifiant, fin de relation sans transfert/suppression automatiques. Demande en attente, historique et activité distincts ; propriété d’un ancien compte non prouvée par la seule adresse. Modalités et autres arbitrages ouverts. Préparation IA-Q02 autorisée avant IA-Q03, documentaire seulement.
+
 ## 2026-10-27 — Publication de la comparaison IA-Q01 vérifiée
 
 Commit f1bd0b6bf8ce9aaea034d993c32b4b4193ccb039 publié sur origin/main, concordance distante vérifiée. Comparaison Proposed et préparation D098 conservées ; P01–P06 non adoptées, IA-Q01 et IA-Q02–IA-Q12 ouverts. Preuve ajoutée à la comparaison et au suivi selon D069/D074 ; aucun code/configuration/migration.
