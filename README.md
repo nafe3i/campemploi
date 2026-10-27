@@ -20,7 +20,7 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Suivi Git et GitHub](docs/git-workflow.md)
 - [Comment nous réaliserons le projet — plan proposé](docs/plan-realisation.md)
 - [Architecture et réalisation — adaptation des archives, proposée](docs/specs/architecture-realisation-campus.md)
-- [Approches et principes techniques — propositions à discuter](docs/specs/technical-guidelines.md)
+- [Approches techniques — T01–T03 validés, autres choix à discuter](docs/specs/technical-guidelines.md)
 
 - [Vision](docs/product/vision.md)
 - [Décisions](docs/product/decisions.md)
@@ -28,4 +28,4 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Workflow](docs/workflow.md)
 - [Liaison à l'application](docs/project-setup.md)
 
-Stack validée D008 : React/Vite + TypeScript, Node.js/NestJS et PostgreSQL ; serveur en monolithe modulaire, API REST. Docker retenu D088 ; Docker Compose et conteneurisation complète en développement validés D089, production à préciser. Aucun code applicatif ni déploiement.
+Stack validée D008 : React/Vite + TypeScript, Node.js/NestJS et PostgreSQL ; serveur en monolithe modulaire, API REST. Docker retenu D088 ; Docker Compose et conteneurisation complète en développement validés D089, production à préciser. Principes responsabilités/SOLID/injection ciblée validés D093. Aucun code applicatif ni déploiement.

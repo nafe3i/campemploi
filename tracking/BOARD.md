@@ -38,8 +38,9 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 | ID | Travail | Statut | Dépendance / validation attendue |
 |---|---|---|---|
-| R01 | Comparer et décider stack/architecture/hébergement | En cours | D008/D088/D089 validées ; docs/specs/technical-guidelines.md proposé D091 : responsabilités, SOLID, DI/interfaces, auth/permissions, PostgreSQL et contrôles. Premier groupe T01–T03 à valider ; plan D090 encore proposé. Aucun code ou installation |
+| R01 | Comparer et décider stack/architecture/hébergement | En cours | D008/D088/D089 validées ; docs/specs/technical-guidelines.md, D091 partiellement validée par D093 : responsabilités, SOLID, DI/interfaces, auth/permissions, PostgreSQL et contrôles. Principes T01–T03 validés D093 ; prochaine discussion T04–T05 ; plan D090 encore proposé. Aucun code ou installation |
 | R01a | Adapter les exemples de contexte et de fiches au campus | Terminé | Livrable documentaire relu : docs/specs/architecture-realisation-campus.md, Proposed D092 ; catalogue et exemple avec contrôles, propositions à valider, aucun développement ; commit 454e6aa publié et vérifié sur origin/main |
+| R01b | Consigner les principes responsabilités/SOLID/injection ciblée | Terminé | Accord « oui c est ça », D093 ; T01–T03 et références alignés, autres groupes proposés ; décision/documentation uniquement, aucun développement |
 | R02 | Spécifier accès, comptes, organisation et offres | À faire | R01 et règles métier pertinentes arbitrées ; critères/tests de permissions |
 | R03 | Initialiser le projet et inspecter la structure réelle | À faire | Stack validée ; setup puis audit |
 | R04 | Réaliser accès nécessaires et parcours d'offres humaines | À faire | Spécification ; développement → vérification → tests → revue → documentation |
@@ -81,6 +82,6 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 ## Prochaine action immédiate
 
-Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. Priorité précisée par le porteur : discuter les approches techniques D091 avant leur mise en œuvre, premier groupe responsabilités/SOLID/injection/interfaces T01–T03. D090 reste proposée ; socle à spécifier après choix nécessaires. Proposer le contenu des Issues/Project avant création externe.
+Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. Priorité précisée par le porteur : discuter les approches techniques D091 avant leur mise en œuvre, T01–T03 validés D093 ; prochaine discussion identité/session et autorisations/isolation T04–T05. D090 reste proposée ; socle à spécifier après choix nécessaires. Proposer le contenu des Issues/Project avant création externe.
 
 Prochaine tâche : R01. C11/C12 restent ouverts pour cadre et essais réels. Aucune fonctionnalité applicative développée ou Accepted ; mise à jour après chaque avancée réelle avec preuve.

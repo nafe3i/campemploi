@@ -23,7 +23,7 @@ Construire une plateforme utilisable par le campus : trouver des opportunités p
 
 Cette organisation reprend [notre workflow](workflow.md) et la [référence JSM](reference/jsm-workflow-source.txt).
 
-Précision demandée ensuite par le porteur : discuter les approches techniques avant leur mise en œuvre. Le document [Approches et principes techniques](specs/technical-guidelines.md), proposé D091, prépare cette discussion : responsabilités, SOLID, injection/interfaces, authentification, permissions, accès PostgreSQL et autres conventions. Ses propositions attendent une validation par groupe ; D090 reste également proposée.
+Précision demandée ensuite par le porteur : discuter les approches techniques avant leur mise en œuvre. Le document [Approches et principes techniques](specs/technical-guidelines.md), partiellement validé D091/D093, prépare cette discussion : responsabilités, SOLID, injection/interfaces, authentification, permissions, accès PostgreSQL et autres conventions. T01–T03 (responsabilités, SOLID pragmatique et injection ciblée) sont validés D093 ; T04–T10 restent à discuter. D090 reste proposée, sans démarrage applicatif.
 
 - **Le porteur du projet** précise le besoin du campus, décide après comparaison des options, participe à la réalisation et donne ses retours sur le résultat visible. Son rôle ne se limite pas à approuver du code.
 - **L'assistant** analyse les documents et le projet réel, recommande avec les compromis, aide à concevoir et implémenter dans le périmètre autorisé, vérifie et explique les résultats, puis tient les documents à jour.

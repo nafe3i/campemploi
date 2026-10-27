@@ -2,7 +2,7 @@
 
 Date : 27 octobre 2026. Statut : **Proposed**. Référence : D092 proposée.
 
-Livrable demandé : une version adaptée à CapEmploi Campus des documents fournis dans `context.zip` et `feature-specs.zip`. La rédaction est autorisée ; les nouveaux choix décrits restent à discuter. Aucun code, configuration, installation ou déploiement n'est réalisé ici. D090 et D091 restent proposées.
+Livrable demandé : une version adaptée à CapEmploi Campus des documents fournis dans `context.zip` et `feature-specs.zip`. La rédaction est autorisée ; les nouveaux choix décrits restent à discuter. Aucun code, configuration, installation ou déploiement n'est réalisé ici. D090 reste proposée ; D091 est partiellement validée pour T01–T03 par D093 le 27 octobre 2026.
 
 ## 1. Ce que les archives nous apportent
 
@@ -17,7 +17,7 @@ Les instructions contenues dans ces exemples (« installer », « créer », « 
 | Vue produit et périmètre | Conserver vision, scope et décisions existants comme références |
 | Architecture et frontières techniques | Décrire React → API NestJS → PostgreSQL, puis stockage privé des CV |
 | Contexte visuel | Spécifier navigation, formulaires, états d'écran et accessibilité ; thème et composants à décider |
-| Standards de code | S'appuyer sur D091, après validation des groupes concernés |
+| Standards de code | Appliquer les principes T01–T03 validés D093 ; autres groupes D091 à décider |
 | Workflow et suivi | Conserver `docs/workflow.md`, STATUS, BOARD, JOURNAL et Git ; éviter un second suivi concurrent |
 | Fiches numérotées | Préparer une fiche par petite capacité vérifiable, reliée à ses règles métier |
 | Propriétaire/collaborateur d'un projet | Remplacer par nos permissions : établissement, rôle, classe, affectation, propriétaire et contexte |
@@ -35,7 +35,8 @@ Quelques incohérences montrent pourquoi une adaptation critique est nécessaire
 | **Validé** | Scope D007 ; React/Vite + TypeScript ; API REST Node.js/NestJS ; PostgreSQL ; serveur en monolithe modulaire D008 |
 | **Validé** | Docker et Compose en développement avec interface, API et base conteneurisées, rechargement automatique D088–D089 |
 | **Validé** | Trois tranches D086 ; contrôles communs et spécifiques D060 ; accord avant nouvelle décision D064 ; suivi et synchronisation D062/D069/D074 |
-| **Proposé** | D090 : plan général ; D091 : responsabilités, SOLID, injection, auth, permissions, données et conventions ; D092 : présente adaptation |
+| **Validé** | Principes T01–T03 : responsabilités, SOLID pragmatique et injection ciblée D093 ; mise en œuvre future à vérifier |
+| **Proposé** | D090 : plan général ; D091 T04–T10 : auth, permissions, données et autres conventions ; D092 : présente adaptation globale |
 | **UNKNOWN** | Organisation exacte du dépôt, versions, ORM, mécanisme/bibliothèque d'authentification, modèle détaillé d'isolation, outils UI/tests et hébergement |
 | **UNKNOWN avant essais réels** | Responsabilités des données C11 et protocole de mesure C12 |
 
@@ -61,9 +62,9 @@ Serveur : NestJS, un seul serveur métier
           └── stockage privé : CV                 [tranche 2]
 ```
 
-Le regroupement exact des modules est proposé. Les modules des tranches suivantes ne seraient créés qu'au moment utile. L'historique nécessaire à une offre ou à une revue reste rattaché au métier concerné ; un module d'audit universel n'est pas exigé.
+Les principes de séparation des responsabilités sont validés D093 ; le regroupement exact des modules est proposé. Les modules des tranches suivantes ne seraient créés qu'au moment utile. L'historique nécessaire à une offre ou à une revue reste rattaché au métier concerné ; un module d'audit universel n'est pas exigé.
 
-| Partie | Responsabilité proposée | Exemple |
+| Partie | Responsabilité retenue D093 | Exemple |
 |---|---|---|
 | React | Afficher, recueillir les entrées, montrer chargement/erreurs/résultats | Formulaire de proposition d'offre |
 | Identité et accès | Identifier le compte et établir son contexte autorisé | Compte connecté et rattachement actif |
@@ -82,9 +83,9 @@ Une demande « publier cette offre » traverse trois questions différentes :
 2. La personne peut-elle publier cette offre et les conditions sont-elles remplies ? Ce sont les permissions et règles métier.
 3. Comment enregistrer ensemble l'état publié et son historique ? C'est la persistance et, selon le modèle retenu, une transaction.
 
-Tout placer dans un controller paraît court au début, mais mélange ces trois raisons de changer. La séparation proposée permet de tester la règle de publication sans construire une requête HTTP, puis de vérifier séparément l'API et les écritures PostgreSQL réelles.
+Tout placer dans un controller paraît court au début, mais mélange ces trois raisons de changer. La séparation retenue D093 permet de tester la règle de publication sans construire une requête HTTP, puis de vérifier séparément l'API et les écritures PostgreSQL réelles.
 
-Injection de dépendances : le service reçoit l'accès aux données dont il a besoin plutôt que de le construire lui-même. Un contrat ciblé peut exprimer ce besoin ; une interface par classe n'est pas obligatoire. D091 T01–T03 détaille cette proposition, encore non validée.
+Injection de dépendances : le service reçoit l'accès aux données dont il a besoin plutôt que de le construire lui-même. Un contrat ciblé peut exprimer ce besoin ; une interface par classe n'est pas obligatoire. D091 T01–T03 détaille ces principes, validés par D093. Les dossiers exacts et le mécanisme concret de liaison des contrats restent à préciser.
 
 ## 4. Organisation des fichiers proposée
 
@@ -199,16 +200,16 @@ Outils et seuils restent à décider. Utiliser des données fictives en dévelop
 
 ## 9. Ce que nous déciderions ensuite
 
-Première discussion proposée : T01–T03 de D091, illustrées ici par responsabilités/controller/service/persistance, SOLID pragmatique et injection ciblée. Conséquence : conventions de code et structure du futur socle, sans sélection d'ORM ni d'authentification par cet accord.
+T01–T03 de D091 sont validés par D093 : responsabilités/controller/service/persistance, SOLID pragmatique et injection ciblée. Conséquence : principes à respecter dans le futur socle, sans sélection d'ORM, d'authentification ou de dossiers précis par cet accord.
 
-Ensuite, traiter par groupes : identité/session et permissions/isolation ; accès PostgreSQL ; structure du dépôt et outils UI/API/tests ; configuration Docker et versions ; stockage/exploitation au moment nécessaire. Ne pas produire toutes les fiches détaillées avant ces choix : compléter les premières, puis avancer progressivement.
+Prochaine discussion : identité/session et permissions/isolation ; accès PostgreSQL ; structure du dépôt et outils UI/API/tests ; configuration Docker et versions ; stockage/exploitation au moment nécessaire. Ne pas produire toutes les fiches détaillées avant ces choix : compléter les premières, puis avancer progressivement.
 
 La validation de cette adaptation porterait sur son organisation documentaire et son catalogue de travail. Les choix explicitement Proposed/UNKNOWN et les règles encore ouvertes restent à valider séparément. Aucun démarrage applicatif n'est déduit de la demande de lecture et rédaction.
 
 ## Références durables
 
 - [Plan général proposé D090](../plan-realisation.md)
-- [Approches techniques proposées D091](technical-guidelines.md)
+- [Approches techniques D091, T01–T03 validés D093](technical-guidelines.md)
 - [Décisions et statuts](../product/decisions.md)
 - [Première tranche et permissions](../scope/first-slice.md)
 - [Workflow et preuves](../workflow.md)

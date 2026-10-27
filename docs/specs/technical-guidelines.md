@@ -1,16 +1,16 @@
 # Approches et principes techniques de CapEmploi Campus
 
-Statut : **Proposed**. Date : 26 octobre 2026. Référence de discussion : D091 proposée.
+Statut de spécification : **Proposed**, sans preuve applicative. Mise à jour : 27 octobre 2026. D091 partiellement validée : principes T01–T03 retenus par D093 ; T04–T10 proposés.
 
 ## Contexte et objectif
 
 À la demande du porteur, définir comment concevoir le logiciel avant d'implémenter ses fonctionnalités : responsabilités, SOLID, dependency injection, interfaces, authentification, permissions et accès à la base, avec les contrôles associés.
 
-Ce document contient des recommandations à discuter par groupes. Il ne valide aucune nouvelle bibliothèque ou architecture détaillée. Chaque accord devra être inscrit dans le registre et dans les sections concernées. D090, plan général de réalisation, reste proposée : cette demande ne constitue pas sa validation.
+Ce document distingue les principes retenus et les recommandations restant à discuter par groupes. Accord « oui c est ça » du 27 octobre 2026 : T01–T03 validés dans le périmètre D093. Aucun choix de bibliothèque ni démarrage applicatif ; D090 reste proposée.
 
-Acquis conservés : scope D007, React/Vite et TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire D008 ; Docker Compose et conteneurisation complète en développement D088–D089. L'architecture précise et les choix ci-dessous restent proposés. Aucun code, installation ou configuration applicative créé.
+Acquis conservés : scope D007, React/Vite et TypeScript, Node.js/NestJS, API REST, PostgreSQL et serveur en monolithe modulaire D008 ; Docker Compose et conteneurisation complète en développement D088–D089. Les principes T01–T03 sont retenus par D093 ; les choix détaillés et T04–T10 restent proposés. Aucun code, installation ou configuration applicative créé.
 
-## 1. Responsabilités et organisation du serveur — proposition T01
+## 1. Responsabilités et organisation du serveur — T01 validé, D093
 
 Organiser le serveur par domaines métier, introduits progressivement : identité/organisation et offres en premier, puis domaines des tranches suivantes. À l'intérieur d'un domaine, distinguer les responsabilités utiles :
 
@@ -22,13 +22,13 @@ Organiser le serveur par domaines métier, introduits progressivement : identit�
 | Contrat de persistance et implémentation | Exécuter les accès PostgreSQL autorisés et les transactions nécessaires |
 | Base de données | Garantir les contraintes d'intégrité définies : liens, unicité et autres contraintes pertinentes |
 
-Proposition : contrôleurs courts, règles métier dans les services, accès SQL/ORM dans une responsabilité identifiée. Les noms et dossiers précis restent à décider dans le socle. La validation du format d'une entrée et la vérification métier de publication sont deux responsabilités distinctes.
+Principe retenu : contrôleurs courts, règles métier dans les services, accès SQL/ORM dans une responsabilité identifiée. Les noms et dossiers précis restent à décider dans le socle. La validation du format d'une entrée et la vérification métier de publication sont deux responsabilités distinctes.
 
-Comparaison : appeler l'ORM directement depuis un contrôleur demande moins de fichiers au départ mais mêle transport, métier et données. Séparer ces responsabilités facilite nos règles de permissions, de transitions et leurs tests. Nous proposons cette séparation, en ajoutant une classe ou couche lorsqu'elle porte une responsabilité concrète.
+Comparaison : appeler l'ORM directement depuis un contrôleur demande moins de fichiers au départ mais mêle transport, métier et données. Séparer ces responsabilités facilite nos règles de permissions, de transitions et leurs tests. Nous retenons cette séparation, en ajoutant une classe ou couche lorsqu'elle porte une responsabilité concrète.
 
-## 2. SOLID, simplicité et composition — proposition T02
+## 2. SOLID, simplicité et composition — T02 validé, D093
 
-SOLID est un ensemble de principes pour limiter les effets d'un changement et rendre le code testable. Proposition : les appliquer avec des exemples concrets pendant la conception et la revue.
+SOLID est un ensemble de principes pour limiter les effets d'un changement et rendre le code testable. Principe retenu : les appliquer avec des exemples concrets pendant la conception et la revue.
 
 | Principe | Application proposée au projet |
 |---|---|
@@ -40,15 +40,15 @@ SOLID est un ensemble de principes pour limiter les effets d'un changement et re
 
 Compléter par des fonctions lisibles, des noms métier, peu de duplication et une composition de petits composants. Une interface supplémentaire se justifie par une frontière, un contrat ou une substitution utile ; chaque classe n'exige pas sa propre interface. Les fonctions de calcul simples peuvent rester des fonctions. Éviter les dépôts génériques universels et les hiérarchies d'héritage sans besoin concret.
 
-## 3. Dependency injection et interfaces — proposition T03
+## 3. Dependency injection et interfaces — T03 validé, D093
 
 **Concept :** une classe reçoit ses dépendances plutôt que de construire elle-même les outils dont elle a besoin. NestJS fournit ces objets à partir de sa configuration de providers.
 
 **Exemple conceptuel :** le service de publication demande un contrat « dépôt d'offres ». L'implémentation PostgreSQL lui est fournie en fonctionnement réel ; un double contrôlé peut servir pour certains tests métier. Le service exprime ce qu'il attend, tandis que l'implémentation réalise l'accès technique. Les tests d'intégration utilisent aussi PostgreSQL pour vérifier les vraies requêtes et contraintes.
 
-Proposition : injection par constructeur pour les dépendances de services ; interfaces ciblées pour les frontières dont le métier doit rester indépendant. L'injection d'un service concret interne reste possible quand une abstraction supplémentaire n'apporte rien. Dependency injection et dependency inversion sont liées mais distinctes : recevoir un objet par constructeur ne suffit pas, à lui seul, à rendre le métier indépendant de l'outil.
+Principe retenu : injection par constructeur pour les dépendances de services ; interfaces ciblées pour les frontières dont le métier doit rester indépendant. L'injection d'un service concret interne reste possible quand une abstraction supplémentaire n'apporte rien. Dependency injection et dependency inversion sont liées mais distinctes : recevoir un objet par constructeur ne suffit pas, à lui seul, à rendre le métier indépendant de l'outil.
 
-**Particularité TypeScript :** les interfaces disparaissent à la compilation. NestJS a donc besoin d'un identifiant présent à l'exécution pour associer un contrat à une implémentation. Proposition : interface TypeScript et token partagé de type Symbol aux frontières retenues. Une classe abstraite est une alternative possible, à discuter si elle simplifie réellement le contrat. [Source NestJS](https://docs.nestjs.com/fundamentals/custom-providers)
+**Particularité TypeScript :** les interfaces disparaissent à la compilation. NestJS a donc besoin d'un identifiant présent à l'exécution pour associer un contrat à une implémentation. Mécanisme à préciser dans le socle : interface TypeScript et token partagé de type Symbol aux frontières retenues est une option ; une classe abstraite est une alternative. D093 valide les principes de fourniture des dépendances et de contrats ciblés, sans figer ce mécanisme. [Source NestJS](https://docs.nestjs.com/fundamentals/custom-providers)
 
 ## 4. Authentification et sessions — proposition T04
 
@@ -144,19 +144,19 @@ Typage, formatage, lint, tests et build seront des contrôles reproductibles du 
 
 | Groupe | Proposition soumise à discussion | Statut courant |
 |---|---|---|
-| 1 | Responsabilités séparées T01, SOLID pragmatique T02, injection par constructeur et contrats ciblés T03 | Proposed ; premier groupe à valider |
+| 1 | Responsabilités séparées T01, SOLID pragmatique T02, injection par constructeur et contrats ciblés T03 | Principes validés D093 le 27 octobre 2026 ; application au code à vérifier lors du développement |
 | 2 | Authentification/sessions T04 et autorisations/isolation T05 | Proposed ; mécanismes et bibliothèque à préciser |
 | 3 | Choix d'accès PostgreSQL, connexions, migrations et transactions T06 | Proposed ; ORM non choisi |
 | 4 | Contrats API/erreurs T07 et organisation React T08 | Proposed ; conventions et outils non choisis |
 | 5 | Fichiers/exploitation T09 et stratégie concrète de tests T10 | Proposed ; exigences existantes conservées |
 
-Chaque groupe peut être ajusté avant validation. Valider le premier groupe ne valide pas les recommandations des autres, ni les technologies seulement citées en comparaison.
+T01–T03 sont validés dans le périmètre D093. Les autres groupes restent à discuter et peuvent être ajustés avant validation ; leurs technologies citées ne sont pas retenues implicitement.
 
 ## Critères du livrable et questions ouvertes
 
-Ce document sera une référence technique une fois les accords consignés section par section. Pour vérifier la mise en œuvre, chaque spécification fonctionnelle indiquera les principes applicables, les décisions précises, les contrôles et les preuves attendues. Les principes devront se retrouver dans le code et les tests avant toute acceptation applicative.
+Les principes T01–T03 constituent une référence de conception validée D093 ; les autres sections restent proposées. Pour vérifier la mise en œuvre, chaque spécification fonctionnelle indiquera les principes applicables, les décisions précises, les contrôles et les preuves attendues. Les principes devront se retrouver dans le code et les tests avant toute acceptation applicative.
 
-Questions restantes : validation du groupe 1 ; stratégie de session et bibliothèque ; modèle de permissions et isolation ; ORM et gestion du pool ; organisation du dépôt ; outils React/API/test ; versions ; hébergement, coût et exploitation. Les questions seront posées au moment utile, par petits groupes.
+Questions restantes : stratégie de session et bibliothèque ; modèle de permissions et isolation ; ORM et gestion du pool ; organisation du dépôt ; outils React/API/test ; versions ; hébergement, coût et exploitation. Les questions seront posées au moment utile, par petits groupes.
 
 ## Références du projet
 

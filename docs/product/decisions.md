@@ -422,7 +422,9 @@ Demande explicite : décider comment réaliser le projet et créer un fichier d�
 
 D007/D008/D086/D088/D089 et la méthode déjà retenue restent applicables ; aucun choix technique ou date ajouté. Plan à relire et valider avant reprise des décisions détaillées du socle. README et suivi actualisés ; aucun code, installation, test applicatif ou déploiement. Aucun agent délégué. Commit/push documentaire selon D069 ; aucune capture nouvelle D074.
 
-## D091 — Approches et principes techniques — Proposé, 2026-10-26
+## D091 — Approches et principes techniques — Partiellement validé, mise à jour 2026-10-27
+
+État courant : T01–T03 validés D093 le 27 octobre 2026 ; T04–T10 restent proposés. Les paragraphes suivants retracent la proposition initiale du 26 octobre.
 
 Le porteur précise vouloir définir avant développement les approches d'authentification, SOLID, dependency injection, dépendance aux interfaces et accès à la base, ainsi que les autres conventions nécessaires. Document de propositions demandé et produit dans docs/specs/technical-guidelines.md : dix sujets, compromis, exemples métier, critères et preuves attendues. PostgreSQL et stack D008 conservés ; mécanismes d'accès, sessions, ORM et nouvelles conventions restent proposés.
 
@@ -434,3 +436,16 @@ Premier groupe soumis à discussion : séparation des responsabilités, SOLID pr
 Demande explicite de lire context.zip et feature-specs.zip comme exemples d'architecture/réalisation et de préparer une version propre à notre projet. Rédaction autorisée et réalisée dans docs/specs/architecture-realisation-campus.md : analyse des références Ghost AI, distinction des instructions embarquées, architecture campus, modules et responsabilités, données, catalogue de fiches et exemple complet de soumission d'offre avec contrôles et preuves attendues.
 
 Les choix validés D007/D008/D086/D088/D089 sont conservés ; D090/D091 restent proposées. L'organisation détaillée, les noms de dossiers/routes et l'ordre fin sont des propositions, sans validation implicite de fournisseur, ORM, authentification, UI ou hébergement. Aucun code, configuration, installation, test applicatif ou déploiement. Document et suivi mis à jour ; publication documentaire selon D069, résultat à vérifier, sans snapshot D074 ni délégation.
+
+
+## D093 — Responsabilités, SOLID pragmatique et injection ciblée — Validé, 2026-10-27
+
+Accord explicite « oui c est ça » à la proposition T01–T03 présentée avec ses conséquences et son périmètre documentaire :
+
+- Organiser le serveur par domaines métier, introduits progressivement ; séparer réception HTTP/validation de forme, règles métier et accès aux données. Controllers courts ; services pour permissions contextuelles, préconditions et transitions ; persistance pour requêtes et écritures ; contraintes cohérentes en base. Le contrôle de connexion ne remplace pas les contrôles propres à la ressource et à l'établissement.
+- Appliquer SOLID avec simplicité : responsabilités claires, services lisibles et contrats ciblés, sans interface par classe ni couche sans responsabilité concrète.
+- Fournir les dépendances aux services, par constructeur, plutôt que les construire dans le métier. Utiliser des contrats aux frontières utiles ; un service concret interne reste possible sans abstraction supplémentaire. Les doubles de test ne remplacent pas les vérifications d'intégration avec PostgreSQL.
+
+Conséquence autorisée maintenant : consigner ces principes dans le registre et les documents techniques/de suivi, puis commit et push vérifié D069. Aucun démarrage applicatif. Authentification, ORM, mécanisme d'isolation, dossiers précis et bibliothèques restent à décider ; le mécanisme concret d'association interface/provider sera précisé dans le socle. Les exemples de stockage, messagerie ou sources ne créent aucune fonctionnalité supplémentaire.
+
+D091 est partiellement validée pour ce seul groupe ; T04–T10 restent proposés, D090 et D092 restent proposées globalement. Les passages cohérents de l'adaptation D092 sont alignés sur D093 sans valider son catalogue ni sa structure de fichiers. Aucun code, installation, test applicatif ou statut Accepted. Prochaine discussion : identité/session et autorisations/isolation T04–T05.
