@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication D094 vérifiée
+
+Commit 593d55d036787a0041071616ed24d3c7f080d412 publié sur origin/main ; concordance distante vérifiée. Huit documents relus, liens et statuts contrôlés, D094 unique ; recherche ciblée de secrets sans motif détecté. Choix JWT documenté, modalités ouvertes ; aucun code ou test applicatif. Preuve ajoutée à l’état/tableau, suivi conservé séparément selon D069/D074.
+
 ## 2026-10-27 — Authentification JWT retenue, D094
 
 Instruction explicite de retenir JWT : D094 consignée et recommandation initiale de session opaque T04 remplacée. Format retenu, sans choisir implicitement bibliothèque, stockage navigateur, cookie, refresh token, durée, algorithme ou architecture sans état. Références RFC 7519/8725 consultées ; principes de validation, confidentialité des claims et preuves à préparer décrits. Modalités et permissions/isolation à spécifier, autres décisions inchangées. Documents techniques, plan, README et suivi alignés ; aucun code, installation, test applicatif, déploiement, snapshot ou délégation. Contrôles documentaires/confidentialité puis commit/push D069, résultat à vérifier.
