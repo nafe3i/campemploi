@@ -24,7 +24,8 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Socle technique — spécification préparatoire, Proposed](docs/specs/socle-technique.md)
 - [Identité / Organisation / Accès — priorité D097, spécification Proposed](docs/specs/identity-organization-access.md)
 - [IA-Q01 — principes validés D099, modalités ouvertes](docs/specs/ia-q01-account-membership-options.md)
-- [IA-Q02 — rôles et permissions, comparaison Proposed](docs/specs/ia-q02-roles-permissions-options.md)
+- [IA-Q02 — principes validés D100, modalités ouvertes](docs/specs/ia-q02-roles-permissions-options.md)
+- [IA-Q03 — classes et inscriptions, comparaison Proposed](docs/specs/ia-q03-class-enrollment-options.md)
 
 - [Vision](docs/product/vision.md)
 - [Décisions](docs/product/decisions.md)

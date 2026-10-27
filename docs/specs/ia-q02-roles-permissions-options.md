@@ -1,6 +1,6 @@
 # IA-Q02 — Modèle des rôles et permissions
 
-Date : 27 octobre 2026. Statut : **Proposed — comparaison préparatoire**. Préparation autorisée D099, avant IA-Q03. Aucune proposition RP01–RP06 ci-dessous n'est adoptée.
+Date : 27 octobre 2026. Statut de spécification : **Proposed**. Préparation D099 ; **orientation B et principes RP01–RP06 validés D100**, sans implémentation autorisée. Modalités et IA-Q03–IA-Q12 restent ouvertes.
 
 ## 1. Question et périmètre
 
@@ -41,7 +41,7 @@ Il n'existe pas de hiérarchie acquise « administrateur > CME > formateur > app
 
 Ces axes sont combinables : plusieurs rôles locaux ne nécessitent pas un éditeur libre de permissions, et un rôle principal ne supprime pas les contrôles sur les ressources. RBAC décrit l'effet du rôle ; attributs/relations complètent le périmètre. Une capacité de représentation n'autorise pas automatiquement tous les cumuls.
 
-## 4. Alternatives argumentées
+## 4. Alternatives comparées — orientation B depuis retenue D100
 
 ### A — Un rôle métier principal, permissions administratives séparées
 
@@ -51,7 +51,7 @@ Avantages : affichage simple, peu de combinaisons, parcours pilote faciles à ex
 
 Sécurité : réduit certaines combinaisons à tester, sans prévenir un accès inter-classes si les requêtes restent insuffisamment bornées. Cette alternative est viable si le campus confirme l'absence de cumuls métier nécessaires ; ce besoin n'est pas encore établi.
 
-### B — Attributions locales explicites, catalogue fermé d'actions
+### B — Attributions locales explicites, catalogue limité et extensible d'actions — retenue D100
 
 Le modèle peut représenter plusieurs responsabilités nommées dans un rattachement. Les permissions administratives restent distinguées, et les classes/accompagnements sont des relations, pas des rôles ajoutés. Le catalogue des actions et politiques est maîtrisé dans la conception de chaque fonctionnalité ; aucune permission personnalisée libre n'est nécessaire.
 
@@ -76,13 +76,13 @@ Au pilote, aucun besoin acquis ne justifie encore cet éditeur. La souplesse ne 
 | Cumuls métier futurs | Évolution ou exceptions nécessaires | Représentables après décisions de cumul | Très souples, gouvernance à établir |
 | Contrôle par classe/bilan/propriétaire | Toujours nécessaire | Toujours nécessaire | Toujours nécessaire |
 | Coût de test relatif | Moins de combinaisons métier | Combinaisons explicites + retrait/conflits | Combinaisons configurables et pouvoir d'édition à tester |
-| Adéquation au pilote | Possible si rôle principal suffisant | Recommandation préparatoire | Surcroît de capacité non justifié actuellement |
+| Adéquation au pilote | Possible si rôle principal suffisant | Orientation retenue D100 | Surcroît de capacité non justifié actuellement |
 
 Comparaison qualitative pour notre produit, sans gain de performance, délai ou coût chiffré inventé.
 
 ## 5. Évaluation d'une action et exemple minimal
 
-PROPOSÉ : une décision explicite reçoit l'identité, le contexte local autorisé, l'action et les attributs utiles de la ressource ; elle évalue droits courants, relations/propriété et conditions métier. Les contrôles communs n'effacent pas les règles spécifiques du cas d'utilisation D093.
+ACQUIS D100 pour le principe, mécanisme OUVERT : une décision explicite reçoit l'identité, le contexte local autorisé, l'action et les attributs utiles de la ressource ; elle évalue droits courants, relations/propriété et conditions métier. Les contrôles communs n'effacent pas les règles spécifiques du cas d'utilisation D093.
 
 Exemple fictif : T1 est formateur, référent de C1. Il peut examiner les documents de C1 selon D058, sans publier une offre ni lire le bilan d'un autre accompagnant. Lui accorder une permission administrative locale, si ce cumul est approuvé ultérieurement, ne ferait pas de ce pouvoir un accès à tous les documents. Exemple conditionnel, pas nouveau cumul autorisé.
 
@@ -102,9 +102,9 @@ Ce contrôle par action/ressource s'appuie sur les règles existantes et rejoint
 
 ACQUIS : gestion locale dans l'établissement, absence de délégation du pouvoir général par l'administration locale, invitations personnelles du personnel et approbation de rattachement. Le rôle apprenant par défaut D038 n'ouvre pas les données internes pendant l'attente. D059 conserve le lien de classe partagé/réutilisable et interdit le transfert automatique.
 
-PROPOSÉ pour B : attribution liée au contexte local et à la responsabilité nommée, identifiable indépendamment du compte global. Un acteur ne peut attribuer que les responsabilités relevant d'un pouvoir explicitement accordé ; l'interface ou le corps d'une requête ne crée pas ce pouvoir. Les changements utiles sont traçables selon politique à préciser IA-Q12, sans conservation illimitée implicite.
+ACQUIS D100 : attribution liée au contexte local et à la responsabilité nommée, identifiable indépendamment du compte global. Un acteur ne peut attribuer que les responsabilités relevant d'un pouvoir explicitement accordé ; l'interface ou le corps d'une requête ne crée pas ce pouvoir. Les changements utiles sont traçables selon politique à préciser IA-Q12, sans conservation illimitée implicite.
 
-L'autorité générale ne devient pas un accès métier confidentiel automatique. Le bootstrap, la désignation/remplacement d'une CME et les garanties de récupération restent IA-Q07. Les actes sur soi-même, la récusation et la capacité de la même personne à rendre les deux avis restent IA-Q05. Aucune validation de B ne réglerait ces conflits à elle seule.
+L'autorité générale ne devient pas un accès métier confidentiel automatique. Le bootstrap, la désignation/remplacement d'une CME et les garanties de récupération restent IA-Q07. Les actes sur soi-même, la récusation et la capacité de la même personne à rendre les deux avis restent IA-Q05. La validation de B par D100 ne règle pas ces conflits à elle seule ; auto-attribution privilégiée et délégations restent IA-Q05/07.
 
 Le retrait d'un rôle, d'une permission administrative, d'une affectation ou d'un rattachement a des portées distinctes. Retirer C1 ne retire pas arbitrairement C2 ; retirer une permission administrative ne réécrit pas un avis métier signé. Les droits provenant uniquement de l'élément retiré ne doivent plus autoriser un nouvel accès, même avec un JWT encore valide ; point d'effet et concurrence IA-Q08 restent à définir. Aucun modèle de cache, de session ou de révocation n'est adopté.
 
@@ -114,26 +114,26 @@ Le retrait d'un rôle, d'une permission administrative, d'une affectation ou d'u
 |---|---|---|
 | Identité globale D099 | Les rôles locaux ne deviennent pas une autorité globale attachée à l'identité | Claims, transport et vérification JWT IA-Q10 |
 | Rattachement actif du pilote | Attribution ne remplace ni approbation ni activité ; historique/demande distincts | Définition d'activité et unicité concurrente, modalités IA-Q01/08 |
-| Attributions multiples proposées B | Relations locales distinctes et cohérentes, pas une valeur de rôle unique réécrivant le passé | Tables, cardinalités historiques, contraintes et ORM non décidés |
+| Représentation de responsabilités multiples B, validée D100 | Relations locales distinctes et cohérentes, pas une valeur de rôle unique réécrivant le passé | Tables, cardinalités historiques, contraintes et ORM non décidés |
 | Rôle et affectation | Rôle formateur commun, relation de classe séparée ; pas doublon technique « responsable technique » | Modèle de classe IA-Q03 et représentation exacte |
 | Changement concurrent | Permission d'attribuer, modification et retrait cohérents ; pas d'auto-élévation par course | Transaction, verrouillage/version, trace IA-Q08/09/12 |
 | Anciennes ressources | Auteurs et données d'établissement préservés selon règles acquises | Conservation/consultation ancienne IA-Q04/12 |
 
 Un tableau de rôles contenu dans le JWT ne devient pas la source permanente des droits. Une signature valide ne démontre pas qu'un rôle, rattachement ou référent est encore courant. Le contrôle de fraîcheur reste à concevoir ; pas de requête SQL systématique, Redis, RLS ou modèle de stockage sélectionné ici.
 
-## 8. Recommandation argumentée — non adoptée
+## 8. Orientation B retenue D100 — justification et limites
 
-Je recommande **B : attributions locales explicites, catalogue limité d'actions, permissions administratives distinctes et politiques contextuelles**, sans éditeur libre de droits au pilote.
+D100 retient **B : attributions locales explicites, catalogue limité d'actions, permissions administratives distinctes et autorisations contextuelles**, sans éditeur libre de droits au pilote.
 
 Pourquoi : cela conserve D056/D079, représente les responsabilités plutôt qu'une hiérarchie et évite de reconstruire l'identité lors d'un changement de mission. Le catalogue limité garde les droits lisibles et testables pour le pilote. Le coût supplémentaire est l'explicitation des attributions et des conflits, déjà nécessaire pour CME/administration/référent/accompagnant.
 
-Cette recommandation porte sur la capacité de représentation et les principes d'évaluation, pas sur l'autorisation de tous les cumuls. Les nouveaux cumuls métier restent à examiner avant leur activation ; le cas des deux avis ne doit pas être résolu par addition de rôles. A reste une alternative raisonnable si un rôle métier principal suffit au campus, mais ses restrictions doivent être explicites. C est à réexaminer seulement si des besoins concrets de délégation/configuration émergent.
+Cette validation porte sur la capacité de représentation et les principes d'évaluation, pas sur l'autorisation de tous les cumuls. Les nouveaux cumuls métier restent à examiner avant leur activation ; le cas des deux avis ne doit pas être résolu par addition de rôles. A et C sont conservées pour expliquer la comparaison antérieure ; elles ne sont pas retenues par D100. Toute évolution ultérieure reste soumise à D064.
 
-## 9. Propositions précises soumises à approbation
+## 9. Principes RP01–RP06 validés D100
 
-RP01–RP06 sont des sous-propositions de cette préparation IA-Q02, pas des fiches F/S ni des décisions acquises.
+RP01–RP06 sont des principes architecturaux approuvés D100, sans changement des fiches F/S. Le document reste Proposed pour les modalités et la mise en œuvre.
 
-| Proposition | Orientation à approuver ou modifier | Limites |
+| Proposition | Orientation approuvée D100 | Limites |
 |---|---|---|
 | RP01 — Séparation | Distinguer rôles métier nommés, permissions administratives et relations d'affectation/propriété, sans hiérarchie donnant tous les droits | Préserve les séparations acquises ; aucun rôle supplémentaire créé |
 | RP02 — Représentation | Permettre de représenter plusieurs responsabilités locales explicites dans un rattachement, plutôt qu'un champ global exclusif | Seul cumul CME + administration locale déjà acquis ; nouveaux cumuls à valider avant activation, conflits IA-Q05 ouverts |
@@ -142,7 +142,16 @@ RP01–RP06 sont des sous-propositions de cette préparation IA-Q02, pas des fic
 | RP05 — Attribution | Rattacher les attributions au contexte local et au pouvoir explicite de celui qui les gère ; pas de nouveau droit automatique au changement d'établissement | D056/D099 conservées ; délégations fines, actes sur soi-même et bootstrap restent ouverts |
 | RP06 — Retrait | Distinguer les portées de retrait et préserver autres droits indépendants/auteurs ; un droit retiré n'est pas prolongé par JWT valide | Sémantique concurrente, fraîcheur, invalidation des jetons et traces IA-Q08/10/12 non choisies |
 
-L'approbation éventuelle de RP02 ne répond pas automatiquement « oui » aux cumuls CME/formateur/apprenant. Toute activation non déjà acquise devra être spécifiée avec ses conflits et approuvée D064. Les modalités de classes IA-Q03 seront préparées ensuite, sans renumérotation des questions.
+La validation de RP02 ne répond pas automatiquement « oui » aux cumuls CME/formateur/apprenant. Toute activation non déjà acquise devra être spécifiée avec ses conflits et approuvée D064. La comparaison IA-Q03 est préparée séparément, sans choix adopté ni renumérotation des questions.
+
+### 9.1 Précisions CTO acquises D100
+
+1. Droits locaux effectifs uniquement avec rattachement courant, approuvé et autorisé ; attribution historique sans accès courant.
+2. Représentation multiple sans nouveau cumul autorisé ; CME + administration locale conservé, autres cumuls à arbitrer.
+3. Aucune action sensible autorisée par la seule union des permissions : conditions métier et conflits d'intérêts vérifiés par action.
+4. Attributions limitées au pouvoir explicite ; auto-attribution privilégiée, délégations et actes sur soi-même IA-Q05/07 ouverts.
+5. Catalogue explicite, limité et extensible ; aucun éditeur libre, moteur de politiques ou schéma SQL adopté.
+6. Retrait faisant cesser les nouveaux accès correspondants même avec JWT valide ; droits indépendants et références historiques préservés ; point d'effet et concurrence IA-Q08 ouverts.
 
 ## 10. Scénarios à vérifier après arbitrage
 
@@ -163,7 +172,7 @@ Aucun test applicatif exécuté ; scénarios à intégrer aux fiches concernées
 
 ## 11. Arbitrages restants et correspondance
 
-IA-Q02 reste ouvert jusqu'à accord sur les propositions. À préciser même après une orientation : catalogue concret, délégations nécessaires, cumuls métier à activer, trace des attributions et représentation des périodes. IA-Q03 (classes), IA-Q05 (conflits), IA-Q07 (bootstrap), IA-Q08/09 (concurrence/isolation), IA-Q10 (JWT), IA-Q11/12 (données/traces) ne sont pas clôturés par cette étude.
+IA-Q02 est acquis pour B et RP01–RP06 D100. Modalités encore ouvertes : catalogue concret, délégations nécessaires, cumuls métier à activer, trace des attributions et représentation des périodes. IA-Q03 (classes), IA-Q05 (conflits), IA-Q07 (bootstrap), IA-Q08/09 (concurrence/isolation), IA-Q10 (JWT), IA-Q11/12 (données/traces) ne sont pas clôturés par cette étude.
 
 | Référence | Dépendance apportée |
 |---|---|
@@ -173,13 +182,13 @@ IA-Q02 reste ouvert jusqu'à accord sur les propositions. À préciser même apr
 | F08/F09 | Rôle commun et affectations distinctes ; conflit de double avis IA-Q05 |
 | F10/F12–F14 | Propriété, accompagnement et tableaux sans élargissement des contenus confidentiels |
 
-Prochaine discussion : alternatives A/B/C et RP01–RP06. Après arbitrage IA-Q02, préparer IA-Q03 ; ne pas implémenter le modèle des rôles au titre de la seule préparation documentaire.
+Prochaine discussion : [IA-Q03 — classes, inscriptions et changements](ia-q03-class-enrollment-options.md), préparation autorisée D100. Aucun choix IA-Q03–IA-Q12 ni développement autorisé par D100.
 
 
-## 12. Vérifications documentaires et conservation
+## 12. Vérifications historiques de la préparation D099 et conservation
 
 Périmètre réel : dix fichiers Markdown — `README.md`, `docs/product/decisions.md`, `docs/specs/ia-q01-account-membership-options.md`, `docs/specs/identity-organization-access.md`, `docs/specs/socle-technique.md`, présente comparaison, `docs/plan-realisation.md`, `tracking/BOARD.md`, `tracking/STATUS.md`, `tracking/JOURNAL.md`.
 
 Contrôles exécutés : 70 liens locaux résolus, encodage et blocs fermés, D099 unique et registre antérieur intégralement conservé ; blocs D059/D068/D064, lignes IA-Q03–IA-Q12, matrice/invariants acquis et intitulés/identifiants F/S identiques à HEAD avant ce travail. Six RP et dix scénarios RP-S uniques ; diff sans erreur d'espacement. Recherche ciblée de secrets et relecture manuelle sans anomalie détectée, sans garantie absolue.
 
-Aucun code, migration, configuration, bibliothèque ou test applicatif créé/exécuté. P01–P06 sont validés D099 ; RP01–RP06 restent proposés. Commit documentaire c5a37c55f8dcf87be7c606a48b5dd9b4656fff92 publié sur origin/main ; concordance distante vérifiée le 27 octobre 2026. Commit/push seuls n'autorisent aucune implémentation.
+Aucun code, migration, configuration, bibliothèque ou test applicatif créé/exécuté. À cette publication de préparation, P01–P06 étaient validés D099 et RP01–RP06 proposés ; ces derniers sont depuis validés D100. Commit documentaire c5a37c55f8dcf87be7c606a48b5dd9b4656fff92 publié sur origin/main ; concordance distante vérifiée le 27 octobre 2026. Commit/push seuls n'autorisent aucune implémentation.

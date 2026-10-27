@@ -1,6 +1,6 @@
 # Identité / Organisation / Accès
 
-Date : 27 octobre 2026. Statut de spécification : **Proposed**. Mandat documentaire et priorité : **D097 validée**. Mise à jour : principes IA-Q01 P01–P06 validés D099 ; préparation IA-Q02 autorisée, sans adoption de ses propositions.
+Date : 27 octobre 2026. Statut de spécification : **Proposed**. Mandat documentaire et priorité : **D097 validée**. Mise à jour : principes IA-Q01 P01–P06 validés D099 ; orientation B et principes IA-Q02 RP01–RP06 validés D100 ; IA-Q03 en préparation, sans choix nouveau.
 
 ## 1. Objectif, périmètre et limites
 
@@ -28,6 +28,7 @@ Légende : **ACQUIS** = exigence validée avec référence ; **PROPOSÉ** = repr
 | Contrôles par action, accord avant décision, suivi et preuves | D060/D064/D065/D069/D074/D095 ; aucune nouvelle gouvernance |
 | Priorité de ce chantier et retrait immédiat malgré JWT valide | D097 ; modalités techniques non choisies |
 | Identité globale stable, rattachements distincts, un actif au pilote, contexte unique, email vérifié/unique, fin des droits locaux sans transfert | D099 P01–P06 et compléments ; attente/activité/historique distincts, concurrence à garantir, email seul sans preuve de propriété historique |
+| Attributions locales explicites, catalogue limité/extensible et autorisations contextuelles | D100 B/RP01–RP06 ; rattachement courant/approuvé/autorisé, pas de nouveau cumul ni union suffisante pour action sensible ; retrait des nouveaux accès malgré JWT valide, effet/concurrence ouverts |
 
 Sources locales : [décisions](../product/decisions.md), [administration](../scope/establishment-administration.md), [revues CV/portfolio](../scope/cv-portfolio-review.md), [première tranche](../scope/first-slice.md), [offres](../scope/offer-lifecycle.md), [scope pilote](../scope/pilot.md), [socle](socle-technique.md), [principes](technical-guidelines.md), [workflow](../workflow.md) et [relecture d'architecture](../reviews/2026-10-27-architecture-cross-review.md).
 
@@ -46,8 +47,8 @@ Exemple fictif : une personne est formateur et référent de la classe C1 dans l
 | Compte | Identité individuelle, état et moyens de connexion | Identité globale et identifiant stable indépendant de l'email, email vérifié/unique modifiable D099 ; normalisation/récupération/réattribution et états exacts OUVERTS |
 | Établissement | Frontière d'organisation et d'accès métier | Plusieurs établissements à prévoir ; création générale et administration locale D056 |
 | Rattachement établissement | Relation entre un compte et un établissement, avec validité métier | Approbation avant accès D059 ; relations distinctes avec validité/histoire, au plus un actif au pilote D099 ; activité/états/périodes et concurrence OUVERTS |
-| Attribution de rôle local | Responsabilité exercée dans un rattachement autorisé | Apprenant/CME/formateur connus ; représentation et cumul complet OUVERTS |
-| Permission administrative locale | Pouvoir de gestion dans l'établissement | Distincte du rôle CME et cumulable avec lui D056 ; encodage OUVERT |
+| Attribution de rôle local | Responsabilité explicite exercée dans un rattachement courant, approuvé et autorisé | B/RP01–RP06 acquis D100 ; représentation multiple, aucun nouveau cumul ; modalités et conflits OUVERTS |
+| Permission administrative locale | Pouvoir de gestion dans l'établissement | Distincte du rôle CME et cumulable avec lui D056/D100 ; pouvoir limité au périmètre explicite, encodage OUVERT |
 | Pouvoir d'administration générale | Création/désignation au niveau général | Portage D056 acquis ; bootstrap/récupération et représentation OUVERTS |
 | Classe | Groupe organisé dans un établissement | Classes gérées localement ; structure année/filière et cycle de vie OUVERTS |
 | Inscription en classe | Relation entre apprenant et classe, distincte de l'identité | Validation et absence de transfert automatique D059 ; simultanéité/historique OUVERTS |
@@ -83,7 +84,7 @@ Le dessin décrit des responsabilités et liens ; seules les cardinalités acqui
 | Formateur / classes référées | Plusieurs classes possibles D078 | Aucun accès aux autres classes par son rôle seul |
 | Classe / apprenants | Plusieurs personnes peuvent utiliser le même lien D059 | Nombre de classes simultanées par apprenant OUVERT |
 | Compte / établissements actifs | Au plus un rattachement actif au pilote ; relations historiques distinctes D099 | Définition d’activité et garantie concurrente à formaliser ; pas de limite permanente ni simultanéité future autorisée |
-| Compte / rôles dans un établissement | Cumul CME + permission d'administration locale explicitement permis D056 | Autres cumuls, auto-approbation et conflits d'intérêts OUVERTS |
+| Compte / rôles dans un établissement | Cumul CME + permission d'administration locale explicitement permis D056 ; représentation multiple locale D100 | Aucun nouveau cumul autorisé ; auto-approbation et conflits d'intérêts OUVERTS |
 | Lien partagé / demandes individuelles | Même lien réutilisé pour plusieurs comptes D059 | Usage unique, compte partagé ou accès automatique interdits par la règle acquise |
 | Formateur / accompagnements | Accès selon demandes adressées/attribuées et rôle d'accompagnant D020–D025 | Aucun nombre maximal, transfert automatique ou lecture globale déduit |
 | Document examiné / types d'avis | Avis CME et formateur distincts ; CV et portfolio séparés D057 | Deux types d'avis ne tranchent pas le cumul par une même personne ni toute cardinalité d'historique |
@@ -110,7 +111,9 @@ PROPOSÉ pour une représentation minimale : un objet « rattachement établisse
 | IA-I14 | Une action refusée ne produit pas d'effet non autorisé ni de fuite par accès direct | ACQUIS D060 |
 | IA-I15 | Une question ouverte ne devient pas une permission par défaut documentaire | ACQUIS D064 ; politique technique de refus T05 encore proposée |
 
-## 5. Modèle d'autorisation proposé
+## 5. Principes d'autorisation acquis D100, mécanismes proposés
+
+D100 valide B/RP01–RP06 : attributions locales explicites, catalogue limité/extensible et contrôles contextuels ; seuls les mécanismes ci-dessous restent proposés. Une attribution historique ne donne pas de droit effectif et aucune action sensible n’est autorisée par la simple union des permissions ; conditions et conflits par action.
 
 Entrées conceptuelles : identité vérifiée, action, ressource, établissement concerné, rattachement courant et approuvé, responsabilités/permissions courantes, propriété, classe/affectation, état métier et contexte spécifique. Certains champs ne s'appliquent pas à toutes les actions : créer le premier établissement n'exige pas déjà un rattachement à cet établissement.
 
@@ -271,19 +274,13 @@ Prévoir résultat explicite pour action répétée ou conflit : opération déj
 
 Demande en attente, relation active et historique ne sont pas confondus. Notion d'activité/garantie face aux approbations concurrentes, normalisation/récupération/réattribution email, réentrée et droits historiques restent ouverts dans leurs arbitrages. L'identité commune ne crée aucun partage, rôle ou nouveau rattachement automatique ; la possession d'une adresse ne suffit pas à prouver la propriété d'un compte historique. Les modalités JWT et d'isolation ne sont pas décidées.
 
-### 10.2 Rôles et permissions — IA-Q02 en préparation
+### 10.2 Rôles et permissions — principes IA-Q02 validés D100
 
-[Comparaison IA-Q02](ia-q02-roles-permissions-options.md), Proposed selon mandat D099 : rôle principal, attributions locales explicites et permissions personnalisables ; recommandation/RP01–RP06 à examiner avant nouvelle décision.
+[Comparaison IA-Q02](ia-q02-roles-permissions-options.md) : orientation B et RP01–RP06 approuvés D100. Attributions locales explicites, catalogue limité et extensible, permissions administratives distinctes et autorisations contextuelles. Aucun éditeur libre, moteur de politiques ou schéma SQL retenu.
 
-ACQUIS : CME + permission administrative locale possible ; formateur et responsable technique désignent le même rôle ; référent est une affectation. OUVERT : rôles multiples supplémentaires, conflits d'intérêts et actes sur soi-même.
+Droits effectifs seulement dans un rattachement courant, approuvé et autorisé ; historique sans droit courant. Représentation multiple sans nouveau cumul autorisé ; seul CME + permission administrative locale acquis. Une action sensible ne s'autorise jamais par simple union des permissions : vérifier ses conditions métier et conflits. Pouvoir d'attribution limité au périmètre explicite, sans auto-attribution privilégiée/délégation/acte sur soi-même décidé ; IA-Q05/07 ouverts.
 
-| Option | Avantage | Conséquence |
-|---|---|---|
-| Un rôle métier principal, permissions administratives distinctes | Simplicité des parcours | Limite les autres cumuls ; transitions de rôle/historique à spécifier |
-| Plusieurs rôles métier locaux explicites | Représente des responsabilités cumulées | Réévaluer chaque permission dans son contexte et définir conflits d'intérêts ; pas d'union aveugle |
-| Profils prédéfinis assemblant des permissions | Peut rendre la délégation plus lisible | Catalogue et gouvernance à maintenir ; ne pas introduire un rôle « staff » tout-puissant |
-
-Ces options ne remettent pas en cause le cumul déjà autorisé. Le cas d'une même personne rendant les deux avis CME/formateur est IA-Q05 ; deux avis distincts ne suffisent pas à décider si deux personnes différentes sont exigées.
+Le retrait fait cesser les nouveaux accès correspondants même avec JWT valide, conserve les droits indépendants et références historiques. Point d'effet et opérations concurrentes IA-Q08 ouverts. Formateur/responsable technique demeure un rôle commun ; référent est une affectation. Le cas des deux avis par une même personne reste IA-Q05 ; D100 ne clôt aucun arbitrage IA-Q03–IA-Q12.
 
 ### 10.3 Isolation et fraîcheur des droits
 
@@ -303,7 +300,7 @@ Pour des droits courants malgré JWT valide : lecture de l'état faisant autorit
 | Décision / invariant d'accès | Influence sur JWT et connexion | Influence sur PostgreSQL, sans migration créée |
 |---|---|---|
 | Principes IA-Q01 D099 et modalités ouvertes | Identité globale stable, contexte métier autorisé ; mécanismes JWT/récupération à définir | Compte global et relations distinctes, limite pilote et concurrence, email vérifié/unique ; contraintes précises et historique à définir |
-| Rôles/permissions IA-Q02/05 | Éviter de figer les pouvoirs ; identifier l'action et les conflits | Attribution locale, portée et contraintes utiles |
+| Rôles/permissions IA-Q02 D100 ; conflits IA-Q05 | Droits courants/contextuels, pas de prolongement par JWT ; modalités ouvertes | Attributions locales explicites et catalogue limité, aucun schéma choisi |
 | Transferts IA-Q03/04 | Contexte courant, données consultables et droits retirés | Validité temporelle, liens anciens/nouveaux, conservation sans copie non autorisée |
 | Liens et activation IA-Q06/07 | Séparer JWT de connexion, lien de classe et invitation personnel | Validité/révocation, demandes, relations et bootstrap |
 | Effet immédiat IA-Q08 | Fraîcheur des droits, sessions/jetons existants et éventuelles invalidations | Point d'effet et coordination atomique des opérations |
@@ -314,15 +311,15 @@ Une permission métier « retirée » et un JWT « révoqué » sont deux décis
 
 Avant migrations métier : décisions applicables figées, règles de cohérence inter-établissements explicites, stratégie de concurrence documentée, preuve prévue sur PostgreSQL réel avec deux établissements fictifs. Driver/ORM et versions restent ouverts ; leur comparaison doit vérifier la capacité à réaliser ces garanties, pas déterminer les règles métier à leur place.
 
-## 12. Registre — principes IA-Q01 acquis, modalités et autres arbitrages ouverts
+## 12. Registre — principes IA-Q01/02 acquis, modalités et autres arbitrages ouverts
 
 Les identifiants IA-Q ci-dessous sont locaux à cette spécification ; ils ne remplacent ni Q01–Q09 du socle ni les fiches F/S. Aucune recommandation n'est une décision.
 
 | ID | Question et options | Conséquences / recommandation à discuter | Bloque |
 |---|---|---|---|
 | IA-Q01 | Principes P01–P06 validés D099 ; activité et concurrence, modalités email/identification/réentrée encore ouvertes | Identité globale, relations distinctes, un actif au pilote, contexte unique, email vérifié/unique et fin des droits sans transfert ; ne pas confondre attente/activité/historique, pas de preuve de propriété par email seul | Principes acquis, modalités nécessaires avant identité persistée/JWT/migrations ; socle Q05/Q06/Q07 |
-| IA-Q02 | Rôle principal, attributions locales ou permissions personnalisables ? | Préparation ia-q02-roles-permissions-options.md Proposed ; RP01–RP06 à discuter ; cumul CME/administration locale et rôle commun formateur acquis, autres cumuls non autorisés implicitement | Matrice technique et modèle de rôles ; Q07 |
-| IA-Q03 | Combien de classes simultanées pour un apprenant ? Qui autorise un changement et quand ? | Comparer une classe active et plusieurs inscriptions ; préserver D059 sans transfert automatique ; définir historique et droits après changement | Rattachement/affectations, F03/F04, Q05/Q07 |
+| IA-Q02 | B et RP01–RP06 validés D100 ; catalogue concret, modalités des attributions et conflits encore ouverts | Attributions locales dans rattachement courant/approuvé/autorisé, permissions administratives distinctes, actions contextuelles ; aucune union suffisante pour action sensible ni nouveau cumul implicite | Principes acquis, modalités avant parcours concernés ; Q07, IA-Q05/07/08 |
+| IA-Q03 | Combien de classes simultanées pour un apprenant ? Qui autorise un changement et quand ? | Comparaison ia-q03-class-enrollment-options.md Proposed, mandat D100 ; A/B/C, CC01–CC08 à arbitrer ; D059 et droits acquis préservés | Rattachement/affectations, F03/F04, Q05/Q07 |
 | IA-Q04 | Départ ou changement d'établissement : quels anciens dossiers et accès, quelles données rejoignent le nouveau contexte ? | Comparer conservation dans l'ancien périmètre, accès personnel limité et éventuelle portabilité explicite ; aucune copie/visibilité nouvelle par défaut | Transfert et conservation ; Q05/Q07/Q09 |
 | IA-Q05 | Quels actes sur soi-même et conflits de rôles ? Une même personne peut-elle rendre les deux avis ? | Comparer séparation des personnes, récusation/délégation autorisée ou cumul encadré ; deux types d'avis distincts maintenus D057, aucun choix ici | Administration selon cas ; revues F09 avant tranche 2 |
 | IA-Q06 | Lien de classe, demandes répétées et invitation personnel : durées, renouvellement, destinataires, validation concurrente ? | Séparer les parcours ; lien de classe réutilisable acquis, activation personnelle du personnel acquise ; préciser demandes déjà déposées et ancienne URL après renouvellement | F03/F04, S05, Q07 |
@@ -333,7 +330,7 @@ Les identifiants IA-Q ci-dessous sont locaux à cette spécification ; ils ne re
 | IA-Q11 | Quels champs/existence/exports sont visibles et quelles erreurs éviteront une fuite ? | Réponses minimales et homogènes recommandées, comparer refus explicite ou masquage d'existence selon ressource ; code HTTP ouvert | Contrats et parcours concernés, Q03/Q07 |
 | IA-Q12 | Traces, conservation, suppression et accès aux anciens rattachements/avis/bilans ? | D068/D080–D082 préservées ; comparer historique minimal et durées justifiées avec C11, sans stockage illimité implicite | Conservation/transferts et données réelles, Q05/Q09 |
 
-Principes IA-Q01 acquis D099 ; ordre demandé : **IA-Q02**, puis **IA-Q03** ; traiter **IA-Q07/08/09** avant les décisions dépendantes de JWT et migrations. IA-Q04 est nécessaire avant le parcours de transfert, même si ce parcours n'est pas implémenté d'abord. IA-Q05 doit être tranchée avant un parcours autorisant un tel cumul ; aucune urgence artificielle de développer toutes les revues en tranche 1. Les options et engagements de chaque groupe restent soumis à D064.
+Principes IA-Q01 acquis D099 et IA-Q02 acquis D100 ; prochaine discussion : **IA-Q03** ; traiter **IA-Q07/08/09** avant les décisions dépendantes de JWT et migrations. IA-Q04 est nécessaire avant le parcours de transfert, même si ce parcours n'est pas implémenté d'abord. IA-Q05 doit être tranchée avant un parcours autorisant un tel cumul ; aucune urgence artificielle de développer toutes les revues en tranche 1. Les options et engagements de chaque groupe restent soumis à D064.
 
 ## 13. Correspondance avec socle, fonctionnalités et suivi
 
@@ -360,4 +357,4 @@ Avant implémentation d'un parcours : ses questions bloquantes doivent être arb
 
 Avant Accepted : exécution réelle des critères applicables, tests pertinents réussis et revue traitée selon workflow ; permissions/isolation prouvées avec deux établissements fictifs, retrait des droits vérifié avec le même JWT valide selon politique décidée, absence d'effet après refus. Les parcours non encore développés restent des exigences futures et aucune preuve n'est déclarée pour eux.
 
-Prochaine discussion : alternatives et propositions RP01–RP06 de la comparaison IA-Q02, puis préparation IA-Q03 après les choix nécessaires ; modalités IA-Q01 toujours ouvertes. Les décisions validées seront inscrites séparément et alignées section par section avant toute implémentation ; le reste de la spécification conservera son statut Proposed.
+Prochaine discussion : [comparaison IA-Q03](ia-q03-class-enrollment-options.md), options et CC01–CC08 non adoptées ; modalités IA-Q01/02 toujours ouvertes. Les décisions validées seront inscrites séparément et alignées section par section avant toute implémentation ; le reste de la spécification conservera son statut Proposed.

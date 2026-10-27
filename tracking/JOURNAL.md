@@ -1,5 +1,14 @@
 # Journal
 
+## 2026-10-27 — Comparaison IA-Q03 et contrôles documentaires terminés
+
+Comparaison Proposed : A une classe courante au pilote avec historique, B plusieurs inscriptions simultanées, C principale et participations secondaires ; recommandation A et huit CC non adoptées. Changement de classe distingué du remplacement de référent, CC06 V1/V2 explicitement ouvert ; seize scénarios, questions résiduelles et correspondance F/S. Dix fichiers/76 liens vérifiés ; registre antérieur, D059/D068/D064/D099, fichier IA-Q01, matrice/invariants/scénarios acquis et IA-Q04–IA-Q12 intacts, F/S conservés. Diff et recherche ciblée de secrets sans anomalie détectée. R01i documentaire terminée ; commit/push à vérifier, aucun test applicatif/code/migration/configuration.
+
+## 2026-10-27 — Validation IA-Q02 et préparation IA-Q03, D100
+
+Accord CTO enregistré avant alignement : B/RP01–RP06 acquis, rattachement courant/approuvé/autorisé, cumul non automatique et actions sensibles au-delà de l’union des droits, attribution bornée, catalogue explicite/extensible, retrait des nouveaux accès malgré JWT. IA-Q05/07/08 et autres modalités ouvertes. Préparation classes/cardinalités/changements autorisée ; aucune décision IA-Q03–IA-Q12, code, migration, configuration, bibliothèque ou nouveau rôle.
+
+
 ## 2026-10-27 — Publication D099 et préparation IA-Q02 vérifiée
 
 Commit c5a37c55f8dcf87be7c606a48b5dd9b4656fff92 publié sur origin/main, concordance distante vérifiée. Dix fichiers documentaires conservés, P01–P06 validés D099 et RP01–RP06 proposés distingués ; preuve reportée dans comparaison et suivi. Aucun code, migration, configuration ni nouvelle décision IA-Q02.

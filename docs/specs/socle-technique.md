@@ -18,7 +18,7 @@ Une décision validée ne rend pas cette spécification **Accepted**. L'acceptat
 
 ## 2. Références et adaptation des ressources
 
-Priorité de conception validée D097 : [Identité / Organisation / Accès](identity-organization-access.md), spécification Proposed. Principes IA-Q01 P01–P06 validés D099 ; activité/concurrence, normalisation/récupération/réattribution et autres modalités restent ouvertes. Préparation [IA-Q02](ia-q02-roles-permissions-options.md) autorisée avant IA-Q03 ; aucune proposition de rôles, politique JWT ou isolation nouvelle adoptée.
+Priorité de conception validée D097 : [Identité / Organisation / Accès](identity-organization-access.md), spécification Proposed. Principes IA-Q01 P01–P06 validés D099 ; activité/concurrence, normalisation/récupération/réattribution et autres modalités restent ouvertes. Orientation B et RP01–RP06 [IA-Q02](ia-q02-roles-permissions-options.md) validés D100 ; droits locaux courants/contextuels, aucun nouveau cumul, politique JWT ou isolation adopté. [IA-Q03](ia-q03-class-enrollment-options.md) préparé Proposed, sans choix de classe acquis.
 
 Références du projet : [décisions](../product/decisions.md), [workflow](../workflow.md), [première tranche](../scope/first-slice.md), [approches techniques](technical-guidelines.md), [administration](../scope/establishment-administration.md), [cycle des offres](../scope/offer-lifecycle.md), [adaptation des exemples](architecture-realisation-campus.md) et [organisation GitHub](../git-workflow.md).
 
@@ -170,13 +170,13 @@ Les exigences ci-dessous sont VALIDÉES ; le mécanisme technique T05 reste PROP
 | CV/portfolio et avis, en tranche 2 | Apprenant concerné, CME locale et référent autorisé ; avis distincts liés au contenu examiné | D057/D058/D081–D084 |
 | Bilans d'accompagnement, en tranche 3 | Apprenant concerné, accompagnant du rendez-vous et CME locale ; pas d'ouverture par simple appartenance à une classe | D025/D080 |
 
-Proposition technique : composer identité, état du compte, rattachement courant, rôle, établissement, propriétaire, classe/affectation, état et action. Les listes, accès par identifiant, exports et fichiers doivent employer les mêmes limites. Un identifiant d'établissement reçu ne crée aucun droit. Vérifier le refus sans lecture/écriture non autorisée.
+Principe contextuel acquis D100, mécanismes ouverts : composer identité, état du compte, rattachement courant/approuvé/autorisé, attributions locales explicites, permissions administratives distinctes, établissement, propriétaire, classe/affectation, état et action. Catalogue limité/extensible sans éditeur libre ni moteur adopté ; aucune action sensible autorisée par simple union de permissions, aucun nouveau cumul. Retrait des nouveaux accès malgré JWT valide ; point d’effet et concurrence IA-Q08 ouverts. Les listes, accès par identifiant, exports et fichiers doivent employer les mêmes limites. Un identifiant d'établissement reçu ne crée aucun droit. Vérifier le refus sans lecture/écriture non autorisée.
 
 Isolation UNKNOWN : base/tables partagées avec périmètre explicite, schémas séparés ou bases séparées. L'hypothèse de base partagée D091 reste proposée ; elle demanderait contraintes, requêtes bornées et tests avec deux établissements fictifs. RLS éventuelle à comparer, pas requise par défaut. Aucun `tenant_id` ajouté mécaniquement à toutes les tables et aucun droit « staff » global inventé.
 
 ## 9. Modèle conceptuel et persistance
 
-Les principes IA-Q01 D099 sont acquis : identité globale stable, rattachements distincts, au plus un actif au pilote et email vérifié/unique indépendant de l'identifiant. Le modèle détaillé reste proposé : aucune table, cardinalité de classe, valeur d'enum ou suppression en cascade fixée ; demande en attente/activité/historique distincts, garantie concurrente à définir.
+Les principes IA-Q01 D099 sont acquis : identité globale stable, rattachements distincts, au plus un actif au pilote et email vérifié/unique indépendant de l'identifiant. IA-Q02 B/RP01–RP06 acquis D100 : rôles et permissions séparés des relations, attributions locales explicites ; auto-attribution/délégations IA-Q05/07 ouvertes. Le modèle détaillé reste proposé : aucune table, cardinalité de classe, valeur d'enum ou suppression en cascade fixée ; demande en attente/activité/historique distincts, garantie concurrente à définir.
 
 ```text
 Compte ── rattachement et rôles locaux ── Établissement
@@ -309,7 +309,7 @@ La création distante de Project/Issues/milestones est autorisée D095 mais pas 
 | Q08 | Contrat d'injection interface/provider | Avant frontière nécessitant ce contrat | PROPOSÉ Symbol ; alternative classe abstraite |
 | Q09 | Hébergement, données réelles, sauvegarde/restauration, exploitation et essais | Avant ouverture concernée | UNKNOWN C11/C12 ; pas requis pour la seule rédaction |
 
-Priorité de conception validée D097 : traiter Identité / Organisation / Accès et ses arbitrages IA-Q avant les décisions dépendantes de JWT et des migrations métier. Ordre d'arbitrage proposé dans cette spécification : IA-Q01, puis IA-Q02/03 et les choix liés ; Q01/Q02/Q04 du présent socle restent ouverts pour le setup. Les préparations techniques indépendantes ne confèrent aucun accès métier et aucun démarrage n'est autorisé par la seule rédaction de D096/D097. Les fiches S01–S06 ne sont pas renumérotées.
+Priorité de conception validée D097 : traiter Identité / Organisation / Accès et ses arbitrages IA-Q avant les décisions dépendantes de JWT et des migrations métier. Principes IA-Q01 D099 et IA-Q02 D100 acquis ; prochaine discussion IA-Q03 et ses choix liés ; Q01/Q02/Q04 du présent socle restent ouverts pour le setup. Les préparations techniques indépendantes ne confèrent aucun accès métier et aucun démarrage n'est autorisé par la seule rédaction de D096/D097. Les fiches S01–S06 ne sont pas renumérotées.
 
 **Critère de préparation avant une unité :** son périmètre et ses dépendances sont décrits, les décisions dont dépend son code sont validées, les erreurs/permissions applicables sont explicites et les vérifications réalisables sont définies. Une question ouverte indépendante peut rester ouverte ; une question dont dépend l'action ne se résout pas par une hypothèse cachée.
 
@@ -319,4 +319,4 @@ Priorité de conception validée D097 : traiter Identité / Organisation / Accè
 
 Livrable : spécification préparatoire du socle, liée aux décisions D007/D008/D086/D088/D089/D093/D094/D095 et inspirée des deux archives relues. Vérification documentaire : cohérence des références/statuts, liens locaux et distinction entre prérequis, propositions et preuves ; résultat consigné dans le suivi.
 
-Prochaine action : examiner la [comparaison IA-Q02](ia-q02-roles-permissions-options.md) et RP01–RP06 avant nouvelle décision, puis préparer IA-Q03. Les principes [IA-Q01](ia-q01-account-membership-options.md) sont validés D099, leurs modalités non résolues restent ouvertes dans [Identité / Organisation / Accès](identity-organization-access.md). Compléter ensuite politique JWT et modèle relationnel minimal avant leurs implémentations ; versions/outillage/configuration du socle restent à décider au moment nécessaire. Aucune option ouverte, aucun fichier applicatif, installation ou test applicatif produit par cette rédaction.
+Prochaine action : examiner la [comparaison IA-Q03](ia-q03-class-enrollment-options.md) et CC01–CC08 avant nouvelle décision. IA-Q02 B/RP01–RP06 validés D100 ; modalités et IA-Q03–IA-Q12 ouverts. Les principes [IA-Q01](ia-q01-account-membership-options.md) sont validés D099, leurs modalités non résolues restent ouvertes dans [Identité / Organisation / Accès](identity-organization-access.md). Compléter ensuite politique JWT et modèle relationnel minimal avant leurs implémentations ; versions/outillage/configuration du socle restent à décider au moment nécessaire. Aucune option ouverte, aucun fichier applicatif, installation ou test applicatif produit par cette rédaction.
