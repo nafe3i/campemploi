@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication de la comparaison IA-Q01 vérifiée
+
+Commit f1bd0b6bf8ce9aaea034d993c32b4b4193ccb039 publié sur origin/main, concordance distante vérifiée. Comparaison Proposed et préparation D098 conservées ; P01–P06 non adoptées, IA-Q01 et IA-Q02–IA-Q12 ouverts. Preuve ajoutée à la comparaison et au suivi selon D069/D074 ; aucun code/configuration/migration.
+
 ## 2026-10-27 — Contrôles IA-Q01 réussis
 
 Huit fichiers uniquement Markdown, 43 liens locaux, treize sections/six propositions, D098 unique et ancien registre intact vérifiés. D059/D068/D064, IA-Q02–IA-Q12, matrice/scénarios/invariants et identifiants/intitulés F/S inchangés ; diff/recherche ciblée de secrets et relecture manuelle sans anomalie détectée. R01g documentaire terminée, comparaison Proposed et modèle non adopté ; aucune migration/configuration ni code applicatif. Publication à vérifier selon D069.

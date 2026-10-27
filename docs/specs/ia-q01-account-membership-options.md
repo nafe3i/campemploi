@@ -208,4 +208,4 @@ Vérifications documentaires exécutées : huit fichiers Markdown concernés ; 4
 
 Fichiers réellement concernés : `docs/specs/ia-q01-account-membership-options.md`, `docs/specs/identity-organization-access.md`, `docs/specs/socle-technique.md`, `docs/product/decisions.md`, `README.md`, `tracking/BOARD.md`, `tracking/STATUS.md` et `tracking/JOURNAL.md`. Aucun test applicatif, build, migration ou configuration exécuté.
 
-Preuve Git à compléter après publication vérifiée. Aucune application de P01–P06 par la publication du document ; toute adoption reste soumise à D064.
+Comparaison et alignement publiés au commit f1bd0b6bf8ce9aaea034d993c32b4b4193ccb039 sur origin/main ; concordance distante vérifiée le 27 octobre 2026. Preuve ajoutée dans un commit de suivi distinct. Aucune application de P01–P06 par la publication du document ; toute adoption reste soumise à D064.
