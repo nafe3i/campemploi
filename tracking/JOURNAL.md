@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication D099 et préparation IA-Q02 vérifiée
+
+Commit c5a37c55f8dcf87be7c606a48b5dd9b4656fff92 publié sur origin/main, concordance distante vérifiée. Dix fichiers documentaires conservés, P01–P06 validés D099 et RP01–RP06 proposés distingués ; preuve reportée dans comparaison et suivi. Aucun code, migration, configuration ni nouvelle décision IA-Q02.
+
 ## 2026-10-27 — Contrôles D099 et préparation IA-Q02 réussis
 
 Dix fichiers Markdown/70 liens locaux, D099 unique, ancien registre intégral et blocs D059/D068/D064 préservés ; IA-Q03–IA-Q12, matrice/invariants et F/S inchangés. Six propositions RP et dix scénarios vérifiés ; diff/confidentialité contrôlés sans anomalie détectée. R01h documentaire terminée, comparaison IA-Q02 Proposed ; aucune décision RP, politique JWT ou isolation adoptée, aucun code/migration/configuration ni test applicatif. Commit/push D069 à vérifier.

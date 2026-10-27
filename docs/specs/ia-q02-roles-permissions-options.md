@@ -182,4 +182,4 @@ Périmètre réel : dix fichiers Markdown — `README.md`, `docs/product/decisio
 
 Contrôles exécutés : 70 liens locaux résolus, encodage et blocs fermés, D099 unique et registre antérieur intégralement conservé ; blocs D059/D068/D064, lignes IA-Q03–IA-Q12, matrice/invariants acquis et intitulés/identifiants F/S identiques à HEAD avant ce travail. Six RP et dix scénarios RP-S uniques ; diff sans erreur d'espacement. Recherche ciblée de secrets et relecture manuelle sans anomalie détectée, sans garantie absolue.
 
-Aucun code, migration, configuration, bibliothèque ou test applicatif créé/exécuté. P01–P06 sont validés D099 ; RP01–RP06 restent proposés. Preuve de publication à ajouter après vérification Git ; commit/push seuls n'autorisent aucune implémentation.
+Aucun code, migration, configuration, bibliothèque ou test applicatif créé/exécuté. P01–P06 sont validés D099 ; RP01–RP06 restent proposés. Commit documentaire c5a37c55f8dcf87be7c606a48b5dd9b4656fff92 publié sur origin/main ; concordance distante vérifiée le 27 octobre 2026. Commit/push seuls n'autorisent aucune implémentation.
