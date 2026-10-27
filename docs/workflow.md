@@ -16,6 +16,10 @@ Adaptation du document JSM fourni par l'utilisateur. Les skills correspondants n
 
 Debug peut intervenir à tout moment : comprendre, reproduire, vérifier les hypothèses, corriger au minimum et prévenir la régression.
 
+## Organisation GitHub — D095
+
+Pour le développement : Issue → branche codex/… depuis main → petits commits/push → PR liée → vérifications et revue → fusion dans main, sans branche develop permanente. Les commits documentaires autorisés gardent D069. BOARD.md reste la référence et Project une vue synchronisée manuellement ; décisions, acceptation et déploiement ont leurs preuves distinctes. Voir docs/git-workflow.md pour le périmètre validé et les limites de mise en place.
+
 ## Spécifications
 
 Suivi de bout en bout (D065) : suivre globalement le projet et chaque fonctionnalité, avec étape, prochaine action, décision attendue, preuves, difficultés et version concernée. Parcours : cadrage → conception → architecture → développement → vérification/tests → revue → préproduction → production pilote → observation/amélioration. Le parcours permet des retours en conception et ne change pas les statuts de spécification. Préproduction/production exigent leurs preuves propres ; commit, fusion ou release seuls ne prouvent pas un déploiement. Aucun déploiement autorisé par la seule validation de cette méthode.

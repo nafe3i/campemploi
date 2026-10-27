@@ -77,12 +77,12 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | G01 | Initialiser Git local et configurer origin fourni | Terminé | main, origin configuré ; dépôt distant sans références lors du contrôle |
 | G02 | Préparer premier contenu et contrôles | Terminé | .gitignore/.gitattributes, docs/git-workflow.md et revue docs/reviews/2026-10-24-initial-git-review.md ; contenu documentaire sélectionné, contrôles avant accord commit |
 | G03 | Créer le premier commit et envoyer le premier état | Terminé | D067 ; commit initial 2082f296e075c6f3a0b1d68a214f1de417c9d54b envoyé et vérifié sur origin/main le 25 octobre 2026 ; dépôt public accepté |
-| G04 | Préparer tâches et Project GitHub | À faire | Modèle à relier au tableau existant avant création externe |
+| G04 | Mettre en place tâches et Project GitHub | En cours | Organisation et création autorisées D095 ; modèle/fiches/branches documentés dans docs/git-workflow.md ; outils GitHub indisponibles ici, compte connecté non confirmé ; aucun Project/Issue/milestone créé |
 | G05 | Consigner et appliquer commit/push après chaque validation | Terminé | D069 et consignes alignées ; lot D068/D069 publié au commit de732bdaca71bef05aaf62b372c9c052c1c4b870 ; concordance origin/main vérifiée, contrôles documentaires et captures ; capture 0010 du résultat |
 | G06 | Remplacer les nouvelles copies snapshots par Git | Terminé | D074 ; consignes, workflow et index historique alignés ; commit dc6aeca0455c921c741771cbc19f80c6b7de3e65 publié et vérifié sur origin/main ; anciennes captures inchangées, aucune nouvelle copie créée |
 
 ## Prochaine action immédiate
 
-Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. Priorité précisée par le porteur : discuter les approches techniques D091 avant leur mise en œuvre, T01–T03 validés D093 ; JWT retenu D094 ; prochaine discussion cycle de vie/stockage des jetons et autorisations/isolation T04–T05. D090 reste proposée ; socle à spécifier après choix nécessaires. Proposer le contenu des Issues/Project avant création externe.
+Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. Priorité précisée par le porteur : discuter les approches techniques D091 avant leur mise en œuvre, T01–T03 validés D093 ; JWT retenu D094 ; prochaine discussion cycle de vie/stockage des jetons et autorisations/isolation T04–T05. D090 reste proposée ; socle à spécifier après choix nécessaires. Organisation Issues/Project et branches validée D095 ; mise en place distante à reprendre dès accès adapté, sans redemander cet accord.
 
 Prochaine tâche : R01. C11/C12 restent ouverts pour cadre et essais réels. Aucune fonctionnalité applicative développée ou Accepted ; mise à jour après chaque avancée réelle avec preuve.

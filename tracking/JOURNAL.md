@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Reprise du suivi et consignation D095
+
+À la demande de situer la prochaine étape, relecture du guide et du suivi : phase Architecture, JWT choisi mais modalités et permissions ouvertes, socle à spécifier avant initialisation. Accord antérieur « oui c est ça je valide / ok » sur organisation GitHub/branches enfin consigné D095 après interruption navigateur. Guide Git, workflow, état et tableau alignés ; G04 en cours, pas terminée : aucune Issue, Project, milestone, PR ou branche créée ; plugin installé mais connexion/droits non confirmés. Lecture distante Git vérifiée au commit d3b8336 lors du test précédent. Aucun nouveau choix JWT/ORM appliqué, aucun code/test applicatif. Contrôles documentaires puis commit/push D069, résultat à vérifier.
+
 ## 2026-10-27 — Publication D094 vérifiée
 
 Commit 593d55d036787a0041071616ed24d3c7f080d412 publié sur origin/main ; concordance distante vérifiée. Huit documents relus, liens et statuts contrôlés, D094 unique ; recherche ciblée de secrets sans motif détecté. Choix JWT documenté, modalités ouvertes ; aucun code ou test applicatif. Preuve ajoutée à l’état/tableau, suivi conservé séparément selon D069/D074.

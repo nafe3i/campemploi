@@ -5,6 +5,15 @@ Règle courante D069 : après chaque validation explicite, commit descriptif et 
 Accord reçu le 25 octobre 2026 (D067) : premier commit et envoi documentaire autorisés, dépôt public accepté. Les mentions d'accord en attente ci-dessous décrivent la préparation antérieure et ne sont plus un blocage. Aucun changement de visibilité demandé.
 Vérification renouvelée le 25 octobre 2026 : main/origin déjà présents, aucun commit ; API publique confirmant private=false, taille 0 et aucune référence Git distante annoncée. Pas de réinitialisation, modification de visibilité ou push. Capture 0004 réellement créée lors de cette reprise ; pas de capture du même identifiant présente avant.
 
+## Organisation courante validée — D095, 27 octobre 2026
+
+- Documents versionnés : référence des décisions, spécifications et preuves. BOARD.md reste la référence des tâches ; Project en donne une vue synchronisée manuellement, sans automatisation annoncée.
+- Un Project « CapEmploi Campus — Réalisation », Issues par petite tâche et milestones par étape/tranche. Statuts : À faire, En cours, À valider, Terminé, Reporté. Distinguer nature, phase, tranche, dépendances et preuves ; une décision terminée ne signifie pas que sa fonctionnalité est développée.
+- Développement/correction : Issue → branche codex/… depuis main → petits commits/push → PR liée → vérifications et revue → fusion dans main. Pas de branche develop permanente. main est la référence intégrée et vérifiée ; une fusion ne prouve pas un déploiement.
+- Les commits documentaires déjà autorisés continuent selon D069. Aucun ajout de protection de branche, permission, automatisation de fusion ou suppression de branche par ce seul accord.
+- Première liste d'Issues : cycle de vie JWT ; permissions/isolation ; accès PostgreSQL/ORM éventuel ; spécification du socle ; initialisation/vérification du socle après décisions nécessaires. Chaque Issue précise objectif, périmètre, dépendances, critères, contrôles accès/erreurs et preuves.
+- Accord de création acquis D095 ; mise en place distante non effectuée. Plugin installé/activé mais outils absents de cette conversation, connexion du compte non confirmée. Lecture Git publique seule insuffisante pour valider les droits du plugin. Aucun lien ou numéro de ressource distante inventé.
+
 ## État vérifié
 
 - Git installé, dépôt local initialisé sur main.
@@ -34,6 +43,6 @@ Cette règle autorise la synchronisation du travail validé et de son suivi. Les
 
 ## Suite produit et organisation
 
-Conserver les décisions/spécifications dans les fichiers versionnés. Préparer un petit ensemble de tâches à partir du tableau courant avant d'en créer sur GitHub ; configurer un Project après revue du contenu. Aucune Issue, aucun Project, aucune invitation à collaborateur ni aucun déploiement créé pendant l'initialisation locale.
+Conserver les décisions/spécifications dans les fichiers versionnés. Le modèle et les cinq premières tâches sont désormais autorisés D095 ; vérifier les ressources existantes avant création, puis enregistrer leurs liens et synchroniser le tableau. L'accès distant adapté reste à confirmer. Aucune Issue, aucun Project, aucune invitation à collaborateur ni aucun déploiement créé pendant l'initialisation locale.
 
 Arrêt des nouvelles captures manuelles explicitement validé D074 le 25 octobre 2026. Les captures 0001–0018 restent inchangées, sans suppression ni réécriture de l'historique Git. Les commits conservent désormais les nouveaux états enregistrés ; ils ne reconstituent pas des versions passées jamais sauvegardées. Exemple de consultation sans modifier le dossier de travail : `git show 492951a:docs/scope/pilot.md` ; exemple de comparaison : `git diff 6ad6a5f 492951a -- docs/scope/pilot.md`.
