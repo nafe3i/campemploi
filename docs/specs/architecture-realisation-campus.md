@@ -96,7 +96,7 @@ docs/
   scope/                      règles métier existantes
   specs/
     architecture-realisation-campus.md
-    socle-technique.md        à rédiger après les choix nécessaires
+    socle-technique.md        rédigé D096, Proposed ; choix ouverts avant setup
     features/                 fiches à créer progressivement après accord
   reviews/                    constats de revue et preuves
 tracking/                     suivi existant, sans duplication dans context/
@@ -208,6 +208,8 @@ JWT retenu D094. Prochaine discussion : cycle de vie JWT, stockage/transport et 
 La validation de cette adaptation porterait sur son organisation documentaire et son catalogue de travail. Les choix explicitement Proposed/UNKNOWN et les règles encore ouvertes restent à valider séparément. Aucun démarrage applicatif n'est déduit de la demande de lecture et rédaction.
 
 ## Références durables
+
+- [Socle technique D096 — unités, prérequis et preuves, Proposed](socle-technique.md)
 
 - [Plan général proposé D090](../plan-realisation.md)
 - [Approches techniques D091, T01–T03 validés D093](technical-guidelines.md)

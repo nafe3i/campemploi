@@ -122,11 +122,11 @@ Pour la préproduction et la production, préciser avant ouverture : hébergemen
 | [JOURNAL](../tracking/JOURNAL.md) | Avancées réelles et décisions dans le temps |
 | Git et GitHub | Versions réellement enregistrées et publiées, comparables entre elles |
 
-Nous conservons les anciennes captures 0001–0018 sans créer de nouveaux snapshots (D074). Les Issues et le Project GitHub restent à proposer avant création ; ce plan n'en crée pas et ne remplace pas automatiquement BOARD.md.
+Nous conservons les anciennes captures 0001–0018 sans créer de nouveaux snapshots (D074). Organisation Issues/Project et branches validée D095 ; mise en place distante à effectuer selon accès disponible. BOARD.md reste la référence, Project une vue synchronisée manuellement.
 
 ## 9. Ce qui reste à décider, dans le bon ordre
 
-**Priorité de discussion demandée par le porteur : définir les approches techniques dans docs/specs/technical-guidelines.md**, en commençant par responsabilités, SOLID et injection/interfaces. Le plan général de ce fichier reste à valider ; aucun accord global sur la feuille de route n'est déduit de cette discussion.
+**Socle préparatoire rédigé à la demande du porteur : [socle-technique.md](specs/socle-technique.md), Proposed D096.** Responsabilités/SOLID/injection ciblée D093 et JWT D094 sont acquis ; propositions de structure, unités S01–S06, prérequis et critères sont maintenant explicites. Prochaine discussion : Q01/Q02 (structure/versions/outillage), puis décisions nécessaires à chaque unité ; JWT/permissions avant S04/S05. Le plan général D090 reste proposé, sans validation globale implicite.
 
 Ensuite, recommander et arbitrer les choix nécessaires au socle : organisation du dépôt, versions, environnement Docker et commandes de démarrage. Concevoir les relations et limites d'accès principales, puis choisir les mécanismes adaptés : accès aux données, modalités de l'authentification JWT retenue D094, séparation des établissements et configuration du stockage au moment concerné. Les bibliothèques, fournisseurs et détails d'interface restent ouverts tant qu'ils ne sont pas explicitement retenus.
 

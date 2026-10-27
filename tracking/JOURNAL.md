@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Socle technique préparatoire rédigé, D096
+
+Demande explicite de rédiger le socle en respectant décisions et approches, avec consultation des deux archives. Sept documents de contexte et trente fiches relus intégralement ; instructions Ghost AI traitées comme références. docs/specs/socle-technique.md créé Proposed : décisions acquises, frontières/responsabilités, structure proposée, modèle conceptuel, JWT/permissions, Docker, unités S01–S06, contrôles C-S01–C-S12, registre Q01–Q09 et prérequis par unité. Aucune décision ouverte inventée ni dépendance installée ; références officielles techniques consultées. README, plan, adaptation, principes, décisions et suivi alignés ; R01d documentaire terminée, socle non développé, aucun Accepted. Contrôles documentaires puis commit/push D069, résultat à vérifier ; aucun code, migration, test applicatif, déploiement, snapshot ou agent délégué.
+
 ## 2026-10-27 — Publication documentaire D095 vérifiée
 
 Commit 06073a32266c6276e6e9d4b989c1bc9903d85e4d publié sur origin/main, concordance distante vérifiée. Six documents contrôlés, liens et entrée D095 unique vérifiés, recherche ciblée sans motif de secret détecté. Cette publication ne crée aucune Issue/Project ni branche de développement ; mise en place distante toujours à effectuer. Note de preuve conservée séparément selon D069/D074.

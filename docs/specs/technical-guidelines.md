@@ -167,6 +167,8 @@ Questions restantes : cycle de vie JWT, stockage/transport, renouvellement, rév
 
 ## Références du projet
 
+- [Socle technique D096 — application préparatoire, Proposed](socle-technique.md)
+
 - [Plan général de réalisation, proposé D090](../plan-realisation.md)
 - [Comparaison et décisions de stack](stack-architecture-options.md)
 - [Workflow et critères de vérification](../workflow.md)

@@ -1,5 +1,7 @@
 # État — 2026-10-27
 
+Socle technique rédigé sur demande dans docs/specs/socle-technique.md, Proposed D096, après relecture des sept documents de context.zip et trente fiches de feature-specs.zip. Décisions acquises conservées, nouvelles propositions/UNKNOWN séparés ; structure/frontières, données, JWT/permissions, Docker, unités S01–S06, critères C-S01–C-S12 et questions Q01–Q09 décrits. Prochaine discussion Q01/Q02 puis décisions nécessaires par unité ; aucun setup, code ou test applicatif. Publication de D096 à vérifier.
+
 Accord sur suivi GitHub et branches consigné D095 : BOARD référence, Project vue manuelle, Issues/milestones et branches codex/… avec PR pour développement ; commits documentaires D069 conservés. G04 en cours pour documentation, aucune ressource distante créée. Plugin installé/activé, outils absents ici et connexion du compte non confirmée ; lecture Git de origin/main réussie. Prochaine étape technique : cycle de vie JWT et permissions/isolation, puis choix nécessaires et spécification du socle avant setup. D095 publiée au commit 06073a32266c6276e6e9d4b989c1bc9903d85e4d ; concordance origin/main vérifiée le 27 octobre 2026.
 
 Instruction explicite : authentification JWT retenue D094 ; recommandation de session opaque T04 remplacée. Bibliothèque, claims/signature, stockage/transport, durées, renouvellement et révocation restent à décider. Documents et suivi alignés ; aucun code ou test applicatif. D094 publiée au commit 593d55d036787a0041071616ed24d3c7f080d412 ; concordance avec origin/main vérifiée le 27 octobre 2026.
@@ -75,4 +77,4 @@ Tâche C07 : règles de clôture/réouverture et modifications explicitement val
 - Matrice complète des permissions, cas limites des classes/revues, protocoles de mesure et données réelles à spécifier.
 - Prototype de collecte automatique prévu ultérieurement, pas une dépendance de la première tranche. Fonctions futures dans docs/product/roadmap.md.
 
-Prochaine tâche produit : préciser le cycle de vie JWT et les autorisations/isolation T04–T05 après validation T01–T03/D093, puis préparer la spécification du socle selon les choix nécessaires. Plan D090 encore proposé ; C11/C12 ouverts avant essais réels, aucun démarrage applicatif.
+Prochaine tâche produit : relire le socle technique Proposed D096 et arbitrer Q01/Q02, puis préciser les choix nécessaires à chaque unité, notamment JWT/permissions avant S04/S05. Plan D090 encore proposé ; C11/C12 ouverts avant essais réels, aucun démarrage applicatif.

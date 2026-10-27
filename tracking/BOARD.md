@@ -42,6 +42,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | R01a | Adapter les exemples de contexte et de fiches au campus | Terminé | Livrable documentaire relu : docs/specs/architecture-realisation-campus.md, Proposed D092 ; catalogue et exemple avec contrôles, propositions à valider, aucun développement ; commit 454e6aa publié et vérifié sur origin/main |
 | R01b | Consigner les principes responsabilités/SOLID/injection ciblée | Terminé | Accord « oui c est ça », D093 ; T01–T03 et références alignés, autres groupes proposés ; décision/documentation uniquement, aucun développement ; commit cb24c9c publié et vérifié sur origin/main |
 | R01c | Consigner le choix JWT | Terminé | Instruction utilisateur, D094 et section T04 alignées ; cycle de vie et bibliothèque ouverts, aucun développement ni test applicatif ; commit 593d55d publié et vérifié sur origin/main |
+| R01d | Rédiger la spécification préparatoire du socle | Terminé | docs/specs/socle-technique.md, Proposed D096 ; deux archives relues, décisions tracées, unités/prérequis/critères et questions ouvertes ; vérification documentaire uniquement, aucun socle développé |
 | R02 | Spécifier accès, comptes, organisation et offres | À faire | R01 et règles métier pertinentes arbitrées ; critères/tests de permissions |
 | R03 | Initialiser le projet et inspecter la structure réelle | À faire | Stack validée ; setup puis audit |
 | R04 | Réaliser accès nécessaires et parcours d'offres humaines | À faire | Spécification ; développement → vérification → tests → revue → documentation |
@@ -83,6 +84,6 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 
 ## Prochaine action immédiate
 
-Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. Priorité précisée par le porteur : discuter les approches techniques D091 avant leur mise en œuvre, T01–T03 validés D093 ; JWT retenu D094 ; prochaine discussion cycle de vie/stockage des jetons et autorisations/isolation T04–T05. D090 reste proposée ; socle à spécifier après choix nécessaires. Organisation Issues/Project et branches validée D095 ; mise en place distante à reprendre dès accès adapté, sans redemander cet accord.
+Consolidations C08/C09 et validation globale C10/D007 documentaires terminées. Priorité précisée par le porteur : discuter les approches techniques D091 avant leur mise en œuvre, T01–T03 validés D093 ; JWT retenu D094 ; socle préparatoire rédigé D096 (Proposed) ; prochaine discussion Q01/Q02, puis décisions nécessaires par unité, JWT/permissions avant S04/S05. D090 reste proposée ; aucun setup autorisé par la seule rédaction. Organisation Issues/Project et branches validée D095 ; mise en place distante à reprendre dès accès adapté, sans redemander cet accord.
 
 Prochaine tâche : R01. C11/C12 restent ouverts pour cadre et essais réels. Aucune fonctionnalité applicative développée ou Accepted ; mise à jour après chaque avancée réelle avec preuve.
