@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication D100 et préparation IA-Q03 vérifiée
+
+Commit 6bdf7fd755efcba206dfec38b4e212a2c9462a4e publié sur origin/main, concordance distante exacte vérifiée. Dix fichiers documentaires conservés ; B/RP01–RP06 validés et CC01–CC08 proposés distingués, preuve reportée dans comparaison et suivi. Aucun code/migration/configuration, cumul supplémentaire ou arbitrage IA-Q03–IA-Q12 adopté.
+
 ## 2026-10-27 — Comparaison IA-Q03 et contrôles documentaires terminés
 
 Comparaison Proposed : A une classe courante au pilote avec historique, B plusieurs inscriptions simultanées, C principale et participations secondaires ; recommandation A et huit CC non adoptées. Changement de classe distingué du remplacement de référent, CC06 V1/V2 explicitement ouvert ; seize scénarios, questions résiduelles et correspondance F/S. Dix fichiers/76 liens vérifiés ; registre antérieur, D059/D068/D064/D099, fichier IA-Q01, matrice/invariants/scénarios acquis et IA-Q04–IA-Q12 intacts, F/S conservés. Diff et recherche ciblée de secrets sans anomalie détectée. R01i documentaire terminée ; commit/push à vérifier, aucun test applicatif/code/migration/configuration.
