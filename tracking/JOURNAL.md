@@ -1,5 +1,17 @@
 # Journal
 
+## 2026-10-27 — Contrôles IA-Q01 réussis
+
+Huit fichiers uniquement Markdown, 43 liens locaux, treize sections/six propositions, D098 unique et ancien registre intact vérifiés. D059/D068/D064, IA-Q02–IA-Q12, matrice/scénarios/invariants et identifiants/intitulés F/S inchangés ; diff/recherche ciblée de secrets et relecture manuelle sans anomalie détectée. R01g documentaire terminée, comparaison Proposed et modèle non adopté ; aucune migration/configuration ni code applicatif. Publication à vérifier selon D069.
+
+## 2026-10-27 — Comparaison IA-Q01 rédigée, aucune option adoptée
+
+Comparaison docs/specs/ia-q01-account-membership-options.md Proposed : cinq axes distincts, besoins acquis/scénarios futurs, modèles M1/M2/M3, risques, contexte d’action unique, identification/email, implications JWT/PostgreSQL et départ/historiques. Recommandation préparée : identité globale, relations distinctes, contexte unique et au plus un rattachement actif au pilote ; six propositions P01–P06 à approuver, pas de choix implicite. Section 10.1 et IA-Q01 reformulées, références/suivi alignés ; IA-Q02–IA-Q12 demeurent ouverts. Contrôles et publication à vérifier ; aucun code/migration/configuration.
+
+## 2026-10-27 — Mandat documentaire IA-Q01, D098
+
+Le porteur confirme IA-Q01 en premier et précise que compte global, rattachements multiples et contexte unique ne sont pas des options nécessairement exclusives. D098 consignée avant comparaison ; préparation selon cinq axes, recommandation et décisions précises à soumettre. Aucun modèle ni autre arbitrage validé, contraintes D059/D068/D064 et absence de code/configuration/migration conservées.
+
 ## 2026-10-27 — Publication du chantier D097 vérifiée
 
 Commit b70e20219cfb379bac07760fb485bb1e56562600 publié sur origin/main, concordance distante vérifiée. Onze fichiers documentaires, spécification Proposed et rapport inclus ; D059/D068/D064 préservées intégralement, F/S non renumérotées, 65 liens et registres IA contrôlés. Aucun code/migration/configuration ; douze arbitrages restent ouverts. Preuve ajoutée au rapport et au suivi, conservation séparée selon D069/D074.

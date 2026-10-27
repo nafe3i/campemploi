@@ -264,15 +264,17 @@ Prévoir résultat explicite pour action répétée ou conflit : opération déj
 
 ## 10. Alternatives de modèle et mécanismes — aucune sélection implicite
 
-### 10.1 Comptes et établissements
+### 10.1 Comptes et établissements — axes reformulés, IA-Q01 ouvert
 
-| Option | Fonctionnement et intérêt | Conséquences / coût |
-|---|---|---|
-| Un compte, un seul établissement actif | Parcours simple ; plusieurs établissements accueillis par la plateforme | Départ/transfert à définir ; ne doit pas devenir unicité à vie cachée ; évolution du multi-rattachement à anticiper |
-| Un compte, plusieurs rattachements indépendants | Identité partagée ; rôles et données propres à chaque contexte | Sélection du contexte, droits locaux, révocations et affichage à tester ; aucun mélange de données |
-| Comptes distincts par établissement | Identités et connexions séparées par organisation | Doublons, récupération et expérience utilisateur plus lourds ; unicité d'adresse et rapprochements à définir |
+Préparation demandée D098 : [comparaison argumentée IA-Q01](ia-q01-account-membership-options.md), Proposed. Identité globale/locale, nombre de rattachements historiques et actifs, contexte de chaque action, identification/activation/récupération et fin d'appartenance sont cinq axes distincts ; ils ne constituent pas trois alternatives exclusives.
 
-Recommandation à discuter : comparer en premier les deux premières options sur les personnes réellement attendues dans le pilote et les besoins futurs. Ne pas retenir l'option multi-rattachement uniquement parce que le produit doit accueillir plusieurs établissements. Aucune option adoptée ; IA-Q01 tranche la capacité et les règles.
+| Combinaison étudiée | Identité | Rattachements actifs | Contexte métier |
+|---|---|---|---|
+| M1 | Compte local à l'établissement | Règles propres aux comptes locaux | Établissement du compte et ressource vérifiés |
+| M2 | Compte global et relations distinctes dans le temps | Au plus un selon restriction envisagée | Un contexte autorisé par action |
+| M3 | Compte global et relations indépendantes | Plusieurs si capacité explicitement autorisée | Un contexte sélectionné et autorisé par action, sans union des droits |
+
+M2/M3 peuvent partager une capacité conceptuelle de relations distinctes. La recommandation préparée est compte global, rattachements distincts, contexte unique et restriction pilote d'au plus un rattachement actif ; **elle n'est pas adoptée**. Les six propositions P01–P06 de la comparaison sont soumises à approbation ; IA-Q01 et IA-Q02–IA-Q12 restent ouverts. Aucun choix JWT, ORM ou isolation déduit de cette étude.
 
 ### 10.2 Rôles et permissions
 
@@ -321,7 +323,7 @@ Les identifiants IA-Q ci-dessous sont locaux à cette spécification ; ils ne re
 
 | ID | Question et options | Conséquences / recommandation à discuter | Bloque |
 |---|---|---|---|
-| IA-Q01 | Un établissement actif par compte, plusieurs rattachements indépendants, ou comptes distincts ? Quelles identités/adresses uniques ? | Priorité : décrire les cas réels, puis décider compte/rattachement/contexte ; ne pas confondre plateforme multi-établissements et compte multi-rattaché | Identité persistée, contexte et migrations métier ; socle Q05/Q06/Q07 |
+| IA-Q01 | Identité globale/locale ; cardinalité historique/active ; contexte sélectionné/autorisé par action ; identification/activation/récupération ; fin de rattachement ? | Préparation D098 dans ia-q01-account-membership-options.md : modèles combinables, recommandation et P01–P06 à approuver ; aucun modèle retenu | Identité persistée, contexte et migrations métier ; socle Q05/Q06/Q07 |
 | IA-Q02 | Un rôle métier principal ou plusieurs rôles locaux ? Quelles délégations de personnel ? | CME + administration locale et rôle formateur unique conservés ; recommander attribution explicite et limitée, pas de « staff » global | Matrice technique et modèle de rôles ; Q07 |
 | IA-Q03 | Combien de classes simultanées pour un apprenant ? Qui autorise un changement et quand ? | Comparer une classe active et plusieurs inscriptions ; préserver D059 sans transfert automatique ; définir historique et droits après changement | Rattachement/affectations, F03/F04, Q05/Q07 |
 | IA-Q04 | Départ ou changement d'établissement : quels anciens dossiers et accès, quelles données rejoignent le nouveau contexte ? | Comparer conservation dans l'ancien périmètre, accès personnel limité et éventuelle portabilité explicite ; aucune copie/visibilité nouvelle par défaut | Transfert et conservation ; Q05/Q07/Q09 |
