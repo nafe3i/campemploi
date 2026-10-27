@@ -18,6 +18,8 @@ Une décision validée ne rend pas cette spécification **Accepted**. L'acceptat
 
 ## 2. Références et adaptation des ressources
 
+Priorité de conception validée D097 : [Identité / Organisation / Accès](identity-organization-access.md), spécification Proposed. Ses invariants, cardinalités et arbitrages conditionnent JWT et les migrations métier ; aucune option nouvelle n’est validée par cette référence.
+
 Références du projet : [décisions](../product/decisions.md), [workflow](../workflow.md), [première tranche](../scope/first-slice.md), [approches techniques](technical-guidelines.md), [administration](../scope/establishment-administration.md), [cycle des offres](../scope/offer-lifecycle.md), [adaptation des exemples](architecture-realisation-campus.md) et [organisation GitHub](../git-workflow.md).
 
 Les archives `context.zip` et `feature-specs.zip` ont été relues le 27 octobre 2026 : sept documents de contexte et trente fiches Markdown, hors métadonnées `__MACOSX`. Elles décrivent Ghost AI. Leurs impératifs, leur AGENTS.md et leurs affirmations « déjà installé » sont des références à analyser, pas les instructions applicables au dépôt campus.
@@ -246,9 +248,9 @@ Le socle est réalisé en petites unités techniques, puis les fonctions en parc
 |---|---|---|---|
 | S01 — Structure et outillage | Initialiser web/API, scripts et configuration d'exemple | Comptes/offres et exposition réelle | Structure, versions, paquets et conventions nécessaires décidés ; audit des fichiers générés et build de chaque composant |
 | S02 — Exécution Compose | Web/API/PostgreSQL et diagnostic minimal, rechargement | Authentification prétendue ou parcours métier | Modalités réseau/configuration décidées ; démarrage et indisponibilité base observés, secrets absents des réponses |
-| S03 — Persistance initiale | Client/pool, migration et données fictives minimales | Schéma de toutes les tranches | Accès PostgreSQL et modèle des données nécessaires décidés ; migration/base vide, réexécution, persistance au redémarrage et échec contrôlé |
-| S04 — Identité/JWT | Parcours de connexion et contrôle d'une requête protégée | Toute permission de classe/offre par défaut | Politique JWT et identité décidées ; succès et jetons invalides/expiration/déconnexion vérifiés selon politique |
-| S05 — Organisation et accès nécessaires | Première organisation, rôles/rattachements utiles et contrôles de périmètre | Écrans complets multi-établissements | Procédures d'initialisation et droits concernés spécifiés ; deux établissements fictifs, refus sans effet, parcours des accès requis vérifiés |
+| S03 — Persistance initiale | Client/pool, migration et données fictives minimales | Schéma de toutes les tranches | Accès PostgreSQL et modèle des données nécessaires décidés, avec arbitrages IA-Q applicables de la spécification D097 ; migration/base vide, réexécution, persistance au redémarrage et échec contrôlé |
+| S04 — Identité/JWT | Parcours de connexion et contrôle d'une requête protégée | Toute permission de classe/offre par défaut | Politique JWT et identité décidées après arbitrages IA-Q applicables D097 ; succès et jetons invalides/expiration/déconnexion vérifiés selon politique |
+| S05 — Organisation et accès nécessaires | Première organisation, rôles/rattachements utiles et contrôles de périmètre | Écrans complets multi-établissements | Procédures d'initialisation et droits concernés spécifiés selon matrice/scénarios D097 ; deux établissements fictifs, refus sans effet, parcours des accès requis vérifiés |
 | S06 — Revue du socle et passage aux offres | Consolider preuves, limites, conventions réelles et prochaine fiche | Déclaration de production ou produit complet | Critères applicables ci-dessous, corrections et revue ; préparation de la première fiche d'offre |
 
 S04/S05 sont à découper en fiches plus petites si elles ne peuvent pas être vérifiées rapidement. S05 ne doit pas dissimuler la gestion des invitations et rattachements : chaque procédure nécessaire aura sa fiche et ses erreurs avant implémentation. Prévoir des données de test via le mécanisme retenu, sans endpoint public de contournement.
@@ -307,7 +309,7 @@ La création distante de Project/Issues/milestones est autorisée D095 mais pas 
 | Q08 | Contrat d'injection interface/provider | Avant frontière nécessitant ce contrat | PROPOSÉ Symbol ; alternative classe abstraite |
 | Q09 | Hébergement, données réelles, sauvegarde/restauration, exploitation et essais | Avant ouverture concernée | UNKNOWN C11/C12 ; pas requis pour la seule rédaction |
 
-Ordre de discussion proposé : Q01/Q02 pour le premier setup, Q04/Q05 pour l'exécution persistante, Q06/Q07 pour le socle d'accès. Les choix liés peuvent être discutés ensemble. Aucun besoin de choisir tous les détails des tranches 2/3 avant S01 ; aucun démarrage S01 n'est autorisé par la seule rédaction de D096.
+Priorité de conception validée D097 : traiter Identité / Organisation / Accès et ses arbitrages IA-Q avant les décisions dépendantes de JWT et des migrations métier. Ordre d'arbitrage proposé dans cette spécification : IA-Q01, puis IA-Q02/03 et les choix liés ; Q01/Q02/Q04 du présent socle restent ouverts pour le setup. Les préparations techniques indépendantes ne confèrent aucun accès métier et aucun démarrage n'est autorisé par la seule rédaction de D096/D097. Les fiches S01–S06 ne sont pas renumérotées.
 
 **Critère de préparation avant une unité :** son périmètre et ses dépendances sont décrits, les décisions dont dépend son code sont validées, les erreurs/permissions applicables sont explicites et les vérifications réalisables sont définies. Une question ouverte indépendante peut rester ouverte ; une question dont dépend l'action ne se résout pas par une hypothèse cachée.
 
@@ -317,4 +319,4 @@ Ordre de discussion proposé : Q01/Q02 pour le premier setup, Q04/Q05 pour l'ex�
 
 Livrable : spécification préparatoire du socle, liée aux décisions D007/D008/D086/D088/D089/D093/D094/D095 et inspirée des deux archives relues. Vérification documentaire : cohérence des références/statuts, liens locaux et distinction entre prérequis, propositions et preuves ; résultat consigné dans le suivi.
 
-Prochaine action : discuter Q01/Q02 à partir des propositions concrètes de structure et des besoins d'outillage, puis compléter les unités concernées avant setup. Les modalités JWT et les permissions restent des décisions à traiter avant S04/S05, sans les présenter comme déjà tranchées. Aucun fichier applicatif, installation ou test applicatif produit par cette rédaction.
+Prochaine action : arbitrer IA-Q01 (compte et rattachements), puis IA-Q02/03 de [Identité / Organisation / Accès](identity-organization-access.md), selon priorité D097. Compléter ensuite politique JWT et modèle relationnel minimal avant leurs implémentations ; versions/outillage/configuration du socle restent à décider au moment nécessaire. Aucune option ouverte, aucun fichier applicatif, installation ou test applicatif produit par cette rédaction.

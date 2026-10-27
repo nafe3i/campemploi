@@ -1,5 +1,17 @@
 # Journal
 
+## 2026-10-27 — Vérifications documentaires D097 réussies
+
+Onze fichiers Markdown concernés et 65 liens locaux contrôlés ; identifiants 15 IA-I/42 IA-A/20 IA-S/12 IA-Q et quatorze sections vérifiés ; D097 unique. Ancien registre conservé intégralement, blocs D059/D068/D064 identiques à HEAD, identifiants/intitulés F/S inchangés ; recherche ciblée de secrets et relecture manuelle sans anomalie détectée, sans garantie absolue. Rapport docs/reviews/2026-10-27-identity-organization-access-review.md finalisé, R01f documentaire terminée ; spécification toujours Proposed, R02 partielle En cours, aucun code ou test applicatif. Commit/push D069 à vérifier.
+
+## 2026-10-27 — Spécification Identité / Organisation / Accès rédigée
+
+Mandat D097 appliqué au périmètre documentaire : concepts/cardinalités, 15 invariants, 42 lignes de matrice, 20 scénarios, alternatives et 12 arbitrages, garanties transactionnelles, dépendances JWT/PostgreSQL et correspondance F/S dans docs/specs/identity-organization-access.md (Proposed). Retrait de l’ancienne affectation distingué de révocation globale JWT, requêtes en cours et cumul des deux avis explicitement ouverts. Socle, références et suivi alignés ; D059/D068/D064 inchangées, aucune renumérotation F/S ni code/configuration/migration. Rapport de fichiers/vérifications à finaliser avant commit/push D069.
+
+## 2026-10-27 — D097 validée, chantier de conception autorisé
+
+Décision explicite du porteur enregistrée avant rédaction : créer la spécification Proposed Identité / Organisation / Accès, consolider règles/cardinalités, matrice et scénarios, alternatives et invariants, correspondance F/S, arbitrages et rapport de vérifications. Priorité approuvée ; choix ouverts non validés par cet accord. Périmètre documentaire uniquement, D059/D068/D064 préservées ; aucun code, migration ou configuration autorisé.
+
 ## 2026-10-27 — Publication de la relecture vérifiée
 
 Rapport et suivi publiés au commit 272d30e4f449ab0c67810d21256cbe2d926957f4, concordance origin/main vérifiée. Quatre documents contrôlés, liens locaux et recherche ciblée de secrets sans anomalie détectée ; aucune décision technique appliquée ni code modifié. R01f reste À valider. Preuve consignée séparément selon D069/D074.

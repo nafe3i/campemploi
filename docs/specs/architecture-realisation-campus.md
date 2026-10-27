@@ -203,11 +203,13 @@ Outils et seuils restent à décider. Utiliser des données fictives en dévelop
 
 T01–T03 de D091 sont validés par D093 : responsabilités/controller/service/persistance, SOLID pragmatique et injection ciblée. Conséquence : principes à respecter dans le futur socle, sans sélection d'ORM, d'authentification ou de dossiers précis par cet accord.
 
-JWT retenu D094. Prochaine discussion : cycle de vie JWT, stockage/transport et permissions/isolation ; accès PostgreSQL ; structure du dépôt et outils UI/API/tests ; configuration Docker et versions ; stockage/exploitation au moment nécessaire. Ne pas produire toutes les fiches détaillées avant ces choix : compléter les premières, puis avancer progressivement.
+JWT retenu D094. Priorité D097 validée : modèle Identité / Organisation / Accès et arbitrages IA-Q, puis décisions dépendantes de JWT et persistance métier ; structure/outillage/Docker et exploitation restent à préciser au moment nécessaire. Ne pas produire toutes les fiches détaillées avant ces choix : compléter les premières, puis avancer progressivement.
 
 La validation de cette adaptation porterait sur son organisation documentaire et son catalogue de travail. Les choix explicitement Proposed/UNKNOWN et les règles encore ouvertes restent à valider séparément. Aucun démarrage applicatif n'est déduit de la demande de lecture et rédaction.
 
 ## Références durables
+
+- [Identité / Organisation / Accès D097 — correspondance F/S et exigences, Proposed](identity-organization-access.md)
 
 - [Socle technique D096 — unités, prérequis et preuves, Proposed](socle-technique.md)
 

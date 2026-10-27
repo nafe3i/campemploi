@@ -167,6 +167,8 @@ Questions restantes : cycle de vie JWT, stockage/transport, renouvellement, rév
 
 ## Références du projet
 
+- [Identité / Organisation / Accès D097 — modèle, matrice, scénarios et arbitrages, Proposed](identity-organization-access.md)
+
 - [Socle technique D096 — application préparatoire, Proposed](socle-technique.md)
 
 - [Plan général de réalisation, proposé D090](../plan-realisation.md)
