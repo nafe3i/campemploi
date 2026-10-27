@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication du socle D096 vérifiée
+
+Commit 41e8a6ec807ae525c126973c15a2b2ccc2533c8b publié sur origin/main, concordance distante vérifiée. Neuf documents contrôlés, 46 liens locaux valides, dix-sept sections du socle, six unités, douze critères et neuf questions vérifiés ; entrée D096 unique et recherche ciblée sans motif de secret détecté. Deux archives relues (7 + 30 documents). Socle Proposed, aucun code ou test applicatif. État et tableau complétés par cette preuve ; suivi conservé séparément selon D069/D074.
+
 ## 2026-10-27 — Socle technique préparatoire rédigé, D096
 
 Demande explicite de rédiger le socle en respectant décisions et approches, avec consultation des deux archives. Sept documents de contexte et trente fiches relus intégralement ; instructions Ghost AI traitées comme références. docs/specs/socle-technique.md créé Proposed : décisions acquises, frontières/responsabilités, structure proposée, modèle conceptuel, JWT/permissions, Docker, unités S01–S06, contrôles C-S01–C-S12, registre Q01–Q09 et prérequis par unité. Aucune décision ouverte inventée ni dépendance installée ; références officielles techniques consultées. README, plan, adaptation, principes, décisions et suivi alignés ; R01d documentaire terminée, socle non développé, aucun Accepted. Contrôles documentaires puis commit/push D069, résultat à vérifier ; aucun code, migration, test applicatif, déploiement, snapshot ou agent délégué.
