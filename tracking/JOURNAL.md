@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication du chantier D097 vérifiée
+
+Commit b70e20219cfb379bac07760fb485bb1e56562600 publié sur origin/main, concordance distante vérifiée. Onze fichiers documentaires, spécification Proposed et rapport inclus ; D059/D068/D064 préservées intégralement, F/S non renumérotées, 65 liens et registres IA contrôlés. Aucun code/migration/configuration ; douze arbitrages restent ouverts. Preuve ajoutée au rapport et au suivi, conservation séparée selon D069/D074.
+
 ## 2026-10-27 — Vérifications documentaires D097 réussies
 
 Onze fichiers Markdown concernés et 65 liens locaux contrôlés ; identifiants 15 IA-I/42 IA-A/20 IA-S/12 IA-Q et quatorze sections vérifiés ; D097 unique. Ancien registre conservé intégralement, blocs D059/D068/D064 identiques à HEAD, identifiants/intitulés F/S inchangés ; recherche ciblée de secrets et relecture manuelle sans anomalie détectée, sans garantie absolue. Rapport docs/reviews/2026-10-27-identity-organization-access-review.md finalisé, R01f documentaire terminée ; spécification toujours Proposed, R02 partielle En cours, aucun code ou test applicatif. Commit/push D069 à vérifier.

@@ -54,4 +54,4 @@ Premier groupe recommandé, non appliqué : IA-Q01 (comptes/rattachements/contex
 
 ## Conservation et publication
 
-Commit et résultat du push à consigner uniquement après vérification. Lien vers la preuve durable : [journal](../../tracking/JOURNAL.md) ; état des tâches : [BOARD](../../tracking/BOARD.md).
+Spécification, rapport et alignement publiés au commit b70e20219cfb379bac07760fb485bb1e56562600 sur origin/main ; concordance avec HEAD local vérifiée le 27 octobre 2026 après push normal. Cette preuve est ajoutée dans un commit de suivi distinct ; aucun résultat futur annoncé. Lien vers la preuve durable : [journal](../../tracking/JOURNAL.md) ; état des tâches : [BOARD](../../tracking/BOARD.md).
