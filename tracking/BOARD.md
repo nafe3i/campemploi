@@ -39,7 +39,7 @@ Chaque ligne sera découpée en tâches plus petites avant de coder ; cet invent
 | ID | Travail | Statut | Dépendance / validation attendue |
 |---|---|---|---|
 | R01 | Comparer et décider stack/architecture/hébergement | En cours | D008/D088/D089 validées ; docs/specs/technical-guidelines.md proposé D091 : responsabilités, SOLID, DI/interfaces, auth/permissions, PostgreSQL et contrôles. Premier groupe T01–T03 à valider ; plan D090 encore proposé. Aucun code ou installation |
-| R01a | Adapter les exemples de contexte et de fiches au campus | Terminé | Livrable documentaire relu : docs/specs/architecture-realisation-campus.md, Proposed D092 ; catalogue et exemple avec contrôles, propositions à valider, aucun développement |
+| R01a | Adapter les exemples de contexte et de fiches au campus | Terminé | Livrable documentaire relu : docs/specs/architecture-realisation-campus.md, Proposed D092 ; catalogue et exemple avec contrôles, propositions à valider, aucun développement ; commit 454e6aa publié et vérifié sur origin/main |
 | R02 | Spécifier accès, comptes, organisation et offres | À faire | R01 et règles métier pertinentes arbitrées ; critères/tests de permissions |
 | R03 | Initialiser le projet et inspecter la structure réelle | À faire | Stack validée ; setup puis audit |
 | R04 | Réaliser accès nécessaires et parcours d'offres humaines | À faire | Spécification ; développement → vérification → tests → revue → documentation |

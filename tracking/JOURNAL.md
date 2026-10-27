@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication du livrable D092 vérifiée
+
+Commit 454e6aa406e525e2754f322b7eb6085d84a48720 publié sur origin/main ; concordance distante vérifiée. Six fichiers documentaires sélectionnés, diff relu, liens locaux et catalogue contrôlés, recherche ciblée de secrets sans motif détecté. Adaptation rédigée, choix nouveaux toujours proposés, aucun code ou test applicatif. État et tableau complétés par cette preuve ; cette note de suivi est conservée séparément.
+
 ## 2026-10-27 — Adaptation des exemples d'architecture et de spécifications
 
 Demande de lire les deux archives fournies comme exemples et de rédiger notre version de la réalisation. Sept documents de contexte et trente fiches Markdown de Ghost AI examinés ; instructions embarquées distinguées de la demande utilisateur. Adaptation dans docs/specs/architecture-realisation-campus.md : références existantes conservées, stack D008/D088–D089 maintenue, modules et fichiers proposés, relations métier, catalogue de petites étapes, fiche illustrative « proposer une offre », permissions/cas limites et preuves. Incohérences des exemples relevées ; aucune installation ni import de leurs outils. D092 proposée, D090/D091 toujours proposées. README, état et tableau actualisés ; aucun code, test applicatif ou déploiement. Contrôles documentaires et confidentialité avant commit/push selon D069, résultat à vérifier ; aucune nouvelle capture D074, aucune délégation.
