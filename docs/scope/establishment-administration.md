@@ -1,6 +1,6 @@
 # Administration des établissements — organisation validée
 
-Mise à jour : 25 octobre 2026. Références D056 et D076. Statut : organisation et périmètre administratif du pilote validés ; procédures techniques détaillées à spécifier. Aucun code applicatif.
+Mise à jour : 27 octobre 2026. Références D056, D076 et D101/D102. Statut : organisation et périmètre administratif du pilote validés ; procédures techniques détaillées à spécifier. Aucun code applicatif.
 
 ## Organisation proposée par l'utilisateur
 
@@ -26,7 +26,7 @@ Périmètre pilote validé D076 : mise en place du premier établissement et de 
 
 La CME génère un lien réutilisable propre à une classe de son établissement. Elle peut partager un seul lien avec la classe ; chaque personne crée son compte individuel ou se connecte, puis demande le rattachement. Accès interne après validation CME uniquement, comme D038. Un lien transféré ne suffit pas à obtenir l'accès. Expiration, désactivation et renouvellement prévus ; pas de mot de passe ou donnée personnelle dans le lien. Aucun changement automatique de classe d'un compte déjà rattaché. Envoi externe non effectué par l'assistant sans autorisation explicite.
 
-Durée d'expiration, demandes multiples et changement de classe/établissement à définir dans les spécifications. Ce parcours ne remplace pas les invitations du personnel ni n'attribue leurs rôles.
+Durée d’expiration et demandes multiples à définir ; changement local de classe acquis sur principes D101/D102, modalités ouvertes ; changement d’établissement IA-Q04 à arbitrer. Ce parcours ne remplace pas les invitations du personnel ni n'attribue leurs rôles.
 
 1. Administration générale par le porteur et gestion locale par la CME validées ; périmètre pilote précisé D076, écrans détaillés à spécifier. D039 modifiée par D056.
 2. Distinction CME/administration locale et invitations du personnel retenues ; modalités d'activation à spécifier.
@@ -35,3 +35,11 @@ Durée d'expiration, demandes multiples et changement de classe/établissement �
 5. Écrans complets multi-établissements reportés D076 ; détails de leur évolution ultérieure à spécifier.
 
 Décision documentaire enregistrée, aucune permission technique appliquée et aucun code applicatif. Les protections des documents et observations restent régies par les décisions existantes.
+
+## Classes et changements locaux — D101/D102
+
+Modèle A au pilote : inscriptions distinctes du compte, rattachement et demande, historique préservé et au plus une inscription de classe courante par apprenant dans son rattachement autorisé. Garantie contre approbations concurrentes requise, sans restriction permanente du modèle. Une demande n’altère pas l’inscription courante et n’ouvre aucun droit cible. Changement approuvé par CME avec permission locale, transition cohérente sans double inscription effective ni effet partiel non autorisé ; réentrée avec nouvelle approbation, pas réactivation historique automatique.
+
+Relais ciblé des droits de revue, droits indépendants réévalués ; changement local distinct d’un transfert d’établissement sans copie automatique de ressources/permissions. CC06/V1 décidé séparément D102 : documents inchangés conservant leurs validations et auteurs réels, pas d’avis positif inventé ni maintien d’accès par ancien avis. [Spécification IA-Q03](../specs/ia-q03-class-enrollment-options.md).
+
+Membre approuvé sans classe, demandes multiples/répétées/concurrentes, point d’effet/revues engagées, auto-actions/conflits, cycle de vie des classes, historiques/durées et IA-Q04 restent ouverts ; aucun protocole transactionnel ni implémentation choisi.

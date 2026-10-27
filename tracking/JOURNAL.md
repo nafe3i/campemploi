@@ -1,5 +1,13 @@
 # Journal
 
+## 2026-10-27 — IA-Q04 rédigé et contrôles documentaires réussis
+
+Comparaison Proposed : conservation à l’origine distincte d’accès après départ et de portabilité ; A sans accès local résiduel, B personnel limité, C export/import explicites distingués. Recommandation ciblée et huit HP non adoptés, notamment HP05/06 nouveaux droits ; dix-huit scénarios, matrice par catégorie, questions et correspondance F/S. D101/D102 alignées jusque dans administration/revues. Douze fichiers/84 liens et tableaux/encodage contrôlés ; registre antérieur, D059/D068/D064/D081/D099/D100, fichiers IA-Q01/02, matrices/invariants/scénarios et IA-Q05–IA-Q12 préservés ; F/S intacts. Diff et recherche ciblée de secrets sans anomalie détectée ; aucun test applicatif ni code/migration/configuration. Publication à vérifier.
+
+## 2026-10-27 — Validation IA-Q03 D101 et CC06/V1 D102
+
+Accord CTO enregistré avant alignement : modèle A et CC01–CC05/07/08 D101, CC06/V1 décision métier nouvelle séparée D102, distincte de D081. Principes locaux acquis, sept groupes de questions conservés ouverts. Préparation IA-Q04 autorisée : identité, fin/nouveau rattachement, ressources, accès personnel et portabilité sans transfert automatique. Aucun arbitrage IA-Q04–IA-Q12, mécanisme technique ou implémentation adopté.
+
 ## 2026-10-27 — Publication D100 et préparation IA-Q03 vérifiée
 
 Commit 6bdf7fd755efcba206dfec38b4e212a2c9462a4e publié sur origin/main, concordance distante exacte vérifiée. Dix fichiers documentaires conservés ; B/RP01–RP06 validés et CC01–CC08 proposés distingués, preuve reportée dans comparaison et suivi. Aucun code/migration/configuration, cumul supplémentaire ou arbitrage IA-Q03–IA-Q12 adopté.

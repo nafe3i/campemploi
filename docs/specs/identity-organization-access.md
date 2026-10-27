@@ -1,6 +1,6 @@
 # Identité / Organisation / Accès
 
-Date : 27 octobre 2026. Statut de spécification : **Proposed**. Mandat documentaire et priorité : **D097 validée**. Mise à jour : principes IA-Q01 P01–P06 validés D099 ; orientation B et principes IA-Q02 RP01–RP06 validés D100 ; IA-Q03 en préparation, sans choix nouveau.
+Date : 27 octobre 2026. Statut de spécification : **Proposed**. Mandat documentaire et priorité : **D097 validée**. Mise à jour : principes IA-Q01 P01–P06 validés D099 ; orientation B et principes IA-Q02 RP01–RP06 validés D100 ; IA-Q03 modèle A et CC01–CC08 validés D101/D102 ; IA-Q04 en préparation, aucun nouveau choix ouvert appliqué.
 
 ## 1. Objectif, périmètre et limites
 
@@ -29,6 +29,8 @@ Légende : **ACQUIS** = exigence validée avec référence ; **PROPOSÉ** = repr
 | Priorité de ce chantier et retrait immédiat malgré JWT valide | D097 ; modalités techniques non choisies |
 | Identité globale stable, rattachements distincts, un actif au pilote, contexte unique, email vérifié/unique, fin des droits locaux sans transfert | D099 P01–P06 et compléments ; attente/activité/historique distincts, concurrence à garantir, email seul sans preuve de propriété historique |
 | Attributions locales explicites, catalogue limité/extensible et autorisations contextuelles | D100 B/RP01–RP06 ; rattachement courant/approuvé/autorisé, pas de nouveau cumul ni union suffisante pour action sensible ; retrait des nouveaux accès malgré JWT valide, effet/concurrence ouverts |
+| Classes et changements locaux | D101 : modèle A/CC01–CC05/07/08, une courante au pilote garantie face à concurrence, demande distincte, approbation locale/réentrée et relais ciblé ; modalités ouvertes |
+| Documents inchangés au changement local de classe | D102 CC06/V1, décision métier distincte de D081 : validations conservées avec auteur réel/type/version ; aucun avis positif créé ni maintien d’accès de l’ancien auteur ; D057/D083 préservées |
 
 Sources locales : [décisions](../product/decisions.md), [administration](../scope/establishment-administration.md), [revues CV/portfolio](../scope/cv-portfolio-review.md), [première tranche](../scope/first-slice.md), [offres](../scope/offer-lifecycle.md), [scope pilote](../scope/pilot.md), [socle](socle-technique.md), [principes](technical-guidelines.md), [workflow](../workflow.md) et [relecture d'architecture](../reviews/2026-10-27-architecture-cross-review.md).
 
@@ -51,7 +53,7 @@ Exemple fictif : une personne est formateur et référent de la classe C1 dans l
 | Permission administrative locale | Pouvoir de gestion dans l'établissement | Distincte du rôle CME et cumulable avec lui D056/D100 ; pouvoir limité au périmètre explicite, encodage OUVERT |
 | Pouvoir d'administration générale | Création/désignation au niveau général | Portage D056 acquis ; bootstrap/récupération et représentation OUVERTS |
 | Classe | Groupe organisé dans un établissement | Classes gérées localement ; structure année/filière et cycle de vie OUVERTS |
-| Inscription en classe | Relation entre apprenant et classe, distincte de l'identité | Validation et absence de transfert automatique D059 ; simultanéité/historique OUVERTS |
+| Inscription en classe | Relation distincte du compte, rattachement et demande | D101 : historique, au plus une courante au pilote, approbation du changement/réentrée et transition cohérente ; activité détaillée/point d’effet/absence de classe OUVERTS |
 | Affectation de référent | Relation formateur/classe autorisant la revue dans son périmètre courant | Un référent par classe, plusieurs classes possibles par formateur ; absence temporaire D084 |
 | Lien de classe | Point d'entrée partagé pour demander un rattachement | Réutilisable D059 ; ce n'est ni une session de connexion ni une preuve d'appartenance |
 | Invitation du personnel | Parcours individuel d'activation prévu D056 | Distinct du lien de classe ; validité, destinataire, répétitions OUVERTS |
@@ -82,7 +84,7 @@ Le dessin décrit des responsabilités et liens ; seules les cardinalités acqui
 | Établissement / classes | Plusieurs classes possibles ; chaque classe est gérée dans un établissement D056/D059 | Nombre minimal, limites, archivage ou transfert d'une classe OUVERTS |
 | Classe / référent courant | Au plus un référent ; zéro temporairement possible D078/D084 | Durée maximale sans référent ou délégation automatique non décidées |
 | Formateur / classes référées | Plusieurs classes possibles D078 | Aucun accès aux autres classes par son rôle seul |
-| Classe / apprenants | Plusieurs personnes peuvent utiliser le même lien D059 | Nombre de classes simultanées par apprenant OUVERT |
+| Classe / apprenants | Plusieurs personnes via le lien D059 ; au plus une inscription courante par apprenant dans son rattachement au pilote D101 | Garantie concurrente requise ; pas de limite permanente, zéro classe après approbation et modalités OUVERTS |
 | Compte / établissements actifs | Au plus un rattachement actif au pilote ; relations historiques distinctes D099 | Définition d’activité et garantie concurrente à formaliser ; pas de limite permanente ni simultanéité future autorisée |
 | Compte / rôles dans un établissement | Cumul CME + permission d'administration locale explicitement permis D056 ; représentation multiple locale D100 | Aucun nouveau cumul autorisé ; auto-approbation et conflits d'intérêts OUVERTS |
 | Lien partagé / demandes individuelles | Même lien réutilisé pour plusieurs comptes D059 | Usage unique, compte partagé ou accès automatique interdits par la règle acquise |
@@ -125,7 +127,7 @@ Pour listes, détails, recherches, compteurs, exports et fichiers : vérifier le
 
 ## 6. Matrice d'autorisations
 
-Résultats : **A** = autorisation acquise sous les préconditions indiquées ; **R** = refus acquis pour ce motif ; **U** = autorisation ou procédure non définie, aucune permission nouvelle accordée ici. Les acteurs portent uniquement les droits du contexte décrit ; un cumul éventuel se réévalue séparément. Les parcours des tranches 2/3 sont des contraintes futures, pas des fonctionnalités réalisées dans le socle. Les lignes A expriment les droits nominaux acquis ; elles ne tranchent pas les actes sur soi-même et conflits de rôles IA-Q05, ni les situations de transfert IA-Q03/04.
+Résultats : **A** = autorisation acquise sous les préconditions indiquées ; **R** = refus acquis pour ce motif ; **U** = autorisation ou procédure non définie, aucune permission nouvelle accordée ici. Les acteurs portent uniquement les droits du contexte décrit ; un cumul éventuel se réévalue séparément. Les parcours des tranches 2/3 sont des contraintes futures, pas des fonctionnalités réalisées dans le socle. Les lignes A expriment les droits nominaux acquis ; elles ne tranchent pas les actes sur soi-même et conflits de rôles IA-Q05, ni les modalités de changement encore ouvertes IA-Q03/04. Les principes locaux acquis D101/D102 sont décrits séparément ; les lignes de matrice sont conservées.
 
 ### 6.1 Identité et organisation — tranche 1
 
@@ -211,7 +213,7 @@ PROPOSÉ comme référence vérifiable : point d'effet identifié par la validat
 | Formateur reste référent d'une autre classe | Son autre affectation peut continuer à autoriser les ressources correspondantes | Représentation technique et cache éventuel |
 | Ancien référent aussi accompagnant | Évaluer les droits de ce rendez-vous séparément ; aucun accès global aux retours de revue restauré | Champs CV accessibles et fin d'un accompagnement |
 | Classe temporairement sans référent | Dépôt et avis CME possibles, aucun avis formateur positif automatique | Délais et procédures d'affectation, sans délégation implicite |
-| Demande de changement de classe | Un autre lien ne change pas automatiquement la classe D059 | Acteur validant le transfert, date d'effet, anciens retours, dossiers en cours, nouvelle revue éventuelle |
+| Demande de changement de classe | D101 : demande sans effet/droit cible, approbation CME avec permission locale, transition cohérente et relais des accès ; D102 : contenu inchangé non remis à revalider, auteurs/type/version conservés | Point d’effet, revues engagées, multiples demandes, auto-actions, accès historiques/durées et vie des classes OUVERTS |
 | Départ/changement d'établissement | Aucune nouvelle permission inter-établissements par simple demande | Conservation/rattachement des anciennes candidatures/documents/bilans, accès de l'ancien/nouveau personnel et portabilité |
 | Retrait de rôle ou désactivation du compte | Contrôles de compte/droits courants requis D060 ; pas de droits forgés par JWT | Acteurs autorisés, statuts, effets globaux/locaux, restauration, traces et sessions |
 
@@ -319,8 +321,8 @@ Les identifiants IA-Q ci-dessous sont locaux à cette spécification ; ils ne re
 |---|---|---|---|
 | IA-Q01 | Principes P01–P06 validés D099 ; activité et concurrence, modalités email/identification/réentrée encore ouvertes | Identité globale, relations distinctes, un actif au pilote, contexte unique, email vérifié/unique et fin des droits sans transfert ; ne pas confondre attente/activité/historique, pas de preuve de propriété par email seul | Principes acquis, modalités nécessaires avant identité persistée/JWT/migrations ; socle Q05/Q06/Q07 |
 | IA-Q02 | B et RP01–RP06 validés D100 ; catalogue concret, modalités des attributions et conflits encore ouverts | Attributions locales dans rattachement courant/approuvé/autorisé, permissions administratives distinctes, actions contextuelles ; aucune union suffisante pour action sensible ni nouveau cumul implicite | Principes acquis, modalités avant parcours concernés ; Q07, IA-Q05/07/08 |
-| IA-Q03 | Combien de classes simultanées pour un apprenant ? Qui autorise un changement et quand ? | Comparaison ia-q03-class-enrollment-options.md Proposed, mandat D100 ; A/B/C, CC01–CC08 à arbitrer ; D059 et droits acquis préservés | Rattachement/affectations, F03/F04, Q05/Q07 |
-| IA-Q04 | Départ ou changement d'établissement : quels anciens dossiers et accès, quelles données rejoignent le nouveau contexte ? | Comparer conservation dans l'ancien périmètre, accès personnel limité et éventuelle portabilité explicite ; aucune copie/visibilité nouvelle par défaut | Transfert et conservation ; Q05/Q07/Q09 |
+| IA-Q03 | Modèle A et CC01–CC08 validés D101/D102 ; modalités ouvertes | Au plus une courante au pilote, changement/réentrée approuvés et relais des droits ; CC06/V1 règle métier distincte de D081 ; zéro classe, demandes, effet/concurrence, auto-actions, vie des classes et historiques à préciser | Principes acquis, modalités avant parcours ; F03/F04/F08/F09, Q05/Q07 |
+| IA-Q04 | Départ ou changement d’établissement : quels anciens dossiers et accès, quelle portabilité ? | Comparaison ia-q04-departure-history-portability-options.md Proposed, mandat D101 : conservation, accès personnel, export/import explicitement distingués ; HP01–HP08 non adoptés | Départ, transfert et conservation ; Q05/Q07/Q09 |
 | IA-Q05 | Quels actes sur soi-même et conflits de rôles ? Une même personne peut-elle rendre les deux avis ? | Comparer séparation des personnes, récusation/délégation autorisée ou cumul encadré ; deux types d'avis distincts maintenus D057, aucun choix ici | Administration selon cas ; revues F09 avant tranche 2 |
 | IA-Q06 | Lien de classe, demandes répétées et invitation personnel : durées, renouvellement, destinataires, validation concurrente ? | Séparer les parcours ; lien de classe réutilisable acquis, activation personnelle du personnel acquise ; préciser demandes déjà déposées et ancienne URL après renouvellement | F03/F04, S05, Q07 |
 | IA-Q07 | Première administration générale/CME et récupération : procédure contrôlée hors web public, invitation initiale ou autre parcours limité ? | Comparer traçabilité, réexécution, secret initial et suppression/fermeture du bootstrap ; aucun endpoint public permanent proposé comme acquis | Première organisation F01/S05, Q06/Q07 |
@@ -330,7 +332,7 @@ Les identifiants IA-Q ci-dessous sont locaux à cette spécification ; ils ne re
 | IA-Q11 | Quels champs/existence/exports sont visibles et quelles erreurs éviteront une fuite ? | Réponses minimales et homogènes recommandées, comparer refus explicite ou masquage d'existence selon ressource ; code HTTP ouvert | Contrats et parcours concernés, Q03/Q07 |
 | IA-Q12 | Traces, conservation, suppression et accès aux anciens rattachements/avis/bilans ? | D068/D080–D082 préservées ; comparer historique minimal et durées justifiées avec C11, sans stockage illimité implicite | Conservation/transferts et données réelles, Q05/Q09 |
 
-Principes IA-Q01 acquis D099 et IA-Q02 acquis D100 ; prochaine discussion : **IA-Q03** ; traiter **IA-Q07/08/09** avant les décisions dépendantes de JWT et migrations. IA-Q04 est nécessaire avant le parcours de transfert, même si ce parcours n'est pas implémenté d'abord. IA-Q05 doit être tranchée avant un parcours autorisant un tel cumul ; aucune urgence artificielle de développer toutes les revues en tranche 1. Les options et engagements de chaque groupe restent soumis à D064.
+Principes IA-Q01/02/03 acquis D099/D100/D101/D102 ; prochaine discussion : **IA-Q04** ; traiter **IA-Q07/08/09** avant les décisions dépendantes de JWT et migrations. IA-Q04 est nécessaire avant le parcours de transfert, même si ce parcours n'est pas implémenté d'abord. IA-Q05 doit être tranchée avant un parcours autorisant un tel cumul ; aucune urgence artificielle de développer toutes les revues en tranche 1. Les options et engagements de chaque groupe restent soumis à D064.
 
 ## 13. Correspondance avec socle, fonctionnalités et suivi
 
@@ -357,4 +359,4 @@ Avant implémentation d'un parcours : ses questions bloquantes doivent être arb
 
 Avant Accepted : exécution réelle des critères applicables, tests pertinents réussis et revue traitée selon workflow ; permissions/isolation prouvées avec deux établissements fictifs, retrait des droits vérifié avec le même JWT valide selon politique décidée, absence d'effet après refus. Les parcours non encore développés restent des exigences futures et aucune preuve n'est déclarée pour eux.
 
-Prochaine discussion : [comparaison IA-Q03](ia-q03-class-enrollment-options.md), options et CC01–CC08 non adoptées ; modalités IA-Q01/02 toujours ouvertes. Les décisions validées seront inscrites séparément et alignées section par section avant toute implémentation ; le reste de la spécification conservera son statut Proposed.
+Prochaine discussion : [comparaison IA-Q04](ia-q04-departure-history-portability-options.md), HP01–HP08 non adoptés ; modalités IA-Q01/02/03 toujours ouvertes. Les décisions validées seront inscrites séparément et alignées section par section avant toute implémentation ; le reste de la spécification conservera son statut Proposed.

@@ -25,7 +25,8 @@ Les fichiers locaux constituent la référence. Aucune synchronisation automatiq
 - [Identité / Organisation / Accès — priorité D097, spécification Proposed](docs/specs/identity-organization-access.md)
 - [IA-Q01 — principes validés D099, modalités ouvertes](docs/specs/ia-q01-account-membership-options.md)
 - [IA-Q02 — principes validés D100, modalités ouvertes](docs/specs/ia-q02-roles-permissions-options.md)
-- [IA-Q03 — classes et inscriptions, comparaison Proposed](docs/specs/ia-q03-class-enrollment-options.md)
+- [IA-Q03 — principes validés D101 et CC06/V1 D102](docs/specs/ia-q03-class-enrollment-options.md)
+- [IA-Q04 — départ et dossiers historiques, comparaison Proposed](docs/specs/ia-q04-departure-history-portability-options.md)
 
 - [Vision](docs/product/vision.md)
 - [Décisions](docs/product/decisions.md)

@@ -1,6 +1,6 @@
 # Revue des CV et portfolios — cadrage progressif
 
-Mise à jour : 26 octobre 2026. Références : D055, D057–D058 et D078–D085. Cadrage principal documenté : double validation, référent/remplacement, commentaires, déclaration portfolio, absence temporaire de référent et non-blocage des candidatures. Modalités restantes à spécifier ; aucune fonctionnalité Accepted ni preuve applicative.
+Mise à jour : 27 octobre 2026. Références : D055, D057–D058, D078–D085 et D101/D102. Cadrage principal documenté : double validation, référent/remplacement, commentaires, déclaration portfolio, absence temporaire de référent et non-blocage des candidatures. Modalités restantes à spécifier ; aucune fonctionnalité Accepted ni preuve applicative.
 
 ## Besoin exprimé
 
@@ -146,3 +146,11 @@ Ces contrôles seront exercés lors de la réalisation des parcours concernés ;
 ## Limites et articulation
 
 Consolidation documentaire C08 terminée, pas de choix de stack ni de fonctionnalité développée/Accepted. Pas d'accès général aux bilans confidentiels via la classe. Détails de droits d'écriture/correction, révision d'avis, filtres/compteurs, référence au contenu examiné et autres modalités à spécifier avant implémentation, avec tests inter-classes/établissements. Aucun changement implicite du parcours initial offres D053 ; états d'offre distincts des états de revue.
+
+## Changement local de classe — D101 et règle métier nouvelle D102
+
+D101 valide le modèle A au pilote et le relais des droits de revue à l’inscription courante. L’ancien référent perd le seul accès issu de l’ancienne inscription après effet ; les droits indépendants sont réévalués selon leurs règles.
+
+D102 valide explicitement CC06/V1, distinct de D081 sur le remplacement du référent : le seul changement de classe dans le même établissement ne remet pas à revalider un CV ou portfolio au contenu examiné inchangé. Conserver auteur réel, type et version examinée de chaque avis. Aucun avis manquant, défavorable ou en attente ne devient positif ; le nouveau référent n’est pas auteur des anciens avis, l’ancien ne garde aucun accès par son seul avis. Modification de contenu : D057/D083 inchangées.
+
+Aucun transfert inter-établissements, droit de révision libre ni conservation illimitée créé. Point d’effet et revues engagées IA-Q08, conflits IA-Q05, accès historiques/durées IA-Q04/12 restent ouverts. [Principes de classe](../specs/ia-q03-class-enrollment-options.md) ; aucune implémentation ni preuve applicative.
