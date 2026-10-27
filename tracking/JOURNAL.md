@@ -1,5 +1,9 @@
 # Journal
 
+## 2026-10-27 — Publication D093 vérifiée
+
+Commit cb24c9c607830de199599af7df3d2cbc69dc90c3 publié sur origin/main ; concordance distante vérifiée. Huit documents sélectionnés et relus, liens locaux et statuts T01–T10 contrôlés, entrée D093 unique, recherche ciblée de secrets sans motif détecté. Aucun code ou test applicatif. État/tableau complétés par la preuve ; note de suivi conservée séparément selon D069/D074.
+
 ## 2026-10-27 — T01–T03 validés, D093
 
 Accord explicite « oui c est ça » à la proposition présentée : domaines métier et responsabilités controller/service/persistance séparées ; SOLID pragmatique ; injection par constructeur et contrats ciblés sans interface systématique. D093 consignée avant alignement documentaire ; D091 partiellement validée, T04–T10 proposés, D090/D092 non validées globalement. Références techniques, plan, README et suivi alignés ; dossiers précis, ORM, authentification et autres outils restent à décider. Aucun code, installation, test applicatif, déploiement ou délégation ; aucune fonctionnalité Accepted. Diff/confidentialité et cohérence à contrôler avant commit/push D069 ; résultat à vérifier. Prochaine discussion : T04–T05, identité/session et permissions/isolation.

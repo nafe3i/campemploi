@@ -1,6 +1,6 @@
 # État — 2026-10-27
 
-Accord explicite « oui c est ça » : T01–T03 validés D093, D091 partiellement validée. Responsabilités séparées par domaine, SOLID pragmatique et injection avec contrats ciblés retenus ; documents alignés, aucun code ou test applicatif. D090/D092 restent proposées ; auth/permissions/isolation T04–T05 constituent la prochaine discussion. Publication de cet accord à vérifier.
+Accord explicite « oui c est ça » : T01–T03 validés D093, D091 partiellement validée. Responsabilités séparées par domaine, SOLID pragmatique et injection avec contrats ciblés retenus ; documents alignés, aucun code ou test applicatif. D090/D092 restent proposées ; auth/permissions/isolation T04–T05 constituent la prochaine discussion. Accord publié au commit cb24c9c607830de199599af7df3d2cbc69dc90c3 ; concordance avec origin/main vérifiée le 27 octobre 2026.
 
 Adaptation demandée des archives context.zip et feature-specs.zip rédigée dans docs/specs/architecture-realisation-campus.md, Proposed D092 : analyse de Ghost AI, architecture campus, responsabilités, données, catalogue de fiches et exemple de soumission avec contrôles. Rédaction autorisée ; propositions restantes non validées, D090 inchangée et D091 désormais partiellement validée par D093. Aucun code, installation ou test applicatif ; vérifications documentaires uniquement. Livrable publié au commit 454e6aa406e525e2754f322b7eb6085d84a48720 ; concordance avec origin/main vérifiée le 27 octobre 2026.
 
